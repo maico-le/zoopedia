@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
-import { Copy, Check, Layers, ExternalLink, ArrowRightLeft, Sparkles, HeartHandshake, AlertTriangle, MapPin, Compass } from 'lucide-react';
+import { Copy, Check, Layers, ExternalLink, ArrowRightLeft, Sparkles, HeartHandshake, AlertTriangle, MapPin, Compass, Network, ArrowRight } from 'lucide-react';
 import { AnimalViewer } from '../viewer/AnimalViewer';
 import { loadSpeciesBySlug } from '../../lib/data-loader';
 import { SpeciesCompareModal } from './SpeciesCompareModal';
@@ -453,7 +453,33 @@ export const SpeciesPage: React.FC = () => {
         )}
 
         {activeTab === 'diet' && (
-          <DietCard diet={species.diet} speciesName={commonName} />
+          <div className="space-y-8">
+            <DietCard diet={species.diet} speciesName={commonName} />
+
+            {/* Food Web & Trophic Level Link Card */}
+            <div className="field-journal-card p-6 bg-stone-900/90 border-natgeo-yellow/20 flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-black border-2 border-natgeo-yellow/40 flex items-center justify-center text-natgeo-yellow text-2xl shrink-0">
+                  <Network className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-base font-bold font-serif text-white">
+                    {isEn ? 'Food Web Position & Trophic Cascades' : 'Vị Trí Trong Mạng Lưới Thức Ăn & Thác Sinh Thái'}
+                  </h4>
+                  <p className="text-xs text-stone-300 font-serif mt-0.5">
+                    {isEn
+                      ? 'Simulate food web interactions, predation balance, and trophic cascading effects in the ecosystem.'
+                      : 'Mô phỏng mối quan hệ săn mồi, cân bằng tháp dinh dưỡng và hiệu ứng thác sinh thái trong tự nhiên.'}
+                  </p>
+                </div>
+              </div>
+
+              <Link to="/ecosystem" className="btn-expedition-primary whitespace-nowrap text-xs font-mono">
+                <span>{isEn ? 'Open Ecosystem Simulator' : 'Mở Phòng Thí Nghiệm Sinh Thái'}</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </div>
         )}
 
         {activeTab === 'behavior' && (

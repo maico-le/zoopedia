@@ -5,6 +5,7 @@ import { SpeciesPage } from '../features/species/SpeciesPage';
 import { TaxonomyPage } from '../features/taxonomy/TaxonomyPage';
 import { TaxonDetailPage } from '../features/taxonomy/TaxonDetailPage';
 import { ExplorePage } from '../features/explore/ExplorePage';
+import { EcosystemPage } from '../features/ecosystem/EcosystemPage';
 import { CreditsPage } from '../features/credits/CreditsPage';
 import { DataQualityPage } from '../features/admin/DataQualityPage';
 
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: 'explore',
         element: <ExplorePage />,
+      },
+      {
+        path: 'ecosystem',
+        element: <EcosystemPage />,
       },
       {
         path: 'species/:slug',
