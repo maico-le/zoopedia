@@ -1,0 +1,260 @@
+{
+  "id": "turritopsis-dohrnii",
+  "taxonKey": {
+    "gbif": 2267675,
+    "col": null,
+    "wikidata": "Q737894",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Turritopsis dohrnii",
+    "authorship": "Weissmann, 1883",
+    "en": [
+      "Immortal Jellyfish",
+      "Benjamin Button Jellyfish"
+    ],
+    "vi": [
+      "Sứa bất tử",
+      "Sứa trẻ mãi không già"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Cnidaria",
+    "class": "Hydrozoa",
+    "order": "Anthoathecata",
+    "family": "Oceaniidae",
+    "genus": "Turritopsis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      0.4,
+      0.5
+    ],
+    "weightKg": [
+      0.0001,
+      0.0005
+    ],
+    "description": {
+      "vi": "Sinh vật duy nhất trên Trái Đất có khả năng đảo ngược hoàn toàn chu kỳ lão hóa sinh học: khi bị tổn thương hoặc già cỗi, nó có thể chuyển hóa tế bào ngược về trạng thái polyp ấu trùng sơ sinh.",
+      "en": "The only known metazoan organism capable of total biological rejuvenation: under stress or senescence, its differentiated cells transdifferentiate back into a juvenile colonial polyp."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vùng biển Địa Trung Hải",
+      "Vùng duyên hải ấm nhiệt đới Đại Tây Dương & Thái Bình Dương"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vùng biển Địa Trung Hải, Vùng duyên hải ấm nhiệt đới Đại Tây Dương & Thái Bình Dương.",
+      "en": "Characteristic habitat spans Vùng biển Địa Trung Hải, Vùng duyên hải ấm nhiệt đới Đại Tây Dương & Thái Bình Dương."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "IT",
+      "ES",
+      "GR",
+      "JP",
+      "US",
+      "PA"
+    ],
+    "text": {
+      "vi": "Ban đầu ở Địa Trung Hải, nay phát tán qua nước dằn tàu trên khắp các đại dương ấm thế giới.",
+      "en": "Native to the Mediterranean Sea, now distributed globally through cargo ship ballast waters."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2267675"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Động vật phù du biển",
+      "Ấu trùng giáp xác",
+      "Trứng cá nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng xúc tu trôi nổi chứa nang trâm chích tê liệt sinh vật phù du siêu nhỏ.",
+      "en": "Specialized feeding habits targeting Động vật phù du biển, Ấu trùng giáp xác."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Sinh vật duy nhất trên Trái Đất có khả năng đảo ngược hoàn toàn chu kỳ lão hóa sinh học: khi bị tổn thương hoặc già cỗi, nó có thể chuyển hóa tế bào ngược về trạng thái polyp ấu trùng sơ sinh.",
+      "en": "The only known metazoan organism capable of total biological rejuvenation: under stress or senescence, its differentiated cells transdifferentiate back into a juvenile colonial polyp."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "planula",
+        "name": {
+          "vi": "Ấu trùng bơi",
+          "en": "Planula"
+        },
+        "description": {
+          "vi": "Ấu trùng có lông bơi tìm giá thể đá dưới đáy biển.",
+          "en": "Ciliated planula larva swimming to anchor on benthic substrate."
+        },
+        "durationDays": [
+          0,
+          5
+        ]
+      },
+      {
+        "key": "polyp",
+        "name": {
+          "vi": "Cụm Polyp",
+          "en": "Polyp Colony"
+        },
+        "description": {
+          "vi": "Hình thành cụm polyp phân nhánh bám vào đá đáy biển.",
+          "en": "Sessile branching benthic colony budding juvenile medusae."
+        },
+        "durationDays": [
+          5,
+          30
+        ]
+      },
+      {
+        "key": "medusa",
+        "name": {
+          "vi": "Sứa trưởng thành (Có thể hoàn đồng)",
+          "en": "Medusa (Immortal)"
+        },
+        "description": {
+          "vi": "Bơi tự do trong nước; khi stress sẽ teo nhỏ và tái sinh ngược thành polyp.",
+          "en": "Free-swimming medusa able to revert into a polyp under physiological stress."
+        },
+        "durationDays": [
+          30,
+          36500
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        100
+      ],
+      "captivity": [
+        10,
+        100
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NE",
+    "populationTrend": "stable",
+    "threats": [
+      "Bị cá và rùa biển ăn thịt (bất tử về sinh học nhưng vẫn có thể bị săn bắt)"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Quá trình 'hoàn đồng' của sứa bất tử dựa trên cơ chế chuyển biệt hóa tế bào (transdifferentiation), cho phép tế bào trưởng thành biến đổi thành loại tế bào hoàn toàn mới.",
+      "en": "The jellyfish achieves biological immortality through cellular transdifferentiation, turning specialized somatic cells back into primordial stem-like states."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Turritopsis_dohrnii.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Bachrach44",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Turritopsis_dohrnii.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Sứa bất tử (Turritopsis dohrnii) trong tự nhiên",
+          "en": "Wild Immortal Jellyfish (Turritopsis dohrnii) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2267675",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

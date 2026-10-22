@@ -1,0 +1,276 @@
+{
+  "id": "buceros-bicornis",
+  "taxonKey": {
+    "gbif": 2475990,
+    "col": null,
+    "wikidata": "Q207869",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Buceros bicornis",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Great Hornbill",
+      "Great Indian Hornbill",
+      "Concave-casqued Hornbill"
+    ],
+    "vi": [
+      "Hồng hoàng",
+      "Phượng hoàng đất",
+      "Mỏ sừng lớn"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "genus": "Buceros",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      95,
+      120
+    ],
+    "weightKg": [
+      2.2,
+      4.0
+    ],
+    "description": {
+      "vi": "Loài chim rừng nhiệt đới tráng lệ bậc nhất châu Á. Chiếc mào sừng (casque) màu vàng óng nhô cao trên mỏ và tiếng đập cánh rền vang như tiếng đầu máy xe lửa trong rừng già.",
+      "en": "One of the most magnificent canopy birds of Asia, adorned with an enormous golden casque atop its beak. Its heavy wingbeats resonate loudly like a steam engine through pristine jungles."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới thường xanh nguyên sinh",
+      "Tán rừng ẩm chân núi Trường Sơn"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới thường xanh nguyên sinh, Tán rừng ẩm chân núi Trường Sơn.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới thường xanh nguyên sinh, Tán rừng ẩm chân núi Trường Sơn."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "IN",
+      "TH",
+      "MY",
+      "ID",
+      "NP",
+      "LA",
+      "KH"
+    ],
+    "text": {
+      "vi": "Ấn Độ, Đông Nam Á và miền Trung Việt Nam (Vườn Quốc gia Bạch Mã, Cát Tiên).",
+      "en": "High-canopy primary forests across South and Southeast Asia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2475990"
+  },
+  "diet": {
+    "type": "frugivore",
+    "preyOrFood": [
+      "Quả sung đa rừng",
+      "Trái cây họ Dầu non",
+      "Thằn lằn cây",
+      "Chuột rừng"
+    ],
+    "feedingBehavior": {
+      "vi": "Bay qua lại trên các ngọn cây cao để tìm kiếm các cây đa cổ thụ đang mùa ra quả chín.",
+      "en": "Specialized feeding habits targeting Quả sung đa rừng, Trái cây họ Dầu non."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài chim rừng nhiệt đới tráng lệ bậc nhất châu Á. Chiếc mào sừng (casque) màu vàng óng nhô cao trên mỏ và tiếng đập cánh rền vang như tiếng đầu máy xe lửa trong rừng già.",
+      "en": "One of the most magnificent canopy birds of Asia, adorned with an enormous golden casque atop its beak. Its heavy wingbeats resonate loudly like a steam engine through pristine jungles."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "nestling",
+        "name": {
+          "vi": "Chim non",
+          "en": "Nestling"
+        },
+        "description": {
+          "vi": "Được mẹ và con nuôi giam kín trong hốc cây được trát bùn kín mít.",
+          "en": "Sealed securely inside tree hollow by mud-and-feces plug."
+        },
+        "durationDays": [
+          0,
+          100
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Rời tổ bay chuyền theo chim bố mẹ học đường bay.",
+          "en": "Breaks out of nest cavity to join canopy foraging flights."
+        },
+        "durationDays": [
+          100,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Cặp đôi sống chung thủy trọn đời bảo vệ tán rừng.",
+          "en": "Monogamous lifelong mates performing iconic flight displays."
+        },
+        "durationDays": [
+          1095,
+          14600
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        30,
+        40
+      ],
+      "captivity": [
+        40,
+        50
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mất các cây gỗ cổ thụ có bọng tổ",
+      "Săn bắn lấy mỏ sừng chạm khắc mỹ nghệ"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Khi ấp trứng, chim mẹ tự giam mình bên trong bọng cây và cùng chim bố dùng phân và bùn trát kín miệng tổ chỉ chừa lại một khe nhỏ xíu để chim bố đút thức ăn vào suốt nhiều tháng.",
+      "en": "The female seals herself inside a tree hollow with a mud wall, leaving only a slit through which the male diligently provisions food for months."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ara-macao.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Bucerotidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Hornbill_in_flight.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Angadachappa",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Hornbill_in_flight.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Hồng hoàng (Buceros bicornis) trong tự nhiên",
+          "en": "Wild Great Hornbill (Buceros bicornis) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2475990",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

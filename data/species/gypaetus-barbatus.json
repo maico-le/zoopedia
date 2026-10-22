@@ -1,0 +1,276 @@
+{
+  "id": "gypaetus-barbatus",
+  "taxonKey": {
+    "gbif": 2480415,
+    "col": null,
+    "wikidata": "Q125959",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Gypaetus barbatus",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Bearded Vulture",
+      "Lammergeier",
+      "Ossifrage"
+    ],
+    "vi": [
+      "Kền kền râu",
+      "Lammergeier",
+      "Kền kền cừu"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Gypaetus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      94,
+      125
+    ],
+    "weightKg": [
+      4.5,
+      7.8
+    ],
+    "description": {
+      "vi": "Chúa tể xương tủy vùng núi cao. Loài chim duy nhất trong tự nhiên có chế độ ăn gần như hoàn toàn bằng xương (85-90% khẩu phần) và nhuộm lông màu đỏ rỉ sắt bằng oxit sắt trên vách đá.",
+      "en": "The only known vertebrate whose diet is almost exclusively bone (85-90%). Famous for dropping giant bones from the sky to shatter them and bathing in iron-rich mud to dye its plumage fiery rust."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Dãy núi cao Alps & Pyrenees",
+      "Vùng núi Himalaya hiểm trở",
+      "Hẻm núi cao nguyên đá"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Dãy núi cao Alps & Pyrenees, Vùng núi Himalaya hiểm trở, Hẻm núi cao nguyên đá.",
+      "en": "Characteristic habitat spans Dãy núi cao Alps & Pyrenees, Vùng núi Himalaya hiểm trở, Hẻm núi cao nguyên đá."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "ES",
+      "FR",
+      "CH",
+      "IT",
+      "NP",
+      "CN",
+      "ET",
+      "IN"
+    ],
+    "text": {
+      "vi": "Các dãy núi cao hiểm trở ở Nam Âu, Đông Phi, Trung Á và cao nguyên Tây Tạng.",
+      "en": "High precipitous mountain ranges across Eurasia and East Africa."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2480415"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Xương tủy động vật móng guốc",
+      "Xương cừu núi",
+      "Xương dê rừng Ibex",
+      "Rùa núi"
+    ],
+    "feedingBehavior": {
+      "vi": "Cắp những chiếc xương ống dài tới 30cm bay lên độ cao 50-100 mét rồi thả rơi xuống mỏm đá để làm vỡ vụn xương lấy tủy béo ngậy.",
+      "en": "Specialized feeding habits targeting Xương tủy động vật móng guốc, Xương cừu núi."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Chúa tể xương tủy vùng núi cao. Loài chim duy nhất trong tự nhiên có chế độ ăn gần như hoàn toàn bằng xương (85-90% khẩu phần) và nhuộm lông màu đỏ rỉ sắt bằng oxit sắt trên vách đá.",
+      "en": "The only known vertebrate whose diet is almost exclusively bone (85-90%). Famous for dropping giant bones from the sky to shatter them and bathing in iron-rich mud to dye its plumage fiery rust."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "chick",
+        "name": {
+          "vi": "Chim non",
+          "en": "Chick"
+        },
+        "description": {
+          "vi": "Nở trong tổ trên vách đá cheo leo giữa mùa đông băng tuyết.",
+          "en": "Hatches inside cliff cave nests during freezing winter months."
+        },
+        "durationDays": [
+          0,
+          120
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Luyện tập kỹ thuật căn góc gió thả xương xuống đá.",
+          "en": "Practices calculated bone-dropping angles onto flat rocky anvils."
+        },
+        "durationDays": [
+          120,
+          2190
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Tắm bùn khoáng đỏ và bay tuần tra khắp các rặng núi tuyết.",
+          "en": "Cosmetically bathes in ochre mud to color underparts."
+        },
+        "durationDays": [
+          2190,
+          16425
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        25,
+        30
+      ],
+      "captivity": [
+        35,
+        45
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Ngộ độc mồi bả độc do con người đặt bẫy thú ăn thịt"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Dịch vị dạ dày của kền kền râu có độ axit cực mạnh (pH xấp xỉ 1, đậm đặc hơn cả axit ắc-quy), có thể phân hủy và tiêu hóa hoàn toàn cả những mẩu xương cứng nhất chỉ trong 24 giờ.",
+      "en": "The stomach acid of a bearded vulture has a pH of approximately 1, dissolving large dense bones completely within 24 hours."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aquila-chrysaetos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Accipitridae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gypaetus_barbatus_in_flight.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Richard Bartz",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gypaetus_barbatus_in_flight.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Kền kền râu (Gypaetus barbatus) trong tự nhiên",
+          "en": "Wild Bearded Vulture (Gypaetus barbatus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2480415",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "id": "pseudoryx-nghetinhensis",
+  "taxonKey": {
+    "gbif": 2441165,
+    "col": null,
+    "wikidata": "Q206587",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Pseudoryx nghetinhensis",
+    "authorship": "Dung et al., 1993",
+    "en": [
+      "Saola",
+      "Asian Unicorn",
+      "Vu Quang Bovid"
+    ],
+    "vi": [
+      "Sao la",
+      "Kỳ lân châu Á",
+      "Bò sừng dài"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae",
+    "genus": "Pseudoryx",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      130,
+      150
+    ],
+    "weightKg": [
+      80,
+      100
+    ],
+    "description": {
+      "vi": "Loài thú móng guốc đặc hữu quý hiếm bậc nhất thế giới của dãy Trường Sơn Việt Nam và Lào. Sở hữu cặp sừng dài thẳng vút kỳ vĩ cùng vệt đốm trắng nổi bật trên mặt.",
+      "en": "One of the world's rarest and most enigmatic large mammals, endemic to the Annamite Range of Vietnam and Laos. Recognized by its long, gently curved parallel horns and white facial markings."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới thường xanh dãy Trường Sơn",
+      "Rừng nguyên sinh ẩm vùng núi cao"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới thường xanh dãy Trường Sơn, Rừng nguyên sinh ẩm vùng núi cao.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới thường xanh dãy Trường Sơn, Rừng nguyên sinh ẩm vùng núi cao."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA"
+    ],
+    "text": {
+      "vi": "Đặc hữu vùng rừng nguyên sinh rậm rạp giáp ranh giữa miền Trung Việt Nam và Trung Lào.",
+      "en": "Endemic to the evergreen moist forests of the Annamite Range along the Vietnam-Laos border."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441165"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Lá cây dẻ rừng",
+      "Cây môn dại",
+      "Chồi non rừng ẩm",
+      "Cây bụi họ Thầu dầu"
+    ],
+    "feedingBehavior": {
+      "vi": "Ăn chồi lá non và các loài cây thảo mộc mọng nước ven suối sâu trong rừng rậm.",
+      "en": "Specialized feeding habits targeting Lá cây dẻ rừng, Cây môn dại."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thú móng guốc đặc hữu quý hiếm bậc nhất thế giới của dãy Trường Sơn Việt Nam và Lào. Sở hữu cặp sừng dài thẳng vút kỳ vĩ cùng vệt đốm trắng nổi bật trên mặt.",
+      "en": "One of the world's rarest and most enigmatic large mammals, endemic to the Annamite Range of Vietnam and Laos. Recognized by its long, gently curved parallel horns and white facial markings."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Bê non",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Sao la non sinh ra vào mùa mưa, ẩn mình kỹ trong bụi rậm.",
+          "en": "Calf born during the wet season, hidden securely in thick vegetation."
+        },
+        "durationDays": [
+          0,
+          180
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Cá thể thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Phát triển sừng và học cách phân biệt thực vật ăn được.",
+          "en": "Develops horn cores and learns foraging navigation."
+        },
+        "durationDays": [
+          180,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá thể trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Đạt kích thước hoàn thiện, sống đơn độc kín đáo trong rừng già.",
+          "en": "Solitary adult maintaining elusive presence in dense primary forests."
+        },
+        "durationDays": [
+          730,
+          5475
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        15
+      ],
+      "captivity": [
+        8,
+        12
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Bẫy dây săn bắt trộm trong rừng",
+      "Mất sinh cảnh rừng nguyên sinh",
+      "Phân mảnh quần thể cực độ"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sao la được phát hiện lần đầu tiên vào năm 1992 tại Vườn Quốc gia Vũ Quang (Hà Tĩnh), là phát hiện động vật có vú lớn quan trọng nhất của thế kỷ 20.",
+      "en": "The Saola's discovery in Vu Quang in 1992 was widely celebrated as one of the most remarkable zoological discoveries of the 20th century."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/equus-caballus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Artiodactyla"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saola_mount.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Trần Ngọc Hùng",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Saola_mount.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Sao la (Pseudoryx nghetinhensis) trong tự nhiên",
+          "en": "Wild Saola (Pseudoryx nghetinhensis) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441165",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

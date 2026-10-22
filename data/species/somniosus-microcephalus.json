@@ -1,0 +1,272 @@
+{
+  "id": "somniosus-microcephalus",
+  "taxonKey": {
+    "gbif": 2420831,
+    "col": null,
+    "wikidata": "Q212160",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Somniosus microcephalus",
+    "authorship": "(Bloch & Schneider, 1801)",
+    "en": [
+      "Greenland Shark",
+      "Gurry Shark",
+      "Grey Shark"
+    ],
+    "vi": [
+      "Cá mập Greenland",
+      "Cá mập Bắc Cực",
+      "Cá mập ngủ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Chondrichthyes",
+    "order": "Squaliformes",
+    "family": "Somniosidae",
+    "genus": "Somniosus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      300,
+      640
+    ],
+    "weightKg": [
+      400,
+      1200
+    ],
+    "description": {
+      "vi": "Loài động vật có xương sống sống thọ nhất hành tinh (có thể sống từ 250 đến 500 năm). Bơi chậm rãi trong làn nước băng giá âm độ ở độ sâu hàng ngàn mét dưới đáy biển Bắc Cực.",
+      "en": "The longest-living vertebrate known on Earth, capable of reaching ages between 250 and 500 years. Glides sluggishly through freezing abyssal waters up to 2,200 meters deep in the Arctic."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Biển sâu thẳm Bắc Băng Dương (Abyssal)",
+      "Vùng thềm lục địa băng giá Bắc Đại Tây Dương"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Biển sâu thẳm Bắc Băng Dương (Abyssal), Vùng thềm lục địa băng giá Bắc Đại Tây Dương.",
+      "en": "Characteristic habitat spans Biển sâu thẳm Bắc Băng Dương (Abyssal), Vùng thềm lục địa băng giá Bắc Đại Tây Dương."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "GL",
+      "IS",
+      "NO",
+      "CA",
+      "RU"
+    ],
+    "text": {
+      "vi": "Vùng biển sâu Bắc Đại Tây Dương và Bắc Băng Dương quanh Greenland, Iceland và Na Uy.",
+      "en": "Deep polar waters of the North Atlantic and Arctic Oceans."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2420831"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá tuyết đáy biển",
+      "Hải cẩu ngủ say",
+      "Cá đuối gai",
+      "Xác cá voi chìm"
+    ],
+    "feedingBehavior": {
+      "vi": "Lặng lẽ bơi tới hút các loài cá đáy và phục kích hải cẩu đang ngủ say trong làn nước tối tăm.",
+      "en": "Specialized feeding habits targeting Cá tuyết đáy biển, Hải cẩu ngủ say."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài động vật có xương sống sống thọ nhất hành tinh (có thể sống từ 250 đến 500 năm). Bơi chậm rãi trong làn nước băng giá âm độ ở độ sâu hàng ngàn mét dưới đáy biển Bắc Cực.",
+      "en": "The longest-living vertebrate known on Earth, capable of reaching ages between 250 and 500 years. Glides sluggishly through freezing abyssal waters up to 2,200 meters deep in the Arctic."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Cá con",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh ra từ buồng trứng phát triển chậm trong lòng mẹ.",
+          "en": "Born live after an exceptionally long gestation."
+        },
+        "durationDays": [
+          0,
+          365
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên (Kéo dài cả thế kỷ)",
+          "en": "Century-Long Juvenile"
+        },
+        "description": {
+          "vi": "Chỉ lớn thêm khoảng 1cm mỗi năm trong suốt 100 năm đầu đời.",
+          "en": "Grows only about 1 cm per year for over a century."
+        },
+        "durationDays": [
+          365,
+          54750
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành sinh sản (Từ 150 tuổi)",
+          "en": "Mature Adult (Age 150+)"
+        },
+        "description": {
+          "vi": "Đạt độ tuổi sinh sản lần đầu tiên khi đã hơn 150 năm tuổi.",
+          "en": "Reaches sexual maturity only at approximately 150 years of age."
+        },
+        "durationDays": [
+          54750,
+          146000
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        270,
+        500
+      ],
+      "captivity": [
+        100,
+        200
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mắc lưới đánh bắt cá tuyết đáy biển sâu"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Một cá thể cá mập Greenland được xác định bằng phương pháp định tuổi đồng vị phóng xạ cacbon thủy tinh thể mắt cho thấy nó sinh ra từ khoảng năm 1620 (thời kỳ chúa Trịnh - chúa Nguyễn).",
+      "en": "Radiocarbon eye-lens dating of a female Greenland shark estimated her birth date around 1620, making her over 400 years old."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Somniosidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Greenland_shark.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Justin",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Greenland_shark.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá mập Greenland (Somniosus microcephalus) trong tự nhiên",
+          "en": "Wild Greenland Shark (Somniosus microcephalus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2420831",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

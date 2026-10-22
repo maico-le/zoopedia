@@ -1,0 +1,275 @@
+{
+  "id": "dugong-dugon",
+  "taxonKey": {
+    "gbif": 2434571,
+    "col": null,
+    "wikidata": "Q93282",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Dugong dugon",
+    "authorship": "(Müller, 1776)",
+    "en": [
+      "Dugong",
+      "Sea Cow"
+    ],
+    "vi": [
+      "Bò biển",
+      "Dugong",
+      "Nàng tiên cá"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Sirenia",
+    "family": "Dugongidae",
+    "genus": "Dugong",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      240,
+      300
+    ],
+    "weightKg": [
+      250,
+      420
+    ],
+    "description": {
+      "vi": "Loài thú biển ăn cỏ hiền lành, nguồn gốc của truyền thuyết 'nàng tiên cá'. Tại Việt Nam, bò biển sinh sống quý giá tại các thảm cỏ biển Phú Quốc và Côn Đảo.",
+      "en": "A strictly herbivorous marine mammal inspiring the historic legend of mermaids. In Vietnam, fragile populations graze on seagrass beds around Phu Quoc and Con Dao islands."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Thảm cỏ biển nông nhiệt đới",
+      "Vùng vịnh biển kín ấm"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Thảm cỏ biển nông nhiệt đới, Vùng vịnh biển kín ấm.",
+      "en": "Characteristic habitat spans Thảm cỏ biển nông nhiệt đới, Vùng vịnh biển kín ấm."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "AU",
+      "ID",
+      "PH",
+      "EG",
+      "MZ"
+    ],
+    "text": {
+      "vi": "Vùng biển nhiệt đới Ấn Độ Dương - Tây Thái Bình Dương; ở Việt Nam có ở Côn Đảo và Phú Quốc.",
+      "en": "Warm coastal waters across the Indo-West Pacific, including Vietnam's seagrass sanctuaries."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434571"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cỏ biển Halophila",
+      "Cỏ biển rễ râm",
+      "Tảo biển mềm"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng chiếc môi cơ bắp hình móng ngựa cày bới bùn cát để nhổ cả rễ cỏ biển giàu dinh dưỡng.",
+      "en": "Specialized feeding habits targeting Cỏ biển Halophila, Cỏ biển rễ râm."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thú biển ăn cỏ hiền lành, nguồn gốc của truyền thuyết 'nàng tiên cá'. Tại Việt Nam, bò biển sinh sống quý giá tại các thảm cỏ biển Phú Quốc và Côn Đảo.",
+      "en": "A strictly herbivorous marine mammal inspiring the historic legend of mermaids. In Vietnam, fragile populations graze on seagrass beds around Phu Quoc and Con Dao islands."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Bò con",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Bơi sát bên vây mẹ và bú sữa mẹ dưới nước.",
+          "en": "Swims close alongside mother, suckling from pectoral teats."
+        },
+        "durationDays": [
+          0,
+          540
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học cách tìm kiếm các thảm cỏ biển sâu hơn.",
+          "en": "Learns seasonal migrations across shallow seagrass beds."
+        },
+        "durationDays": [
+          540,
+          3650
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống hòa bình, di chuyển thong thả theo thủy triều.",
+          "en": "Gentle grazer synchronized with tidal rhythms."
+        },
+        "durationDays": [
+          3650,
+          25550
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        50,
+        70
+      ],
+      "captivity": [
+        50,
+        70
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mắc lưới đánh cá rê",
+      "Mất các thảm cỏ biển do bồi lắng ô nhiễm"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bò biển có họ hàng gần gũi về mặt tiến hóa với loài voi hơn là với cá voi hay hải cẩu.",
+      "en": "Evolutionarily, dugongs are much more closely related to terrestrial elephants than to whales or dolphins."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Dugongidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dugong_Marsa_Alam.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Julien Willem",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dugong_Marsa_Alam.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Bò biển (Dugong dugon) trong tự nhiên",
+          "en": "Wild Dugong (Dugong dugon) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434571",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

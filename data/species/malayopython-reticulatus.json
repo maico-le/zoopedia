@@ -1,0 +1,276 @@
+{
+  "id": "malayopython-reticulatus",
+  "taxonKey": {
+    "gbif": 8272993,
+    "col": null,
+    "wikidata": "Q214060",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Malayopython reticulatus",
+    "authorship": "(Schneider, 1801)",
+    "en": [
+      "Reticulated Python",
+      "Asiatic Reticulated Python"
+    ],
+    "vi": [
+      "Trăn gấm",
+      "Trăn mắt lưới",
+      "Trăn hoa"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Squamata",
+    "family": "Pythonidae",
+    "genus": "Malayopython",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      300,
+      700
+    ],
+    "weightKg": [
+      40,
+      140
+    ],
+    "description": {
+      "vi": "Loài bò sát dài nhất hành tinh, có cá thể ghi nhận dài tới gần 8 mét. Hoa văn mắt lưới hình thoi đan xen phức tạp mang lại khả năng ngụy trang tuyệt hảo dưới thảm lá rừng nhiệt đới.",
+      "en": "The world's longest reptile, with confirmed specimens exceeding 7 meters. Its intricate geometric reticulated pattern provides astonishing camouflage amidst tropical forest leaf litter."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới Đông Nam Á",
+      "Rừng ven đầm lầy suối nước",
+      "Khu dân cư nông thôn"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới Đông Nam Á, Rừng ven đầm lầy suối nước, Khu dân cư nông thôn.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới Đông Nam Á, Rừng ven đầm lầy suối nước, Khu dân cư nông thôn."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "ID",
+      "MY",
+      "PH",
+      "TH",
+      "MM",
+      "KH",
+      "LA"
+    ],
+    "text": {
+      "vi": "Khắp Đông Nam Á, tại Việt Nam có từ miền Trung đến Nam Bộ.",
+      "en": "Widespread across Southeast Asia from Indochina to the Philippines."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/8272993"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Khỉ rừng",
+      "Lợn rừng con",
+      "Hươu nai non",
+      "Chuột cống",
+      "Gia cầm"
+    ],
+    "feedingBehavior": {
+      "vi": "Cuộn các vòng cơ bắp cực khỏe siết chặt khiến tim con mồi ngừng đập rồi nuốt chửng toàn bộ thân thể con mồi.",
+      "en": "Specialized feeding habits targeting Khỉ rừng, Lợn rừng con."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài bò sát dài nhất hành tinh, có cá thể ghi nhận dài tới gần 8 mét. Hoa văn mắt lưới hình thoi đan xen phức tạp mang lại khả năng ngụy trang tuyệt hảo dưới thảm lá rừng nhiệt đới.",
+      "en": "The world's longest reptile, with confirmed specimens exceeding 7 meters. Its intricate geometric reticulated pattern provides astonishing camouflage amidst tropical forest leaf litter."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "hatchling",
+        "name": {
+          "vi": "Trăn con",
+          "en": "Hatchling"
+        },
+        "description": {
+          "vi": "Rắn con dài khoảng 60cm khi chui ra khỏi vỏ trứng.",
+          "en": "Hatches at approximately 60 cm long, immediately self-sufficient."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Leo trèo giỏi trên các cành cây rậm ven nước.",
+          "en": "Highly arboreal, hunting rodents in trees near water."
+        },
+        "durationDays": [
+          90,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Săn các loài thú móng guốc lớn trên mặt đất.",
+          "en": "Ground-dwelling ambush giant ambushing large ungulates."
+        },
+        "durationDays": [
+          1095,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        20,
+        25
+      ],
+      "captivity": [
+        25,
+        32
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Săn bắt lấy da trăn xuất khẩu cho ngành thời trang da"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Trăn gấm mẹ có tập tính ấp trứng hiếm thấy ở loài bò sát: chúng cuộn tròn quanh ổ trứng và run rẩy các khối cơ liên tục để sinh nhiệt sưởi ấm trứng.",
+      "en": "Female pythons exhibit rare maternal brooding, coiling around their clutch and shivering their muscles rhythmically to generate incubating heat."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/python-bivittatus.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Pythonidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reticulated_python_in_Khao_Yai.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Rushen",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Reticulated_python_in_Khao_Yai.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Trăn gấm (Malayopython reticulatus) trong tự nhiên",
+          "en": "Wild Reticulated Python (Malayopython reticulatus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/8272993",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

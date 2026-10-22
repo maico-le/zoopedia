@@ -1,0 +1,275 @@
+{
+  "id": "delphinapterus-leucas",
+  "taxonKey": {
+    "gbif": 2440804,
+    "col": null,
+    "wikidata": "Q149097",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Delphinapterus leucas",
+    "authorship": "(Pallas, 1776)",
+    "en": [
+      "Beluga Whale",
+      "White Whale"
+    ],
+    "vi": [
+      "Cá voi trắng",
+      "Cá voi Beluga",
+      "Chim hoàng yến của biển"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Cetacea",
+    "family": "Monodontidae",
+    "genus": "Delphinapterus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      350,
+      550
+    ],
+    "weightKg": [
+      700,
+      1600
+    ],
+    "description": {
+      "vi": "Cá voi trắng muốt đáng yêu không có vây lưng giúp bơi dưới băng tuyết dễ dàng, có cổ linh hoạt cử động được và khả năng phát âm đa dạng như tiếng chim hót.",
+      "en": "An adorable all-white Arctic whale lacking a dorsal fin to navigate under sea ice, possessing a flexible neck and an acoustic repertoire earning it the moniker 'sea canary'."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vịnh biển băng Bắc Cực",
+      "Cửa sông lớn nước lợ phương Bắc"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vịnh biển băng Bắc Cực, Cửa sông lớn nước lợ phương Bắc.",
+      "en": "Characteristic habitat spans Vịnh biển băng Bắc Cực, Cửa sông lớn nước lợ phương Bắc."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "RU",
+      "CA",
+      "US",
+      "GL",
+      "NO"
+    ],
+    "text": {
+      "vi": "Vùng biển ven bờ và các cửa sông lớn đổ ra Bắc Băng Dương.",
+      "en": "Coastal Arctic and sub-Arctic waters and major northern river estuaries."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2440804"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá hồi",
+      "Cá trích Bắc cực",
+      "Mực ống",
+      "Cua biển"
+    ],
+    "feedingBehavior": {
+      "vi": "Hút cá từ kẽ đá đáy biển bằng cách tạo lực hút chân không và phun các tia nước áp lực.",
+      "en": "Specialized feeding habits targeting Cá hồi, Cá trích Bắc cực."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Cá voi trắng muốt đáng yêu không có vây lưng giúp bơi dưới băng tuyết dễ dàng, có cổ linh hoạt cử động được và khả năng phát âm đa dạng như tiếng chim hót.",
+      "en": "An adorable all-white Arctic whale lacking a dorsal fin to navigate under sea ice, possessing a flexible neck and an acoustic repertoire earning it the moniker 'sea canary'."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Cá voi con",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Sinh ra có màu xám đen, chuyển dần sang trắng khi lớn.",
+          "en": "Born dark slate grey, gradually whitening over years."
+        },
+        "durationDays": [
+          0,
+          730
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học cách định vị hồi âm định hướng qua mê cung băng.",
+          "en": "Masters echolocation navigating through sea ice mazes."
+        },
+        "durationDays": [
+          730,
+          2555
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Toàn thân trắng tinh khiết, bơi theo đàn hàng trăm con.",
+          "en": "Immaculate white social adult traveling in massive pods."
+        },
+        "durationDays": [
+          2555,
+          18250
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        35,
+        50
+      ],
+      "captivity": [
+        35,
+        45
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Ô nhiễm hóa chất tích tụ trong chuỗi thức ăn",
+      "Giao thông hàng hải"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá voi trắng có các đốt sống cổ không bị dính liền, cho phép chúng có thể quay đầu sang trái, phải hoặc gật đầu lên xuống như con người.",
+      "en": "Belugas have unfused cervical vertebrae, giving them the rare mammalian ability to turn and nod their head up, down, and sideways."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/dolphin.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Monodontidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beluga_whale_head.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Greg Hume",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Beluga_whale_head.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá voi trắng (Delphinapterus leucas) trong tự nhiên",
+          "en": "Wild Beluga Whale (Delphinapterus leucas) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2440804",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

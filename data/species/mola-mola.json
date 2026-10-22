@@ -1,0 +1,273 @@
+{
+  "id": "mola-mola",
+  "taxonKey": {
+    "gbif": 2407519,
+    "col": null,
+    "wikidata": "Q167098",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Mola mola",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Ocean Sunfish",
+      "Common Mola"
+    ],
+    "vi": [
+      "Cá mặt trăng",
+      "Cá mola",
+      "Cá thái dương"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Actinopterygii",
+    "order": "Tetraodontiformes",
+    "family": "Molidae",
+    "genus": "Mola",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      180,
+      330
+    ],
+    "weightKg": [
+      300,
+      2000
+    ],
+    "description": {
+      "vi": "Loài cá có xương nặng nhất thế giới. Cơ thể dẹp tròn kỳ lạ không có vây đuôi thật sự, thường nổi nghiêng mình sát mặt nước biển để sưởi ấm dưới ánh nắng mặt trời.",
+      "en": "The heaviest extant bony fish on the planet. Possesses an oddly truncated, disc-shaped body lacking a caudal fin, famously basking on its side at the ocean surface to soak up solar warmth."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Biển khơi đại dương nhiệt đới và ôn đới",
+      "Vùng nước bề mặt và tầng trung biển"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Biển khơi đại dương nhiệt đới và ôn đới, Vùng nước bề mặt và tầng trung biển.",
+      "en": "Characteristic habitat spans Biển khơi đại dương nhiệt đới và ôn đới, Vùng nước bề mặt và tầng trung biển."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "US",
+      "JP",
+      "AU",
+      "ZA",
+      "ES",
+      "GB"
+    ],
+    "text": {
+      "vi": "Các vùng biển nhiệt đới và ôn đới trên toàn thế giới; thỉnh thoảng bắt gặp ở vịnh Bắc Bộ Việt Nam.",
+      "en": "Temperate and tropical pelagic waters across all oceans."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2407519"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Sứa biển",
+      "Salp biển",
+      "Mực ống nhỏ",
+      "Ấu trùng giáp xác"
+    ],
+    "feedingBehavior": {
+      "vi": "Hút và nhai sứa biển bằng chiếc mỏ dạng răng hợp nhất, bơi lên xuống giữa mặt biển và độ sâu 600m.",
+      "en": "Specialized feeding habits targeting Sứa biển, Salp biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài cá có xương nặng nhất thế giới. Cơ thể dẹp tròn kỳ lạ không có vây đuôi thật sự, thường nổi nghiêng mình sát mặt nước biển để sưởi ấm dưới ánh nắng mặt trời.",
+      "en": "The heaviest extant bony fish on the planet. Possesses an oddly truncated, disc-shaped body lacking a caudal fin, famously basking on its side at the ocean surface to soak up solar warmth."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "fry",
+        "name": {
+          "vi": "Cá bột",
+          "en": "Larva / Fry"
+        },
+        "description": {
+          "vi": "Nở ra từ trứng bé xíu chỉ 2mm với các gai nhọn như cá nóc.",
+          "en": "Hatches at tiny 2 mm size covered in spiky puff-like spines."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tăng trưởng gấp 60 triệu lần kích thước ban đầu.",
+          "en": "Undergoes a staggering 60-million-fold body mass increase."
+        },
+        "durationDays": [
+          60,
+          1825
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Nổi ngang trên mặt biển để chim biển rỉa sạch ký sinh trùng.",
+          "en": "Basks sideways allowing seabirds to pluck skin parasites."
+        },
+        "durationDays": [
+          1825,
+          8395
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        23
+      ],
+      "captivity": [
+        8,
+        10
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mắc vào rác thải bao nilon do nuốt nhầm tưởng sứa"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá mặt trăng cái giữ kỷ lục vô địch thế giới về số lượng trứng trong một lần sinh sản: có thể đẻ tới hơn 300 triệu quả trứng một lần.",
+      "en": "A female sunfish holds the vertebrate fecundity world record, producing up to 300 million eggs in a single spawning event."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/dolphin.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Molidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ocean_sunfish_mola_mola.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Daniel Botelho",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ocean_sunfish_mola_mola.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá mặt trăng (Mola mola) trong tự nhiên",
+          "en": "Wild Ocean Sunfish (Mola mola) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2407519",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

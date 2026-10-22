@@ -1,0 +1,275 @@
+{
+  "id": "dermochelys-coriacea",
+  "taxonKey": {
+    "gbif": 2442080,
+    "col": null,
+    "wikidata": "Q120015",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Dermochelys coriacea",
+    "authorship": "(Vandelli, 1761)",
+    "en": [
+      "Leatherback Sea Turtle",
+      "Lute Turtle",
+      "Leathery Turtle"
+    ],
+    "vi": [
+      "Rùa da",
+      "Rùa luýt",
+      "Rùa da khổng lồ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Testudines",
+    "family": "Dermochelyidae",
+    "genus": "Dermochelys",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      180,
+      220
+    ],
+    "weightKg": [
+      300,
+      700
+    ],
+    "description": {
+      "vi": "Loài rùa biển lớn nhất thế giới, không có mai cứng bằng sừng mà được bao bọc bởi lớp da dày dai như da thuộc có 7 gờ dọc. Có thể lặn sâu hơn 1.200 mét vào vùng nước lạnh băng.",
+      "en": "The largest of all living sea turtles, lacking a bony keratinous carapace, enclosed instead in a leathery flexible hide with seven distinct longitudinal ridges. Can dive past 1,200 meters."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Biển khơi đại dương toàn cầu",
+      "Bãi biển cát nhiệt đới làm tổ"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Biển khơi đại dương toàn cầu, Bãi biển cát nhiệt đới làm tổ.",
+      "en": "Characteristic habitat spans Biển khơi đại dương toàn cầu, Bãi biển cát nhiệt đới làm tổ."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "US",
+      "CR",
+      "GA",
+      "ID",
+      "AU",
+      "TT"
+    ],
+    "text": {
+      "vi": "Di cư rộng khắp các đại dương thế giới; từng làm tổ tại các bãi biển cát miền Trung Việt Nam.",
+      "en": "Circumglobal pelagic distribution, nesting on tropical beaches."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2442080"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Sứa biển mặt trăng",
+      "Sứa bờm sư tử",
+      "Siphonophore biển",
+      "Mực nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Họng và thực quản chứa hàng trăm gai nhọn ngoảnh ngược về sau giúp giữ chặt những con sứa trơn tuột khi nuốt.",
+      "en": "Specialized feeding habits targeting Sứa biển mặt trăng, Sứa bờm sư tử."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài rùa biển lớn nhất thế giới, không có mai cứng bằng sừng mà được bao bọc bởi lớp da dày dai như da thuộc có 7 gờ dọc. Có thể lặn sâu hơn 1.200 mét vào vùng nước lạnh băng.",
+      "en": "The largest of all living sea turtles, lacking a bony keratinous carapace, enclosed instead in a leathery flexible hide with seven distinct longitudinal ridges. Can dive past 1,200 meters."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "hatchling",
+        "name": {
+          "vi": "Rùa con",
+          "en": "Hatchling"
+        },
+        "description": {
+          "vi": "Nở từ ổ cát chui lên chạy thục mạng ra biển lúc đêm.",
+          "en": "Emerges from sand nest scrambling into surf under darkness."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Bơi ra vùng nước biển sâu ấm áp kiếm sứa.",
+          "en": "Pelagic wanderer in warm oceanic waters gorging on jellyfish."
+        },
+        "durationDays": [
+          60,
+          5840
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Di cư ngàn dặm về đúng bãi biển nơi mình sinh ra để đẻ trứng.",
+          "en": "Migrates thousands of miles to natal beaches for nesting."
+        },
+        "durationDays": [
+          5840,
+          29200
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        50,
+        80
+      ],
+      "captivity": [
+        40,
+        60
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Nuốt phải túi nilon rác thải nhựa do nhầm với sứa biển",
+      "Mắc lưới giã cào đại dương"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Rùa da có khả năng điều hòa thân nhiệt nội sinh (endothermy) độc nhất trong loài bò sát, giúp chúng giữ ấm cơ thể trong vùng biển cực lạnh giá.",
+      "en": "Leatherbacks maintain warm internal body temperatures in freezing arctic waters thanks to countercurrent circulation and gigantic metabolic mass."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/chelonia-mydas.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Dermochelyidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leatherback_sea_turtle_sandy_point.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Claudia Lombard",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leatherback_sea_turtle_sandy_point.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Rùa da (Dermochelys coriacea) trong tự nhiên",
+          "en": "Wild Leatherback Sea Turtle (Dermochelys coriacea) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2442080",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

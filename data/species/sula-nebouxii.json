@@ -1,0 +1,269 @@
+{
+  "id": "sula-nebouxii",
+  "taxonKey": {
+    "gbif": 2481878,
+    "col": null,
+    "wikidata": "Q199693",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Sula nebouxii",
+    "authorship": "Milne-Edwards, 1882",
+    "en": [
+      "Blue-footed Booby",
+      "Blue-footed Gannet"
+    ],
+    "vi": [
+      "Chim bồ nông chân xanh",
+      "Chim Booby chân xanh"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Suliformes",
+    "family": "Sulidae",
+    "genus": "Sula",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      76,
+      84
+    ],
+    "weightKg": [
+      1.1,
+      1.8
+    ],
+    "description": {
+      "vi": "Loài chim biển nổi tiếng thế giới tại quần đảo Galapagos với đôi chân màng màu xanh ngọc lam rực rỡ và điệu nhảy tán tỉnh nhấc chân giậm gót vô cùng hài hước.",
+      "en": "An iconic tropical seabird famous in the Galápagos Islands for its electric blue webbed feet and comical high-stepping courtship dance."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Hải đảo đá núi lửa nhiệt đới",
+      "Vùng biển khơi Đông Thái Bình Dương"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Hải đảo đá núi lửa nhiệt đới, Vùng biển khơi Đông Thái Bình Dương.",
+      "en": "Characteristic habitat spans Hải đảo đá núi lửa nhiệt đới, Vùng biển khơi Đông Thái Bình Dương."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "EC",
+      "MX",
+      "PE",
+      "CO"
+    ],
+    "text": {
+      "vi": "Quần đảo Galapagos và các đảo đá ven bờ Tây châu Mỹ từ Mexico đến Peru.",
+      "en": "Galápagos Islands and dry coastal islands of the eastern Pacific Ocean."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2481878"
+  },
+  "diet": {
+    "type": "piscivore",
+    "preyOrFood": [
+      "Cá mòi",
+      "Cá cơm",
+      "Cá chuồn",
+      "Mực nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Bay liệng trên mặt biển rồi gấp cánh lao thẳng đứng xuống nước như một mũi tên xé nước ở tốc độ gần 100 km/h.",
+      "en": "Specialized feeding habits targeting Cá mòi, Cá cơm."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài chim biển nổi tiếng thế giới tại quần đảo Galapagos với đôi chân màng màu xanh ngọc lam rực rỡ và điệu nhảy tán tỉnh nhấc chân giậm gót vô cùng hài hước.",
+      "en": "An iconic tropical seabird famous in the Galápagos Islands for its electric blue webbed feet and comical high-stepping courtship dance."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "chick",
+        "name": {
+          "vi": "Chim non",
+          "en": "Chick"
+        },
+        "description": {
+          "vi": "Bông xù màu trắng toát nằm trên nền đất đá núi lửa.",
+          "en": "Fluffy white nestling brooded atop volcanic rocky ground."
+        },
+        "durationDays": [
+          0,
+          100
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập lao mình xuống biển săn cá mòi.",
+          "en": "Practices torpedo-like plunge-dives into coastal surf."
+        },
+        "durationDays": [
+          100,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chân chuyển sang màu xanh ngọc lam đậm đà khi ăn nhiều cá.",
+          "en": "Vibrant foot color indicates peak nutritional health and diet."
+        },
+        "durationDays": [
+          730,
+          6200
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        18
+      ],
+      "captivity": [
+        18,
+        20
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Cạn kiệt nguồn cá mòi do hiện tượng El Niño"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Màu xanh ngọc lam ở chân chim là do các sắc tố carotenoid thu được từ khẩu phần cá tươi; con nào có chân càng xanh biếc càng được bạn đời săn đón.",
+      "en": "The electric blue foot color comes from carotenoid pigments absorbed from fresh fish; brighter blue feet correlate directly with mate desirability."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aptenodytes-forsteri.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Sulidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-footed_Booby_on_Galapagos.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Hans Stieglitz",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-footed_Booby_on_Galapagos.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chim bồ nông chân xanh (Sula nebouxii) trong tự nhiên",
+          "en": "Wild Blue-footed Booby (Sula nebouxii) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2481878",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "id": "latimeria-chalumnae",
+  "taxonKey": {
+    "gbif": 2441285,
+    "col": null,
+    "wikidata": "Q212178",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Latimeria chalumnae",
+    "authorship": "Smith, 1939",
+    "en": [
+      "West Indian Ocean Coelacanth",
+      "Gombessa"
+    ],
+    "vi": [
+      "Cá vây tay",
+      "Hóa thạch sống Coelacanth"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Sarcopterygii",
+    "order": "Coelacanthiformes",
+    "family": "Latimeriidae",
+    "genus": "Latimeria",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      130,
+      200
+    ],
+    "weightKg": [
+      50,
+      95
+    ],
+    "description": {
+      "vi": "'Hóa thạch sống' vĩ đại nhất đại dương. Từng được xem là đã tuyệt chủng cùng thời với khủng long 66 triệu năm trước cho đến khi một cá thể còn sống bất ngờ được phát hiện vào năm 1938.",
+      "en": "The supreme 'living fossil' of marine biology. Presumed extinct alongside dinosaurs 66 million years ago until an astounding living specimen was rediscovered off South Africa in 1938."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Hang động vách đá núi lửa ngầm sâu (150-400m)"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Hang động vách đá núi lửa ngầm sâu (150-400m).",
+      "en": "Characteristic habitat spans Hang động vách đá núi lửa ngầm sâu (150-400m)."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "KM",
+      "ZA",
+      "MG",
+      "TZ",
+      "MZ"
+    ],
+    "text": {
+      "vi": "Vùng biển sâu quanh quần đảo Comoros, bờ biển Nam Phi, Madagascar và Tanzania.",
+      "en": "Deep volcanic underwater caves around the Comoros Islands and western Indian Ocean."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441285"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá biển sâu ngầm",
+      "Mực ống đáy biển",
+      "Cá mập đáy nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Trôi lơ lửng trồng cây chuối trong hang ngầm dùng cơ quan cảm biến điện trường ở mũi để phát hiện con mồi.",
+      "en": "Specialized feeding habits targeting Cá biển sâu ngầm, Mực ống đáy biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "'Hóa thạch sống' vĩ đại nhất đại dương. Từng được xem là đã tuyệt chủng cùng thời với khủng long 66 triệu năm trước cho đến khi một cá thể còn sống bất ngờ được phát hiện vào năm 1938.",
+      "en": "The supreme 'living fossil' of marine biology. Presumed extinct alongside dinosaurs 66 million years ago until an astounding living specimen was rediscovered off South Africa in 1938."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "embryo",
+        "name": {
+          "vi": "Phôi thai trong bụng mẹ",
+          "en": "Embryo"
+        },
+        "description": {
+          "vi": "Mang thai kéo dài kỷ lục tới 3-5 năm trước khi đẻ con.",
+          "en": "Gestation lasts a record-setting 3 to 5 years before live birth."
+        },
+        "durationDays": [
+          0,
+          1460
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Ẩn nấp kỹ lưỡng trong các hang nham thạch tối tăm.",
+          "en": "Hides deep inside submerged lava tube caverns."
+        },
+        "durationDays": [
+          1460,
+          18250
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Có các vây thùy thịt chuyển động so le như chân thú đi.",
+          "en": "Uses paired lobed fins moving in alternating quadrupedal gate."
+        },
+        "durationDays": [
+          18250,
+          36500
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        80,
+        100
+      ],
+      "captivity": [
+        20,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Vô tình mắc phải lưỡi câu đáy sâu của ngư dân"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Các vây ngực và vây bụng của cá vây tay mọc trên các cuống thịt có khớp xương, là tiền thân tiến hóa của 4 chi động vật trên cạn đầu tiên bò lên đất liền.",
+      "en": "The coelacanth's fleshy paired lobed fins move rhythmically like four walking legs, mirroring our ancient ancestors' transition onto land."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Latimeria_chalumnae_specimen.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Alberto Fernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Latimeria_chalumnae_specimen.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá vây tay (Latimeria chalumnae) trong tự nhiên",
+          "en": "Wild West Indian Ocean Coelacanth (Latimeria chalumnae) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441285",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "id": "bison-bison",
+  "taxonKey": {
+    "gbif": 2441176,
+    "col": null,
+    "wikidata": "Q18057",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Bison bison",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "American Bison",
+      "American Buffalo"
+    ],
+    "vi": [
+      "Bò rừng bizon Bắc Mỹ",
+      "Bò rừng bizon"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae",
+    "genus": "Bison",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      210,
+      350
+    ],
+    "weightKg": [
+      400,
+      1000
+    ],
+    "description": {
+      "vi": "Loài thú có vú trên cạn lớn nhất Bắc Mỹ với bướu vai cơ bắp nhô cao và bộ lông mùa đông màu nâu sẫm rậm rạp giúp chống chọi bão tuyết.",
+      "en": "The largest terrestrial mammal in North America, characterized by a massive muscular shoulder hump and shaggy winter coat adapted to blizzards."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Đồng cỏ thảo nguyên Bắc Mỹ",
+      "Vùng đồng bằng Great Plains"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Đồng cỏ thảo nguyên Bắc Mỹ, Vùng đồng bằng Great Plains.",
+      "en": "Characteristic habitat spans Đồng cỏ thảo nguyên Bắc Mỹ, Vùng đồng bằng Great Plains."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "US",
+      "CA"
+    ],
+    "text": {
+      "vi": "Từng thống trị khắp các đồng bằng Bắc Mỹ, nay được bảo tồn tại Vườn Quốc gia Yellowstone và các khu bảo tồn.",
+      "en": "Formerly widespread across North America; now protected in Yellowstone and reserves."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441176"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cỏ thảo nguyên",
+      "Cây bìm bìm dại",
+      "Cỏ lác khô"
+    ],
+    "feedingBehavior": {
+      "vi": "Gặm cỏ thành bầy lớn liên tục di chuyển trên thảo nguyên bao la.",
+      "en": "Specialized feeding habits targeting Cỏ thảo nguyên, Cây bìm bìm dại."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thú có vú trên cạn lớn nhất Bắc Mỹ với bướu vai cơ bắp nhô cao và bộ lông mùa đông màu nâu sẫm rậm rạp giúp chống chọi bão tuyết.",
+      "en": "The largest terrestrial mammal in North America, characterized by a massive muscular shoulder hump and shaggy winter coat adapted to blizzards."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Bê non",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Sinh ra có màu lông đỏ hoe (red dog) nổi bật.",
+          "en": "Born with reddish-orange coats, dubbed 'red dogs'."
+        },
+        "durationDays": [
+          0,
+          200
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Mọc sừng cong và phát triển bướu vai.",
+          "en": "Develops curved horns and shoulder crest."
+        },
+        "durationDays": [
+          200,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bò đực khổng lồ dẫn dắt và bảo vệ đàn.",
+          "en": "Massive dominant bulls protecting the herd."
+        },
+        "durationDays": [
+          1095,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        20
+      ],
+      "captivity": [
+        25,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "stable",
+    "threats": [
+      "Thu hẹp đồng cỏ tự nhiên",
+      "Xung đột dịch bệnh truyền nhiễm với gia súc nuôi"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Dù nặng tới 1 tấn, bò rừng bizon có thể chạy nước rút với vận tốc lên tới 55 km/h và nhảy cao tới 1.8 mét.",
+      "en": "Despite weighing up to a ton, bison can sprint at 55 km/h (35 mph) and jump up to 1.8 meters high."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/equus-caballus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Bovidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/American_bison_k5680-1.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Jack Dykinga",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/American_bison_k5680-1.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Bò rừng bizon Bắc Mỹ (Bison bison) trong tự nhiên",
+          "en": "Wild American Bison (Bison bison) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441176",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

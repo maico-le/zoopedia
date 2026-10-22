@@ -1,0 +1,276 @@
+{
+  "id": "vulpes-lagopus",
+  "taxonKey": {
+    "gbif": 2434552,
+    "col": null,
+    "wikidata": "Q25399",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Vulpes lagopus",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Arctic Fox",
+      "Polar Fox",
+      "White Fox"
+    ],
+    "vi": [
+      "Cáo tuyết Bắc cực",
+      "Hồ ly tuyết",
+      "Cáo trắng"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Canidae",
+    "genus": "Vulpes",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      46,
+      68
+    ],
+    "weightKg": [
+      2.5,
+      6.0
+    ],
+    "description": {
+      "vi": "Bậc thầy ngụy trang vùng cực băng giá với bộ lông dày cách nhiệt siêu đẳng, có thể chuyển từ màu trắng tinh khiết mùa đông sang màu nâu xám mùa hè.",
+      "en": "An extraordinary cold-adapted circumpolar canid whose ultra-dense thermal coat transitions from immaculate snow-white in winter to camouflage grey-brown in summer."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Lãnh nguyên Bắc Cực (Tundra)",
+      "Băng đảo Bắc Băng Dương"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Lãnh nguyên Bắc Cực (Tundra), Băng đảo Bắc Băng Dương.",
+      "en": "Characteristic habitat spans Lãnh nguyên Bắc Cực (Tundra), Băng đảo Bắc Băng Dương."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "RU",
+      "CA",
+      "US",
+      "NO",
+      "IS",
+      "GL"
+    ],
+    "text": {
+      "vi": "Vùng lãnh nguyên ven biển và các đảo băng thuộc vòng Bắc Cực quanh năm băng giá.",
+      "en": "Circumpolar Arctic tundra biomes throughout Eurasia and North America."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434552"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Chuột lemming",
+      "Trứng chim biển",
+      "Cá hồi Bắc cực",
+      "Xác hải cẩu"
+    ],
+    "feedingBehavior": {
+      "vi": "Lắng nghe tiếng động của chuột lemming dưới lớp tuyết dày hơn 1 mét rồi tung người nhảy chúi đầu xuống tuyết để bắt gọn.",
+      "en": "Specialized feeding habits targeting Chuột lemming, Trứng chim biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Bậc thầy ngụy trang vùng cực băng giá với bộ lông dày cách nhiệt siêu đẳng, có thể chuyển từ màu trắng tinh khiết mùa đông sang màu nâu xám mùa hè.",
+      "en": "An extraordinary cold-adapted circumpolar canid whose ultra-dense thermal coat transitions from immaculate snow-white in winter to camouflage grey-brown in summer."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "kit",
+        "name": {
+          "vi": "Cáo con",
+          "en": "Kit"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang ngầm sưởi ấm lẫn nhau.",
+          "en": "Born in complex underground dens dug into permafrost."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập nhảy cắm đầu xuống tuyết săn chuột.",
+          "en": "Hones head-first snow diving techniques catching lemmings."
+        },
+        "durationDays": [
+          60,
+          300
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chịu được cái lạnh khắc nghiệt tới -50°C mà không run rẩy.",
+          "en": "Resists extreme sub-zero temperatures down to -50°C."
+        },
+        "durationDays": [
+          300,
+          3650
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        6,
+        10
+      ],
+      "captivity": [
+        12,
+        14
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Cáo đỏ phương Nam xâm lấn do biến đổi khí hậu ấm lên"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cáo tuyết có hệ thống trao đổi nhiệt ngược dòng ở bàn chân giúp ngăn ngừa mất nhiệt và lông phủ kín cả đệm chân như đi giày tuyết.",
+      "en": "The Arctic fox has countercurrent vascular heat exchangers in its paws and dense fur on its footpads acting as built-in snowshoes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Canidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_lagopus_in_winter_fur.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Algikal",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_lagopus_in_winter_fur.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cáo tuyết Bắc cực (Vulpes lagopus) trong tự nhiên",
+          "en": "Wild Arctic Fox (Vulpes lagopus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434552",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

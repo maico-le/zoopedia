@@ -1,0 +1,272 @@
+{
+  "id": "ramphastos-toco",
+  "taxonKey": {
+    "gbif": 2478887,
+    "col": null,
+    "wikidata": "Q232356",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Ramphastos toco",
+    "authorship": "Statius Müller, 1776",
+    "en": [
+      "Toco Toucan",
+      "Giant Toucan"
+    ],
+    "vi": [
+      "Chim Toucan Toco",
+      "Toucan mỏ lớn",
+      "Chim tu-căng"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Piciformes",
+    "family": "Ramphastidae",
+    "genus": "Ramphastos",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      55,
+      65
+    ],
+    "weightKg": [
+      0.5,
+      0.85
+    ],
+    "description": {
+      "vi": "Loài Toucan lớn nhất thế giới với chiếc mỏ cong màu vàng cam rực rỡ dài tới 20cm, vừa là công cụ hái quả vừa là bộ phận tản nhiệt điều hòa thân nhiệt kỳ diệu.",
+      "en": "The largest toucan species on Earth, famous for its oversized vivid orange bill measuring up to 20 cm, serving both for fruit pluck and dynamic thermal regulation."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng bán rụng lá nhiệt đới",
+      "Đồng cỏ xavan Cerrado Nam Mỹ",
+      "Rừng ven sông"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng bán rụng lá nhiệt đới, Đồng cỏ xavan Cerrado Nam Mỹ, Rừng ven sông.",
+      "en": "Characteristic habitat spans Rừng bán rụng lá nhiệt đới, Đồng cỏ xavan Cerrado Nam Mỹ, Rừng ven sông."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "BR",
+      "BO",
+      "PY",
+      "AR"
+    ],
+    "text": {
+      "vi": "Vùng rừng thưa và xavan ở miền Trung và miền Đông Nam Mỹ (Brazil, Bolivia, Paraguay, Argentina).",
+      "en": "Semi-open woodlands and savannas across central and eastern South America."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2478887"
+  },
+  "diet": {
+    "type": "frugivore",
+    "preyOrFood": [
+      "Quả sung rừng",
+      "Quả cọ xavan",
+      "Trứng chim",
+      "Côn trùng lớn"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng chóp mỏ hái trái cây chín rồi hất tung vào không trung để nuốt trọn vào cổ họng.",
+      "en": "Specialized feeding habits targeting Quả sung rừng, Quả cọ xavan."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài Toucan lớn nhất thế giới với chiếc mỏ cong màu vàng cam rực rỡ dài tới 20cm, vừa là công cụ hái quả vừa là bộ phận tản nhiệt điều hòa thân nhiệt kỳ diệu.",
+      "en": "The largest toucan species on Earth, famous for its oversized vivid orange bill measuring up to 20 cm, serving both for fruit pluck and dynamic thermal regulation."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "chick",
+        "name": {
+          "vi": "Chim non",
+          "en": "Chick"
+        },
+        "description": {
+          "vi": "Sinh ra trụi lông và chưa có mỏ lớn.",
+          "en": "Born naked and blind inside tree cavity nests."
+        },
+        "durationDays": [
+          0,
+          50
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Mỏ bắt đầu phát triển nhanh chóng và chuyển màu cam.",
+          "en": "Bill expands rapidly displaying vivid coloration."
+        },
+        "durationDays": [
+          50,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống theo nhóm gia đình, truyền quả cho nhau khi tán tỉnh.",
+          "en": "Tosses berries back and forth during mating courtship rituals."
+        },
+        "durationDays": [
+          730,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        20
+      ],
+      "captivity": [
+        20,
+        25
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Bẫy bắt chim cảnh",
+      "Thu hẹp diện tích rừng Cerrado"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Mặc dù trông có vẻ rất nặng, chiếc mỏ khổng lồ của Toucan thực ra rất nhẹ vì được cấu tạo từ các túi khí rỗng tổ ong và sợi keratin siêu nhẹ.",
+      "en": "Despite its bulky appearance, the toucan's bill is remarkably light, constructed with hollow honeycomb air pockets wrapped in keratin."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ara-macao.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Ramphastidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramphastos_toco_eating_fruit.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Dario Sanches",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramphastos_toco_eating_fruit.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chim Toucan Toco (Ramphastos toco) trong tự nhiên",
+          "en": "Wild Toco Toucan (Ramphastos toco) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2478887",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

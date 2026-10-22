@@ -1,0 +1,268 @@
+{
+  "id": "heloderma-suspectum",
+  "taxonKey": {
+    "gbif": 2470783,
+    "col": null,
+    "wikidata": "Q207270",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Heloderma suspectum",
+    "authorship": "Cope, 1869",
+    "en": [
+      "Gila Monster",
+      "Gila Lizard"
+    ],
+    "vi": [
+      "Thằn lằn quái vật Gila",
+      "Quái vật Gila",
+      "Thằn lằn độc Gila"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Squamata",
+    "family": "Helodermatidae",
+    "genus": "Heloderma",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      45,
+      56
+    ],
+    "weightKg": [
+      0.8,
+      1.8
+    ],
+    "description": {
+      "vi": "Loài thằn lằn có nọc độc nổi tiếng của sa mạc Bắc Mỹ với lớp da sần sùi hạt cườm hoa văn đen-hồng cam sặc sỡ cảnh báo độc tính và chiếc đuôi mập mạp tích trữ mỡ.",
+      "en": "The famous heavy-bodied venomous lizard of North American deserts, armored in beaded black-and-pink osteoderm scales with a thick tail used for fat storage."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Sa mạc Sonoran & Mojave",
+      "Vùng cây bụi gò đồi đá khô cằn"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Sa mạc Sonoran & Mojave, Vùng cây bụi gò đồi đá khô cằn.",
+      "en": "Characteristic habitat spans Sa mạc Sonoran & Mojave, Vùng cây bụi gò đồi đá khô cằn."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "US",
+      "MX"
+    ],
+    "text": {
+      "vi": "Sa mạc Sonoran và Mojave ở Tây Nam Hoa Kỳ (Arizona, New Mexico) và miền Bắc Mexico.",
+      "en": "Arid deserts and rocky foothills across the southwestern United States and Mexico."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2470783"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Trứng chim cút",
+      "Chuột con trong tổ",
+      "Trứng rùa sa mạc",
+      "Thằn lằn nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng khứu giác lần theo mùi trứng và tổ thú gặm nhấm, dùng hàm răng có rãnh nọc độc nhai nghiền để nọc độc ngấm dần vào vết cắn.",
+      "en": "Specialized feeding habits targeting Trứng chim cút, Chuột con trong tổ."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thằn lằn có nọc độc nổi tiếng của sa mạc Bắc Mỹ với lớp da sần sùi hạt cườm hoa văn đen-hồng cam sặc sỡ cảnh báo độc tính và chiếc đuôi mập mạp tích trữ mỡ.",
+      "en": "The famous heavy-bodied venomous lizard of North American deserts, armored in beaded black-and-pink osteoderm scales with a thick tail used for fat storage."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "hatchling",
+        "name": {
+          "vi": "Con non",
+          "en": "Hatchling"
+        },
+        "description": {
+          "vi": "Nở ra từ trứng vùi dưới cát sau 9 tháng ấp.",
+          "en": "Hatches from underground eggs after an extensive 9-month incubation."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tích tụ mỡ vào đuôi để tồn tại qua các mùa hạn hán.",
+          "en": "Stores lipid reserves in tail to withstand prolonged desert droughts."
+        },
+        "durationDays": [
+          90,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Dành tới 90% cuộc đời ẩn mình trong các hang đất mát mẻ.",
+          "en": "Spends up to 90% of its lifespan sheltered inside subterranean burrows."
+        },
+        "durationDays": [
+          1095,
+          10950
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        20,
+        25
+      ],
+      "captivity": [
+        25,
+        35
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mất sinh cảnh sa mạc do mở rộng đô thị và giao thông"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Một loại protein trong nọc độc của quái vật Gila (exendin-4) đã được các nhà khoa học y sinh nghiên cứu để chế tạo ra thuốc điều trị bệnh tiểu đường tuýp 2 nổi tiếng toàn cầu.",
+      "en": "A peptide isolated from Gila monster saliva, exendin-4, led directly to the breakthrough development of major GLP-1 medications for type-2 diabetes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/crocodylus-siamensis.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Helodermatidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heloderma_suspectum_carmencita.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Mark A. Wilson",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Heloderma_suspectum_carmencita.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Thằn lằn quái vật Gila (Heloderma suspectum) trong tự nhiên",
+          "en": "Wild Gila Monster (Heloderma suspectum) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2470783",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

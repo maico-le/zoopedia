@@ -1,0 +1,273 @@
+{
+  "id": "crocodylus-niloticus",
+  "taxonKey": {
+    "gbif": 2441995,
+    "col": null,
+    "wikidata": "Q35061",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Crocodylus niloticus",
+    "authorship": "Laurenti, 1768",
+    "en": [
+      "Nile Crocodile",
+      "African Crocodile"
+    ],
+    "vi": [
+      "Cá sấu sông Nile",
+      "Cá sấu châu Phi"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Crocodilia",
+    "family": "Crocodylidae",
+    "genus": "Crocodylus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      350,
+      550
+    ],
+    "weightKg": [
+      225,
+      750
+    ],
+    "description": {
+      "vi": "Loài bò sát ăn thịt nước ngọt lớn thứ hai thế giới. Kẻ săn mồi phục kích lừng danh châu Phi với lực cắn khủng khiếp có thể nghiền nát xương thú lớn trong cú đớp tử thần (death roll).",
+      "en": "The second largest extant reptile, renowned as Africa's apex freshwater ambush hunter. Possesses bone-crushing jaw power and executes devastating death-rolls to subdue large prey."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Lưu vực sông ngòi châu Phi",
+      "Hồ nước ngọt đầm lầy nhiệt đới"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Lưu vực sông ngòi châu Phi, Hồ nước ngọt đầm lầy nhiệt đới.",
+      "en": "Characteristic habitat spans Lưu vực sông ngòi châu Phi, Hồ nước ngọt đầm lầy nhiệt đới."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "EG",
+      "KE",
+      "TZ",
+      "ZA",
+      "UG",
+      "BW",
+      "ZM"
+    ],
+    "text": {
+      "vi": "Khắp các hệ thống sông hồ và đầm lầy châu Phi cận Sahara và đảo Madagascar.",
+      "en": "Ubiquitous throughout aquatic riverine systems of sub-Saharan Africa and Madagascar."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441995"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Linh dương đầu bò",
+      "Ngựa vằn",
+      "Cá da trơn lớn",
+      "Trâu rừng châu Phi non"
+    ],
+    "feedingBehavior": {
+      "vi": "Phục kích chìm dưới nước rồi lao lên đớp gọn con mồi đang uống nước kéo xuống lòng sông.",
+      "en": "Specialized feeding habits targeting Linh dương đầu bò, Ngựa vằn."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài bò sát ăn thịt nước ngọt lớn thứ hai thế giới. Kẻ săn mồi phục kích lừng danh châu Phi với lực cắn khủng khiếp có thể nghiền nát xương thú lớn trong cú đớp tử thần (death roll).",
+      "en": "The second largest extant reptile, renowned as Africa's apex freshwater ambush hunter. Possesses bone-crushing jaw power and executes devastating death-rolls to subdue large prey."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "hatchling",
+        "name": {
+          "vi": "Con non",
+          "en": "Hatchling"
+        },
+        "description": {
+          "vi": "Được mẹ dùng miệng ngậm cẩn thận đưa xuống nước an toàn.",
+          "en": "Carried gently in mother's toothy mouth down to water."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Ăn côn trùng và cá nhỏ ven bờ nước.",
+          "en": "Forages on insects, frogs, and fish in shallow margins."
+        },
+        "durationDays": [
+          90,
+          3650
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Thống trị các bến vượt sông của đàn thú móng guốc.",
+          "en": "Dominates river crossings intercepting migratory herds."
+        },
+        "durationDays": [
+          3650,
+          25550
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        60,
+        80
+      ],
+      "captivity": [
+        70,
+        90
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Ô nhiễm sông ngòi",
+      "Xung đột với cộng đồng ngư dân"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Lực cắn của cá sấu sông Nile đo được lên tới hơn 5.000 pound lực (hơn 22.000 Newton), là một trong những cú cắn mạnh nhất từng được ghi nhận trong lịch sử sinh vật sống.",
+      "en": "The bite force of an adult Nile crocodile can exceed 5,000 pounds (22,000 N), ranking among the strongest measured anywhere in biology."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/crocodylus-siamensis.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Crocodylidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_crocodile_head.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Tomas Castelazo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_crocodile_head.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá sấu sông Nile (Crocodylus niloticus) trong tự nhiên",
+          "en": "Wild Nile Crocodile (Crocodylus niloticus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441995",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

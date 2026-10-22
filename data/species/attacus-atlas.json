@@ -1,0 +1,263 @@
+{
+  "id": "attacus-atlas",
+  "taxonKey": {
+    "gbif": 1865807,
+    "col": null,
+    "wikidata": "Q754025",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Attacus atlas",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Atlas Moth",
+      "Giant Atlas Moth"
+    ],
+    "vi": [
+      "Bướm khổng lồ Atlas",
+      "Bướm khế",
+      "Bướm bà"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Saturniidae",
+    "genus": "Attacus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      25,
+      30
+    ],
+    "weightKg": [
+      0.015,
+      0.028
+    ],
+    "description": {
+      "vi": "Một trong những loài bướm đêm lớn nhất thế giới với diện tích bề mặt cánh lên tới hơn 400 cm2. Hai chóp cánh uốn lượn có họa tiết y hệt đầu một con rắn hổ mang đang đe dọa.",
+      "en": "One of the largest lepidopterans in the world by wingspan and wing surface area. The wing tips uncannily mimic the heads of venomous cobras to terrify predatory birds."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới Đông Nam Á",
+      "Vườn cây ăn trái nông thôn Việt Nam"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới Đông Nam Á, Vườn cây ăn trái nông thôn Việt Nam.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới Đông Nam Á, Vườn cây ăn trái nông thôn Việt Nam."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "ID",
+      "MY",
+      "TH",
+      "IN",
+      "PH",
+      "CN"
+    ],
+    "text": {
+      "vi": "Rừng nhiệt đới Nam Á và Đông Nam Á; tại Việt Nam thường xuất hiện vào mùa hè ở vườn khế và rừng cây bụi.",
+      "en": "Subtropical and tropical forests across South and Southeast Asia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/1865807"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Lá cây khế",
+      "Lá cây quế rừng",
+      "Lá ổi",
+      "Lá cây trà"
+    ],
+    "feedingBehavior": {
+      "vi": "Ấu trùng sâu bướm ăn lá cây liên tục; khi biến thái thành bướm trưởng thành thì không có miệng và hoàn toàn không ăn uống.",
+      "en": "Specialized feeding habits targeting Lá cây khế, Lá cây quế rừng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Một trong những loài bướm đêm lớn nhất thế giới với diện tích bề mặt cánh lên tới hơn 400 cm2. Hai chóp cánh uốn lượn có họa tiết y hệt đầu một con rắn hổ mang đang đe dọa.",
+      "en": "One of the largest lepidopterans in the world by wingspan and wing surface area. The wing tips uncannily mimic the heads of venomous cobras to terrify predatory birds."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "caterpillar",
+        "name": {
+          "vi": "Sâu bướm",
+          "en": "Caterpillar"
+        },
+        "description": {
+          "vi": "Sâu màu xanh lam phủ phấn trắng ăn lá cây cực khỏe.",
+          "en": "Voracious bluish-green caterpillar coated in white wax."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "pupa",
+        "name": {
+          "vi": "Kén nhộng tơ tằm",
+          "en": "Pupa / Cocoon"
+        },
+        "description": {
+          "vi": "Dệt chiếc kén tơ màu nâu dày như da gắn vào cành lá.",
+          "en": "Spins a durable brownish silk cocoon attached to twigs."
+        },
+        "durationDays": [
+          60,
+          100
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Bướm trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chỉ sống được 1-2 tuần nhờ năng lượng tích lũy từ sâu non để tìm bạn đời sinh sản.",
+          "en": "Lives only 1-2 weeks solely dedicated to finding a mate."
+        },
+        "durationDays": [
+          100,
+          114
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        0.3,
+        0.4
+      ],
+      "captivity": [
+        0.3,
+        0.4
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NE",
+    "populationTrend": "stable",
+    "threats": [
+      "Thu hái kén và bắt bướm làm tiêu bản mỹ nghệ"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bướm khổng lồ Atlas trưởng thành hoàn toàn không có vòi hay miệng để ăn; chúng sống vỏn vẹn khoảng 10 ngày nhờ vào lượng mỡ dự trữ từ thời còn là sâu bướm.",
+      "en": "Adult Atlas moths have vestigial mouthparts and cannot eat, surviving merely one to two weeks on fat stored during the caterpillar stage."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Attacus_atlas_qtl1.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Quartl",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Attacus_atlas_qtl1.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Bướm khổng lồ Atlas (Attacus atlas) trong tự nhiên",
+          "en": "Wild Atlas Moth (Attacus atlas) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/1865807",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

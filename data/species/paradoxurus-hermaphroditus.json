@@ -1,0 +1,279 @@
+{
+  "id": "paradoxurus-hermaphroditus",
+  "taxonKey": {
+    "gbif": 2434598,
+    "col": null,
+    "wikidata": "Q233979",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Paradoxurus hermaphroditus",
+    "authorship": "(Pallas, 1777)",
+    "en": [
+      "Asian Palm Civet",
+      "Common Palm Civet",
+      "Toddy Cat"
+    ],
+    "vi": [
+      "Cầy vòi hương",
+      "Cầy hương",
+      "Chồn hương cà phê"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Viverridae",
+    "genus": "Paradoxurus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      48,
+      59
+    ],
+    "weightKg": [
+      2.5,
+      4.5
+    ],
+    "description": {
+      "vi": "Loài thú ăn đêm leo trèo tài tình gắn liền với văn hóa cà phê chồn độc đáo. Bộ lông xám tro có 3 sọc đen chạy dọc sống lưng và đốm đen hai bên hông.",
+      "en": "An arboreal nocturnal viverrid renowned for its role in producing world-famous Kopi Luwak coffee. Characterized by grey fur with three black dorsal stripes and spotted flanks."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới thứ sinh",
+      "Đồn điền cà phê Tây Nguyên",
+      "Vườn cây ăn trái"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới thứ sinh, Đồn điền cà phê Tây Nguyên, Vườn cây ăn trái.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới thứ sinh, Đồn điền cà phê Tây Nguyên, Vườn cây ăn trái."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "ID",
+      "PH",
+      "MY",
+      "IN",
+      "TH",
+      "LA"
+    ],
+    "text": {
+      "vi": "Khắp Đông Nam Á và Nam Á; rất phổ biến tại các vùng đồi rừng và nương cà phê Tây Nguyên Việt Nam.",
+      "en": "Native across South and Southeast Asia, abundant in tropical forests and agricultural plantations."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434598"
+  },
+  "diet": {
+    "type": "frugivore",
+    "preyOrFood": [
+      "Quả cà phê chín mọng",
+      "Quả sung rừng",
+      "Trái xoài",
+      "Chuột nhỏ",
+      "Trứng chim"
+    ],
+    "feedingBehavior": {
+      "vi": "Chọn lọc những quả cà phê chín mọng ngon nhất để ăn, hạt cà phê lên men trong đường tiêu hóa tạo hương vị thơm đặc biệt.",
+      "en": "Specialized feeding habits targeting Quả cà phê chín mọng, Quả sung rừng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thú ăn đêm leo trèo tài tình gắn liền với văn hóa cà phê chồn độc đáo. Bộ lông xám tro có 3 sọc đen chạy dọc sống lưng và đốm đen hai bên hông.",
+      "en": "An arboreal nocturnal viverrid renowned for its role in producing world-famous Kopi Luwak coffee. Characterized by grey fur with three black dorsal stripes and spotted flanks."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Con non",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh ra trong bọng cây cao, bú mẹ hoàn toàn.",
+          "en": "Born in high tree hollows, fully dependent on milk."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập leo trèo qua các tán dây leo trong đêm.",
+          "en": "Hones nocturnal arboreal balancing among vines."
+        },
+        "durationDays": [
+          60,
+          365
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Đánh dấu lãnh thổ bằng tuyến xạ hương thơm nồng.",
+          "en": "Marks nocturnal territory using musky perineal scent glands."
+        },
+        "durationDays": [
+          365,
+          5475
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        12,
+        15
+      ],
+      "captivity": [
+        15,
+        20
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Bị nuôi nhốt cưỡng bức trong các trang trại sản xuất cà phê chồn"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Enzyme tiêu hóa trong dạ dày cầy vòi hương phá vỡ cấu trúc protein của hạt cà phê, loại bỏ vị đắng gắt và tạo nên hương vị béo ngậy nồng nàn độc nhất vô nhị của cà phê chồn.",
+      "en": "Proteolytic enzymes inside the civet's digestive tract partially ferment the coffee beans, softening bitterness and enhancing aromatic flavor."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Viverridae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Palm_Civet_Over_Canopy.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Praval Sharma",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Palm_Civet_Over_Canopy.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cầy vòi hương (Paradoxurus hermaphroditus) trong tự nhiên",
+          "en": "Wild Asian Palm Civet (Paradoxurus hermaphroditus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434598",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

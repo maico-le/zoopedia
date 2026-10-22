@@ -1,0 +1,271 @@
+{
+  "id": "camelus-bactrianus",
+  "taxonKey": {
+    "gbif": 2441097,
+    "col": null,
+    "wikidata": "Q7375",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Camelus bactrianus",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Bactrian Camel",
+      "Two-humped Camel"
+    ],
+    "vi": [
+      "Lạc đà hai bướu",
+      "Lạc đà Gobi"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Camelidae",
+    "genus": "Camelus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      250,
+      300
+    ],
+    "weightKg": [
+      450,
+      700
+    ],
+    "description": {
+      "vi": "Bậc thầy sinh tồn ở vùng hoang mạc Trung Á với 2 chiếc bướu chứa mỡ dự trữ năng lượng và khả năng chịu đựng nhiệt độ từ -40°C đến +40°C.",
+      "en": "A rugged desert survivor native to Central Asia, featuring two fat-storing humps and tolerance to extreme temperature swings from -40°C to +40°C."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Sa mạc cát và sỏi đá Gobi",
+      "Vùng thảo nguyên khô cằn Trung Á"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Sa mạc cát và sỏi đá Gobi, Vùng thảo nguyên khô cằn Trung Á.",
+      "en": "Characteristic habitat spans Sa mạc cát và sỏi đá Gobi, Vùng thảo nguyên khô cằn Trung Á."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "MN",
+      "CN",
+      "KZ"
+    ],
+    "text": {
+      "vi": "Sa mạc Gobi và các vùng bán hoang mạc ở Mông Cổ và Tây Bắc Trung Quốc.",
+      "en": "The harsh steppes and rocky deserts of Mongolia and Northwest China."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441097"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cây gai sa mạc",
+      "Cây cỏ mặn sa mạc",
+      "Cành lá khô cằn"
+    ],
+    "feedingBehavior": {
+      "vi": "Hàm răng và môi dẻo dai cho phép nhai nuốt cả những cành gai nhọn hoắt nhất sa mạc.",
+      "en": "Specialized feeding habits targeting Cây gai sa mạc, Cây cỏ mặn sa mạc."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Bậc thầy sinh tồn ở vùng hoang mạc Trung Á với 2 chiếc bướu chứa mỡ dự trữ năng lượng và khả năng chịu đựng nhiệt độ từ -40°C đến +40°C.",
+      "en": "A rugged desert survivor native to Central Asia, featuring two fat-storing humps and tolerance to extreme temperature swings from -40°C to +40°C."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Lạc đà con",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Đứng dậy và đi theo mẹ chỉ sau 2 giờ.",
+          "en": "Stands and follows mother within 2 hours of birth."
+        },
+        "durationDays": [
+          0,
+          365
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Bắt đầu tích tụ mỡ định hình 2 bướu đứng thẳng.",
+          "en": "Accumulates fat establishing erect humps."
+        },
+        "durationDays": [
+          365,
+          1825
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Có thể nhịn uống nước hàng tuần liền trong bão cát.",
+          "en": "Capable of surviving weeks without water in sandstorms."
+        },
+        "durationDays": [
+          1825,
+          14600
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        25,
+        35
+      ],
+      "captivity": [
+        35,
+        45
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Cạn kiệt nguồn nước hoang mạc",
+      "Săn bắt trộm lấy thịt"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Lạc đà hai bướu hoang dã có thể uống cạn tới 100 lít nước chỉ trong vòng 10 phút để bù nước cho cơ thể.",
+      "en": "A thirsty Bactrian camel can drink up to 100 liters of water in just 10 minutes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/equus-caballus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Camelidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Camelus_bactrianus_in_Yinchuan.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Stefan Fussan",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Camelus_bactrianus_in_Yinchuan.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Lạc đà hai bướu (Camelus bactrianus) trong tự nhiên",
+          "en": "Wild Bactrian Camel (Camelus bactrianus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441097",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

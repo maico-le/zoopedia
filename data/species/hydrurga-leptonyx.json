@@ -1,0 +1,272 @@
+{
+  "id": "hydrurga-leptonyx",
+  "taxonKey": {
+    "gbif": 2434800,
+    "col": null,
+    "wikidata": "Q188448",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Hydrurga leptonyx",
+    "authorship": "(de Blainville, 1820)",
+    "en": [
+      "Leopard Seal",
+      "Sea Leopard"
+    ],
+    "vi": [
+      "Hải cẩu báo",
+      "Báo biển"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Phocidae",
+    "genus": "Hydrurga",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      280,
+      360
+    ],
+    "weightKg": [
+      300,
+      500
+    ],
+    "description": {
+      "vi": "Kẻ săn mồi đỉnh cao đáng sợ của vùng biển băng Nam Cực với hàm răng sắc bén như khủng long và bộ da đốm xám tựa báo hoa mai.",
+      "en": "The formidable apex predatory seal of Antarctica, equipped with reptilian-like jaws, razor-sharp trident teeth, and a sleek leopard-spotted grey pelt."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Băng biển Nam Cực (Antarctic pack ice)",
+      "Vùng biển khơi Nam Đại Dương"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Băng biển Nam Cực (Antarctic pack ice), Vùng biển khơi Nam Đại Dương.",
+      "en": "Characteristic habitat spans Băng biển Nam Cực (Antarctic pack ice), Vùng biển khơi Nam Đại Dương."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "AQ",
+      "NZ",
+      "AU",
+      "ZA"
+    ],
+    "text": {
+      "vi": "Vùng biển băng quanh châu Nam Cực và các hải đảo cận Nam Cực.",
+      "en": "Circumpolar Antarctic waters and sub-Antarctic islands."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434800"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Chim cánh cụt hoàng đế & Adélie",
+      "Hải cẩu con",
+      "Nhuyễn thể krill",
+      "Cá băng"
+    ],
+    "feedingBehavior": {
+      "vi": "Tuần tra ven rìa băng phục kích chim cánh cụt nhảy xuống nước, dùng răng nanh nhọn xé mồi.",
+      "en": "Specialized feeding habits targeting Chim cánh cụt hoàng đế & Adélie, Hải cẩu con."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Kẻ săn mồi đỉnh cao đáng sợ của vùng biển băng Nam Cực với hàm răng sắc bén như khủng long và bộ da đốm xám tựa báo hoa mai.",
+      "en": "The formidable apex predatory seal of Antarctica, equipped with reptilian-like jaws, razor-sharp trident teeth, and a sleek leopard-spotted grey pelt."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Hải cẩu con",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh trên tảng băng trôi độc lập, tăng cân nhanh chóng.",
+          "en": "Born on fast ice floes, fattening rapidly on rich milk."
+        },
+        "durationDays": [
+          0,
+          30
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học cách lọc nhuyễn thể krill và săn chim cánh cụt non.",
+          "en": "Hones penguin stalking tactics along ice shelves."
+        },
+        "durationDays": [
+          30,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Kẻ săn mồi đơn độc thống trị chuỗi thức ăn Nam Cực.",
+          "en": "Solitary apex marine stalker across the Southern Ocean."
+        },
+        "durationDays": [
+          1095,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        20,
+        26
+      ],
+      "captivity": [
+        22,
+        26
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Băng tan do biến đổi khí hậu ở bán đảo Nam Cực"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Răng của hải cẩu báo có thiết kế khóa lồng vào nhau độc đáo vừa có thể xé thịt con mồi lớn vừa có thể đóng vai trò như rây lọc nhuyễn thể krill tí hon dưới nước.",
+      "en": "The leopard seal's trident post-canines interlock seamlessly to filter Antarctic krill like a sieve, in addition to tearing large prey."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Phocidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leopard_seal_hydrurga_leptonyx.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Stan Shebs",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leopard_seal_hydrurga_leptonyx.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Hải cẩu báo (Hydrurga leptonyx) trong tự nhiên",
+          "en": "Wild Leopard Seal (Hydrurga leptonyx) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434800",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

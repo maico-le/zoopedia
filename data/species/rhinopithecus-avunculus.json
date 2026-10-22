@@ -1,0 +1,271 @@
+{
+  "id": "rhinopithecus-avunculus",
+  "taxonKey": {
+    "gbif": 2436534,
+    "col": null,
+    "wikidata": "Q1143202",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Rhinopithecus avunculus",
+    "authorship": "Dollman, 1912",
+    "en": [
+      "Tonkin Snub-nosed Monkey",
+      "Dollman's Snub-nosed Monkey"
+    ],
+    "vi": [
+      "Khỉ mũi hếch Bắc Bộ",
+      "Voọc mũi hếch Hà Giang"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Primates",
+    "family": "Cercopithecidae",
+    "genus": "Rhinopithecus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      50,
+      65
+    ],
+    "weightKg": [
+      8,
+      14
+    ],
+    "description": {
+      "vi": "Loài linh trưởng đặc hữu cực kỳ quý hiếm chỉ có tại miền Bắc Việt Nam, với chiếc mũi hếch ngược đặc trưng, mảng da xanh nhạt quanh mắt và vệt lông cổ màu cam.",
+      "en": "One of the world's most critically endangered colobines, endemic strictly to northern Vietnam, featuring an upturned nose, light blue orbital skin, and an orange throat collar."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng trên núi đá vôi Hà Giang và Tuyên Quang",
+      "Rừng á nhiệt đới thường xanh ẩm"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng trên núi đá vôi Hà Giang và Tuyên Quang, Rừng á nhiệt đới thường xanh ẩm.",
+      "en": "Characteristic habitat spans Rừng trên núi đá vôi Hà Giang và Tuyên Quang, Rừng á nhiệt đới thường xanh ẩm."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN"
+    ],
+    "text": {
+      "vi": "Chỉ còn sinh sống tại các dải rừng núi đá vôi hiểm trở ở Hà Giang, Tuyên Quang và Bắc Kạn.",
+      "en": "Exclusively restricted to rugged karst forest fragments in Ha Giang and Tuyen Quang provinces, Northern Vietnam."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2436534"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Lá cây rừng karst",
+      "Hạt dẻ rừng",
+      "Mầm trúc non",
+      "Hoa lan rừng"
+    ],
+    "feedingBehavior": {
+      "vi": "Chuyên ăn lá cây và hạt quả non trên các vách đá vôi dựng đứng.",
+      "en": "Specialized feeding habits targeting Lá cây rừng karst, Hạt dẻ rừng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài linh trưởng đặc hữu cực kỳ quý hiếm chỉ có tại miền Bắc Việt Nam, với chiếc mũi hếch ngược đặc trưng, mảng da xanh nhạt quanh mắt và vệt lông cổ màu cam.",
+      "en": "One of the world's most critically endangered colobines, endemic strictly to northern Vietnam, featuring an upturned nose, light blue orbital skin, and an orange throat collar."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "infant",
+        "name": {
+          "vi": "Con non",
+          "en": "Infant"
+        },
+        "description": {
+          "vi": "Con non bám ngực mẹ di chuyển qua vách đá.",
+          "en": "Infant clings to mother traversing steep limestone cliffs."
+        },
+        "durationDays": [
+          0,
+          300
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Luyện tập nhảy giữa các mỏm đá tai mèo sắc nhọn.",
+          "en": "Practices jumping across hazardous jagged karst outcrops."
+        },
+        "durationDays": [
+          300,
+          1825
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Cá thể trưởng thành sống theo bầy đa thê gia đình.",
+          "en": "Adult living in complex multi-family polygynous harems."
+        },
+        "durationDays": [
+          1825,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        20
+      ],
+      "captivity": [
+        20,
+        25
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Săn bắn tự chế bằng súng kíp",
+      "Chặt phá rừng làm nương rẫy",
+      "Khai thác khoáng sản gần sinh cảnh"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ước tính toàn thế giới hiện chỉ còn chưa đầy 250 cá thể Khỉ mũi hếch ngoài tự nhiên, là biểu tượng bảo tồn cấp thiết số 1 của Việt Nam.",
+      "en": "Fewer than 250 wild individuals survive today, making it one of the absolute highest conservation priorities in global primatology."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ailuropoda-melanoleuca.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Cercopithecidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tonkin_snub-nosed_monkey.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Terry Whittaker",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tonkin_snub-nosed_monkey.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Khỉ mũi hếch Bắc Bộ (Rhinopithecus avunculus) trong tự nhiên",
+          "en": "Wild Tonkin Snub-nosed Monkey (Rhinopithecus avunculus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2436534",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "odontodactylus-scyllarus",
+  "taxonKey": {
+    "gbif": 2225642,
+    "col": null,
+    "wikidata": "Q1138406",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Odontodactylus scyllarus",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Peacock Mantis Shrimp",
+      "Harlequin Mantis Shrimp"
+    ],
+    "vi": [
+      "Tôm tít công",
+      "Tôm bọ ngựa công",
+      "Bọ ngựa biển ngũ sắc"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Stomatopoda",
+    "family": "Odontodactylidae",
+    "genus": "Odontodactylus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      10,
+      18
+    ],
+    "weightKg": [
+      0.08,
+      0.2
+    ],
+    "description": {
+      "vi": "Bậc thầy săn mồi sở hữu đôi càng búa tạo ra cú đấm có gia tốc ngang ngửa viên đạn súng lục (vận tốc hơn 80 km/h) làm bốc hơi cả nước biển và đôi mắt nhận biết 16 loại thụ thể màu sắc quang phổ.",
+      "en": "A flamboyant marine crustacean capable of delivering a punch with the acceleration of a .22 caliber bullet, generating supercavitating shockwaves, alongside possessing 16 color-photoreceptor visual channels."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rạn san hô nhiệt đới Ấn Độ Dương - Thái Bình Dương",
+      "Đáy cát ven rạn san hô"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rạn san hô nhiệt đới Ấn Độ Dương - Thái Bình Dương, Đáy cát ven rạn san hô.",
+      "en": "Characteristic habitat spans Rạn san hô nhiệt đới Ấn Độ Dương - Thái Bình Dương, Đáy cát ven rạn san hô."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "ID",
+      "PH",
+      "AU",
+      "TH",
+      "MY",
+      "JP"
+    ],
+    "text": {
+      "vi": "Vùng biển nhiệt đới nông từ Đông Phi qua Đông Nam Á (bao gồm vùng biển Nam Trung Bộ Việt Nam) đến rạn san hô Great Barrier Úc.",
+      "en": "Widespread throughout the Indo-Pacific from East Africa to northern Australia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2225642"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cua biển vỏ cứng",
+      "Ốc biển",
+      "Sò điệp",
+      "Nghêu sò rạn san hô"
+    ],
+    "feedingBehavior": {
+      "vi": "Vung đôi càng búa đập vỡ nát lớp vỏ kitin siêu cứng của cua và sò trong chớp mắt.",
+      "en": "Specialized feeding habits targeting Cua biển vỏ cứng, Ốc biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Bậc thầy săn mồi sở hữu đôi càng búa tạo ra cú đấm có gia tốc ngang ngửa viên đạn súng lục (vận tốc hơn 80 km/h) làm bốc hơi cả nước biển và đôi mắt nhận biết 16 loại thụ thể màu sắc quang phổ.",
+      "en": "A flamboyant marine crustacean capable of delivering a punch with the acceleration of a .22 caliber bullet, generating supercavitating shockwaves, alongside possessing 16 color-photoreceptor visual channels."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "larva",
+        "name": {
+          "vi": "Ấu trùng phù du",
+          "en": "Planktonic Larva"
+        },
+        "description": {
+          "vi": "Trôi nổi tự do trong dòng hải lưu rạn san hô.",
+          "en": "Transparent zoea drifting freely in reef currents."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Đào hang trong nền cát san hô và phát triển màu sắc sặc sỡ.",
+          "en": "Excavates sand burrows and develops vivid coloration."
+        },
+        "durationDays": [
+          60,
+          365
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chiếm giữ hang đá san hô, bảo vệ vùng săn mồi hung bạo.",
+          "en": "Territorial benthic predator guarding reef cavity burrows."
+        },
+        "durationDays": [
+          365,
+          2190
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        4,
+        6
+      ],
+      "captivity": [
+        5,
+        7
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NE",
+    "populationTrend": "stable",
+    "threats": [
+      "Suy thoái rạn san hô do biến đổi khí hậu",
+      "Đánh bắt làm sinh vật cảnh thủy sinh"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cú đấm của tôm tít công tạo ra hiện tượng xâm thực (cavitation) sinh ra nhiệt độ cục bộ tương đương bề mặt Mặt Trời và phát ra tia sáng quang học (sonoluminescence).",
+      "en": "The strike causes supercavitation bubbles that collapse with acoustic shockwaves producing momentary flashes of light and intense localized heat."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peacock_mantis_shrimp_on_coral_head.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Roy L. Caldwell",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peacock_mantis_shrimp_on_coral_head.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Tôm tít công (Odontodactylus scyllarus) trong tự nhiên",
+          "en": "Wild Peacock Mantis Shrimp (Odontodactylus scyllarus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2225642",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

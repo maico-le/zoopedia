@@ -1,0 +1,277 @@
+{
+  "id": "hydrochoerus-hydrochaeris",
+  "taxonKey": {
+    "gbif": 2437649,
+    "col": null,
+    "wikidata": "Q131538",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Hydrochoerus hydrochaeris",
+    "authorship": "(Linnaeus, 1766)",
+    "en": [
+      "Capybara",
+      "Greater Capybara"
+    ],
+    "vi": [
+      "Chuột lang nước",
+      "Capybara"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Rodentia",
+    "family": "Caviidae",
+    "genus": "Hydrochoerus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      106,
+      134
+    ],
+    "weightKg": [
+      35,
+      66
+    ],
+    "description": {
+      "vi": "Loài gặm nhấm lớn nhất thế giới, nổi tiếng toàn cầu bởi bản tính cực kỳ hòa đồng, thân thiện với nhiều loài động vật và khả năng bơi lặn siêu hạng.",
+      "en": "The world's largest living rodent, renowned worldwide for its exceptionally docile social nature and semi-aquatic lifestyle across South American wetlands."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vùng ngập nước Pantanal",
+      "Đồng bằng ngập lũ Nam Mỹ",
+      "Rừng ven sông suối Amazon"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vùng ngập nước Pantanal, Đồng bằng ngập lũ Nam Mỹ, Rừng ven sông suối Amazon.",
+      "en": "Characteristic habitat spans Vùng ngập nước Pantanal, Đồng bằng ngập lũ Nam Mỹ, Rừng ven sông suối Amazon."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "BR",
+      "CO",
+      "VE",
+      "AR",
+      "PE",
+      "BO",
+      "PY"
+    ],
+    "text": {
+      "vi": "Bản địa của hầu hết các vùng đồng bằng ngập nước và lưu vực sông tại Nam Mỹ (ngoại trừ Chile).",
+      "en": "Widespread across South American wetlands, riverbanks, and savannas east of the Andes."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2437649"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cỏ nước ngập",
+      "Cây bèo lục bình",
+      "Vỏ cây bụi ven sông",
+      "Rau thủy sinh"
+    ],
+    "feedingBehavior": {
+      "vi": "Gặm cỏ nước ven bờ và lặn dưới nước ăn rong rêu và thực vật thủy sinh.",
+      "en": "Specialized feeding habits targeting Cỏ nước ngập, Cây bèo lục bình."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài gặm nhấm lớn nhất thế giới, nổi tiếng toàn cầu bởi bản tính cực kỳ hòa đồng, thân thiện với nhiều loài động vật và khả năng bơi lặn siêu hạng.",
+      "en": "The world's largest living rodent, renowned worldwide for its exceptionally docile social nature and semi-aquatic lifestyle across South American wetlands."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Chuột lang con",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Có thể chạy và bơi chỉ sau vài giờ chào đời.",
+          "en": "Precocious pups capable of swimming within hours of birth."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học tập phản xạ lặn trốn báo đốm dưới nước.",
+          "en": "Learns underwater submersion to evade predators like jaguars."
+        },
+        "durationDays": [
+          90,
+          500
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống theo bầy 10-20 cá thể hòa thuận ven hồ.",
+          "en": "Gregarious adult living peacefully in communal wetland groups."
+        },
+        "durationDays": [
+          500,
+          3650
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        8,
+        10
+      ],
+      "captivity": [
+        12,
+        14
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Săn bắt lấy thịt và da",
+      "Ô nhiễm nguồn nước ngập mặn Pantanal"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Capybara có thể nín thở dưới nước tới 5 phút để trốn tránh kẻ săn mồi nguy hiểm như báo đốm và trăn anaconda.",
+      "en": "Capybaras can remain submerged underwater for up to 5 minutes to stay hidden from prowling predators."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/equus-caballus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Rodentia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capybara_sitting_in_water.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Charles J. Sharp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Capybara_sitting_in_water.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chuột lang nước (Hydrochoerus hydrochaeris) trong tự nhiên",
+          "en": "Wild Capybara (Hydrochoerus hydrochaeris) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2437649",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "monodon-monoceros",
+  "taxonKey": {
+    "gbif": 2440801,
+    "col": null,
+    "wikidata": "Q159426",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Monodon monoceros",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Narwhal",
+      "Moon Whale"
+    ],
+    "vi": [
+      "Kỳ lân biển",
+      "Cá voi kỳ lân",
+      "Narwhal"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Cetacea",
+    "family": "Monodontidae",
+    "genus": "Monodon",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      395,
+      550
+    ],
+    "weightKg": [
+      800,
+      1600
+    ],
+    "description": {
+      "vi": "'Kỳ lân của biển cả' với chiếc ngà xoắn ốc ngược chiều kim đồng hồ dài tới 3 mét mọc xuyên qua môi trên của con đực, chứa hàng triệu đầu dây thần kinh cảm giác.",
+      "en": "The legendary 'Unicorn of the Sea', renowned for the male's spiraling counterclockwise ivory tusk up to 3 meters long, rich with millions of sensory nerve endings."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Biển băng trôi Bắc Cực",
+      "Vịnh hẹp vịnh băng Greenland & Canada"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Biển băng trôi Bắc Cực, Vịnh hẹp vịnh băng Greenland & Canada.",
+      "en": "Characteristic habitat spans Biển băng trôi Bắc Cực, Vịnh hẹp vịnh băng Greenland & Canada."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "GL",
+      "CA",
+      "RU",
+      "NO"
+    ],
+    "text": {
+      "vi": "Vùng biển đóng băng sâu quanh năm ở Bắc Cực quanh Canada, Greenland, Na Uy và Nga.",
+      "en": "High Arctic maritime waters around Greenland, Canada, and the Arctic archipelago."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2440801"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá bơn Greenland",
+      "Mực ống Bắc cực",
+      "Cá tuyết cực"
+    ],
+    "feedingBehavior": {
+      "vi": "Lặn sâu hơn 1500 mét xuống đáy biển tối tăm để hút các loài cá bơn và mực ống.",
+      "en": "Specialized feeding habits targeting Cá bơn Greenland, Mực ống Bắc cực."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "'Kỳ lân của biển cả' với chiếc ngà xoắn ốc ngược chiều kim đồng hồ dài tới 3 mét mọc xuyên qua môi trên của con đực, chứa hàng triệu đầu dây thần kinh cảm giác.",
+      "en": "The legendary 'Unicorn of the Sea', renowned for the male's spiraling counterclockwise ivory tusk up to 3 meters long, rich with millions of sensory nerve endings."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Con non",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Sinh ra có màu xanh xám nhạt, bơi cùng đàn.",
+          "en": "Born pale mottled grey, protected inside tight family pods."
+        },
+        "durationDays": [
+          0,
+          365
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Ngà xoắn bắt đầu đâm xuyên qua môi trên con đực.",
+          "en": "Spiral tusk pierces upper lip in adolescent males."
+        },
+        "durationDays": [
+          365,
+          2920
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Dùng ngà thăm dò độ mặn nhiệt độ nước và giao tiếp.",
+          "en": "Uses sensory tusk to detect salinity, temperature, and peers."
+        },
+        "durationDays": [
+          2920,
+          18250
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        40,
+        50
+      ],
+      "captivity": [
+        30,
+        40
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Bị kẹt dưới các tảng băng dày đột ngột đóng băng",
+      "Tiếng ồn tàu thuyền thám hiểm Bắc Cực"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Chiếc ngà của kỳ lân biển thực chất là một chiếc răng cửa phát triển dài quá cỡ có cấu trúc bề ngoài xốp ngược với răng thông thường.",
+      "en": "The narwhal tusk is actually an overgrown canine tooth featuring millions of microscopic nerve pathways connecting directly to the brain."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/dolphin.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Monodontidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narwhals_breaching.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Glenn Williams",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Narwhals_breaching.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Kỳ lân biển (Monodon monoceros) trong tự nhiên",
+          "en": "Wild Narwhal (Monodon monoceros) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2440801",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

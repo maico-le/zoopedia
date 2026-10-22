@@ -1,0 +1,264 @@
+{
+  "id": "scleropages-formosus",
+  "taxonKey": {
+    "gbif": 2400350,
+    "col": null,
+    "wikidata": "Q732446",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Scleropages formosus",
+    "authorship": "(Müller & Schlegel, 1840)",
+    "en": [
+      "Asian Arowana",
+      "Dragon Fish",
+      "Bonytongue"
+    ],
+    "vi": [
+      "Cá rồng châu Á",
+      "Cá rồng huyết long",
+      "Kim long quá bối"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Actinopterygii",
+    "order": "Osteoglossiformes",
+    "family": "Osteoglossidae",
+    "genus": "Scleropages",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      60,
+      90
+    ],
+    "weightKg": [
+      4.0,
+      7.5
+    ],
+    "description": {
+      "vi": "Biểu tượng phong thủy quý phái bậc nhất châu Á. Vảy lớn óng ánh như vảy rồng với hai sợi râu ở cằm, có khả năng phóng mình nhảy vọt lên khỏi mặt nước hơn 1.5 mét để đớp chim muông côn trùng trên cành cây.",
+      "en": "An auspicious emblem of wealth and majesty in Asian culture, covered in iridescent metallic armor-like scales with barbels resembling a mythical dragon. Capable of leaping 1.5 meters into the air to pluck canopy insects."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Sông suối rừng nhiệt đới trũng",
+      "Rừng đầm lầy than bùn ngập nước"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Sông suối rừng nhiệt đới trũng, Rừng đầm lầy than bùn ngập nước.",
+      "en": "Characteristic habitat spans Sông suối rừng nhiệt đới trũng, Rừng đầm lầy than bùn ngập nước."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "MY",
+      "ID",
+      "TH",
+      "KH"
+    ],
+    "text": {
+      "vi": "Vùng nước đen đầm lầy than bùn ở Đông Nam Á (Malaysia, Indonesia, Thái Lan, Campuchia và Nam Bộ Việt Nam).",
+      "en": "Peat swamp forests and blackwater rivers of Southeast Asia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2400350"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Dế mèn",
+      "Bọ cánh cứng",
+      "Cá nhỏ",
+      "Ếch nhái",
+      "Chim con trên cành thấp"
+    ],
+    "feedingBehavior": {
+      "vi": "Tuần tra mặt nước rình rập côn trùng trên nhánh cây de sát mặt sông rồi phóng mình chớp nhoáng lên bắt.",
+      "en": "Specialized feeding habits targeting Dế mèn, Bọ cánh cứng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Biểu tượng phong thủy quý phái bậc nhất châu Á. Vảy lớn óng ánh như vảy rồng với hai sợi râu ở cằm, có khả năng phóng mình nhảy vọt lên khỏi mặt nước hơn 1.5 mét để đớp chim muông côn trùng trên cành cây.",
+      "en": "An auspicious emblem of wealth and majesty in Asian culture, covered in iridescent metallic armor-like scales with barbels resembling a mythical dragon. Capable of leaping 1.5 meters into the air to pluck canopy insects."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "fry",
+        "name": {
+          "vi": "Cá bột",
+          "en": "Fry"
+        },
+        "description": {
+          "vi": "Được cá bố ngậm ấp trong miệng suốt gần 2 tháng.",
+          "en": "Brooded carefully inside father's mouth for up to 60 days."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Mọc vảy ánh kim và phát triển đôi râu cảm ứng cằm.",
+          "en": "Develops radiant metallic sheen and sensory barbels."
+        },
+        "durationDays": [
+          60,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bảo vệ vùng nước râm mát ven bờ sông rừng rậm.",
+          "en": "Dominates surface territory beneath shaded forest canopies."
+        },
+        "durationDays": [
+          1095,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        20
+      ],
+      "captivity": [
+        20,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Săn bắt trộm quá mức do giá trị thương mại phong thủy cực cao",
+      "Ô nhiễm đầm lầy than bùn"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá rồng bố là một trong những ông bố tận tụy nhất giới tự nhiên: chúng nhịn ăn hoàn toàn suốt 2 tháng ròng rã chỉ để ngậm và bảo vệ hàng chục quả trứng và cá con trong khoang miệng.",
+      "en": "Male arowanas are mouthbrooders who starve themselves for over two months straight while protecting eggs and larvae in their mouths."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scleropages_formosus.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Karelj",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scleropages_formosus.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá rồng châu Á (Scleropages formosus) trong tự nhiên",
+          "en": "Wild Asian Arowana (Scleropages formosus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2400350",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

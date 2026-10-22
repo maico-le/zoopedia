@@ -1,0 +1,256 @@
+{
+  "id": "mellisuga-helenae",
+  "taxonKey": {
+    "gbif": 2476717,
+    "col": null,
+    "wikidata": "Q216868",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Mellisuga helenae",
+    "authorship": "(Lembeye, 1850)",
+    "en": [
+      "Bee Hummingbird",
+      "Zunzuncito"
+    ],
+    "vi": [
+      "Chim ruồi ong",
+      "Chim ruồi tí hon",
+      "Chim ong Cuba"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Apodiformes",
+    "family": "Trochilidae",
+    "genus": "Mellisuga",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      5.5,
+      6.1
+    ],
+    "weightKg": [
+      0.0016,
+      0.0026
+    ],
+    "description": {
+      "vi": "Loài chim nhỏ nhất và nhẹ nhất còn sống trên Trái Đất (chỉ nặng khoảng 2 gram, nhẹ hơn cả một đồng xu). Có thể đập cánh 80-200 lần mỗi giây và bay lùi ngược lại.",
+      "en": "The smallest extant bird species in the world, weighing barely 2 grams (lighter than a standard dime). Flaps its wings up to 200 times per second and can fly backwards and upside down."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng ven biển cận nhiệt đới Cuba",
+      "Vườn hoa cây bụi nhiệt đới"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng ven biển cận nhiệt đới Cuba, Vườn hoa cây bụi nhiệt đới.",
+      "en": "Characteristic habitat spans Rừng ven biển cận nhiệt đới Cuba, Vườn hoa cây bụi nhiệt đới."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "CU"
+    ],
+    "text": {
+      "vi": "Đặc hữu của quần đảo Cuba và đảo Isla de la Juventud.",
+      "en": "Endemic strictly to the archipelago of Cuba and Isle of Youth."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2476717"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Mật hoa nhiệt đới",
+      "Ruồi giấm nhỏ",
+      "Bọ phấn hoa"
+    ],
+    "feedingBehavior": {
+      "vi": "Bay đứng yên lơ lửng trong không trung và luồn mỏ dài mảnh hút mật hoa từ 1.500 bông hoa mỗi ngày.",
+      "en": "Specialized feeding habits targeting Mật hoa nhiệt đới, Ruồi giấm nhỏ."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài chim nhỏ nhất và nhẹ nhất còn sống trên Trái Đất (chỉ nặng khoảng 2 gram, nhẹ hơn cả một đồng xu). Có thể đập cánh 80-200 lần mỗi giây và bay lùi ngược lại.",
+      "en": "The smallest extant bird species in the world, weighing barely 2 grams (lighter than a standard dime). Flaps its wings up to 200 times per second and can fly backwards and upside down."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "chick",
+        "name": {
+          "vi": "Chim non",
+          "en": "Chick"
+        },
+        "description": {
+          "vi": "Nở ra từ quả trứng chỉ nhỏ bằng hạt cà phê trong tổ dệt bằng tơ nhện.",
+          "en": "Hatches from a coffee-bean-sized egg inside a spiderweb-woven nest."
+        },
+        "durationDays": [
+          0,
+          20
+        ]
+      },
+      {
+        "key": "fledgling",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Fledgling"
+        },
+        "description": {
+          "vi": "Tập bay đứng im tại chỗ trước các nụ hoa.",
+          "en": "Practices stationary hovering flight in front of flowers."
+        },
+        "durationDays": [
+          20,
+          180
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bộ lông con đực phát sáng óng ánh màu đỏ ruby rực rỡ.",
+          "en": "Males display iridescent fiery ruby-red gorget feathers."
+        },
+        "durationDays": [
+          180,
+          2555
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        5,
+        7
+      ],
+      "captivity": [
+        7,
+        10
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mất rừng tự nhiên do chuyển đổi nông nghiệp tại Cuba"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Trái tim của chim ruồi ong đập với tốc độ chóng mặt lên tới hơn 1.200 nhịp mỗi phút khi bay lượn hút mật hoa.",
+      "en": "The heart of a bee hummingbird beats at an astronomical rate of over 1,200 beats per minute during active flight."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mellisuga_helenae_male.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Charles J. Sharp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mellisuga_helenae_male.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chim ruồi ong (Mellisuga helenae) trong tự nhiên",
+          "en": "Wild Bee Hummingbird (Mellisuga helenae) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2476717",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

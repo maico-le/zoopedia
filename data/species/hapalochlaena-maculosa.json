@@ -1,0 +1,259 @@
+{
+  "id": "hapalochlaena-maculosa",
+  "taxonKey": {
+    "gbif": 2289297,
+    "col": null,
+    "wikidata": "Q1353272",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Hapalochlaena maculosa",
+    "authorship": "(Hoyle, 1883)",
+    "en": [
+      "Southern Blue-ringed Octopus",
+      "Blue-ringed Octopus"
+    ],
+    "vi": [
+      "Bạch tuộc đốm xanh",
+      "Bạch tuộc vòng xanh phương Nam"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Cephalopoda",
+    "order": "Octopoda",
+    "family": "Octopodidae",
+    "genus": "Hapalochlaena",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      12,
+      20
+    ],
+    "weightKg": [
+      0.03,
+      0.08
+    ],
+    "description": {
+      "vi": "Loài bạch tuộc nhỏ bé nhưng mang nọc độc chết người đáng sợ nhất đại dương. Khi bị kích động, các vòng tròn màu xanh lam phát huỳnh quang rực sáng cảnh báo độc tố tetrodotoxin hủy diệt.",
+      "en": "One of the ocean's most venomous marine animals. Small and unassuming, it flashes iridescent blue warning rings containing lethal tetrodotoxin when disturbed."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vũng triều đá ven biển",
+      "Rạn san hô nông",
+      "Bãi đá ngầm"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vũng triều đá ven biển, Rạn san hô nông, Bãi đá ngầm.",
+      "en": "Characteristic habitat spans Vũng triều đá ven biển, Rạn san hô nông, Bãi đá ngầm."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "AU",
+      "ID",
+      "PH",
+      "JP"
+    ],
+    "text": {
+      "vi": "Vùng biển duyên hải và các vũng thủy triều đá ngầm ở miền Nam nước Úc và Tây Thái Bình Dương.",
+      "en": "Tide pools and shallow reefs of southern Australia and the western Pacific."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2289297"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cua nhỏ",
+      "Tôm biển",
+      "Cá con ven bờ đá"
+    ],
+    "feedingBehavior": {
+      "vi": "Cắn vào con mồi bằng mỏ sừng sắc bén và tiết nước bọt chứa độc tố làm tê liệt hệ thần kinh con mồi trong vài giây.",
+      "en": "Specialized feeding habits targeting Cua nhỏ, Tôm biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài bạch tuộc nhỏ bé nhưng mang nọc độc chết người đáng sợ nhất đại dương. Khi bị kích động, các vòng tròn màu xanh lam phát huỳnh quang rực sáng cảnh báo độc tố tetrodotoxin hủy diệt.",
+      "en": "One of the ocean's most venomous marine animals. Small and unassuming, it flashes iridescent blue warning rings containing lethal tetrodotoxin when disturbed."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "paralarva",
+        "name": {
+          "vi": "Ấu trùng phù du",
+          "en": "Paralarva"
+        },
+        "description": {
+          "vi": "Bơi lội tự do kiếm ăn bằng sinh vật phù du.",
+          "en": "Pelagic paralarva foraging on micro-crustaceans."
+        },
+        "durationDays": [
+          0,
+          30
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tìm kiếm các vỏ ốc rỗng hoặc hốc đá làm nơi trú ẩn.",
+          "en": "Settles into empty seashells or rock crevices."
+        },
+        "durationDays": [
+          30,
+          180
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sinh sản một lần trong đời rồi chết sau khi canh giữ trứng nở.",
+          "en": "Semelparous adult dying shortly after brooding egg clutches."
+        },
+        "durationDays": [
+          180,
+          730
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        1.5,
+        2
+      ],
+      "captivity": [
+        1,
+        2
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Ô nhiễm rác thải nhựa vùng triều ven biển"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Lượng độc tố tetrodotoxin trong một con bạch tuộc đốm xanh chỉ nặng 25 gram đủ sức làm tê liệt hệ hô hấp và hạ gục 26 người trưởng thành trong vòng vài phút.",
+      "en": "A single tiny 25-gram blue-ringed octopus carries enough tetrodotoxin to paralyze 26 adult humans within minutes."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-ringed_octopus.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Rickard Zerpe",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-ringed_octopus.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Bạch tuộc đốm xanh (Hapalochlaena maculosa) trong tự nhiên",
+          "en": "Wild Southern Blue-ringed Octopus (Hapalochlaena maculosa) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2289297",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

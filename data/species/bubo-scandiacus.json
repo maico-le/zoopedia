@@ -1,0 +1,272 @@
+{
+  "id": "bubo-scandiacus",
+  "taxonKey": {
+    "gbif": 5229212,
+    "col": null,
+    "wikidata": "Q170155",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Bubo scandiacus",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Snowy Owl",
+      "Polar Owl",
+      "Arctic Owl"
+    ],
+    "vi": [
+      "Cú tuyết",
+      "Cú trắng Bắc Cực",
+      "Cú tuyết vĩ đại"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "genus": "Bubo",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      52,
+      71
+    ],
+    "weightKg": [
+      1.6,
+      2.5
+    ],
+    "description": {
+      "vi": "Loài cú tuyệt mỹ của vùng lãnh nguyên cực bắc với đôi mắt vàng rực và bộ lông trắng muốt. Không như các loài cú khác, cú tuyết hoạt động và săn mồi tích cực cả ban ngày.",
+      "en": "A magnificent circumpolar raptor with luminous yellow eyes and snow-white plumage. Unlike most nocturnal owls, it is largely diurnal, hunting across sunlit Arctic summer days."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Lãnh nguyên Bắc Cực mở",
+      "Đồng bằng băng tuyết"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Lãnh nguyên Bắc Cực mở, Đồng bằng băng tuyết.",
+      "en": "Characteristic habitat spans Lãnh nguyên Bắc Cực mở, Đồng bằng băng tuyết."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "CA",
+      "RU",
+      "US",
+      "GL",
+      "NO"
+    ],
+    "text": {
+      "vi": "Vùng lãnh nguyên không cây cối thuộc vòng Bắc Cực quanh Trái Đất.",
+      "en": "Open, treeless tundra across the circumpolar Arctic zone."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5229212"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Chuột lemming",
+      "Thỏ tuyết Bắc cực",
+      "Vịt trời eider",
+      "Chuột đồng"
+    ],
+    "feedingBehavior": {
+      "vi": "Ngồi rình trên các ụ đất cao trên lãnh nguyên rồi bay là là sát mặt tuyết tóm gọn chuột.",
+      "en": "Specialized feeding habits targeting Chuột lemming, Thỏ tuyết Bắc cực."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài cú tuyệt mỹ của vùng lãnh nguyên cực bắc với đôi mắt vàng rực và bộ lông trắng muốt. Không như các loài cú khác, cú tuyết hoạt động và săn mồi tích cực cả ban ngày.",
+      "en": "A magnificent circumpolar raptor with luminous yellow eyes and snow-white plumage. Unlike most nocturnal owls, it is largely diurnal, hunting across sunlit Arctic summer days."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "owlet",
+        "name": {
+          "vi": "Cú non",
+          "en": "Owlet"
+        },
+        "description": {
+          "vi": "Nở trong tổ đất gồ ghề trên lãnh nguyên.",
+          "en": "Hatches in ground scrape nests on elevated tundra knolls."
+        },
+        "durationDays": [
+          0,
+          45
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Lông có nhiều vệt đen nâu đốm trước khi chuyển trắng.",
+          "en": "Heavily barred with dark brown spots before whitening."
+        },
+        "durationDays": [
+          45,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Con đực trưởng thành gần như trắng tuyết hoàn toàn.",
+          "en": "Mature males become almost pure immaculate white."
+        },
+        "durationDays": [
+          730,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        15
+      ],
+      "captivity": [
+        20,
+        28
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Chu kỳ số lượng chuột lemming suy giảm do biến đổi khí hậu tuyết tan"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Một con cú tuyết trưởng thành có thể tiêu thụ tới hơn 1.600 con chuột lemming trong một năm.",
+      "en": "A single adult snowy owl may consume more than 1,600 lemmings in a single breeding year."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aquila-chrysaetos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Strigidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowy_Owl_-_detroit_zoo.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Brendan Lally",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowy_Owl_-_detroit_zoo.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cú tuyết (Bubo scandiacus) trong tự nhiên",
+          "en": "Wild Snowy Owl (Bubo scandiacus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5229212",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

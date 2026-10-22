@@ -1,0 +1,276 @@
+{
+  "id": "falco-peregrinus",
+  "taxonKey": {
+    "gbif": 2481037,
+    "col": null,
+    "wikidata": "Q30535",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Falco peregrinus",
+    "authorship": "Tunstall, 1771",
+    "en": [
+      "Peregrine Falcon",
+      "Duck Hawk"
+    ],
+    "vi": [
+      "Chim ưng Peregrine",
+      "Cắt lớn",
+      "Chim ưng du mục"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "genus": "Falco",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      34,
+      58
+    ],
+    "weightKg": [
+      0.6,
+      1.5
+    ],
+    "description": {
+      "vi": "Sinh vật di chuyển nhanh nhất trong toàn bộ vương quốc động vật. Khi thực hiện cú bổ nhào săn mồi từ không trung, chim ưng có thể đạt tốc độ kinh hoàng vượt quá 380 km/h.",
+      "en": "The fastest member of the animal kingdom. When executing its high-speed hunting stoop (dive), the peregrine reaches astounding velocities exceeding 380 km/h (240 mph)."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vách đá ven biển",
+      "Vùng núi cao",
+      "Tòa nhà chọc trời đô thị"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vách đá ven biển, Vùng núi cao, Tòa nhà chọc trời đô thị.",
+      "en": "Characteristic habitat spans Vách đá ven biển, Vùng núi cao, Tòa nhà chọc trời đô thị."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "US",
+      "CA",
+      "GB",
+      "RU",
+      "AU",
+      "ZA",
+      "JP"
+    ],
+    "text": {
+      "vi": "Phân bố rộng khắp mọi lục địa ngoại trừ châu Nam Cực, có mặt cả ở vùng núi và các đô thị lớn.",
+      "en": "Cosmopolitan distribution across every continent except Antarctica."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2481037"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Bồ câu",
+      "Vịt trời",
+      "Chim sáo",
+      "Hải âu nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Bay liệng trên cao phát hiện con mồi rồi khóa cánh bổ nhào với vận tốc xé gió, tung đòn đánh gãy cánh con mồi ngay trên không trung.",
+      "en": "Specialized feeding habits targeting Bồ câu, Vịt trời."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Sinh vật di chuyển nhanh nhất trong toàn bộ vương quốc động vật. Khi thực hiện cú bổ nhào săn mồi từ không trung, chim ưng có thể đạt tốc độ kinh hoàng vượt quá 380 km/h.",
+      "en": "The fastest member of the animal kingdom. When executing its high-speed hunting stoop (dive), the peregrine reaches astounding velocities exceeding 380 km/h (240 mph)."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "eyas",
+        "name": {
+          "vi": "Chim non",
+          "en": "Eyas"
+        },
+        "description": {
+          "vi": "Nở trên vách đá cheo leo, được chim bố mẹ mớm thịt tươi.",
+          "en": "Hatches on high cliff ledges, nurtured with regurgitated prey meat."
+        },
+        "durationDays": [
+          0,
+          42
+        ]
+      },
+      {
+        "key": "fledgling",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Fledgling"
+        },
+        "description": {
+          "vi": "Tập bắt con mồi chim bố mẹ thả rơi giữa không trung.",
+          "en": "Practices mid-air aerial interception dropped by parents."
+        },
+        "durationDays": [
+          42,
+          365
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chúa tể tốc độ bầu trời, sống chung thủy cùng một bạn đời trọn đời.",
+          "en": "Monogamous apex aerial hunter with lifelong pair bonds."
+        },
+        "durationDays": [
+          365,
+          5475
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        12,
+        17
+      ],
+      "captivity": [
+        20,
+        25
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Ngộ độc thuốc trừ sâu DDT trong quá khứ",
+      "Thu nhặt trứng trộm cho thú chơi chim săn"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Để thở được khi bổ nhào ở tốc độ 380 km/h mà không bị nổ phổi, lỗ mũi chim ưng có các nốt củ khí động học đặc biệt điều hòa luồng không khí áp suất cao.",
+      "en": "Bony tubercles inside the falcon's nostrils divert supersonic-level shockwaves, allowing it to breathe smoothly during 380 km/h dives."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aquila-chrysaetos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Falconidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Falco_peregrinus_good.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Carlos Delgado",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Falco_peregrinus_good.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chim ưng Peregrine (Falco peregrinus) trong tự nhiên",
+          "en": "Wild Peregrine Falcon (Falco peregrinus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2481037",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

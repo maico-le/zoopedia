@@ -1,0 +1,256 @@
+{
+  "id": "macrocheira-kaempferi",
+  "taxonKey": {
+    "gbif": 2226871,
+    "col": null,
+    "wikidata": "Q273656",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Macrocheira kaempferi",
+    "authorship": "(Temminck, 1836)",
+    "en": [
+      "Japanese Spider Crab",
+      "Giant Spider Crab"
+    ],
+    "vi": [
+      "Cua nhện Nhật Bản",
+      "Cua nhện khổng lồ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Decapoda",
+    "family": "Inachidae",
+    "genus": "Macrocheira",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      300,
+      380
+    ],
+    "weightKg": [
+      14,
+      19
+    ],
+    "description": {
+      "vi": "Động vật chân khớp có sải chân lớn nhất hành tinh (lên tới 3.8 mét từ đầu càng này sang càng kia). Sống ẩn dật dưới đáy biển sâu tối tăm lạnh giá ngoài khơi Nhật Bản.",
+      "en": "Possesses the greatest leg span of any arthropod on Earth, stretching up to 3.8 meters (12.5 ft) from claw to claw. Inhabits dark deep-sea trenches off the coast of Japan."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Đáy biển sâu Thái Bình Dương (200-600m)",
+      "Sườn lục địa dốc tối tăm"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Đáy biển sâu Thái Bình Dương (200-600m), Sườn lục địa dốc tối tăm.",
+      "en": "Characteristic habitat spans Đáy biển sâu Thái Bình Dương (200-600m), Sườn lục địa dốc tối tăm."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "JP"
+    ],
+    "text": {
+      "vi": "Vùng đáy biển sâu quanh vịnh Sagami, Suruga và bờ biển phía nam đảo Honshu, Nhật Bản.",
+      "en": "Deep Pacific waters off the southern coasts of Honshu, Japan."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2226871"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [
+      "Xác cá chìm",
+      "Động vật thân mềm đáy biển",
+      "Rong biển sâu",
+      "Sao biển"
+    ],
+    "feedingBehavior": {
+      "vi": "Dò dẫm những chiếc chân khẳng khiu trên nền bùn đáy biển để nhặt nhạnh xác động vật và sò ốc.",
+      "en": "Specialized feeding habits targeting Xác cá chìm, Động vật thân mềm đáy biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Động vật chân khớp có sải chân lớn nhất hành tinh (lên tới 3.8 mét từ đầu càng này sang càng kia). Sống ẩn dật dưới đáy biển sâu tối tăm lạnh giá ngoài khơi Nhật Bản.",
+      "en": "Possesses the greatest leg span of any arthropod on Earth, stretching up to 3.8 meters (12.5 ft) from claw to claw. Inhabits dark deep-sea trenches off the coast of Japan."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "zoea",
+        "name": {
+          "vi": "Ấu trùng zoea",
+          "en": "Zoea Larva"
+        },
+        "description": {
+          "vi": "Ấu trùng phù du siêu nhỏ trôi nổi ở tầng nước nông.",
+          "en": "Microscopic planktonic zoea drifting in upper water columns."
+        },
+        "durationDays": [
+          0,
+          50
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Lặn xuống đáy sâu và bắt đầu các chu kỳ lột xác lớn.",
+          "en": "Descends to deep seafloor undergoing massive molting cycles."
+        },
+        "durationDays": [
+          50,
+          3650
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sải chân khổng lồ bước đi thong dong trên đáy đại dương.",
+          "en": "Massive long-legged scavenger walking the abyssal seabed."
+        },
+        "durationDays": [
+          3650,
+          36500
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        50,
+        100
+      ],
+      "captivity": [
+        50,
+        80
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NE",
+    "populationTrend": "stable",
+    "threats": [
+      "Đánh bắt bằng lưới kéo đáy biển"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Mặc dù sở hữu cặp càng vươn dài khổng lồ trông rất đáng sợ, cua nhện Nhật Bản lại là loài sinh vật ăn xác thối rất hiền lành và di chuyển cực kỳ chậm chạp.",
+      "en": "Despite their monstrous alien-like appearance, Japanese spider crabs are gentle, slow-moving bottom scavengers."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese_spider_crab.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Taka",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese_spider_crab.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cua nhện Nhật Bản (Macrocheira kaempferi) trong tự nhiên",
+          "en": "Wild Japanese Spider Crab (Macrocheira kaempferi) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2226871",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

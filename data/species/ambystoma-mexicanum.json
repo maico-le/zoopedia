@@ -1,0 +1,259 @@
+{
+  "id": "ambystoma-mexicanum",
+  "taxonKey": {
+    "gbif": 2431985,
+    "col": null,
+    "wikidata": "Q22718",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Ambystoma mexicanum",
+    "authorship": "(Shaw & Nodder, 1798)",
+    "en": [
+      "Axolotl",
+      "Mexican Walking Fish"
+    ],
+    "vi": [
+      "Kỳ giông Axolotl",
+      "Khủng long sáu sừng",
+      "Kỳ giông Mexico"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Urodela",
+    "family": "Ambystomatidae",
+    "genus": "Ambystoma",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      15,
+      30
+    ],
+    "weightKg": [
+      0.15,
+      0.3
+    ],
+    "description": {
+      "vi": "Loài lưỡng cư kỳ lạ giữ nguyên hình thái ấu trùng suốt đời (hiện tượng neoteny) với 6 chiếc mang ngoài xòe rộng như cánh hoa màu hồng cùng năng lực tái sinh chi hoàn hảo phi thường.",
+      "en": "A fascinating neotenic salamander that retains its larval characteristics throughout adulthood, featuring six feathery external gills and unprecedented biological limb regeneration abilities."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Hồ nước ngọt Xochimilco",
+      "Kênh đào ngập nước thung lũng Mexico"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Hồ nước ngọt Xochimilco, Kênh đào ngập nước thung lũng Mexico.",
+      "en": "Characteristic habitat spans Hồ nước ngọt Xochimilco, Kênh đào ngập nước thung lũng Mexico."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "MX"
+    ],
+    "text": {
+      "vi": "Đặc hữu duy nhất tại hồ Xochimilco và hệ thống kênh đào ở Thung lũng Mexico.",
+      "en": "Endemic strictly to Lake Xochimilco and Lake Chalco canals in the Valley of Mexico."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2431985"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Giun đất nhỏ",
+      "Ấu trùng muỗi",
+      "Tôm cá nhỏ nước ngọt",
+      "Động vật thân mềm"
+    ],
+    "feedingBehavior": {
+      "vi": "Hút thức ăn bằng cơ chế tạo áp suất chân không nhanh trong khoang miệng.",
+      "en": "Specialized feeding habits targeting Giun đất nhỏ, Ấu trùng muỗi."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài lưỡng cư kỳ lạ giữ nguyên hình thái ấu trùng suốt đời (hiện tượng neoteny) với 6 chiếc mang ngoài xòe rộng như cánh hoa màu hồng cùng năng lực tái sinh chi hoàn hảo phi thường.",
+      "en": "A fascinating neotenic salamander that retains its larval characteristics throughout adulthood, featuring six feathery external gills and unprecedented biological limb regeneration abilities."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "egg",
+        "name": {
+          "vi": "Trứng",
+          "en": "Egg"
+        },
+        "description": {
+          "vi": "Trứng bám thành chùm vào rễ cây thủy sinh.",
+          "en": "Eggs attached in gelatinous clusters to aquatic vegetation."
+        },
+        "durationDays": [
+          0,
+          15
+        ]
+      },
+      {
+        "key": "larva",
+        "name": {
+          "vi": "Ấu trùng mang ngoài",
+          "en": "Larva"
+        },
+        "description": {
+          "vi": "Nở ra bơi lội tự do và mọc dần 4 chi.",
+          "en": "Free-swimming larva developing limb buds and gills."
+        },
+        "durationDays": [
+          15,
+          180
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành vĩnh viễn ở trạng thái ấu trùng",
+          "en": "Neotenic Adult"
+        },
+        "description": {
+          "vi": "Thành thục sinh dục dưới nước mà không biến thái thành cá thể trên cạn.",
+          "en": "Sexually mature aquatic adult without terrestrial metamorphosis."
+        },
+        "durationDays": [
+          180,
+          5475
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        15
+      ],
+      "captivity": [
+        15,
+        20
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Ô nhiễm nguồn nước thải Mexico City",
+      "Cá rô phi ngoại lai ăn thịt trứng non",
+      "Cạn kiệt nước ngầm"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Axolotl có thể tái sinh hoàn hảo các chi bị đứt, đuôi, một phần của tim, mắt và thậm chí cả các phần của tủy sống và não bộ mà không hề để lại sẹo.",
+      "en": "Axolotls can seamlessly regenerate entire lost limbs, tail, spinal cord, and even parts of their heart and brain without any scar tissue."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Axolotl_ganz.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "LoKiLeCh",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Axolotl_ganz.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Kỳ giông Axolotl (Ambystoma mexicanum) trong tự nhiên",
+          "en": "Wild Axolotl (Ambystoma mexicanum) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2431985",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

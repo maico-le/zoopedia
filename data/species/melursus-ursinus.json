@@ -1,0 +1,274 @@
+{
+  "id": "melursus-ursinus",
+  "taxonKey": {
+    "gbif": 2433433,
+    "col": null,
+    "wikidata": "Q184980",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Melursus ursinus",
+    "authorship": "(Shaw, 1791)",
+    "en": [
+      "Sloth Bear",
+      "Labiated Bear"
+    ],
+    "vi": [
+      "Gấu lợn",
+      "Gấu lười Ấn Độ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Melursus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      140,
+      180
+    ],
+    "weightKg": [
+      55,
+      130
+    ],
+    "description": {
+      "vi": "Loài gấu Nam Á có chiếc môi dẻo không có răng cửa giữa và mũi có thể đóng kín, cho phép hút tổ mối với tiếng ồn vang xa hàng trăm mét.",
+      "en": "A myrmecophagous bear native to South Asia with protruding flexible lips, missing upper middle incisors, and nostrils that close to vacuum up termites."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng khô nhiệt đới Ấn Độ",
+      "Vùng cây bụi gò đồi đá"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng khô nhiệt đới Ấn Độ, Vùng cây bụi gò đồi đá.",
+      "en": "Characteristic habitat spans Rừng khô nhiệt đới Ấn Độ, Vùng cây bụi gò đồi đá."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "IN",
+      "LK",
+      "NP",
+      "BT"
+    ],
+    "text": {
+      "vi": "Tiểu lục địa Ấn Độ, Sri Lanka, Nepal và Bhutan.",
+      "en": "Forested and scrub habitats across the Indian subcontinent and Sri Lanka."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433433"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [
+      "Mối đất",
+      "Kiến rừng",
+      "Mật ong",
+      "Quả sung rừng",
+      "Trái cây mọng"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng vuốt cong quặp xới tung tổ mối đất rồi áp sát mõm hút sạch ấu trùng như máy hút bụi.",
+      "en": "Specialized feeding habits targeting Mối đất, Kiến rừng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài gấu Nam Á có chiếc môi dẻo không có răng cửa giữa và mũi có thể đóng kín, cho phép hút tổ mối với tiếng ồn vang xa hàng trăm mét.",
+      "en": "A myrmecophagous bear native to South Asia with protruding flexible lips, missing upper middle incisors, and nostrils that close to vacuum up termites."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Gấu con",
+          "en": "Cub"
+        },
+        "description": {
+          "vi": "Đặc biệt thường cưỡi trên lưng mẹ khi di chuyển kiếm ăn.",
+          "en": "Famously rides on mother's back during daily foraging trips."
+        },
+        "durationDays": [
+          0,
+          365
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập đào bới gò mối đá cứng bằng móng vuốt.",
+          "en": "Hones claw power digging through cement-like termite mounds."
+        },
+        "durationDays": [
+          365,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bảo vệ lãnh thổ hung dữ trước cả hổ và báo hoa mai.",
+          "en": "Fierce adult standing ground against tigers and leopards."
+        },
+        "durationDays": [
+          1095,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        20
+      ],
+      "captivity": [
+        25,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Xung đột với cộng đồng địa phương",
+      "Mất sinh cảnh rừng nhiệt đới khô"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Tiếng hút mối và kiến của gấu lợn mạnh đến mức có thể nghe thấy rõ ràng từ khoảng cách xa hơn 100 mét trong rừng đêm.",
+      "en": "The vacuum sound produced by a feeding sloth bear inhaling termites can be heard over 100 meters away."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ursus-arctos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Ursidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sloth_Bear_in_Karnataka.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Dilan Dharmasena",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sloth_Bear_in_Karnataka.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Gấu lợn (Melursus ursinus) trong tự nhiên",
+          "en": "Wild Sloth Bear (Melursus ursinus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433433",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "id": "pterois-volitans",
+  "taxonKey": {
+    "gbif": 2334407,
+    "col": null,
+    "wikidata": "Q503482",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Pterois volitans",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Red Lionfish",
+      "Zebrafish",
+      "Firefish"
+    ],
+    "vi": [
+      "Cá sư tử",
+      "Cá mao tiên",
+      "Cá hổ rạn san hô"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Actinopterygii",
+    "order": "Scorpaeniformes",
+    "family": "Scorpaenidae",
+    "genus": "Pterois",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      30,
+      45
+    ],
+    "weightKg": [
+      0.8,
+      1.3
+    ],
+    "description": {
+      "vi": "Vẻ đẹp lộng lẫy và ma mị của rạn san hô với những dải vây tia xòe rộng như cánh quạt mang gai nhọn chứa nọc độc thần kinh gây đau đớn dữ dội.",
+      "en": "A strikingly ornate reef predator adorned with bold zebra stripes and billowing fan-like fins equipped with venomous spines delivering excruciating stings."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rạn san hô nhiệt đới nông",
+      "Bãi đá ngầm đầm phá"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rạn san hô nhiệt đới nông, Bãi đá ngầm đầm phá.",
+      "en": "Characteristic habitat spans Rạn san hô nhiệt đới nông, Bãi đá ngầm đầm phá."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "ID",
+      "PH",
+      "AU",
+      "US",
+      "BS"
+    ],
+    "text": {
+      "vi": "Bản địa vùng Ấn Độ Dương - Thái Bình Dương (có nhiều tại biển Việt Nam); xâm lấn mạnh tại vùng biển Caribbe.",
+      "en": "Native to the Indo-Pacific; invasive across the Caribbean and Atlantic."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2334407"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá rạn nhỏ",
+      "Tôm con",
+      "Cua nhỏ",
+      "Mực con"
+    ],
+    "feedingBehavior": {
+      "vi": "Dồn con mồi vào góc san hô bằng đôi vây ngực mở rộng rồi đớp trọn vào miệng chỉ trong vài mili-giây.",
+      "en": "Specialized feeding habits targeting Cá rạn nhỏ, Tôm con."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Vẻ đẹp lộng lẫy và ma mị của rạn san hô với những dải vây tia xòe rộng như cánh quạt mang gai nhọn chứa nọc độc thần kinh gây đau đớn dữ dội.",
+      "en": "A strikingly ornate reef predator adorned with bold zebra stripes and billowing fan-like fins equipped with venomous spines delivering excruciating stings."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "larva",
+        "name": {
+          "vi": "Ấu trùng nổi",
+          "en": "Larva"
+        },
+        "description": {
+          "vi": "Trôi dạt theo các dòng hải lưu rạn san hô.",
+          "en": "Planktonic larvae carried far by ocean drift currents."
+        },
+        "durationDays": [
+          0,
+          35
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Định cư dưới các hốc san hô sừng và mọc gai độc.",
+          "en": "Settles into reef crevices developing venomous fin spines."
+        },
+        "durationDays": [
+          35,
+          365
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bơi lơ lửng tự tin giữa rạn san hô mà không sợ kẻ thù.",
+          "en": "Fearless apex reef grazer with few natural predators."
+        },
+        "durationDays": [
+          365,
+          3650
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        15
+      ],
+      "captivity": [
+        12,
+        16
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Đánh bắt làm cá cảnh thủy sinh"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá sư tử có thể mở rộng dạ dày của mình lên gấp 30 lần kích thước bình thường để nuốt chửng những con cá dài bằng nửa thân hình của nó.",
+      "en": "A lionfish can expand its stomach up to 30 times its resting size to consume prey over half its own length."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pterois_volitans_Manado-e_edit.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Jens Petersen",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pterois_volitans_Manado-e_edit.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá sư tử (Pterois volitans) trong tự nhiên",
+          "en": "Wild Red Lionfish (Pterois volitans) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2334407",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

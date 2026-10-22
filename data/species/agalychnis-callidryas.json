@@ -1,0 +1,262 @@
+{
+  "id": "agalychnis-callidryas",
+  "taxonKey": {
+    "gbif": 2428014,
+    "col": null,
+    "wikidata": "Q210747",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Agalychnis callidryas",
+    "authorship": "(Cope, 1862)",
+    "en": [
+      "Red-eyed Tree Frog",
+      "Red-eyed Leaf Frog"
+    ],
+    "vi": [
+      "Ếch cây mắt đỏ",
+      "Ếch cây mắt ngọc"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Anura",
+    "family": "Hylidae",
+    "genus": "Agalychnis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      5.0,
+      7.5
+    ],
+    "weightKg": [
+      0.008,
+      0.015
+    ],
+    "description": {
+      "vi": "Biểu tượng sống động của rừng mưa nhiệt đới Trung Mỹ với đôi mắt đỏ rực mở to làm giật mình kẻ săn mồi, hai bên sườn màu xanh lam sọc vàng và các ngón chân màng màu cam tươi.",
+      "en": "An iconic symbol of Neotropical rainforests featuring startling scarlet-red eyes with vertical pupils, bright blue-and-yellow striped flanks, and vivid orange webbed suction toes."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới ẩm thấp Trung Mỹ",
+      "Tán lá cây bụi quanh ao hồ rừng"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới ẩm thấp Trung Mỹ, Tán lá cây bụi quanh ao hồ rừng.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới ẩm thấp Trung Mỹ, Tán lá cây bụi quanh ao hồ rừng."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "CR",
+      "PA",
+      "NI",
+      "HN",
+      "GT",
+      "MX",
+      "CO"
+    ],
+    "text": {
+      "vi": "Vùng rừng mưa nhiệt đới từ miền Nam Mexico qua Trung Mỹ đến bờ biển Colombia.",
+      "en": "Neotropical lowland rainforest canopies throughout Central America."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2428014"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Dế mèn rừng",
+      "Bướm đêm",
+      "Ruồi",
+      "Nhện nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Phóng chiếc lưỡi dài dính chớp nhoáng tóm gọn côn trùng trong đêm tối.",
+      "en": "Specialized feeding habits targeting Dế mèn rừng, Bướm đêm."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Biểu tượng sống động của rừng mưa nhiệt đới Trung Mỹ với đôi mắt đỏ rực mở to làm giật mình kẻ săn mồi, hai bên sườn màu xanh lam sọc vàng và các ngón chân màng màu cam tươi.",
+      "en": "An iconic symbol of Neotropical rainforests featuring startling scarlet-red eyes with vertical pupils, bright blue-and-yellow striped flanks, and vivid orange webbed suction toes."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "egg",
+        "name": {
+          "vi": "Bọc trứng trên lá",
+          "en": "Arboreal Egg Clutch"
+        },
+        "description": {
+          "vi": "Đẻ thành khối thạch bám dưới mặt lá cây chìa ra mặt nước ao.",
+          "en": "Laid in gelatinous clutches attached to leaves overhanging water."
+        },
+        "durationDays": [
+          0,
+          7
+        ]
+      },
+      {
+        "key": "tadpole",
+        "name": {
+          "vi": "Nòng nọc",
+          "en": "Tadpole"
+        },
+        "description": {
+          "vi": "Nở ra rơi thẳng xuống nước ao bơi lội và phát triển chi.",
+          "en": "Hatches and drops directly into water developing limbs."
+        },
+        "durationDays": [
+          7,
+          75
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống trên tán lá cao, dùng tư thế ngủ khép mình ngụy trang tuyệt hảo.",
+          "en": "Sleeps folded flat concealing bright colors until startled."
+        },
+        "durationDays": [
+          75,
+          1825
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        4,
+        5
+      ],
+      "captivity": [
+        5,
+        8
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Dịch nấm Chytrid gây suy giảm lưỡng cư toàn cầu"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Phôi trứng của ếch cây mắt đỏ có khả năng cảm nhận độ rung chuyển của rắn săn mồi đang bò tới và tự động 'kích hoạt nở khẩn cấp' sớm trước thời hạn để rơi ngay xuống nước tẩu thoát.",
+      "en": "Embryos can detect vibrational frequencies of attacking tree snakes and hatch prematurely within seconds to drop to safety."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-eyed_Tree_Frog_Agalychnis_callidryas.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Carey James Balboa",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-eyed_Tree_Frog_Agalychnis_callidryas.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Ếch cây mắt đỏ (Agalychnis callidryas) trong tự nhiên",
+          "en": "Wild Red-eyed Tree Frog (Agalychnis callidryas) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2428014",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

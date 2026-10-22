@@ -1,0 +1,270 @@
+{
+  "id": "pan-paniscus",
+  "taxonKey": {
+    "gbif": 2436444,
+    "col": null,
+    "wikidata": "Q26207",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Pan paniscus",
+    "authorship": "Schwarz, 1929",
+    "en": [
+      "Bonobo",
+      "Pygmy Chimpanzee"
+    ],
+    "vi": [
+      "Vượn người Bonobo",
+      "Tinh tinh lùn",
+      "Bonobo"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Primates",
+    "family": "Hominidae",
+    "genus": "Pan",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      70,
+      83
+    ],
+    "weightKg": [
+      31,
+      45
+    ],
+    "description": {
+      "vi": "Họ hàng linh trưởng gần nhất của loài người (chia sẻ 98.7% DNA). Xã hội Bonobo nổi tiếng với chế độ mẫu hệ hòa bình, giải quyết mọi xung đột bằng sự âu yếm gắn kết.",
+      "en": "Our closest extant primate relative alongside chimpanzees, sharing 98.7% of our DNA. Famous for egalitarian, matriarchal societies where empathy and affection resolve tensions."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới trũng bồn địa sông Congo"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới trũng bồn địa sông Congo.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới trũng bồn địa sông Congo."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "CD"
+    ],
+    "text": {
+      "vi": "Đặc hữu vùng rừng trũng ẩm ướt phía nam sông Congo thuộc Cộng hòa Dân chủ Congo.",
+      "en": "Endemic exclusively to the lowland rainforests south of the Congo River in the DRC."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2436444"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [
+      "Trái cây vả rừng",
+      "Chồi non",
+      "Mật ong",
+      "Côn trùng nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Tìm kiếm trái cây chín trên tán rừng cao và chia sẻ thức ăn hòa nhã với các cá thể khác.",
+      "en": "Specialized feeding habits targeting Trái cây vả rừng, Chồi non."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Họ hàng linh trưởng gần nhất của loài người (chia sẻ 98.7% DNA). Xã hội Bonobo nổi tiếng với chế độ mẫu hệ hòa bình, giải quyết mọi xung đột bằng sự âu yếm gắn kết.",
+      "en": "Our closest extant primate relative alongside chimpanzees, sharing 98.7% of our DNA. Famous for egalitarian, matriarchal societies where empathy and affection resolve tensions."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "infant",
+        "name": {
+          "vi": "Con non",
+          "en": "Infant"
+        },
+        "description": {
+          "vi": "Bám chặt vào bụng mẹ trong 2 năm đầu.",
+          "en": "Clings to mother's belly for nursing up to 2 years."
+        },
+        "durationDays": [
+          0,
+          730
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học các quy tắc gắn kết cộng đồng phức tạp.",
+          "en": "Learns nuanced social behaviors and empathy."
+        },
+        "durationDays": [
+          730,
+          3285
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Tham gia vào mạng lưới liên minh mẫu hệ.",
+          "en": "Participates in female-led social alliances."
+        },
+        "durationDays": [
+          3285,
+          14600
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        35,
+        40
+      ],
+      "captivity": [
+        45,
+        50
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Săn bắt thịt rừng (bushmeat)",
+      "Nội chiến và mất sinh cảnh rừng Congo"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Không giống như tinh tinh thông thường có thể chiến tranh bầy đàn khốc liệt, vượn người Bonobo hầu như chưa từng ghi nhận trường hợp giết chết đồng loại trong tự nhiên.",
+      "en": "Unlike common chimps, wild bonobos have never been documented committing lethal intraspecific warfare."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ailuropoda-melanoleuca.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Hominidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonobo_sitting_on_wood.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Pierre Fidenci",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonobo_sitting_on_wood.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Vượn người Bonobo (Pan paniscus) trong tự nhiên",
+          "en": "Wild Bonobo (Pan paniscus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2436444",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

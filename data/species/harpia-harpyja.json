@@ -1,0 +1,272 @@
+{
+  "id": "harpia-harpyja",
+  "taxonKey": {
+    "gbif": 2480436,
+    "col": null,
+    "wikidata": "Q179854",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Harpia harpyja",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Harpy Eagle",
+      "American Harpy Eagle"
+    ],
+    "vi": [
+      "Đại bàng Harpy",
+      "Đại bàng rừng nhiệt đới Amazon"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Harpia",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      86,
+      107
+    ],
+    "weightKg": [
+      4.0,
+      9.0
+    ],
+    "description": {
+      "vi": "Loài đại bàng săn mồi khổng lồ và hùng mạnh nhất rừng mưa nhiệt đới châu Mỹ. Sở hữu móng vuốt sau to bằng móng vuốt gấu xám, chuyên săn khỉ và lười trên ngọn cây.",
+      "en": "The most powerful raptor found in the Americas. Equipped with rear talons larger than grizzly bear claws, specialized in snatching tree sloths and monkeys from high canopies."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Tầng tán rừng mưa nhiệt đới Amazon",
+      "Rừng trũng ẩm ướt Trung và Nam Mỹ"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Tầng tán rừng mưa nhiệt đới Amazon, Rừng trũng ẩm ướt Trung và Nam Mỹ.",
+      "en": "Characteristic habitat spans Tầng tán rừng mưa nhiệt đới Amazon, Rừng trũng ẩm ướt Trung và Nam Mỹ."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "BR",
+      "CO",
+      "PE",
+      "PA",
+      "VE",
+      "EC"
+    ],
+    "text": {
+      "vi": "Lưu vực rừng nhiệt đới Amazon và Trung Mỹ từ Panama xuống Brazil.",
+      "en": "Neotropical lowland rainforests across Central and South America."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2480436"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Con lười ba ngón",
+      "Khỉ rú",
+      "Chồn hương Nam Mỹ",
+      "Trăn Nam Mỹ non"
+    ],
+    "feedingBehavior": {
+      "vi": "Bay luồn lách qua tán rừng dày đặc với sải cánh rộng 2 mét rồi quắp lấy con mồi bằng lực siết chân chết chóc.",
+      "en": "Specialized feeding habits targeting Con lười ba ngón, Khỉ rú."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài đại bàng săn mồi khổng lồ và hùng mạnh nhất rừng mưa nhiệt đới châu Mỹ. Sở hữu móng vuốt sau to bằng móng vuốt gấu xám, chuyên săn khỉ và lười trên ngọn cây.",
+      "en": "The most powerful raptor found in the Americas. Equipped with rear talons larger than grizzly bear claws, specialized in snatching tree sloths and monkeys from high canopies."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "nestling",
+        "name": {
+          "vi": "Chim non",
+          "en": "Nestling"
+        },
+        "description": {
+          "vi": "Nở trong tổ khổng lồ trên ngọn cây gạo cổ thụ.",
+          "en": "Raised in massive stick nests atop towering silk-cotton trees."
+        },
+        "durationDays": [
+          0,
+          160
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Vẫn phụ thuộc chim bố mẹ tiếp tế mồi tới gần 2 năm.",
+          "en": "Dependent on parents for prey delivery for nearly 2 years."
+        },
+        "durationDays": [
+          160,
+          1460
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chúa tể bầu trời tầng tán rừng Amazon, sống một vợ một chồng trọn đời.",
+          "en": "Apex canopy aerial apex predator with lifelong pair bonds."
+        },
+        "durationDays": [
+          1460,
+          10950
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        25,
+        35
+      ],
+      "captivity": [
+        35,
+        40
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mất rừng Amazon do khai hoang và cháy rừng",
+      "Bị bắn hạ do kích thước quá lớn"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Móng vuốt của đại bàng Harpy có thể dài tới 13cm và tạo ra lực siết ép lên tới hơn 530 psi, đủ sức bóp vỡ sọ con mồi trong tích tắc.",
+      "en": "The harpy eagle's talons exert over 530 psi of crushing pressure, sufficient to instantly crush bone and skull."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aquila-chrysaetos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Accipitridae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpy_Eagle_head_profile.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Jonathan Wilkins",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpy_Eagle_head_profile.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Đại bàng Harpy (Harpia harpyja) trong tự nhiên",
+          "en": "Wild Harpy Eagle (Harpia harpyja) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2480436",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

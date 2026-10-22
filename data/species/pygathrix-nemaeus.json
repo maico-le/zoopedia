@@ -1,0 +1,275 @@
+{
+  "id": "pygathrix-nemaeus",
+  "taxonKey": {
+    "gbif": 2436528,
+    "col": null,
+    "wikidata": "Q907284",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Pygathrix nemaeus",
+    "authorship": "(Linnaeus, 1771)",
+    "en": [
+      "Red-shanked Douc Langur",
+      "Costumed Ape",
+      "Red-shanked Douc"
+    ],
+    "vi": [
+      "Voọc chà vá chân nâu",
+      "Chà vá chân đỏ",
+      "Nữ hoàng linh trưởng"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Primates",
+    "family": "Cercopithecidae",
+    "genus": "Pygathrix",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      55,
+      76
+    ],
+    "weightKg": [
+      7,
+      11
+    ],
+    "description": {
+      "vi": "Được mệnh danh là 'Nữ hoàng linh trưởng' với bộ lông 5 sắc màu lộng lẫy nhất giới linh trưởng: cẳng chân màu đỏ hạt dẻ, râu quai nón trắng muốt và khuôn mặt vàng cam rực rỡ.",
+      "en": "Hailed as the 'Queen of Primates' due to its extravagantly colorful coat featuring bright red-chestnut shanks, pristine white forearms, and a distinctive golden-orange face."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới bán đảo Sơn Trà",
+      "Rừng bán rụng lá núi đá vôi miền Trung"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới bán đảo Sơn Trà, Rừng bán rụng lá núi đá vôi miền Trung.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới bán đảo Sơn Trà, Rừng bán rụng lá núi đá vôi miền Trung."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "KH"
+    ],
+    "text": {
+      "vi": "Phân bố tại miền Trung Việt Nam (nổi tiếng nhất tại Bán đảo Sơn Trà, Đà Nẵng) và vùng giáp ranh Nam Lào.",
+      "en": "Native to Central Vietnam (famed at the Son Tra Peninsula, Da Nang) and Southern Laos."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2436528"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Lá non cây đa",
+      "Chồi lộc non",
+      "Quả sung rừng",
+      "Hoa cúc dại rừng nhiệt đới"
+    ],
+    "feedingBehavior": {
+      "vi": "Chuyên ăn lá non và chồi cây trên tán cao, dạ dày nhiều ngăn chứa vi khuẩn lên men phân giải chất xơ cellulose.",
+      "en": "Specialized feeding habits targeting Lá non cây đa, Chồi lộc non."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Được mệnh danh là 'Nữ hoàng linh trưởng' với bộ lông 5 sắc màu lộng lẫy nhất giới linh trưởng: cẳng chân màu đỏ hạt dẻ, râu quai nón trắng muốt và khuôn mặt vàng cam rực rỡ.",
+      "en": "Hailed as the 'Queen of Primates' due to its extravagantly colorful coat featuring bright red-chestnut shanks, pristine white forearms, and a distinctive golden-orange face."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "infant",
+        "name": {
+          "vi": "Con non sơ sinh",
+          "en": "Infant"
+        },
+        "description": {
+          "vi": "Voọc con bám chặt vào bụng mẹ khi di chuyển trên tán cây.",
+          "en": "Infant clings securely to mother's belly while navigating tree canopies."
+        },
+        "durationDays": [
+          0,
+          240
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập nhảy chuyền cành và ăn lá non độc lập.",
+          "en": "Practices arboreal acrobatics and establishes leaf selection skills."
+        },
+        "durationDays": [
+          240,
+          1460
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống theo đàn gia đình 4-15 cá thể bảo vệ lãnh thổ tán rừng.",
+          "en": "Forms bonded social troops of 4-15 individuals canopy patrolling."
+        },
+        "durationDays": [
+          1460,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        18,
+        25
+      ],
+      "captivity": [
+        25,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Săn bắt trộm và buôn bán thú cảnh",
+      "Thu hẹp diện tích rừng Sơn Trà do du lịch",
+      "Va chạm giao thông"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bán đảo Sơn Trà (Đà Nẵng) là nơi có mật độ cá thể Voọc chà vá chân nâu cao và dễ quan sát nhất trên toàn thế giới.",
+      "en": "Son Tra Peninsula in Da Nang is recognized globally as the prime sanctuary holding the highest density of wild Red-shanked Doucs."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ailuropoda-melanoleuca.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Primates"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-shanked_douc_langur_(Pygathrix_nemaeus)_in_Son_Tra_Nature_Reserve.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Vyacheslav Argenberg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-shanked_douc_langur_(Pygathrix_nemaeus)_in_Son_Tra_Nature_Reserve.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Voọc chà vá chân nâu (Pygathrix nemaeus) trong tự nhiên",
+          "en": "Wild Red-shanked Douc Langur (Pygathrix nemaeus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2436528",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

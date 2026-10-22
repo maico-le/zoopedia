@@ -1,0 +1,275 @@
+{
+  "id": "sphyrna-mokarran",
+  "taxonKey": {
+    "gbif": 2418797,
+    "col": null,
+    "wikidata": "Q212175",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Sphyrna mokarran",
+    "authorship": "(Rüppell, 1837)",
+    "en": [
+      "Great Hammerhead",
+      "Great Hammerhead Shark"
+    ],
+    "vi": [
+      "Cá mập đầu búa lớn",
+      "Cá nhám đầu búa"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Chondrichthyes",
+    "order": "Carcharhiniformes",
+    "family": "Sphyrnidae",
+    "genus": "Sphyrna",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      350,
+      610
+    ],
+    "weightKg": [
+      230,
+      580
+    ],
+    "description": {
+      "vi": "Loài cá mập đầu búa lớn nhất đại dương. Phần đầu dẹp ngang mở rộng hình búa (cephalofoil) giúp định vị điện trường con mồi cực nhạy và tạo tầm nhìn bao quát 360 độ.",
+      "en": "The largest hammerhead shark species. Its iconic T-shaped head extension (cephalofoil) maximizes electroreceptive coverage and provides full 360-degree stereoscopic binocular vision."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Vùng biển nhiệt đới ven bờ",
+      "Rạn san hô đại dương",
+      "Thềm lục địa ấm"
+    ],
+    "realm": [
+      "marine"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Vùng biển nhiệt đới ven bờ, Rạn san hô đại dương, Thềm lục địa ấm.",
+      "en": "Characteristic habitat spans Vùng biển nhiệt đới ven bờ, Rạn san hô đại dương, Thềm lục địa ấm."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "US",
+      "AU",
+      "BS",
+      "MX",
+      "BR",
+      "ZA",
+      "EG"
+    ],
+    "text": {
+      "vi": "Vùng biển ven bờ và khơi xa của tất cả các đại dương nhiệt đới và cận nhiệt đới trên thế giới.",
+      "en": "Found in warm temperate and tropical waters worldwide along continental shelves."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2418797"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cá đuối gai độc",
+      "Cá mập nhỏ",
+      "Cá xương biển",
+      "Mực nang"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng chiếc đầu búa ghim chặt cá đuối xuống đáy cát rồi cắn xé bằng hàm răng sắc nhọn.",
+      "en": "Specialized feeding habits targeting Cá đuối gai độc, Cá mập nhỏ."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài cá mập đầu búa lớn nhất đại dương. Phần đầu dẹp ngang mở rộng hình búa (cephalofoil) giúp định vị điện trường con mồi cực nhạy và tạo tầm nhìn bao quát 360 độ.",
+      "en": "The largest hammerhead shark species. Its iconic T-shaped head extension (cephalofoil) maximizes electroreceptive coverage and provides full 360-degree stereoscopic binocular vision."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Cá con sơ sinh",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh ra bơi lội ngay trong các vùng rừng ngập mặn cạn ven bờ.",
+          "en": "Born live in shallow coastal nursery bays and mangroves."
+        },
+        "durationDays": [
+          0,
+          365
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Di chuyển ra vùng rạn san hô sâu hơn kiếm ăn.",
+          "en": "Ventures into deeper coral reef waters targeting stingrays."
+        },
+        "durationDays": [
+          365,
+          2920
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Kẻ săn mồi đơn độc uy dũng của đại dương bao la.",
+          "en": "Solitary oceanic apex predator with extensive migratory routes."
+        },
+        "durationDays": [
+          2920,
+          16000
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        30,
+        44
+      ],
+      "captivity": [
+        20,
+        25
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "CR",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Đánh bắt lấy vây cá mập (vi cá)",
+      "Mắc lưới đánh bắt hải sản phụ"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá mập đầu búa lớn dường như miễn nhiễm hoàn toàn với nọc độc cực mạnh từ gai đuôi của cá đuối - món ăn khoái khẩu nhất của chúng.",
+      "en": "Great hammerheads appear completely immune to the venomous stings of stingrays, often found with dozens of embedded barbs in their jaws."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Sphyrnidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_hammerhead_shark_in_Bahamas.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Albert Kok",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_hammerhead_shark_in_Bahamas.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Cá mập đầu búa lớn (Sphyrna mokarran) trong tự nhiên",
+          "en": "Wild Great Hammerhead (Sphyrna mokarran) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2418797",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

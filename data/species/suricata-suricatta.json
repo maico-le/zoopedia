@@ -1,0 +1,276 @@
+{
+  "id": "suricata-suricatta",
+  "taxonKey": {
+    "gbif": 2434280,
+    "col": null,
+    "wikidata": "Q131378",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Suricata suricatta",
+    "authorship": "(Schreber, 1776)",
+    "en": [
+      "Meerkat",
+      "Suricate"
+    ],
+    "vi": [
+      "Chồn Meerkat",
+      "Hồ ly đất Meerkat",
+      "Cầy đất Meerkat"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Herpestidae",
+    "genus": "Suricata",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      24,
+      35
+    ],
+    "weightKg": [
+      0.6,
+      1.0
+    ],
+    "description": {
+      "vi": "Loài thú săn mồi nhỏ bé ngộ nghĩnh của sa mạc châu Phi với tư thế đứng bằng hai chân sau làm lính gác, sở hữu viền mắt đen tựa kính râm giảm chói mặt trời.",
+      "en": "A small, highly cooperative mongoose native to southern African deserts. Famous for its upright sentry lookout stance and dark eye patches that act as natural glare-reducers."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Sa mạc Kalahari",
+      "Đồng cỏ khô cằn bán sa mạc",
+      "Vùng trũng đá cát sa mạc"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Sa mạc Kalahari, Đồng cỏ khô cằn bán sa mạc, Vùng trũng đá cát sa mạc.",
+      "en": "Characteristic habitat spans Sa mạc Kalahari, Đồng cỏ khô cằn bán sa mạc, Vùng trũng đá cát sa mạc."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "ZA",
+      "NA",
+      "BW",
+      "AO"
+    ],
+    "text": {
+      "vi": "Sa mạc Kalahari và vùng đồng cỏ khô cằn ở Nam Phi, Namibia, Botswana và Angola.",
+      "en": "Inhabits the arid open terrain of the Kalahari Desert and southwestern Africa."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434280"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Bọ cạp sa mạc",
+      "Ấu trùng bọ cánh cứng",
+      "Thằn lằn cát",
+      "Nhện độc",
+      "Trứng chim"
+    ],
+    "feedingBehavior": {
+      "vi": "Đào bới cát tìm bọ cạp và côn trùng độc, có khả năng miễn dịch bẩm sinh với nhiều loại nọc độc.",
+      "en": "Specialized feeding habits targeting Bọ cạp sa mạc, Ấu trùng bọ cánh cứng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài thú săn mồi nhỏ bé ngộ nghĩnh của sa mạc châu Phi với tư thế đứng bằng hai chân sau làm lính gác, sở hữu viền mắt đen tựa kính râm giảm chói mặt trời.",
+      "en": "A small, highly cooperative mongoose native to southern African deserts. Famous for its upright sentry lookout stance and dark eye patches that act as natural glare-reducers."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Con non",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Ở trong hang ngầm dưới lòng đất trong 3 tuần đầu.",
+          "en": "Sheltered inside underground burrows for first weeks of life."
+        },
+        "durationDays": [
+          0,
+          45
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Được các con lớn dạy cách vặt ngòi nọc bọ cạp.",
+          "en": "Taught by helper adults how to safely disarm live scorpions."
+        },
+        "durationDays": [
+          45,
+          365
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Luân phiên làm nhiệm vụ lính gác cảnh báo chim săn mồi cho bầy.",
+          "en": "Participates in daily sentry lookout duty protecting the mob."
+        },
+        "durationDays": [
+          365,
+          4380
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        8,
+        12
+      ],
+      "captivity": [
+        12,
+        15
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Hạn hán kéo dài do biến đổi khí hậu",
+      "Bệnh lao lây lan trong đàn"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Chồn Meerkat miễn nhiễm với nọc độc chết người của bọ cạp sa mạc nhờ các thụ thể acetylcholine đặc biệt trong tế bào thần kinh.",
+      "en": "Meerkats possess evolved cellular neurotoxin resistance, allowing them to withstand venomous scorpion stings."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Herpestidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meerkat_(Suricata_suricatta)_Tswalu.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Charles J. Sharp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meerkat_(Suricata_suricatta)_Tswalu.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Chồn Meerkat (Suricata suricatta) trong tự nhiên",
+          "en": "Wild Meerkat (Suricata suricatta) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434280",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

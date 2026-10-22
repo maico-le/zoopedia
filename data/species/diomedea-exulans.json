@@ -1,0 +1,270 @@
+{
+  "id": "diomedea-exulans",
+  "taxonKey": {
+    "gbif": 2481387,
+    "col": null,
+    "wikidata": "Q212170",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Diomedea exulans",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Wandering Albatross",
+      "Snowy Albatross",
+      "White-winged Albatross"
+    ],
+    "vi": [
+      "Hải âu lữ hành",
+      "Hải âu lang thang"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Procellariiformes",
+    "family": "Diomedeidae",
+    "genus": "Diomedea",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      107,
+      135
+    ],
+    "weightKg": [
+      6.0,
+      12.0
+    ],
+    "description": {
+      "vi": "Loài chim có sải cánh lớn nhất còn sống trên hành tinh (lên tới 3.5 mét). Có thể bay lượn hàng ngàn dặm trên các cơn bão gầm rú ở Nam Đại Dương mà hầu như không cần vỗ cánh.",
+      "en": "Possesses the largest wingspan of any living bird, spanning up to 3.5 meters (11.5 ft). Capable of gliding for thousands of nautical miles across stormy Southern Oceans without flapping."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Biển khơi Nam Đại Dương (Roaring Forties)",
+      "Các đảo lộng gió cận Nam Cực"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Biển khơi Nam Đại Dương (Roaring Forties), Các đảo lộng gió cận Nam Cực.",
+      "en": "Characteristic habitat spans Biển khơi Nam Đại Dương (Roaring Forties), Các đảo lộng gió cận Nam Cực."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "AQ",
+      "NZ",
+      "AU",
+      "ZA",
+      "CL"
+    ],
+    "text": {
+      "vi": "Vùng biển Nam Đại Dương bao quanh cực Nam giữa vĩ tuyến 28° và 60° Nam.",
+      "en": "Circumpolar across the Southern Oceans and sub-Antarctic islands."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2481387"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Mực nang đại dương",
+      "Cá biển sâu trồi lên mặt nước",
+      "Xác sinh vật phù du"
+    ],
+    "feedingBehavior": {
+      "vi": "Lướt sát ngọn sóng biển bắt mực và cá trôi nổi ban đêm nhờ khứu giác cực nhạy.",
+      "en": "Specialized feeding habits targeting Mực nang đại dương, Cá biển sâu trồi lên mặt nước."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài chim có sải cánh lớn nhất còn sống trên hành tinh (lên tới 3.5 mét). Có thể bay lượn hàng ngàn dặm trên các cơn bão gầm rú ở Nam Đại Dương mà hầu như không cần vỗ cánh.",
+      "en": "Possesses the largest wingspan of any living bird, spanning up to 3.5 meters (11.5 ft). Capable of gliding for thousands of nautical miles across stormy Southern Oceans without flapping."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "chick",
+        "name": {
+          "vi": "Chim non",
+          "en": "Chick"
+        },
+        "description": {
+          "vi": "Ở trong tổ trên đảo lộng gió suốt gần 10 tháng.",
+          "en": "Fledged slowly over 10 months in windblown island nests."
+        },
+        "durationDays": [
+          0,
+          300
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Bay liên tục trên biển suốt 5-7 năm không đặt chân lên đất liền.",
+          "en": "Spends first 5-7 years continuously at sea without landing."
+        },
+        "durationDays": [
+          300,
+          3650
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống chung thủy suốt đời, cứ 2 năm mới đẻ 1 quả trứng duy nhất.",
+          "en": "Lifelong monogamous bond laying a single egg biennially."
+        },
+        "durationDays": [
+          3650,
+          21900
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        50,
+        60
+      ],
+      "captivity": [
+        55,
+        65
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mắc câu chùm dài trong ngành đánh bắt cá ngừ đại dương"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Nhờ một khớp xương khóa cánh đặc biệt (shoulder-lock), hải âu lữ hành có thể giữ thẳng cánh khi bay lượn mà không tiêu tốn năng lượng cơ bắp, thậm chí có thể vừa ngủ vừa bay.",
+      "en": "A specialized tendon locks their wings open effortlessly, allowing them to dynamic-soar continuously with almost zero metabolic wing-flapping energy."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/aptenodytes-forsteri.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Diomedeidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diomedea_exulans_in_flight.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "JJ Harrison",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Diomedea_exulans_in_flight.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Hải âu lữ hành (Diomedea exulans) trong tự nhiên",
+          "en": "Wild Wandering Albatross (Diomedea exulans) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2481387",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

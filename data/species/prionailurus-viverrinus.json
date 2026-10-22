@@ -1,0 +1,274 @@
+{
+  "id": "prionailurus-viverrinus",
+  "taxonKey": {
+    "gbif": 2435185,
+    "col": null,
+    "wikidata": "Q174987",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Prionailurus viverrinus",
+    "authorship": "(Bennett, 1833)",
+    "en": [
+      "Fishing Cat",
+      "Fish Cat"
+    ],
+    "vi": [
+      "Mèo cá",
+      "Mèo đầm lầy"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Prionailurus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      65,
+      85
+    ],
+    "weightKg": [
+      6,
+      14
+    ],
+    "description": {
+      "vi": "Loài mèo hoang dã có tài bơi lội siêu hạng với màng bơi giữa các ngón chân và lớp lông kép chống thấm nước, chuyên lặn bắt cá dưới đầm lầy.",
+      "en": "A medium-sized wild cat exquisitely adapted to wetland habitats with webbed paws and water-resistant double-layered fur, specialized in diving to catch fish."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng ngập mặn Đồng bằng sông Cửu Long",
+      "Đầm lầy nước ngọt trũng nhiệt đới"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng ngập mặn Đồng bằng sông Cửu Long, Đầm lầy nước ngọt trũng nhiệt đới.",
+      "en": "Characteristic habitat spans Rừng ngập mặn Đồng bằng sông Cửu Long, Đầm lầy nước ngọt trũng nhiệt đới."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "TH",
+      "IN",
+      "LK",
+      "KH",
+      "MM"
+    ],
+    "text": {
+      "vi": "Nam Á và Đông Nam Á; ở Việt Nam phân bố tại các vùng đất ngập nước miền Tây Nam Bộ.",
+      "en": "Wetlands, marshes, and mangrove forests across South and Southeast Asia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2435185"
+  },
+  "diet": {
+    "type": "piscivore",
+    "preyOrFood": [
+      "Cá lóc đồng",
+      "Cá trê",
+      "Cua đồng",
+      "Ếch nhái"
+    ],
+    "feedingBehavior": {
+      "vi": "Gõ nhẹ mặt nước giả làm côn trùng thu hút cá rồi lao mình xuống nước vồ lấy cá.",
+      "en": "Specialized feeding habits targeting Cá lóc đồng, Cá trê."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài mèo hoang dã có tài bơi lội siêu hạng với màng bơi giữa các ngón chân và lớp lông kép chống thấm nước, chuyên lặn bắt cá dưới đầm lầy.",
+      "en": "A medium-sized wild cat exquisitely adapted to wetland habitats with webbed paws and water-resistant double-layered fur, specialized in diving to catch fish."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "kitten",
+        "name": {
+          "vi": "Mèo con",
+          "en": "Kitten"
+        },
+        "description": {
+          "vi": "Tập chơi với nước từ khi mới được 1 tháng tuổi.",
+          "en": "Plays with water as early as one month of age."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Thành thạo kỹ năng lặn bắt cá dưới nước sâu.",
+          "en": "Masters diving techniques catching live prey underwater."
+        },
+        "durationDays": [
+          90,
+          450
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Chiếm giữ vùng bãi bồi sậy ven sông độc lập.",
+          "en": "Solitary adult patrolling reed bed riverbanks."
+        },
+        "durationDays": [
+          450,
+          4380
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        12
+      ],
+      "captivity": [
+        12,
+        15
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Khai hoang đất ngập nước làm ao tôm cá"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Móng vuốt của mèo cá không thể thu hoàn toàn vào trong bao đệm chân, giúp chúng tạo độ bám vững chắc trên bờ bùn lầy trơn trượt.",
+      "en": "The claws of a fishing cat are semi-retractable, maintaining a permanent grip on slippery mud banks."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/panthera-leo.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Felidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prionailurus_viverrinus_01.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Patrick Peeters",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Prionailurus_viverrinus_01.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Mèo cá (Prionailurus viverrinus) trong tự nhiên",
+          "en": "Wild Fishing Cat (Prionailurus viverrinus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2435185",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

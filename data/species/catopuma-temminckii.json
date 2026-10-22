@@ -1,0 +1,280 @@
+{
+  "id": "catopuma-temminckii",
+  "taxonKey": {
+    "gbif": 2435182,
+    "col": null,
+    "wikidata": "Q192770",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Catopuma temminckii",
+    "authorship": "(Vigors & Horsfield, 1827)",
+    "en": [
+      "Asian Golden Cat",
+      "Temminck's Golden Cat"
+    ],
+    "vi": [
+      "Báo lửa",
+      "Beo vàng Á châu"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Catopuma",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      66,
+      105
+    ],
+    "weightKg": [
+      9,
+      16
+    ],
+    "description": {
+      "vi": "Mãnh thú họ Mèo bí ẩn của rừng Đông Nam Á với màu lông thay đổi linh hoạt từ đỏ hung rực rỡ, nâu đồng đến xám tro, có hai sọc trắng viền đen sắc sảo kéo từ mắt lên trán.",
+      "en": "A medium-sized wild cat of Asian forests exhibiting striking polymorphic coat colors ranging from fiery golden-red to melanistic black, adorned with distinctive facial stripes."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới thường xanh",
+      "Rừng hỗn giao lá rộng vùng núi cao"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mưa nhiệt đới thường xanh, Rừng hỗn giao lá rộng vùng núi cao.",
+      "en": "Characteristic habitat spans Rừng mưa nhiệt đới thường xanh, Rừng hỗn giao lá rộng vùng núi cao."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "KH",
+      "TH",
+      "MM",
+      "IN",
+      "MY",
+      "ID",
+      "CN"
+    ],
+    "text": {
+      "vi": "Phân bố tại Đông Nam Á, miền Nam Trung Quốc và vùng chân núi Himalaya.",
+      "en": "Found throughout Southeast Asia, Southern China, and the foothills of the Himalayas."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2435182"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Gà rừng",
+      "Hoẵng non",
+      "Chuột núi",
+      "Thỏ rừng",
+      "Thằn lằn"
+    ],
+    "feedingBehavior": {
+      "vi": "Săn mồi rình rập nhanh nhẹn cả trên mặt đất lẫn cành cây thấp trong rừng rậm ban đêm.",
+      "en": "Specialized feeding habits targeting Gà rừng, Hoẵng non."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Mãnh thú họ Mèo bí ẩn của rừng Đông Nam Á với màu lông thay đổi linh hoạt từ đỏ hung rực rỡ, nâu đồng đến xám tro, có hai sọc trắng viền đen sắc sảo kéo từ mắt lên trán.",
+      "en": "A medium-sized wild cat of Asian forests exhibiting striking polymorphic coat colors ranging from fiery golden-red to melanistic black, adorned with distinctive facial stripes."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "kitten",
+        "name": {
+          "vi": "Mèo con",
+          "en": "Kitten"
+        },
+        "description": {
+          "vi": "Sinh ra trong bọng cây kín đáo, bú mẹ hoàn toàn.",
+          "en": "Born altricial in hollow tree hollows or rock dens."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Học cách phục kích chuột rừng và gà lôi.",
+          "en": "Hones stalking tactics on rodents and ground birds."
+        },
+        "durationDays": [
+          90,
+          550
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống đơn độc, tuần tra bảo vệ lãnh thổ săn mồi rộng lớn.",
+          "en": "Solitary apex stalker patrolling expansive jungle territory."
+        },
+        "durationDays": [
+          550,
+          6570
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        12,
+        17
+      ],
+      "captivity": [
+        18,
+        20
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Mắc bẫy săn thú rừng",
+      "Mất môi trường sống rừng tự nhiên",
+      "Buôn bán da lông bất hợp pháp"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Trong thần thoại của một số dân tộc miền núi, lông của Báo lửa được tin là có khả năng xua đuổi hổ dữ rừng sâu.",
+      "en": "Local folklore in some mountain communities attributes protective powers to the cat's fur, believing it wards off tigers."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/panthera-leo.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Felidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catopuma_temminckii_01.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Karen Stout",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catopuma_temminckii_01.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Báo lửa (Catopuma temminckii) trong tự nhiên",
+          "en": "Wild Asian Golden Cat (Catopuma temminckii) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2435182",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

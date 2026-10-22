@@ -1,0 +1,280 @@
+{
+  "id": "bos-gaurus",
+  "taxonKey": {
+    "gbif": 2441026,
+    "col": null,
+    "wikidata": "Q179617",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Bos gaurus",
+    "authorship": "Smith, 1827",
+    "en": [
+      "Gaur",
+      "Indian Bison"
+    ],
+    "vi": [
+      "Bò tót",
+      "Bò tót Đông Dương",
+      "Gaur"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae",
+    "genus": "Bos",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      250,
+      330
+    ],
+    "weightKg": [
+      650,
+      1500
+    ],
+    "description": {
+      "vi": "Loài động vật móng guốc hoang dã khổng lồ lớn nhất họ Trâu bò trên thế giới. Con đực sở hữu khối cơ bắp cuồn cuộn màu đen tuyền cùng 4 cẳng chân trắng muốt như đi tất.",
+      "en": "The largest extant bovine species in the world. Massive muscular build with dark brown-to-black coat and distinctive white stockings on all four legs."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng khộp rụng lá Tây Nguyên",
+      "Đồng cỏ xavan nhiệt đới ẩm",
+      "Rừng bán thường xanh Cát Tiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng khộp rụng lá Tây Nguyên, Đồng cỏ xavan nhiệt đới ẩm, Rừng bán thường xanh Cát Tiên.",
+      "en": "Characteristic habitat spans Rừng khộp rụng lá Tây Nguyên, Đồng cỏ xavan nhiệt đới ẩm, Rừng bán thường xanh Cát Tiên."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "KH",
+      "TH",
+      "MM",
+      "IN",
+      "NP",
+      "MY"
+    ],
+    "text": {
+      "vi": "Tại Việt Nam phân bố chủ yếu ở Vườn Quốc gia Cát Tiên, Yok Đôn, Chư Mom Ray và vùng rừng Tây Nguyên.",
+      "en": "Inhabits protected evergreen and deciduous forests across South and Southeast Asia, including Cat Tien National Park in Vietnam."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441026"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cỏ voi tự nhiên",
+      "Chồi tre nứa",
+      "Lá cây họ Đậu rừng",
+      "Vỏ cây rừng ẩm"
+    ],
+    "feedingBehavior": {
+      "vi": "Gặm cỏ và chồi non theo đàn lớn vào rạng sáng và hoàng hôn mát mẻ.",
+      "en": "Specialized feeding habits targeting Cỏ voi tự nhiên, Chồi tre nứa."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài động vật móng guốc hoang dã khổng lồ lớn nhất họ Trâu bò trên thế giới. Con đực sở hữu khối cơ bắp cuồn cuộn màu đen tuyền cùng 4 cẳng chân trắng muốt như đi tất.",
+      "en": "The largest extant bovine species in the world. Massive muscular build with dark brown-to-black coat and distinctive white stockings on all four legs."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Bê non",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Bê non có màu nâu vàng nhạt để ngụy trang.",
+          "en": "Calf born with light golden-brown coat for savanna camouflage."
+        },
+        "durationDays": [
+          0,
+          240
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Phát triển gờ vai nhô cao và sừng cong hình bán nguyệt.",
+          "en": "Develops characteristic muscular dorsal ridge and horns."
+        },
+        "durationDays": [
+          240,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Bò đực đầu đàn to lớn thống lĩnh đàn cái.",
+          "en": "Massive dominant bulls leading matriarchal herds."
+        },
+        "durationDays": [
+          1095,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        18,
+        25
+      ],
+      "captivity": [
+        25,
+        30
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Xung đột ranh giới với đất nông nghiệp",
+      "Săn bắn trộm lấy đầu sừng",
+      "Dịch bệnh lây từ gia súc nuôi"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bò tót có sức mạnh áp đảo đến mức chỉ có hổ Bengal trưởng thành cỡ đại mới dám liều lĩnh săn đuổi.",
+      "en": "Due to their colossal strength and mass, only the largest male Bengal tigers ever dare attempt to hunt adult gaurs."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/equus-caballus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Bovidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bos_gaurus_Kanha.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Dey.sandip",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bos_gaurus_Kanha.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Bò tót (Bos gaurus) trong tự nhiên",
+          "en": "Wild Gaur (Bos gaurus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441026",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

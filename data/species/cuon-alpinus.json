@@ -1,0 +1,281 @@
+{
+  "id": "cuon-alpinus",
+  "taxonKey": {
+    "gbif": 2434538,
+    "col": null,
+    "wikidata": "Q132585",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Cuon alpinus",
+    "authorship": "(Pallas, 1811)",
+    "en": [
+      "Dhole",
+      "Asiatic Wild Dog",
+      "Red Dhole"
+    ],
+    "vi": [
+      "Sói đỏ",
+      "Chó dại châu Á",
+      "Chó sói lửa"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Canidae",
+    "genus": "Cuon",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      90,
+      115
+    ],
+    "weightKg": [
+      12,
+      21
+    ],
+    "description": {
+      "vi": "Kẻ săn mồi bầy đàn đỉnh cao của núi rừng châu Á. Bộ lông màu đỏ rỉ sắt đặc trưng, đuôi xù đen nhánh và khả năng phối hợp săn mồi bằng tiếng huýt gió kỳ lạ.",
+      "en": "A highly social pack-hunting canid native to Central, South, and Southeast Asia. Features a striking rusty-red coat, bushy black tail, and unique whistling calls."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng hỗn giao rụng lá nhiệt đới",
+      "Rừng thường xanh núi cao",
+      "Rừng tre nứa rậm rạp"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng hỗn giao rụng lá nhiệt đới, Rừng thường xanh núi cao, Rừng tre nứa rậm rạp.",
+      "en": "Characteristic habitat spans Rừng hỗn giao rụng lá nhiệt đới, Rừng thường xanh núi cao, Rừng tre nứa rậm rạp."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "KH",
+      "TH",
+      "IN",
+      "ID",
+      "CN",
+      "BT"
+    ],
+    "text": {
+      "vi": "Phân bố rải rác từ miền Trung Việt Nam, Lào sang Ấn Độ, Tây Tạng và quần đảo Sunda.",
+      "en": "Fragmented populations across South and Southeast Asia, including Vietnam's central highlands."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2434538"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Nai rừng",
+      "Hoẵng",
+      "Lợn rừng",
+      "Thỏ rừng"
+    ],
+    "feedingBehavior": {
+      "vi": "Săn mồi theo bầy đàn 5-15 con bền bỉ rượt đuổi con mồi lớn đến khi kiệt sức.",
+      "en": "Specialized feeding habits targeting Nai rừng, Hoẵng."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Kẻ săn mồi bầy đàn đỉnh cao của núi rừng châu Á. Bộ lông màu đỏ rỉ sắt đặc trưng, đuôi xù đen nhánh và khả năng phối hợp săn mồi bằng tiếng huýt gió kỳ lạ.",
+      "en": "A highly social pack-hunting canid native to Central, South, and Southeast Asia. Features a striking rusty-red coat, bushy black tail, and unique whistling calls."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Sói con",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang đá, được cả bầy bảo bọc và chia thức ăn.",
+          "en": "Pups raised cooperatively inside communal rock dens."
+        },
+        "durationDays": [
+          0,
+          70
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tham gia đàn săn mồi học chiến thuật vây bọc.",
+          "en": "Joins pack hunts to master coordinated flank attacks."
+        },
+        "durationDays": [
+          70,
+          450
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Thành viên trung thành của bầy đàn kỷ luật cao.",
+          "en": "Highly cooperative adult sustaining pack cohesion."
+        },
+        "durationDays": [
+          450,
+          4380
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        13
+      ],
+      "captivity": [
+        14,
+        16
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Cạn kiệt con mồi móng guốc",
+      "Mất sinh cảnh rừng nguyên sinh",
+      "Bệnh dịch truyền nhiễm từ chó nhà"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sói đỏ không sủa hay hú như sói xám mà giao tiếp bằng chuỗi âm thanh huýt gió líu lo như tiếng chim hót để điều phối vị trí trong rừng dày.",
+      "en": "Dholes communicate not by howling, but through high-pitched whistles and chirps that carry clearly across dense undergrowth."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/canis-lupus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Canidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuon_alpinus_Nagarhole.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Srikanth Parthasarathy",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuon_alpinus_Nagarhole.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Sói đỏ (Cuon alpinus) trong tự nhiên",
+          "en": "Wild Dhole (Cuon alpinus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2434538",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

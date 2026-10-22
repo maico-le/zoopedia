@@ -1,0 +1,275 @@
+{
+  "id": "tremarctos-ornatus",
+  "taxonKey": {
+    "gbif": 2433502,
+    "col": null,
+    "wikidata": "Q131233",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Tremarctos ornatus",
+    "authorship": "(F. G. Cuvier, 1825)",
+    "en": [
+      "Spectacled Bear",
+      "Andean Bear"
+    ],
+    "vi": [
+      "Gấu Andes",
+      "Gấu bốn mắt",
+      "Gấu mặt kính"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Tremarctos",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      120,
+      200
+    ],
+    "weightKg": [
+      60,
+      175
+    ],
+    "description": {
+      "vi": "Loài gấu bản địa duy nhất còn tồn tại của toàn bộ Nam Mỹ. Nổi bật với những vòng khoang lông màu vàng nhạt quanh mắt trông như đeo kính cận.",
+      "en": "The only extant bear species native to South America, instantly recognizable by distinctive yellowish-white facial markings resembling eyeglasses."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mây mù ẩm ướt dãy Andes",
+      "Đồng cỏ núi cao Paramo"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Rừng mây mù ẩm ướt dãy Andes, Đồng cỏ núi cao Paramo.",
+      "en": "Characteristic habitat spans Rừng mây mù ẩm ướt dãy Andes, Đồng cỏ núi cao Paramo."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "PE",
+      "CO",
+      "EC",
+      "BO",
+      "VE"
+    ],
+    "text": {
+      "vi": "Dọc theo sườn dốc dãy núi Andes từ Venezuela qua Colombia, Ecuador, Peru đến Bolivia.",
+      "en": "High-altitude cloud forests and páramo along the Andean mountain chain."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433502"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [
+      "Cây họ Dứa dại Andes (Bromeliad)",
+      "Mầm cọ non",
+      "Trái cây rừng mây",
+      "Mật ong"
+    ],
+    "feedingBehavior": {
+      "vi": "Leo trèo lên các cây cao làm sàn nghỉ bằng cành lá và ăn lõi mềm của các loài cây họ Dứa.",
+      "en": "Specialized feeding habits targeting Cây họ Dứa dại Andes (Bromeliad), Mầm cọ non."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài gấu bản địa duy nhất còn tồn tại của toàn bộ Nam Mỹ. Nổi bật với những vòng khoang lông màu vàng nhạt quanh mắt trông như đeo kính cận.",
+      "en": "The only extant bear species native to South America, instantly recognizable by distinctive yellowish-white facial markings resembling eyeglasses."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Gấu con",
+          "en": "Cub"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang đá kín trên vách núi cao.",
+          "en": "Born inside cliff caves protected from Andean winds."
+        },
+        "durationDays": [
+          0,
+          180
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Thành thạo kỹ năng leo trèo trên cây rừng sương mù.",
+          "en": "Masters canopy foraging in dense cloud forest trees."
+        },
+        "durationDays": [
+          180,
+          1095
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống đơn độc, xây tổ sàn cành cây để ngủ.",
+          "en": "Solitary adult constructing wooden sleeping platforms in trees."
+        },
+        "durationDays": [
+          1095,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        20,
+        25
+      ],
+      "captivity": [
+        30,
+        35
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Xung đột với người chăn thả gia súc",
+      "Phân mảnh sinh cảnh do làm đường đèo"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Nhân vật chú gấu Paddington nổi tiếng trong văn học thiếu nhi thế giới được sáng tạo dựa trên loài Gấu Andes này.",
+      "en": "The beloved literary character Paddington Bear is officially an Andean Spectacled Bear from 'Darkest Peru'."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ursus-arctos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Ursidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tremarctos_ornatus_19.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Ltshears",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tremarctos_ornatus_19.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Gấu Andes (Tremarctos ornatus) trong tự nhiên",
+          "en": "Wild Spectacled Bear (Tremarctos ornatus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433502",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

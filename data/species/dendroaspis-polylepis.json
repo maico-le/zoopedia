@@ -1,0 +1,273 @@
+{
+  "id": "dendroaspis-polylepis",
+  "taxonKey": {
+    "gbif": 2470659,
+    "col": null,
+    "wikidata": "Q174950",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Dendroaspis polylepis",
+    "authorship": "Günther, 1864",
+    "en": [
+      "Black Mamba",
+      "Black-mouthed Mamba"
+    ],
+    "vi": [
+      "Rắn Mamba đen",
+      "Hắc Mamba",
+      "Mamba đen"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Squamata",
+    "family": "Elapidae",
+    "genus": "Dendroaspis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      220,
+      320
+    ],
+    "weightKg": [
+      1.4,
+      2.5
+    ],
+    "description": {
+      "vi": "Loài rắn độc nhanh nhất và đáng sợ nhất châu Phi. Tên gọi không bắt nguồn từ vảy ngoài (thực tế có màu nâu xám) mà từ vòm khoang miệng màu đen tuyền như mực há to đe dọa khi tấn công.",
+      "en": "The fastest venomous snake on land, capable of 16-20 km/h. Named not for its brownish-grey scales, but for the inky jet-black interior of its gaping defensive mouth display."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Xavan khô châu Phi",
+      "Rừng cây bụi đồi đá",
+      "Đồng bằng rậm rạp"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Xavan khô châu Phi, Rừng cây bụi đồi đá, Đồng bằng rậm rạp.",
+      "en": "Characteristic habitat spans Xavan khô châu Phi, Rừng cây bụi đồi đá, Đồng bằng rậm rạp."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "ZA",
+      "KE",
+      "TZ",
+      "ZW",
+      "MZ",
+      "UG"
+    ],
+    "text": {
+      "vi": "Các vùng xavan và rừng cây bụi khắp Đông và Nam Phi.",
+      "en": "Open savannas, rocky hills, and woodlands of sub-Saharan Africa."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2470659"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Chuột chù bụi",
+      "Thỏ rừng nhỏ",
+      "Dơi non",
+      "Chim nhỏ"
+    ],
+    "feedingBehavior": {
+      "vi": "Tung ra những cú cắn chớp nhoáng tiêm nọc độc thần kinh cực mạnh rồi chờ con mồi bất động trong vài phút.",
+      "en": "Specialized feeding habits targeting Chuột chù bụi, Thỏ rừng nhỏ."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài rắn độc nhanh nhất và đáng sợ nhất châu Phi. Tên gọi không bắt nguồn từ vảy ngoài (thực tế có màu nâu xám) mà từ vòm khoang miệng màu đen tuyền như mực há to đe dọa khi tấn công.",
+      "en": "The fastest venomous snake on land, capable of 16-20 km/h. Named not for its brownish-grey scales, but for the inky jet-black interior of its gaping defensive mouth display."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "hatchling",
+        "name": {
+          "vi": "Rắn con",
+          "en": "Hatchling"
+        },
+        "description": {
+          "vi": "Nở ra từ trứng đã có tuyến nọc độc đầy đủ khả năng phòng vệ.",
+          "en": "Hatches equipped with fully functional lethal venom fangs."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tăng trưởng chiều dài nhanh chóng tới 2 mét trong 1 năm.",
+          "en": "Grows rapidly reaching 2 meters within its first year."
+        },
+        "durationDays": [
+          90,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Kẻ săn mồi tốc độ nhanh nhẹn chiếm giữ các hang đá mối.",
+          "en": "Agile, territorial stalker holding permanent rock crevices."
+        },
+        "durationDays": [
+          730,
+          4380
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        11,
+        15
+      ],
+      "captivity": [
+        15,
+        20
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "stable",
+    "threats": [
+      "Xung đột bị con người đập giết do tâm lý sợ hãi"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Chỉ hai giọt nọc độc của rắn Mamba đen là đủ làm ngừng thở một người trưởng thành trong vòng chưa đầy 30 phút nếu không có huyết thanh kháng nọc.",
+      "en": "Just two drops of black mamba neurotoxin can kill an adult human within 30 minutes without anti-venom treatment."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/python-bivittatus.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false,
+      "representativeFor": "Elapidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dendroaspis_polylepis_head.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Tad Arens",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dendroaspis_polylepis_head.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Rắn Mamba đen (Dendroaspis polylepis) trong tự nhiên",
+          "en": "Wild Black Mamba (Dendroaspis polylepis) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2470659",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

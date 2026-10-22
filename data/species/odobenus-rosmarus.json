@@ -1,0 +1,275 @@
+{
+  "id": "odobenus-rosmarus",
+  "taxonKey": {
+    "gbif": 2433544,
+    "col": null,
+    "wikidata": "Q22123",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Odobenus rosmarus",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Walrus",
+      "Atlantic Walrus",
+      "Pacific Walrus"
+    ],
+    "vi": [
+      "Hải mã",
+      "Mã biển",
+      "Hải tượng"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Odobenidae",
+    "genus": "Odobenus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": [
+      260,
+      360
+    ],
+    "weightKg": [
+      800,
+      1700
+    ],
+    "description": {
+      "vi": "Loài động vật chân màng khổng lồ vùng cực với cặp ngà dài tới 1 mét dùng để trèo lên băng tuyết và râu ria dày đặc cảm ứng động vật thân mềm đáy biển.",
+      "en": "A colossal Arctic pinniped easily identified by its massive ivory tusks up to 1 meter in length, rugged blubbery skin, and sensitive vibrissae whiskers."
+    },
+    "sexualDimorphism": "Có sự khác biệt rõ rệt về kích thước hoặc màu sắc giữa con đực và con cái khi trưởng thành."
+  },
+  "habitat": {
+    "biomes": [
+      "Băng trôi Bắc Băng Dương",
+      "Vùng biển nông ven bờ cực Bắc"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh cảnh đặc trưng thuộc Băng trôi Bắc Băng Dương, Vùng biển nông ven bờ cực Bắc.",
+      "en": "Characteristic habitat spans Băng trôi Bắc Băng Dương, Vùng biển nông ven bờ cực Bắc."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "RU",
+      "US",
+      "CA",
+      "GL",
+      "NO"
+    ],
+    "text": {
+      "vi": "Vùng biển nông và các tảng băng trôi ven bờ quanh Bắc Băng Dương.",
+      "en": "Shallow continental shelves and drifting pack ice in the Arctic Ocean."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433544"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Nghêu sò đáy biển",
+      "Ốc biển",
+      "Cua biển cực",
+      "Giun biển"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng râu ria quét đáy bùn định vị nghêu sò rồi dùng cơ miệng tạo áp suất chân không hút thịt ra khỏi vỏ.",
+      "en": "Specialized feeding habits targeting Nghêu sò đáy biển, Ốc biển."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Loài động vật chân màng khổng lồ vùng cực với cặp ngà dài tới 1 mét dùng để trèo lên băng tuyết và râu ria dày đặc cảm ứng động vật thân mềm đáy biển.",
+      "en": "A colossal Arctic pinniped easily identified by its massive ivory tusks up to 1 meter in length, rugged blubbery skin, and sensitive vibrissae whiskers."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Hải mã con",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Bú mẹ trong nước và leo lên lưng mẹ nghỉ ngơi.",
+          "en": "Nurses at sea and rides on mother's back atop ice floes."
+        },
+        "durationDays": [
+          0,
+          730
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Cặp ngà bắt đầu nhú dài ra khỏi môi trên.",
+          "en": "Ivory tusks erupt through the upper lip."
+        },
+        "durationDays": [
+          730,
+          2555
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Sống thành đàn hàng trăm con nằm sưởi ấm trên bãi đá băng.",
+          "en": "Gathers in massive hauling colonies on rocky shorelines."
+        },
+        "durationDays": [
+          2555,
+          14600
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        30,
+        40
+      ],
+      "captivity": [
+        35,
+        45
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      60,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Con non được bố mẹ chăm sóc, bảo bọc chu đáo trong giai đoạn đầu đời.",
+      "en": "Offspring receive active parental care and provisioning during early developmental phases."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Băng biển tan nhanh do biến đổi khí hậu toàn cầu"
+    ],
+    "assessmentYear": 2023
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Tên khoa học 'Odobenus' có nghĩa là 'kẻ đi bằng răng', bởi hải mã thường dùng cặp ngà cắm chặt vào băng để kéo thân hình nặng cả tấn lên bờ.",
+      "en": "The scientific name Odobenus translates to 'tooth-walker', referring to the way walruses use their tusks to haul their massive bodies onto ice."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Odobenidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Walrus_on_ice_floe.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Joel Garlich-Miller",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walrus_on_ice_floe.jpg?width=1280",
+        "caption": {
+          "vi": "Mẫu vật Hải mã (Odobenus rosmarus) trong tự nhiên",
+          "en": "Wild Walrus (Odobenus rosmarus) in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433544",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Species Survival Commission",
+      "url": "https://www.iucn.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wildlife Database",
+      "url": "https://www.nationalgeographic.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}
