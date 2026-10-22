@@ -196,7 +196,16 @@
     }
   ],
   "media": {
-    "model3d": null,
+    "model3d": {
+      "glb": "models/python-bivittatus.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false
+    },
     "images": [
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Burmese_Python_(13),_NPSPhoto,_R._Cammauf_(9101584016).jpg?width=1280",

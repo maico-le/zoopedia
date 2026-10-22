@@ -195,13 +195,14 @@
   ],
   "media": {
     "model3d": {
-      "glb": "models/vulpes-vulpes.glb",
-      "tier": "B",
-      "license": "CC0 / CC-BY-4.0",
-      "author": "PixelMannen",
-      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
-      "isRepresentative": true,
-      "representativeFor": "Mammalia"
+      "glb": "models/ursus-arctos.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false
     },
     "images": [
       {

@@ -195,7 +195,16 @@
     }
   ],
   "media": {
-    "model3d": null,
+    "model3d": {
+      "glb": "models/crocodylus-siamensis.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false
+    },
     "images": [
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Siamese_Crocodiles_at_Samphran_Elephant_Ground_&_Zoo_(II).jpg?width=1280",

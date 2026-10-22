@@ -200,7 +200,16 @@
     }
   ],
   "media": {
-    "model3d": null,
+    "model3d": {
+      "glb": "models/chelonia-mydas.glb",
+      "tier": "A",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": false
+    },
     "images": [
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg?width=1280",

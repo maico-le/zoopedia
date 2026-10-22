@@ -12,6 +12,8 @@ interface AnimalViewerProps {
   speciesName?: string;
   isRepresentative?: boolean;
   representativeFor?: string | null;
+  className?: string;
+  hideTitleBadge?: boolean;
 }
 
 interface ViewerErrorBoundaryProps {
@@ -56,6 +58,8 @@ export const AnimalViewer: React.FC<AnimalViewerProps> = ({
   speciesName,
   isRepresentative,
   representativeFor,
+  className,
+  hideTitleBadge,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hasWebGL, setHasWebGL] = useState<boolean>(true);
@@ -145,8 +149,10 @@ export const AnimalViewer: React.FC<AnimalViewerProps> = ({
     <div
       ref={containerRef}
       onDoubleClick={handleDoubleClick}
-      className={`relative w-full h-[440px] sm:h-[520px] lg:h-[580px] bg-specimen-dark rounded-3xl overflow-hidden border border-white/10 shadow-specimen transition-all group ${
-        isFullscreen ? 'fixed inset-0 z-50 rounded-none h-screen w-screen border-none' : ''
+      className={`relative overflow-hidden transition-all group ${
+        isFullscreen
+          ? 'fixed inset-0 z-50 rounded-none h-screen w-screen border-none bg-specimen-dark'
+          : className || 'w-full h-[440px] sm:h-[520px] lg:h-[580px] bg-specimen-dark rounded-3xl border border-white/10 shadow-specimen'
       }`}
     >
       {/* Bio-Macro Viewfinder Corner Reticles */}
@@ -156,19 +162,21 @@ export const AnimalViewer: React.FC<AnimalViewerProps> = ({
       <div className="reticle-corner bottom-4 right-4 border-b-2 border-r-2 rounded-br-lg" />
 
       {/* Specimen Identifier Badge */}
-      <div className="absolute top-4 left-6 z-10 pointer-events-none flex flex-col gap-1">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-900/80 backdrop-blur-md border border-white/10 text-xs shadow-lg">
-          <span className="w-2 h-2 rounded-full bg-emerald-400" />
-          <span className="font-serif italic text-emerald-300 font-semibold text-sm">
-            {speciesName || 'Specimen'}
-          </span>
-          {isRepresentative && (
-            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-              ĐẠI DIỆN {representativeFor ? representativeFor.toUpperCase() : 'NHÓM'}
+      {!hideTitleBadge && (
+        <div className="absolute top-4 left-6 z-10 pointer-events-none flex flex-col gap-1">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-900/80 backdrop-blur-md border border-white/10 text-xs shadow-lg">
+            <span className="w-2 h-2 rounded-full bg-emerald-400" />
+            <span className="font-serif italic text-emerald-300 font-semibold text-sm">
+              {speciesName || 'Specimen'}
             </span>
-          )}
+            {isRepresentative && (
+              <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                ĐẠI DIỆN {representativeFor ? representativeFor.toUpperCase() : 'NHÓM'}
+              </span>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* 3D Scene wrapped in ErrorBoundary */}
       <ViewerErrorBoundary

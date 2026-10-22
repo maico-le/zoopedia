@@ -135,6 +135,16 @@ export const SpeciesPage: React.FC = () => {
               🐅 Hổ Bengal (3D Thực)
             </button>
             <button
+              onClick={() => setSelectedModelGlb('models/panthera-leo.glb')}
+              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                selectedModelGlb === 'models/panthera-leo.glb'
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
+                  : 'text-stone-300 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              🦁 Sư tử (3D Thực)
+            </button>
+            <button
               onClick={() => setSelectedModelGlb('models/canis-lupus.glb')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
                 selectedModelGlb === 'models/canis-lupus.glb'
@@ -142,17 +152,7 @@ export const SpeciesPage: React.FC = () => {
                   : 'text-stone-300 hover:text-white hover:bg-white/5'
               }`}
             >
-              🐺 Sói xám (Hoạt họa)
-            </button>
-            <button
-              onClick={() => setSelectedModelGlb('models/equus-caballus.glb')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
-                selectedModelGlb === 'models/equus-caballus.glb'
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              🐎 Ngựa hoang
+              🐺 Sói xám (3D Thực)
             </button>
           </div>
 

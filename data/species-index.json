@@ -387,7 +387,7 @@
     "order": "Psittaciformes",
     "family": "Psittacidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg?width=1280"
   },
@@ -485,8 +485,8 @@
     "order": "Unknown",
     "family": "Crocodylidae",
     "iucn": "EN",
-    "tier": "C",
-    "has3D": false,
+    "tier": "A",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Siamese_Crocodiles_at_Samphran_Elephant_Ground_&_Zoo_(II).jpg?width=1280"
   },
   {
@@ -541,7 +541,7 @@
     "order": "Carnivora",
     "family": "Felidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheetah_(Acinonyx_jubatus)_female_2.jpg?width=1280"
   },
@@ -555,7 +555,7 @@
     "order": "Carnivora",
     "family": "Ursidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Giant_Panda_2004-03-2.jpg?width=1280"
   },
@@ -807,7 +807,7 @@
     "order": "Carnivora",
     "family": "Felidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_in_masai_mara.jpg?width=1280"
   },
@@ -905,7 +905,7 @@
     "order": "Carnivora",
     "family": "Ursidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg?width=1280"
   },
@@ -975,8 +975,8 @@
     "order": "Unknown",
     "family": "Pythonidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "A",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Burmese_Python_(13),_NPSPhoto,_R._Cammauf_(9101584016).jpg?width=1280"
   },
   {
@@ -1003,8 +1003,8 @@
     "order": "Unknown",
     "family": "Cheloniidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "A",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg?width=1280"
   },
   {

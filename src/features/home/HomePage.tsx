@@ -28,8 +28,20 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'EN',
     modelGlb: 'models/panthera-tigris.glb',
-    desc: 'Loài thú ăn thịt đầu bảng với bộ lông sọc vằn đặc trưng và cú cắn uy lực.',
+    desc: 'Loài thú ăn thịt đầu bảng với bộ lông sọc vằn chân thực, cấu trúc giải phẫu uy lực.',
     icon: '🐅',
+  },
+  {
+    id: 'panthera-leo',
+    nameVi: 'Sư tử châu Phi',
+    nameEn: 'African Lion',
+    scientific: 'Panthera leo',
+    class: 'Mammalia',
+    order: 'Carnivora',
+    iucn: 'VU',
+    modelGlb: 'models/panthera-leo.glb',
+    desc: 'Chúa tể thảo nguyên với bờm vàng oai vệ, sinh sống theo bầy đàn có tổ chức cao.',
+    icon: '🦁',
   },
   {
     id: 'canis-lupus',
@@ -40,44 +52,56 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'LC',
     modelGlb: 'models/canis-lupus.glb',
-    desc: 'Thú săn mồi có tổ chức bầy đàn chặt chẽ và tiếng hú định danh lãnh thổ.',
+    desc: 'Thú săn mồi có tổ chức bầy đàn chặt chẽ, khứu giác tinh nhạy và tiếng hú định danh.',
     icon: '🐺',
   },
   {
-    id: 'equus-caballus',
-    nameVi: 'Ngựa hoang',
-    nameEn: 'Wild Horse',
-    scientific: 'Equus caballus',
-    class: 'Mammalia',
-    order: 'Perissodactyla',
-    iucn: 'LC',
-    modelGlb: 'models/equus-caballus.glb',
-    desc: 'Động vật móng guốc đơn thích nghi với tốc độ chạy bền bỉ trên thảo nguyên.',
-    icon: '🐎',
-  },
-  {
-    id: 'flamingo',
-    nameVi: 'Hồng hạc lớn',
-    nameEn: 'Greater Flamingo',
-    scientific: 'Phoenicopterus roseus',
-    class: 'Aves',
-    order: 'Phoenicopteriformes',
-    iucn: 'LC',
-    modelGlb: 'models/flamingo.glb',
-    desc: 'Loài chim lội nước có bộ lông hồng rực rỡ nhờ sắc tố carotenoid từ thức ăn.',
-    icon: '🦩',
-  },
-  {
-    id: 'vulpes-vulpes',
-    nameVi: 'Cáo đỏ',
-    nameEn: 'Red Fox',
-    scientific: 'Vulpes vulpes',
+    id: 'ursus-arctos',
+    nameVi: 'Gấu nâu',
+    nameEn: 'Brown Bear',
+    scientific: 'Ursus arctos',
     class: 'Mammalia',
     order: 'Carnivora',
     iucn: 'LC',
-    modelGlb: 'models/vulpes-vulpes.glb',
-    desc: 'Loài thú ăn thịt nhỏ thông minh, thích nghi rộng rãi với nhiều môi trường.',
-    icon: '🦊',
+    modelGlb: 'models/ursus-arctos.glb',
+    desc: 'Loài thú ăn tạp to lớn với lớp mỡ dày, vuốt khỏe thích nghi bắt cá hồi và đào bới.',
+    icon: '🐻',
+  },
+  {
+    id: 'ailuropoda-melanoleuca',
+    nameVi: 'Gấu trúc lớn',
+    nameEn: 'Giant Panda',
+    scientific: 'Ailuropoda melanoleuca',
+    class: 'Mammalia',
+    order: 'Carnivora',
+    iucn: 'VU',
+    modelGlb: 'models/ailuropoda-melanoleuca.glb',
+    desc: 'Bảo vật tự nhiên với hai màu lông đen trắng tương phản, ăn trúc chuyên biệt.',
+    icon: '🐼',
+  },
+  {
+    id: 'carcharodon-carcharias',
+    nameVi: 'Cá mập trắng lớn',
+    nameEn: 'Great White Shark',
+    scientific: 'Carcharodon carcharias',
+    class: 'Chondrichthyes',
+    order: 'Lamniformes',
+    iucn: 'VU',
+    modelGlb: 'models/carcharodon-carcharias.glb',
+    desc: 'Kẻ săn mồi đỉnh chóp đại dương với cơ thể hình thoi khí động học và khứu giác siêu đẳng.',
+    icon: '🦈',
+  },
+  {
+    id: 'chelonia-mydas',
+    nameVi: 'Rùa xanh',
+    nameEn: 'Green Sea Turtle',
+    scientific: 'Chelonia mydas',
+    class: 'Reptilia',
+    order: 'Testudines',
+    iucn: 'EN',
+    modelGlb: 'models/chelonia-mydas.glb',
+    desc: 'Loài bò sát biển cổ xưa với mai sừng phẳng lướt nước và hành trình di cư nghìn dặm.',
+    icon: '🐢',
   },
 ];
 
@@ -273,12 +297,14 @@ export const HomePage: React.FC = () => {
                 </div>
               </div>
 
-              {/* 3D Canvas */}
-              <div className="h-[420px] sm:h-[500px] relative">
+              {/* 3D Canvas Viewport */}
+              <div className="h-[460px] sm:h-[540px] relative">
                 <AnimalViewer
                   key={activeSpecimen.id}
                   modelGlb={activeSpecimen.modelGlb}
                   speciesName={activeSpecimen.nameVi}
+                  className="w-full h-full rounded-none border-none shadow-none"
+                  hideTitleBadge={true}
                 />
               </div>
             </div>

@@ -245,11 +245,12 @@
   "media": {
     "model3d": {
       "glb": "models/panthera-tigris.glb",
-      "anatomy": "anatomy/panthera-tigris.json",
       "tier": "A",
-      "license": "CC-BY-4.0",
-      "author": "Open Heritage Archive",
-      "sourceUrl": "https://3d.si.edu",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
       "isRepresentative": false
     },
     "images": [

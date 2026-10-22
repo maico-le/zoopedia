@@ -217,9 +217,11 @@
     "model3d": {
       "glb": "models/canis-lupus.glb",
       "tier": "A",
-      "license": "CC0-1.0",
-      "author": "Quaternius",
-      "sourceUrl": "https://quaternius.com",
+      "hasAnimations": true,
+      "source": "Google Search AR Open Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
       "isRepresentative": false
     },
     "images": [
