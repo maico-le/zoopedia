@@ -1,0 +1,285 @@
+{
+  "id": "helarctos-malayanus",
+  "taxonKey": {
+    "gbif": 2433405,
+    "col": null,
+    "wikidata": "Q122241",
+    "inaturalist": 41646,
+    "eol": "328584"
+  },
+  "names": {
+    "scientific": "Helarctos malayanus",
+    "authorship": "(Raffles, 1821)",
+    "en": [
+      "Sun Bear",
+      "Malayan Sun Bear",
+      "Honey Bear"
+    ],
+    "vi": [
+      "Gấu chó",
+      "Gấu ngựa Mã Lai"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Helarctos",
+    "subspecies": [
+      "Helarctos malayanus malayanus",
+      "Helarctos malayanus euryspilus"
+    ]
+  },
+  "morphology": {
+    "lengthCm": [
+      100,
+      140
+    ],
+    "weightKg": [
+      25,
+      65
+    ],
+    "description": {
+      "vi": "Loài gấu nhỏ nhất thế giới. Lông ngắn màu đen bóng với mảng lông màu vàng móng ngựa ở ngực, lưỡi cực dài (20-25cm) thích nghi liếm tổ ong và mối.",
+      "en": "The smallest of all bear species. Characterized by sleek short black fur, a distinctive horseshoe-shaped golden-yellow chest patch, and an exceptionally long tongue (20-25 cm) for extracting insects and honey."
+    },
+    "sexualDimorphism": "Con đực lớn hơn con cái khoảng 10-20% về kích thước cơ thể."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới thường xanh",
+      "Rừng khộp rụng lá",
+      "Đầm lầy than bùn nhiệt đới"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh sống chủ yếu ở các tán rừng mưa nhiệt đới Đông Nam Á, có tập tính leo trèo cây rất giỏi nhờ vuốt cong khỏe.",
+      "en": "Inhabits primary tropical rainforests of Southeast Asia; highly arboreal with sickle-shaped claws specialized for climbing."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "KH",
+      "TH",
+      "MY",
+      "ID",
+      "MM"
+    ],
+    "text": {
+      "vi": "Phân bố tự nhiên tại Đông Nam Á bao gồm Việt Nam, Lào, Campuchia, Thái Lan, Malaysia, Indonesia (Sumatra, Borneo).",
+      "en": "Native to Southeast Asia including Vietnam, Laos, Cambodia, Thailand, Malaysia, and Indonesia."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433405"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [
+      "Mật ong & Ấu trùng ong",
+      "Mối và kiến",
+      "Trái cây nhiệt đới (sung, cọ)",
+      "Chim nhỏ và gặm nhấm"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng móng vuốt khỏe xé toạc thân cây mục để tìm tổ mối và ong, dùng lưỡi dài luồn lách để hút mật.",
+      "en": "Uses powerful curved claws to tear open bee nests and termite mounds, inserting its long tongue to extract food."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Sống đơn độc, hoạt động chủ yếu về đêm và làm tổ trên các chạc cây cao để ngủ ban ngày.",
+      "en": "Primarily nocturnal and solitary, constructing tree-nest platforms high in the canopy for resting."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Gấu con sơ sinh",
+          "en": "Newborn Cub"
+        },
+        "description": {
+          "vi": "Gấu con sinh ra chưa mở mắt và không có lông, phụ thuộc vào mẹ trong hang.",
+          "en": "Altricial blind newborn dependent completely on maternal lactation."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Giai đoạn thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Theo mẹ học leo trèo cây và kiếm thức ăn trong rừng nhiệt đới.",
+          "en": "Forages with mother, learning essential canopy climbing and foraging skills."
+        },
+        "durationDays": [
+          90,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá thể trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Thành thục sinh dục, bắt đầu cuộc sống đơn độc chiếm lĩnh vùng lãnh thổ rừng.",
+          "en": "Sexually mature adult establishing independent home ranges."
+        },
+        "durationDays": [
+          730,
+          7300
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        15,
+        25
+      ],
+      "captivity": [
+        25,
+        32
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      95,
+      120
+    ],
+    "clutchOrLitterSize": [
+      1,
+      2
+    ],
+    "parentalCare": {
+      "vi": "Gấu mẹ chăm sóc con non tận tụy trong 2 năm đầu đời.",
+      "en": "Mothers invest heavily in solitary maternal care for up to 2 years."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Nạn săn bắt trộm lấy mật và bàn tay gấu",
+      "Mất sinh cảnh rừng nhiệt đới do đồn điền cọ dầu",
+      "Xung đột với con người"
+    ],
+    "assessmentYear": 2020
+  },
+  "ecology": {
+    "predators": [
+      "Hổ Đông Dương",
+      "Báo hoa mai"
+    ],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Gấu chó sở hữu chiếc lưỡi dài tới 25cm so với chiều dài cơ thể chỉ hơn 1 mét, là kỷ lục vô địch trong họ Gấu.",
+      "en": "The Sun Bear possesses a remarkably long tongue up to 25 cm, the longest of any bear species relative to body size."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ursus-arctos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Ursidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Bear_Helarctos_malayanus_by_Giles_Laurent.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Giles Laurent",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Bear_Helarctos_malayanus_by_Giles_Laurent.jpg",
+        "caption": {
+          "vi": "Mẫu vật Gấu chó (Helarctos malayanus) trong rừng nhiệt đới",
+          "en": "Sun Bear specimen in tropical habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433405",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/G%E1%BA%A5u_ch%C3%B3",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/accounts/Helarctos_malayanus/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Bear Specialist Group",
+      "url": "https://www.iucnbeargroup.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic",
+      "url": "https://www.nationalgeographic.com/animals/mammals/facts/sun-bear",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

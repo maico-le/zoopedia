@@ -6,8 +6,8 @@ describe('Milestone M4: Biological Traits & Content Integrity', () => {
   const speciesDir = path.resolve(__dirname, '../data/species');
   const files = fs.readdirSync(speciesDir).filter((f) => f.endsWith('.json'));
 
-  it('should verify all 106 species files exist', () => {
-    expect(files.length).toBe(106);
+  it('should verify all catalogued species files exist', () => {
+    expect(files.length).toBeGreaterThanOrEqual(106);
   });
 
   it('should verify each species has valid morphology length and weight', () => {

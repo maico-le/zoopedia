@@ -1482,5 +1482,61 @@
     "tier": "C",
     "has3D": false,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Venus_Flower_Basket.jpg?width=1280"
+  },
+  {
+    "id": "helarctos-malayanus",
+    "nameVi": "Gấu chó",
+    "nameEn": "Sun Bear",
+    "scientific": "Helarctos malayanus",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "iucn": "VU",
+    "tier": "B",
+    "has3D": true,
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Bear_Helarctos_malayanus_by_Giles_Laurent.jpg?width=1280"
+  },
+  {
+    "id": "ursus-thibetanus",
+    "nameVi": "Gấu ngựa",
+    "nameEn": "Asian Black Bear",
+    "scientific": "Ursus thibetanus",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "iucn": "VU",
+    "tier": "B",
+    "has3D": true,
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Asiatic_black_bear_in_Bandipur_tiger_reserve.jpg?width=1280"
+  },
+  {
+    "id": "panthera-onca",
+    "nameVi": "Báo đốm",
+    "nameEn": "Jaguar",
+    "scientific": "Panthera onca",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "iucn": "NT",
+    "tier": "B",
+    "has3D": true,
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaguar_(Panthera_onca_palustris)_male_Piquiri_River_2.jpg?width=1280"
+  },
+  {
+    "id": "panthera-uncia",
+    "nameVi": "Báo tuyết",
+    "nameEn": "Snow Leopard",
+    "scientific": "Panthera uncia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "iucn": "VU",
+    "tier": "B",
+    "has3D": true,
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Uncia_uncia.jpg?width=1280"
   }
 ]

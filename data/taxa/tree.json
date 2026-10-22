@@ -53,7 +53,7 @@
             "ornithorhynchus-anatinus"
           ]
         },
-        "speciesCount": 29
+        "speciesCount": 33
       },
       "Aves": {
         "orders": {
@@ -154,7 +154,7 @@
         "speciesCount": 3
       }
     },
-    "speciesCount": 56
+    "speciesCount": 60
   },
   "Arthropoda": {
     "classes": {

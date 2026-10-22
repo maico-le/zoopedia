@@ -1,0 +1,281 @@
+{
+  "id": "panthera-onca",
+  "taxonKey": {
+    "gbif": 5219426,
+    "col": null,
+    "wikidata": "Q35670",
+    "inaturalist": 41970,
+    "eol": "328604"
+  },
+  "names": {
+    "scientific": "Panthera onca",
+    "authorship": "(Linnaeus, 1758)",
+    "en": [
+      "Jaguar",
+      "American Jaguar"
+    ],
+    "vi": [
+      "Báo đốm",
+      "Báo đốm Mỹ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Panthera",
+    "subspecies": [
+      "Panthera onca onca",
+      "Panthera onca hernandesii"
+    ]
+  },
+  "morphology": {
+    "lengthCm": [
+      110,
+      185
+    ],
+    "weightKg": [
+      56,
+      158
+    ],
+    "description": {
+      "vi": "Loài mèo lớn nhất châu Mỹ và lớn thứ ba thế giới. Cơ thể vạm vỡ, đầu to và bộ hàm có lực cắn mạnh nhất trong các loài mèo lớn (đủ sức đục thủng mai rùa). Bộ lông hoa mai có đốm đen nhỏ ở tâm hoa.",
+      "en": "The largest cat species in the Americas and third-largest in the world. Exceptionally muscular with an exceptionally powerful bite capable of piercing turtle shells and turtle carapaces. Distinctive rosette markings containing center spots."
+    },
+    "sexualDimorphism": "Con đực thường lớn hơn con cái khoảng 20-30% về thể trọng."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng mưa nhiệt đới Amazon",
+      "Vùng ngập nước Pantanal",
+      "Rừng khô Chaco"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Gắn liền với môi trường nước, rừng rậm và đầm lầy châu Mỹ. Là loài mèo bơi lội cự phách.",
+      "en": "Strongly associated with rivers, wetlands, and dense tropical rainforests; an apex swimmer."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "BR",
+      "MX",
+      "CO",
+      "PE",
+      "BO",
+      "PY",
+      "AR"
+    ],
+    "text": {
+      "vi": "Phân bố từ miền tây nam Hoa Kỳ và Mexico qua Trung Mỹ xuống lòng chảo sông Amazon và vùng ngập nước Pantanal ở Nam Mỹ.",
+      "en": "Ranges from southwestern United States and Mexico through Central America to the Amazon Basin and Pantanal in South America."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5219426"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Chuột lang nước Capybara",
+      "Cá sấu Caiman",
+      "Lợn vòi Tapir",
+      "Rùa sông và cá lớn"
+    ],
+    "feedingBehavior": {
+      "vi": "Dùng cú cắn xuyên xương sọ độc nhất vô nhị giữa hai tai con mồi, có thể săn bắt cả cá sấu Caiman dưới nước.",
+      "en": "Employs an unusual killing method: bites directly through the temporal bones of the skull between the ears to pierce the brain."
+    }
+  },
+  "behavior": {
+    "activityPattern": "cathemeral",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Săn mồi đơn độc, thường rình phục kích từ trên cành cây sát bờ nước hoặc trực tiếp lặn bơi săn cá sấu.",
+      "en": "Solitary stalk-and-ambush predator, frequently hunting along riverbanks and diving underwater."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Con non sơ sinh",
+          "en": "Newborn Cub"
+        },
+        "description": {
+          "vi": "Báo con sinh ra chưa mở mắt, bú sữa mẹ trong hang ẩn.",
+          "en": "Blind altricial cubs nursing in concealed dens."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Giai đoạn thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Tập săn mồi và bơi lội cùng mẹ đến 2 năm tuổi.",
+          "en": "Accompanies mother developing predatory ambush and swimming skills."
+        },
+        "durationDays": [
+          90,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá thể trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Trưởng thành độc lập, thống trị sinh cảnh rừng và đầm lầy.",
+          "en": "Solitary apex territorial reproductive adult."
+        },
+        "durationDays": [
+          730,
+          5840
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        12,
+        15
+      ],
+      "captivity": [
+        20,
+        23
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      93,
+      105
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Báo mẹ nuôi dưỡng và bảo vệ đàn con độc lập.",
+      "en": "Maternal investment for up to two years."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "NT",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Phá rừng nhiệt đới Amazon làm đồng cỏ chăn nuôi",
+      "Săn trộm lấy da và răng nanh",
+      "Xung đột với chủ trang trại gia súc"
+    ],
+    "assessmentYear": 2021
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Báo đốm có lực cắn tính trên trọng lượng cơ thể mạnh nhất trong các loài thú ăn thịt họ Mèo, có thể cắn vỡ mai rùa dễ dàng.",
+      "en": "Pound for pound, the jaguar has the most powerful bite of all big cats, capable of crushing armored turtle carapaces."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/panthera-leo.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Panthera"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaguar_(Panthera_onca_palustris)_male_Piquiri_River_2.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Charles J. Sharp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaguar_(Panthera_onca_palustris)_male_Piquiri_River_2.jpg",
+        "caption": {
+          "vi": "Mẫu vật Báo đốm (Panthera onca) tại Pantanal",
+          "en": "Jaguar specimen at Pantanal"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5219426",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%C3%A1o_%C4%91%E1%BB%91m",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "PanTHERIA Database",
+      "url": "https://esapubs.org/archive/ecol/E090/184/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "ADW Panthera onca",
+      "url": "https://animaldiversity.org/accounts/Panthera_onca/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Jaguar Dossier",
+      "url": "https://www.nationalgeographic.com/animals/mammals/facts/jaguar",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

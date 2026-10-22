@@ -1,0 +1,291 @@
+{
+  "id": "ursus-thibetanus",
+  "taxonKey": {
+    "gbif": 2433420,
+    "col": null,
+    "wikidata": "Q170183",
+    "inaturalist": 41644,
+    "eol": "328583"
+  },
+  "names": {
+    "scientific": "Ursus thibetanus",
+    "authorship": "G. Cuvier, 1823",
+    "en": [
+      "Asian Black Bear",
+      "Moon Bear",
+      "White-chested Bear"
+    ],
+    "vi": [
+      "Gấu ngựa",
+      "Gấu đen châu Á"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Ursus",
+    "subspecies": [
+      "Ursus thibetanus formosanus",
+      "Ursus thibetanus gedrosianus",
+      "Ursus thibetanus japonica",
+      "Ursus thibetanus laniger",
+      "Ursus thibetanus mupinensis",
+      "Ursus thibetanus thibetanus",
+      "Ursus thibetanus ussuricus"
+    ]
+  },
+  "morphology": {
+    "lengthCm": [
+      120,
+      190
+    ],
+    "weightKg": [
+      50,
+      200
+    ],
+    "description": {
+      "vi": "Bộ lông đen tuyền dày mượt, đặc trưng bởi vệt lông trắng hình chữ V rõ nét trước ngực giống như vầng trăng khuyết (gọi là Moon Bear). Tai tròn lớn và bờm cổ rậm rạp.",
+      "en": "Medium-sized bear with a smooth black coat distinguished by a prominent creamy-white V-shaped crescent mark across the chest. Possesses large rounded ears and thick ruff around the neck."
+    },
+    "sexualDimorphism": "Con đực nặng gấp rưỡi con cái (đực 100-200kg so với cái 50-125kg)."
+  },
+  "habitat": {
+    "biomes": [
+      "Rừng lá rộng ôn đới",
+      "Rừng thường xanh nhiệt đới ẩm",
+      "Rừng hỗn giao trên núi cao"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh sống trên các vùng đồi núi dốc có độ che phủ rừng cao ở châu Á từ 1.000 đến 3.500m.",
+      "en": "Prefers steep forested terrain across Asian mountain ranges from 1,000 to 3,500m."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "VN",
+      "LA",
+      "TH",
+      "MM",
+      "CN",
+      "JP",
+      "IN",
+      "RU"
+    ],
+    "text": {
+      "vi": "Phân bố tự nhiên khắp châu Á: Việt Nam, Lào, Thái Lan, Trung Quốc, Nhật Bản, Triều Tiên, miền đông nước Nga và dãy Himalaya.",
+      "en": "Widespread across forested mountainous Asia including Vietnam, China, Japan, Korea, India, and Russian Far East."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433420"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [
+      "Quả sồi & Hạt dẻ",
+      "Quả mọng rừng",
+      "Mật ong & Côn trùng",
+      "Động vật có vú nhỏ và xác thối"
+    ],
+    "feedingBehavior": {
+      "vi": "Leo trèo cành cây bẻ cành làm tổ ăn quả ('tổ gấu'), dùng khứu giác siêu nhạy lần tìm hạt và mật.",
+      "en": "Climbs trees to harvest nuts and fruits, frequently bending branches to create feeding platforms."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Hoạt động ban ngày và hoàng hôn, ngủ đông ở các vùng khí hậu lạnh phía bắc trong hốc cây cổ thụ hoặc hang đá.",
+      "en": "Crepuscular and diurnal; hibernates during harsh winters in hollow trees or rock crevices in northern latitudes."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Gấu con sơ sinh",
+          "en": "Newborn Cub"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang vào mùa đông, nặng chỉ khoảng 300-400 gram.",
+          "en": "Born during winter denning, weighing merely 300-400 grams."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Gấu nhỡ",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Đi theo mẹ trong 2-3 năm học cách kiếm ăn và chọn quả hạt.",
+          "en": "Accompanies mother for 2 to 3 years learning seasonal foraging paths."
+        },
+        "durationDays": [
+          90,
+          900
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá thể trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Trưởng thành độc lập, bảo vệ vùng kiếm ăn trên núi.",
+          "en": "Independent reproductive adult occupying home territories."
+        },
+        "durationDays": [
+          900,
+          9125
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        20,
+        25
+      ],
+      "captivity": [
+        30,
+        36
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      200,
+      240
+    ],
+    "clutchOrLitterSize": [
+      1,
+      3
+    ],
+    "parentalCare": {
+      "vi": "Gấu mẹ bảo vệ đàn con vô cùng dữ dội trước kẻ thù.",
+      "en": "Mothers fiercely defend cubs against potential predators including tigers."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Nạn buôn bán mật gấu trái phép",
+      "Mất rừng nguyên sinh và chia cắt sinh cảnh",
+      "Xung đột bẫy thú rừng"
+    ],
+    "assessmentYear": 2020
+  },
+  "ecology": {
+    "predators": [
+      "Hổ Siberia",
+      "Chó sói xám"
+    ],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Gấu ngựa có thể đứng thẳng và đi bằng hai chân sau hàng chục mét để nhìn xa và dọa kẻ thù.",
+      "en": "Asian Black Bears can walk upright on their hind legs for considerable distances to survey surroundings."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/ursus-arctos.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Ursidae"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asiatic_black_bear_in_Bandipur_tiger_reserve.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asiatic_black_bear_in_Bandipur_tiger_reserve.jpg",
+        "caption": {
+          "vi": "Mẫu vật Gấu ngựa (Ursus thibetanus)",
+          "en": "Asian Black Bear specimen"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433420",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/G%E1%BA%A5u_ng%E1%BB%B1a",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/accounts/Ursus_thibetanus/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "IUCN Bear Specialist Group",
+      "url": "https://www.iucnbeargroup.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "Smithsonian National Zoo",
+      "url": "https://nationalzoo.si.edu/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "panthera-uncia",
+  "taxonKey": {
+    "gbif": 5219436,
+    "col": null,
+    "wikidata": "Q30197",
+    "inaturalist": 41973,
+    "eol": "328605"
+  },
+  "names": {
+    "scientific": "Panthera uncia",
+    "authorship": "(Schreber, 1775)",
+    "en": [
+      "Snow Leopard",
+      "Ounce",
+      "Ghost of the Mountains"
+    ],
+    "vi": [
+      "Báo tuyết",
+      "Báo hoa mai tuyết"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Panthera",
+    "subspecies": [
+      "Panthera uncia uncia",
+      "Panthera uncia irbis"
+    ]
+  },
+  "morphology": {
+    "lengthCm": [
+      90,
+      130
+    ],
+    "weightKg": [
+      25,
+      55
+    ],
+    "description": {
+      "vi": "Được mệnh danh là 'Hồn ma của rặng núi'. Bộ lông xám khói dày mịn với các hoa đốm sẫm màu ngụy trang tuyệt hảo trên vách đá tuyết, đuôi cực dài (80-100cm) dùng giữ thăng bằng và quấn giữ ấm khi ngủ.",
+      "en": "Nicknamed the 'Ghost of the Mountains'. Dense smoky-gray woolly coat with dark rosettes providing perfect camouflage on rocky crags, and an exceptionally long, thick tail (80-100 cm) for balance and warmth."
+    },
+    "sexualDimorphism": "Con đực lớn hơn con cái khoảng 20-30%."
+  },
+  "habitat": {
+    "biomes": [
+      "Đồng cỏ núi cao và cây bụi sơn địa",
+      "Vách đá cheo leo băng tuyết Himalaya",
+      "Thảo nguyên lạnh cao nguyên Tây Tạng"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Sinh sống ở độ cao cực hạn từ 3.000 đến 5.500m trên các dãy núi cao hiểm trở nhất Trung Á và Himalaya.",
+      "en": "Inhabits rugged alpine and subalpine rocky zones between 3,000 and 5,500m across Central Asia."
+    }
+  },
+  "distribution": {
+    "countries": [
+      "CN",
+      "IN",
+      "NP",
+      "BT",
+      "PK",
+      "AF",
+      "MN",
+      "RU"
+    ],
+    "text": {
+      "vi": "Phân bố dọc theo 12 quốc gia vùng núi Trung Á: Tây Tạng (Trung Quốc), Mông Cổ, Ấn Độ, Nepal, Bhutan, Pakistan, Afghanistan, Nga.",
+      "en": "Native to mountain ranges of Central and South Asia across 12 countries including the Tibetan Plateau, Himalayas, and Altai."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5219436"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [
+      "Cừu xanh Bharal",
+      "Dê núi Ibex",
+      "Hươu xạ",
+      "Thỏ cộc Pika và gà tuyết"
+    ],
+    "feedingBehavior": {
+      "vi": "Rình phục kích trên các vách đá dốc dựng đứng, có thể nhảy xa tới 15 mét để vồ mồi trên triền dốc đá cheo leo.",
+      "en": "Stalks prey across cliff ledges, capable of leaping up to 15 meters across ravines."
+    }
+  },
+  "behavior": {
+    "activityPattern": "crepuscular",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Đơn độc, cực kỳ bí ẩn và thoắt ẩn thoắt hiện, hoạt động mạnh nhất vào lúc bình minh và hoàng hôn trên triền núi tuyết.",
+      "en": "Solitary and notoriously elusive, most active at dawn and dusk across rocky ridges."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Báo con sơ sinh",
+          "en": "Newborn Cub"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang đá lót lông mẹ, mắt mở sau 7-9 ngày.",
+          "en": "Born in fur-lined rocky dens, opening eyes after 7-9 days."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "juvenile",
+        "name": {
+          "vi": "Giai đoạn thiếu niên",
+          "en": "Juvenile"
+        },
+        "description": {
+          "vi": "Theo mẹ rèn luyện kỹ năng leo trèo và vồ mồi trên vách đá dốc.",
+          "en": "Accompanies mother mastering steep cliff traversing and stalking techniques."
+        },
+        "durationDays": [
+          90,
+          650
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá thể trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Thành thục sinh sản, kiểm soát vùng lãnh thổ núi non rộng lớn tới hàng trăm km².",
+          "en": "Solitary reproductive adult patrolling immense mountain home ranges."
+        },
+        "durationDays": [
+          650,
+          5840
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        13
+      ],
+      "captivity": [
+        18,
+        22
+      ]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": [
+      90,
+      105
+    ],
+    "clutchOrLitterSize": [
+      1,
+      3
+    ],
+    "parentalCare": {
+      "vi": "Báo mẹ chăm sóc con non một mình trong 18-22 tháng.",
+      "en": "Solitary maternal care lasting 18 to 22 months."
+    },
+    "text": null
+  },
+  "conservation": {
+    "iucn": "VU",
+    "populationTrend": "decreasing",
+    "threats": [
+      "Biến đổi khí hậu làm co hẹp ranh giới tuyết vĩnh cửu",
+      "Săn trộm lấy bộ lông quý và xương",
+      "Xung đột trả đũa do tấn công gia súc"
+    ],
+    "assessmentYear": 2017
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Báo tuyết không thể gầm như sư tử hay hổ vì cấu trúc thanh quản khác biệt; thay vào đó chúng phát ra âm thanh 'chuff' nhẹ nhàng để chào nhau.",
+      "en": "Snow leopards cannot roar like lions or tigers due to differences in vocal anatomy; they communicate via gentle non-aggressive 'chuffs'."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/panthera-leo.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "Panthera"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Uncia_uncia.jpg?width=1280",
+        "license": "CC-BY-SA-3.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uncia_uncia.jpg",
+        "caption": {
+          "vi": "Mẫu vật Báo tuyết (Panthera uncia) trên vách đá tuyết",
+          "en": "Snow Leopard specimen on rocky snowy crag"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5219436",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%C3%A1o_tuy%E1%BA%BFt",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "Snow Leopard Trust",
+      "url": "https://snowleopard.org/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "ADW Panthera uncia",
+      "url": "https://animaldiversity.org/accounts/Panthera_uncia/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic Wild",
+      "url": "https://www.nationalgeographic.com/animals/mammals/facts/snow-leopard",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    }
+  ]
+}

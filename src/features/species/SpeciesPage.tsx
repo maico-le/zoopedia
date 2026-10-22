@@ -10,6 +10,8 @@ import { SpeciesCompareModal } from './SpeciesCompareModal';
 import { SizeComparison } from './SizeComparison';
 import { LifeCycleTimeline } from './LifeCycleTimeline';
 import { DietCard } from './DietCard';
+import { DistributionMap } from './DistributionMap';
+import { SubspeciesSection } from './SubspeciesSection';
 import { EmptyTraitBadge } from '../../components/EmptyTraitBadge';
 
 type TabKey =
@@ -345,6 +347,20 @@ export const SpeciesPage: React.FC = () => {
               weightKg={species.morphology?.weightKg ?? null}
               speciesName={commonName}
             />
+
+            {/* Geographical Distribution Map Component */}
+            <DistributionMap
+              distribution={species.distribution}
+              biomes={species.habitat?.biomes}
+              speciesName={commonName}
+              scientificName={species.names.scientific}
+            />
+
+            {/* Subspecies & Evolutionary Lineages */}
+            <SubspeciesSection
+              speciesId={species.id}
+              speciesName={commonName}
+            />
           </div>
         )}
 
@@ -372,20 +388,34 @@ export const SpeciesPage: React.FC = () => {
                 </div>
               )}
             </div>
+
+            <SubspeciesSection
+              speciesId={species.id}
+              speciesName={commonName}
+            />
           </div>
         )}
 
         {activeTab === 'habitat' && (
-          <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/25 shadow-xl space-y-6">
-            <h3 className="font-serif text-2xl font-bold text-white">{t('species.habitatSectionTitle')}</h3>
-            <div className="space-y-2">
-              <div className="font-mono font-bold text-natgeo-yellow text-sm uppercase">{t('species.characteristicBiome')}</div>
-              <p className="text-sm text-stone-200 leading-relaxed">{isEn ? (species.habitat?.description?.en || species.habitat?.description?.vi) : (species.habitat?.description?.vi || species.habitat?.description?.en)}</p>
+          <div className="space-y-8">
+            <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/25 shadow-xl space-y-6">
+              <h3 className="font-serif text-2xl font-bold text-white">{t('species.habitatSectionTitle')}</h3>
+              <div className="space-y-2">
+                <div className="font-mono font-bold text-natgeo-yellow text-sm uppercase">{t('species.characteristicBiome')}</div>
+                <p className="text-sm text-stone-200 leading-relaxed">{isEn ? (species.habitat?.description?.en || species.habitat?.description?.vi) : (species.habitat?.description?.vi || species.habitat?.description?.en)}</p>
+              </div>
+              <div className="space-y-2">
+                <div className="font-mono font-bold text-natgeo-yellow text-sm uppercase">{t('species.geoRecords')}</div>
+                <p className="text-sm text-stone-200 leading-relaxed">{isEn ? (species.distribution?.text?.en || species.distribution?.text?.vi) : (species.distribution?.text?.vi || species.distribution?.text?.en)}</p>
+              </div>
             </div>
-            <div className="space-y-2">
-              <div className="font-mono font-bold text-natgeo-yellow text-sm uppercase">{t('species.geoRecords')}</div>
-              <p className="text-sm text-stone-200 leading-relaxed">{isEn ? (species.distribution?.text?.en || species.distribution?.text?.vi) : (species.distribution?.text?.vi || species.distribution?.text?.en)}</p>
-            </div>
+
+            <DistributionMap
+              distribution={species.distribution}
+              biomes={species.habitat?.biomes}
+              speciesName={commonName}
+              scientificName={species.names.scientific}
+            />
           </div>
         )}
 
