@@ -5,7 +5,7 @@
 | **M0 – Khởi tạo** | **HOÀN THÀNH (DONE)** | Scaffold Vite + React 19 + TypeScript + Tailwind CSS, JSON Schema cho loài & giải phẫu, script `validate-data`, Vitest, CI workflow, và `DECISIONS.md`. | 2026-10-22 |
 | **M1 – Viewer 3D cơ bản** | **HOÀN THÀNH (DONE)** | `AnimalViewer` với Three.js / R3F, OrbitControls, Camera Presets (trước/sau/trái/phải/trên/3D), auto-rotate, animation clip switcher/speed, chụp màn hình PNG, toàn màn hình, kiểm tra WebGL & ErrorBoundary fallback, tối ưu mobile battery (`frameloop="demand"`). | 2026-10-22 |
 | **M2 – Pipeline taxonomy + tên** | **HOÀN THÀNH (DONE)** | Pipeline Python 3.11 đa luồng thu thập dữ liệu GBIF + Wikidata + từ điển đối chiếu tên tiếng Việt cho **106 loài đa dạng** phủ khắp **8 ngành động vật**, xuất JSON, schema validation 100% pass, báo cáo Completeness và cây phân loại `taxa/tree.json`. | 2026-10-22 |
-| **M3 – Duyệt và tìm kiếm** | Chưa bắt đầu | Trang chủ 3D, cây phân loại tương tác, MiniSearch chuẩn hóa không dấu tiếng Việt, bộ lọc đa tiêu chí. | - |
+| **M3 – Duyệt và tìm kiếm** | **HOÀN THÀNH (DONE)** | Công cụ tìm kiếm MiniSearch client-side không dấu tiếng Việt + tiếng Anh; bộ lọc đa tiêu chí (8 ngành, lớp, mức độ bảo tồn IUCN, có 3D, Tier A); cây phân loại taxonomy tương tác; so sánh 2 loài đối sánh thuộc tính; trang khám phá & định vị mẫu vật ngẫu nhiên. | 2026-10-22 |
 | **M4 – Nội dung sinh học** | Chưa bắt đầu | Pipeline cào nội dung tập tính, sinh sản, chu kỳ sống, số liệu traits, provenance & review flags. | - |
 | **M5 – Giải phẫu 3D** | Chưa bắt đầu | `AnatomyPanel`, explode view slider, bóc lớp, cô lập bộ phận, clipping plane, 3 loài Tier A + 3 Tier B. | - |
 | **M6 – Tính năng nâng cao** | Chưa bắt đầu | Chu kỳ sống đa giai đoạn, so sánh loài, quiz giải phẫu, URL state sync. | - |
@@ -73,3 +73,33 @@
    - `npm run validate-data`: 100% loài đều vượt qua schema validation và kiểm tra provenance với điểm độ đầy đủ (Completeness) đạt từ 90% đến 100%.
    - Vitest suite nâng cấp lên 12 tests: kiểm tra độ bao phủ cả 8 ngành và các lớp có xương sống (thú, chim, bò sát, lưỡng cư, cá).
    - Trang quản trị chất lượng `/dev/data-quality` cập nhật bảng tra cứu trực quan theo dõi toàn bộ 106 loài.
+
+---
+
+## Chi tiết Milestone M3 (Đã hoàn thành)
+1. **Engine Tìm kiếm MiniSearch Client-side (`src/lib/search-engine.ts`)**:
+   - Tích hợp thư viện tìm kiếm `minisearch` chạy trực tiếp trên trình duyệt, không phụ thuộc backend.
+   - Hàm chuẩn hóa tiếng Việt bỏ dấu linh hoạt (`src/lib/normalize-vi.ts`), tách từ tự động cho phép gõ tiếng Việt có dấu, không dấu hoặc tiếng Anh (ví dụ: `ho dong duong`, `ho`, `tiger`, `panthera`, `lon rung`, `bach tuoc`).
+   - Hỗ trợ fuzzy search (levenshtein distance độ lệch 0.2) và tiền tố (prefix) cho trải nghiệm gõ tức thì.
+   - Unit test suite chuyên biệt `tests/search-engine.test.ts` (6 tests) xác thực toàn diện.
+2. **Trang Khám phá & Bảng điều khiển Bộ lọc Đa tiêu chí (`src/features/explore/ExplorePage.tsx`)**:
+   - Thanh tìm kiếm tức thời hỗ trợ phím tắt và xóa nhanh.
+   - Bộ lọc phân cấp 8 ngành (Phyla) với danh sách Lớp (Classes) tương ứng phản ứng linh hoạt theo ngành đã chọn.
+   - Bộ lọc trạng thái bảo tồn IUCN (CR, EN, VU, NT, LC).
+   - Bộ lọc mẫu vật có mô hình 3D (`has3D`) và mẫu vật giải phẫu chuẩn Tier A (`tierA`).
+   - Sắp xếp linh hoạt theo tên tiếng Việt (A-Z), danh pháp khoa học hoặc cấp độ đe dọa IUCN.
+   - Đồng bộ hai chiều trạng thái bộ lọc với Query Parameters trên URL (`?q=...&phylum=...&tierA=true`), cho phép lưu bookmark hoặc chia sẻ liên kết trực tiếp.
+3. **Cây Phân loại & Trang Chi tiết Taxon (`src/features/taxonomy/TaxonDetailPage.tsx`)**:
+   - Tuyến đường động `/taxa/:rank/:name` hiển thị breadcrumbs phân tầng sinh học, danh sách các Lớp/Bộ trực thuộc và toàn bộ loài tương ứng.
+   - Thống kê tổng số mẫu vật, số lớp, trạng thái danh mục theo tiêu chuẩn bảo tàng quốc tế.
+4. **Tính năng So sánh Loài Đối sánh Đa chiều (`src/features/species/SpeciesCompareModal.tsx`)**:
+   - Modal so sánh cho phép chọn bất kỳ loài thứ 2 trong 106 loài để đặt cạnh loài hiện tại.
+   - Đối chiếu trực quan: vị trí phân loại học (Phylum/Class/Order/Family), tình trạng bảo tồn IUCN, đặc điểm hình thái kích thước, dinh dưỡng, môi trường sống và sự hiện diện của mô hình 3D.
+5. **Cải tiến Trải nghiệm & Kết nối Điều hướng**:
+   - Header tích hợp nút "Khám phá" và nút "Ngẫu nhiên" (chọn nhanh 1 trong 106 loài qua `getRandomSpeciesSlug`).
+   - Trang chủ kết nối các phím tắt điều hướng nhanh tới cây phân loại 8 ngành, mô hình 3D Tier A, loài nguy cấp IUCN và tra cứu trực tiếp.
+6. **Kiểm định & Tối ưu**:
+   - `npm test`: 18/18 tests pass sạch sẽ (100%).
+   - `npm run lint`: 0 error, 0 warning.
+   - `npm run build`: Production bundle Vite 6 thành công vượt bậc.
+   - `npm run validate-data`: 106/106 loài hợp lệ theo JSON Schema.

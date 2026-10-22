@@ -1,18 +1,25 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../store/useAppStore';
-import { Globe, Moon, Sun, Layers, Compass, Award } from 'lucide-react';
+import { Globe, Moon, Sun, Layers, Compass, Award, Search, Shuffle } from 'lucide-react';
+import { getRandomSpeciesSlug } from '../lib/data-loader';
 
 export const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { darkMode, toggleDarkMode, language, setLanguage } = useAppStore();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLanguageToggle = () => {
     const nextLang = language === 'vi' ? 'en' : 'vi';
     setLanguage(nextLang);
     i18n.changeLanguage(nextLang);
+  };
+
+  const handleRandomSpecimen = () => {
+    const slug = getRandomSpeciesSlug();
+    navigate(`/species/${slug}`);
   };
 
   const isActive = (path: string) => location.pathname === path;
@@ -48,6 +55,18 @@ export const Header: React.FC = () => {
 
         {/* Archival Navigation */}
         <nav className="hidden md:flex items-center gap-1.5 text-sm font-medium">
+          <Link
+            to="/explore"
+            className={`px-4 py-2 rounded-xl transition-all flex items-center gap-2 ${
+              isActive('/explore')
+                ? 'bg-emerald-500/15 text-emerald-300 font-semibold border border-emerald-500/30 shadow-sm'
+                : 'text-stone-300 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <Search className="w-4 h-4 text-emerald-400" />
+            {t('nav.explore')}
+          </Link>
+
           <Link
             to="/taxa"
             className={`px-4 py-2 rounded-xl transition-all flex items-center gap-2 ${
@@ -87,6 +106,15 @@ export const Header: React.FC = () => {
 
         {/* Global Controls */}
         <div className="flex items-center gap-3">
+          <button
+            onClick={handleRandomSpecimen}
+            className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-stone-900/80 hover:bg-white/10 text-xs font-mono font-semibold uppercase tracking-wider text-amber-300 hover:text-amber-200 transition-all hover:border-amber-500/40"
+            title="Xem mẫu vật ngẫu nhiên"
+          >
+            <Shuffle className="w-3.5 h-3.5 text-amber-400" />
+            <span>Ngẫu nhiên</span>
+          </button>
+
           <button
             onClick={handleLanguageToggle}
             className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-stone-900/80 hover:bg-white/10 text-xs font-mono font-semibold uppercase tracking-wider text-stone-200 transition-all hover:border-emerald-500/40"

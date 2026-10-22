@@ -3,9 +3,10 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
-import { Copy, Check, Layers, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Copy, Check, Layers, ExternalLink, ShieldCheck, ArrowRightLeft } from 'lucide-react';
 import { AnimalViewer } from '../viewer/AnimalViewer';
 import { loadSpeciesBySlug } from '../../lib/data-loader';
+import { SpeciesCompareModal } from './SpeciesCompareModal';
 
 type TabKey =
   | 'overview'
@@ -26,6 +27,7 @@ export const SpeciesPage: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [selectedModelGlb, setSelectedModelGlb] = useState<string>('models/panthera-tigris.glb');
   const [species, setSpecies] = useState<Species>((tigerData as unknown) as Species);
+  const [showCompareModal, setShowCompareModal] = useState(false);
 
   useEffect(() => {
     if (slug) {
@@ -136,6 +138,15 @@ export const SpeciesPage: React.FC = () => {
               🐎 Ngựa hoang
             </button>
           </div>
+
+          <button
+            onClick={() => setShowCompareModal(true)}
+            className="btn-specimen flex items-center gap-2 text-xs py-2 px-3.5"
+            title="So sánh với loài khác"
+          >
+            <ArrowRightLeft className="w-3.5 h-3.5 text-amber-300" />
+            <span>So sánh loài</span>
+          </button>
 
           <span className="px-3.5 py-2 rounded-2xl bio-glass text-emerald-300 text-xs font-mono font-semibold flex items-center gap-1.5 border border-emerald-500/30">
             <Layers className="w-4 h-4 text-emerald-400" />
@@ -377,6 +388,14 @@ export const SpeciesPage: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Species Comparison Modal */}
+      {showCompareModal && (
+        <SpeciesCompareModal
+          currentSpecies={species}
+          onClose={() => setShowCompareModal(false)}
+        />
+      )}
     </div>
   );
 };

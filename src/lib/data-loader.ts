@@ -25,6 +25,13 @@ export function getTaxaTree(): Record<string, unknown> {
   return taxaTreeData;
 }
 
+export function getRandomSpeciesSlug(): string {
+  const index = getAllSpeciesIndex();
+  if (index.length === 0) return 'panthera-tigris';
+  const randomIndex = Math.floor(Math.random() * index.length);
+  return index[randomIndex].id;
+}
+
 /**
  * Dynamically loads a species data file by its slug ID.
  */

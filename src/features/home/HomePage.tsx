@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Compass, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Search, Compass, Sparkles, ArrowRight, Layers, AlertTriangle, Shuffle, ShieldCheck } from 'lucide-react';
 import { matchVietnameseText } from '../../lib/normalize-vi';
+import { getRandomSpeciesSlug } from '../../lib/data-loader';
 import { AnimalViewer } from '../viewer/AnimalViewer';
 
 interface ExhibitSpecimen {
@@ -96,7 +97,9 @@ export const HomePage: React.FC = () => {
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (filtered.length > 0) {
+    if (searchQuery.trim()) {
+      navigate(`/explore?q=${encodeURIComponent(searchQuery.trim())}`);
+    } else if (filtered.length > 0) {
       navigate(`/species/${filtered[0].id}`);
     }
   };
@@ -181,6 +184,41 @@ export const HomePage: React.FC = () => {
               </div>
             )}
           </form>
+
+          {/* Quick Explorer Shortcuts */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-5 text-xs">
+            <Link
+              to="/taxa"
+              className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
+            >
+              <Compass className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Khám phá theo ngành</span>
+            </Link>
+
+            <button
+              onClick={() => navigate(`/species/${getRandomSpeciesSlug()}`)}
+              className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
+            >
+              <Shuffle className="w-3.5 h-3.5 text-amber-300" />
+              <span>Mẫu vật ngẫu nhiên</span>
+            </button>
+
+            <Link
+              to="/explore?tierA=true"
+              className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
+            >
+              <Layers className="w-3.5 h-3.5 text-emerald-300" />
+              <span>Mô hình 3D Tier A</span>
+            </Link>
+
+            <Link
+              to="/explore?iucn=EN"
+              className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
+            >
+              <AlertTriangle className="w-3.5 h-3.5 text-rose-400" />
+              <span>Sắp nguy cấp (IUCN)</span>
+            </Link>
+          </div>
 
           {/* Botanical Filter Chips */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs">

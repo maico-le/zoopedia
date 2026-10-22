@@ -106,17 +106,23 @@ export const TaxonomyPage: React.FC = () => {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-white/10">
-                {representativeSpecies ? (
+              <div className="pt-4 border-t border-white/10 flex flex-col gap-2">
+                <Link
+                  to={`/taxa/phylum/${phylumKey}`}
+                  className="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-emerald-500/20 text-emerald-300 border border-white/10 hover:border-emerald-500/30 flex items-center justify-between text-xs font-semibold transition-all"
+                >
+                  <span>Xem cây ngành {phylumKey}</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+
+                {representativeSpecies && (
                   <Link
                     to={`/species/${representativeSpecies.id}`}
-                    className="flex items-center justify-between text-xs font-semibold text-emerald-400 hover:text-emerald-300 group-hover:translate-x-0.5 transition-all"
+                    className="flex items-center justify-between text-[11px] text-stone-400 hover:text-white transition-colors px-1"
                   >
-                    <span>Mẫu vật: {representativeSpecies.nameVi}</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <span>Đại diện: {representativeSpecies.nameVi}</span>
+                    <span>&rarr;</span>
                   </Link>
-                ) : (
-                  <span className="text-xs text-stone-500">Đang cập nhật</span>
                 )}
               </div>
             </div>
