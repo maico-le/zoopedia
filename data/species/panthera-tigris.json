@@ -1,0 +1,240 @@
+{
+  "id": "panthera-tigris",
+  "taxonKey": {
+    "gbif": 5219416,
+    "col": "4CGXM",
+    "wikidata": "Q19939",
+    "inaturalist": 41944,
+    "eol": 328674
+  },
+  "names": {
+    "scientific": "Panthera tigris",
+    "authorship": "(Linnaeus, 1758)",
+    "en": ["Tiger", "Bengal Tiger"],
+    "vi": ["Hổ", "Cọp", "Hổ Đông Dương"],
+    "otherLocal": {
+      "vi_dialect": ["Khái", "Ông Ba Mươi"]
+    },
+    "nameSource": {
+      "vi": "wikidata",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Panthera",
+    "subspecies": ["Panthera tigris tigris", "Panthera tigris corbetti", "Panthera tigris altaica"]
+  },
+  "morphology": {
+    "lengthCm": [250, 390],
+    "weightKg": [90, 310],
+    "description": {
+      "vi": "Loài thú ăn thịt lớn nhất trong họ Mèo. Bộ lông màu cam với các vằn đen đặc trưng độc nhất cho từng cá thể, bụng trắng.",
+      "en": "The largest living cat species. Characterized by a reddish-orange coat with dark vertical stripes and a lighter underside."
+    },
+    "sexualDimorphism": "Con đực lớn hơn con cái đáng kể về cả chiều dài và khối lượng."
+  },
+  "habitat": {
+    "biomes": ["rừng mưa nhiệt đới", "rừng lá rụng ẩm nhiệt đới", "rừng ngập mặn", "rừng taiga ôn đới"],
+    "realm": ["terrestrial"],
+    "description": {
+      "vi": "Thích nghi với nhiều loại rừng khác nhau, đòi hỏi nơi có độ che phủ tốt, gần nguồn nước và dồi dào con mồi lớn.",
+      "en": "Occupies a wide range of forest habitats requiring dense cover, access to water, and large prey populations."
+    }
+  },
+  "distribution": {
+    "countries": ["IN", "BD", "NP", "BT", "RU", "CN", "ID", "MY", "TH", "MM", "VN"],
+    "text": {
+      "vi": "Từng phân bố khắp châu Á, hiện nay vùng phân bố bị thu hẹp hơn 93%, chỉ còn các quần thể biệt lập.",
+      "en": "Historically ranged widely across Asia; currently restricted to fragmented populations across South and Southeast Asia, China, and the Russian Far East."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5219416"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": ["Hươu nai", "Lợn rừng", "Hoẵng", "Bò tót", "Trâu rừng"],
+    "feedingBehavior": {
+      "vi": "Săn mồi đơn độc bằng cách rình và vồ bất ngờ từ phía sau hoặc bên sườn, cắn vào cổ họng hoặc gáy con mồi.",
+      "en": "Solitary ambush predator, stalking prey from behind dense vegetation before delivering a fatal bite to the throat or neck."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": {
+      "vi": "Giao tiếp qua tiếng gầm vang xa tới 3 km, đánh dấu mùi nước tiểu, vết cào trên thân cây.",
+      "en": "Communicates through deep vocal roars carrying up to 3 km, scent markings, and territorial tree scratchings."
+    },
+    "migration": {
+      "vi": "Không di cư theo mùa, nhưng di chuyển tuần tra lãnh thổ rộng lớn từ 20 đến 400 km².",
+      "en": "Non-migratory; regularly patrols expansive territorial home ranges ranging from 20 to over 400 km²."
+    },
+    "defense": {
+      "vi": "Đỉnh chuỗi thức ăn, phòng thủ lãnh thổ dữ dội trước các cá thể cùng giới.",
+      "en": "Apex predator; fiercely defends territory against same-sex conspecifics using canine displays and physical aggression."
+    },
+    "text": {
+      "vi": "Hổ rất thích nước và thường ngâm mình trong các hồ suối để làm mát vào những ngày nắng nóng.",
+      "en": "Tigers are exceptional swimmers and frequently bathe in rivers and lakes to stay cool during the heat."
+    }
+  },
+  "lifeCycle": {
+    "stages": [
+      {
+        "key": "infant",
+        "name": { "vi": "Hổ con sơ sinh", "en": "Newborn Cub" },
+        "description": { "vi": "Mù và phụ thuộc hoàn toàn vào mẹ trong 2 tháng đầu.", "en": "Blind and entirely dependent on the mother for the first 2 months." },
+        "durationDays": [0, 60]
+      },
+      {
+        "key": "juvenile",
+        "name": { "vi": "Hổ non học săn", "en": "Juvenile Hunter" },
+        "description": { "vi": "Bắt đầu theo mẹ học kỹ năng rình và săn mồi.", "en": "Accompanies mother on hunts to learn predatory tactics." },
+        "durationDays": [60, 540]
+      },
+      {
+        "key": "subadult",
+        "name": { "vi": "Hổ mới lớn tách đàn", "en": "Dispersing Subadult" },
+        "description": { "vi": "Rời mẹ để tìm kiếm lãnh thổ riêng.", "en": "Leaves the natal home range to establish an independent territory." },
+        "durationDays": [540, 900]
+      },
+      {
+        "key": "adult",
+        "name": { "vi": "Hổ trưởng thành", "en": "Mature Adult" },
+        "description": { "vi": "Đạt độ chín sinh dục và làm chủ vùng lãnh thổ.", "en": "Sexually mature and actively reproducing territory owner." },
+        "durationDays": [900, 7300]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [10, 15],
+      "captivity": [16, 26]
+    }
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": "polygynous",
+    "season": "Quanh năm, đỉnh điểm từ tháng 11 đến tháng 4",
+    "gestationDays": [93, 112],
+    "clutchOrLitterSize": [2, 4],
+    "parentalCare": {
+      "vi": "Hổ mẹ đơn thân nuôi nấng và bảo vệ con trong khoảng 2 năm; con đực không tham gia chăm sóc con.",
+      "en": "Maternal investment only; the tigress raises and protects cubs for approximately 2 years without male assistance."
+    },
+    "text": {
+      "vi": "Hổ con bắt đầu tập ăn thịt từ tuần thứ 8 và bú mẹ hoàn toàn trong hai tháng đầu.",
+      "en": "Cubs begin consuming meat around 8 weeks while continuing to nurse periodically until 5 to 6 months old."
+    }
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "decreasing",
+    "threats": ["Mất và phân mảnh sinh cảnh", "Săn trộm lấy xương da và bộ phận", "Xung đột với con người", "Suy giảm con mồi"],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": ["Không có thiên địch tự nhiên ngoại trừ con người"],
+    "symbiosis": [],
+    "ecosystemRole": {
+      "vi": "Đóng vai trò loài chỉ thị và loài bảo trợ (umbrella species), kiểm soát số lượng thú ăn cỏ để bảo vệ cân bằng thảm thực vật rừng.",
+      "en": "Keystone apex predator regulating herbivore densities, thus sustaining vegetation density and trophic cascade equilibrium."
+    }
+  },
+  "humanRelations": {
+    "uses": ["Biểu tượng văn hóa, du lịch sinh thái bảo tồn"],
+    "conflicts": ["Tấn công gia súc và con người ở các vùng tiếp giáp rừng bị phân mảnh"],
+    "culturalNotes": {
+      "vi": "Là con giáp thứ ba (Dần) trong 12 con giáp Việt Nam và văn hóa Đông Á, biểu trưng cho sức mạnh, uy quyền và sự dũng mãnh.",
+      "en": "One of the 12 signs of the East Asian zodiac, symbolizing supreme courage, martial valor, and protective power."
+    }
+  },
+  "funFacts": [
+    {
+      "vi": "Các vằn trên da hổ không chỉ nằm trên lông mà còn in sâu trực tiếp vào lớp biểu bì da.",
+      "en": "Tiger stripes are not merely on the fur; they are directly imprinted into the underlying epidermis."
+    },
+    {
+      "vi": "Mỗi cá thể hổ có hoa văn sọc vằn độc nhất vô nhị giống hệt như dấu vân tay ở con người.",
+      "en": "No two tigers have the same stripe patterns; they function like human fingerprints for individual identification."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/panthera-tigris.glb",
+      "anatomy": "anatomy/panthera-tigris.json",
+      "license": "CC-BY-4.0",
+      "author": "Smithsonian 3D / Open Heritage",
+      "sourceUrl": "https://3d.si.edu",
+      "tier": "A",
+      "isRepresentative": false,
+      "representativeFor": null
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/1280px-Walking_tiger_female.jpg",
+        "license": "CC-BY-SA-4.0",
+        "author": "Davidvraju",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walking_tiger_female.jpg",
+        "caption": {
+          "vi": "Cá thể hổ cái tại Vườn quốc gia Ranthambore",
+          "en": "Female Bengal tiger in Ranthambore National Park"
+        }
+      }
+    ],
+    "silhouette": {
+      "svg": "silhouette/panthera-tigris.svg",
+      "license": "CC0",
+      "sourceUrl": "https://www.phylopic.org"
+    }
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5219416",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q19939",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    },
+    {
+      "field": "conservation",
+      "source": "iucn",
+      "url": "https://www.iucnredlist.org/species/15955/214862019",
+      "license": "CC-BY-SA",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "morphology.weightKg",
+      "source": "pantheria",
+      "url": "https://esapubs.org/archive/ecol/E090/184/",
+      "license": "Open Access",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "behavior.text.vi",
+      "source": "wikipedia-vi",
+      "url": "https://vi.wikipedia.org/wiki/H%E1%BB%95",
+      "license": "CC-BY-SA-4.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

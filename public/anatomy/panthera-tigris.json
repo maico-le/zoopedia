@@ -1,0 +1,78 @@
+{
+  "model": "models/panthera-tigris.glb",
+  "layers": [
+    { "id": "skin", "name": { "vi": "Da & Lông vằn", "en": "Skin & Striped Fur" }, "default": true },
+    { "id": "muscle", "name": { "vi": "Hệ cơ bắp", "en": "Muscular System" }, "default": false },
+    { "id": "skeleton", "name": { "vi": "Hệ xương khớp", "en": "Skeletal System" }, "default": false },
+    { "id": "circulatory", "name": { "vi": "Hệ tuần hoàn (Tim mạch)", "en": "Circulatory System" }, "default": false },
+    { "id": "respiratory", "name": { "vi": "Hệ hô hấp (Phổi)", "en": "Respiratory System" }, "default": false },
+    { "id": "digestive", "name": { "vi": "Hệ tiêu hóa", "en": "Digestive System" }, "default": false },
+    { "id": "nervous", "name": { "vi": "Hệ thần kinh", "en": "Nervous System" }, "default": false }
+  ],
+  "parts": [
+    {
+      "node": "skin_outer",
+      "layer": "skin",
+      "name": { "vi": "Lớp da và bộ lông cam sọc đen", "en": "Outer Fur Coat", "latin": "Integumentum commune" },
+      "function": {
+        "vi": "Ngụy trang trong thảm thực vật, điều hòa thân nhiệt và chống chịu thời tiết",
+        "en": "Camouflage in dense brush, thermoregulation, and weather barrier"
+      },
+      "description": {
+        "vi": "Chứa các tế bào sắc tố melanin tạo sọc vằn ăn sâu tới lớp biểu bì chân lông.",
+        "en": "Melanin pigments form disruptive coloration patterns that penetrate down into the epidermis."
+      },
+      "explodeVector": [0, 0.4, 0],
+      "labelAnchor": [0, 0.5, 0],
+      "relatedParts": ["muscle_body"]
+    },
+    {
+      "node": "bone_skull",
+      "layer": "skeleton",
+      "name": { "vi": "Hộp sọ và răng nanh", "en": "Skull & Canines", "latin": "Cranium et Dentes" },
+      "function": {
+        "vi": "Bảo vệ não bộ và tạo lực cắn nghẹt thở lên tới 1050 psi",
+        "en": "Protects brain and anchors massive jaw muscles delivering 1,050 psi bite force"
+      },
+      "description": {
+        "vi": "Răng nanh dài tới 9 cm (dài nhất trong các loài thú ăn thịt họ Mèo) dùng để khóa cổ họng con mồi.",
+        "en": "Canines measure up to 9 cm, perfectly engineered to crush vertebrae and collapse trachea."
+      },
+      "explodeVector": [0, 0.3, 0.5],
+      "labelAnchor": [0, 0.4, 0.6],
+      "relatedParts": ["bone_spine"]
+    },
+    {
+      "node": "organ_heart",
+      "layer": "circulatory",
+      "name": { "vi": "Tim", "en": "Heart", "latin": "Cor" },
+      "function": {
+        "vi": "Bơm máu giàu oxy nuôi cơ bắp trong những cú vồ bứt tốc cự ly ngắn",
+        "en": "Pumps oxygenated blood to heavy musculature during high-intensity ambush sprints"
+      },
+      "description": {
+        "vi": "Tim của thú họ mèo có khối lượng tương đối nhỏ so với kích thước cơ thể, phù hợp với chiến thuật rình vồ bộc phát ngắn chứ không rượt đuổi đường dài.",
+        "en": "Proportionately smaller cardiac index suited for explosive acceleration rather than prolonged endurance chases."
+      },
+      "explodeVector": [0.2, 0.1, 0],
+      "labelAnchor": [0.15, 0.2, 0],
+      "relatedParts": ["organ_lungs"]
+    },
+    {
+      "node": "organ_lungs",
+      "layer": "respiratory",
+      "name": { "vi": "Hai lá phổi", "en": "Lungs", "latin": "Pulmones" },
+      "function": {
+        "vi": "Trao đổi khí oxy và giải nhiệt qua đường hô hấp khi không có tuyến mồ hôi trên da",
+        "en": "Gas exchange and respiratory panting thermoregulation"
+      },
+      "description": {
+        "vi": "Phổi lớn thích nghi với lượng oxy tiêu thụ cao trong thời gian bùng nổ năng lượng.",
+        "en": "High lung capacity supports surge metabolic demands during high-speed take-downs."
+      },
+      "explodeVector": [-0.2, 0.1, 0],
+      "labelAnchor": [-0.15, 0.2, 0],
+      "relatedParts": ["organ_heart"]
+    }
+  ]
+}

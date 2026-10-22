@@ -1,0 +1,403 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zoopedia.org/schemas/species.schema.json",
+  "title": "Zoopedia Species Schema",
+  "description": "Standard schema for animal species entries in Zoopedia",
+  "type": "object",
+  "required": ["id", "names", "taxonomy", "media", "provenance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique URL-friendly slug, e.g. panthera-tigris"
+    },
+    "taxonKey": {
+      "type": "object",
+      "properties": {
+        "gbif": { "type": ["integer", "null"] },
+        "col": { "type": ["string", "null"] },
+        "wikidata": { "type": ["string", "null"] },
+        "inaturalist": { "type": ["integer", "null"] },
+        "eol": { "type": ["integer", "string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "names": {
+      "type": "object",
+      "required": ["scientific", "en", "vi"],
+      "properties": {
+        "scientific": { "type": "string" },
+        "authorship": { "type": ["string", "null"] },
+        "en": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "vi": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "otherLocal": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "nameSource": {
+          "type": "object",
+          "properties": {
+            "vi": {
+              "type": "string",
+              "enum": ["wikidata", "inat", "wikipedia-vi", "gbif", "manual", "machine_translated"]
+            },
+            "en": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "required": ["kingdom", "phylum", "class", "order", "family", "genus"],
+      "properties": {
+        "kingdom": { "type": "string" },
+        "phylum": { "type": "string" },
+        "class": { "type": "string" },
+        "order": { "type": "string" },
+        "family": { "type": "string" },
+        "genus": { "type": "string" },
+        "subspecies": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "morphology": {
+      "type": ["object", "null"],
+      "properties": {
+        "lengthCm": {
+          "type": ["array", "null"],
+          "items": { "type": "number" }
+        },
+        "weightKg": {
+          "type": ["array", "null"],
+          "items": { "type": "number" }
+        },
+        "description": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "sexualDimorphism": { "type": ["string", "null"] }
+      }
+    },
+    "habitat": {
+      "type": ["object", "null"],
+      "properties": {
+        "biomes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "realm": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "description": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "distribution": {
+      "type": ["object", "null"],
+      "properties": {
+        "countries": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "text": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "gbifOccurrenceMapUrl": { "type": ["string", "null"] }
+      }
+    },
+    "diet": {
+      "type": ["object", "null"],
+      "properties": {
+        "type": {
+          "type": ["string", "null"],
+          "enum": ["carnivore", "herbivore", "omnivore", "insectivore", "piscivore", "frugivore", "detritivore", "filter_feeder", "other", null]
+        },
+        "preyOrFood": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "feedingBehavior": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "behavior": {
+      "type": ["object", "null"],
+      "properties": {
+        "activityPattern": {
+          "type": ["string", "null"],
+          "enum": ["diurnal", "nocturnal", "crepuscular", "cathemeral", null]
+        },
+        "social": {
+          "type": ["string", "null"],
+          "enum": ["solitary", "pairs", "gregarious", "eusocial", "colonial", null]
+        },
+        "communication": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "migration": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "defense": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "text": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "lifeCycle": {
+      "type": ["object", "null"],
+      "properties": {
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "name"],
+            "properties": {
+              "key": { "type": "string" },
+              "name": {
+                "type": "object",
+                "properties": {
+                  "vi": { "type": "string" },
+                  "en": { "type": "string" }
+                }
+              },
+              "description": {
+                "type": ["object", "null"],
+                "properties": {
+                  "vi": { "type": ["string", "null"] },
+                  "en": { "type": ["string", "null"] }
+                }
+              },
+              "durationDays": {
+                "type": ["array", "null"],
+                "items": { "type": "number" }
+              }
+            }
+          }
+        },
+        "lifespanYears": {
+          "type": ["object", "null"],
+          "properties": {
+            "wild": {
+              "type": ["array", "null"],
+              "items": { "type": "number" }
+            },
+            "captivity": {
+              "type": ["array", "null"],
+              "items": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "reproduction": {
+      "type": ["object", "null"],
+      "properties": {
+        "mode": {
+          "type": ["string", "null"],
+          "enum": ["viviparous", "oviparous", "ovoviviparous", "asexual", null]
+        },
+        "matingSystem": { "type": ["string", "null"] },
+        "season": { "type": ["string", "null"] },
+        "gestationDays": {
+          "type": ["array", "null"],
+          "items": { "type": "number" }
+        },
+        "clutchOrLitterSize": {
+          "type": ["array", "null"],
+          "items": { "type": "number" }
+        },
+        "parentalCare": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        },
+        "text": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "conservation": {
+      "type": ["object", "null"],
+      "properties": {
+        "iucn": {
+          "type": ["string", "null"],
+          "enum": ["EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD", "NE", null]
+        },
+        "populationTrend": {
+          "type": ["string", "null"],
+          "enum": ["increasing", "decreasing", "stable", "unknown", null]
+        },
+        "threats": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "assessmentYear": { "type": ["integer", "null"] }
+      }
+    },
+    "ecology": {
+      "type": ["object", "null"],
+      "properties": {
+        "predators": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "symbiosis": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "ecosystemRole": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "humanRelations": {
+      "type": ["object", "null"],
+      "properties": {
+        "uses": { "type": "array", "items": { "type": "string" } },
+        "conflicts": { "type": "array", "items": { "type": "string" } },
+        "culturalNotes": {
+          "type": ["object", "null"],
+          "properties": {
+            "vi": { "type": ["string", "null"] },
+            "en": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "funFacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["vi", "en"],
+        "properties": {
+          "vi": { "type": "string" },
+          "en": { "type": "string" }
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "properties": {
+        "model3d": {
+          "type": ["object", "null"],
+          "required": ["glb", "license", "sourceUrl"],
+          "properties": {
+            "glb": { "type": "string" },
+            "anatomy": { "type": ["string", "null"] },
+            "license": { "type": "string" },
+            "author": { "type": ["string", "null"] },
+            "sourceUrl": { "type": "string" },
+            "tier": { "type": "string", "enum": ["A", "B", "C"] },
+            "isRepresentative": { "type": "boolean" },
+            "representativeFor": { "type": ["string", "null"] }
+          }
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "license", "sourceUrl"],
+            "properties": {
+              "url": { "type": "string" },
+              "license": { "type": "string" },
+              "author": { "type": ["string", "null"] },
+              "sourceUrl": { "type": "string" },
+              "caption": {
+                "type": ["object", "null"],
+                "properties": {
+                  "vi": { "type": "string" },
+                  "en": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "silhouette": {
+          "type": ["object", "null"],
+          "properties": {
+            "svg": { "type": "string" },
+            "license": { "type": "string" },
+            "sourceUrl": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "source", "license", "retrievedAt", "method"],
+        "properties": {
+          "field": { "type": "string" },
+          "source": { "type": "string" },
+          "url": { "type": ["string", "null"] },
+          "license": { "type": "string" },
+          "retrievedAt": { "type": "string" },
+          "method": {
+            "type": "string",
+            "enum": ["extracted", "curated", "llm_summarized", "machine_translated", "database_import"]
+          },
+          "needsReview": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

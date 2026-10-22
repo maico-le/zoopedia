@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zoopedia.org/schemas/anatomy.schema.json",
+  "title": "Zoopedia Anatomy Schema",
+  "description": "Mapping from 3D GLB mesh node names to anatomical layers, organs, and metadata",
+  "type": "object",
+  "required": ["model", "layers", "parts"],
+  "properties": {
+    "model": { "type": "string" },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": {
+            "type": "object",
+            "required": ["vi", "en"],
+            "properties": {
+              "vi": { "type": "string" },
+              "en": { "type": "string" }
+            }
+          },
+          "default": { "type": "boolean" }
+        }
+      }
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node", "layer", "name"],
+        "properties": {
+          "node": { "type": "string" },
+          "layer": { "type": "string" },
+          "name": {
+            "type": "object",
+            "required": ["vi", "en"],
+            "properties": {
+              "vi": { "type": "string" },
+              "en": { "type": "string" },
+              "latin": { "type": "string" }
+            }
+          },
+          "function": {
+            "type": ["object", "null"],
+            "properties": {
+              "vi": { "type": "string" },
+              "en": { "type": "string" }
+            }
+          },
+          "description": {
+            "type": ["object", "null"],
+            "properties": {
+              "vi": { "type": "string" },
+              "en": { "type": "string" }
+            }
+          },
+          "explodeVector": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "labelAnchor": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "relatedParts": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
