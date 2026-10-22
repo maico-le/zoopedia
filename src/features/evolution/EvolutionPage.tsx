@@ -14,7 +14,9 @@ import {
   Info,
   Layers,
   Flame,
-  Globe
+  Globe,
+  Play,
+  Pause
 } from 'lucide-react';
 import taxaTreeData from '../../../data/taxa/tree.json';
 import speciesIndexData from '../../../data/species-index.json';
@@ -212,9 +214,41 @@ const ORDER_EVOLUTION_META: Record<string, { divergenceMya: number; descVi: stri
   Lamniformes: { divergenceMya: 140, descVi: 'Hệ tuần hoàn trao đổi nhiệt ngược dòng (rete mirabile) giữ cơ bắp ấm hơn nước biển, răng thay thế liên tục vô tận.', descEn: 'Countercurrent vascular heat exchangers (rete mirabile) keeping core swimming muscles warm, serial polyphyodont teeth.' }
 };
 
-// --- GEOLOGICAL TIMELINE EPOCHS ---
+// --- PALEOGEOGRAPHIC MAP SPECIMEN DATA STRUCTURES ---
 
-interface GeologicalEpoch {
+export interface PaleomapSpecimenPoint {
+  id: string;
+  nameVi: string;
+  nameEn: string;
+  scientific: string;
+  icon: string;
+  x: number; // 0 to 1000 SVG coordinates
+  y: number; // 0 to 500 SVG coordinates
+  paleoLocationVi: string;
+  paleoLocationEn: string;
+  habitatVi: string;
+  habitatEn: string;
+  distributionVi: string;
+  distributionEn: string;
+  descendantNameVi?: string;
+  descendantNameEn?: string;
+  descendantSlug?: string;
+}
+
+export interface PaleomapData {
+  supercontinentVi: string;
+  supercontinentEn: string;
+  oceanVi: string;
+  oceanEn: string;
+  climateZoneVi: string;
+  climateZoneEn: string;
+  landmassPath: string; // SVG path defining the continental shapes
+  shallowSeasPath?: string; // SVG path for coastal shallow waters
+  iceCapsPath?: string; // SVG path for polar glaciers
+  specimens: PaleomapSpecimenPoint[];
+}
+
+export interface GeologicalEpoch {
   id: string;
   nameVi: string;
   nameEn: string;
@@ -235,6 +269,7 @@ interface GeologicalEpoch {
     impactEn: string;
   };
   connectedSpeciesSlugs: string[];
+  paleoMap: PaleomapData;
 }
 
 const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
@@ -253,6 +288,72 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
     evolutionaryLeapVi: 'Sự hình thành Dây sống lưng (notochord), mắt phân giải cao sơ khai, vỏ cứng bảo vệ và cơ chế săn mồi chủ động.',
     evolutionaryLeapEn: 'Invention of dorsal notochord, bilateral visual eyes, protective biomineralized shells, and active predatory pursuit.',
     connectedSpeciesSlugs: ['octopus-vulgaris', 'sepia-officinalis', 'asterias-rubens', 'acanthaster-planci', 'strongylocentrotus-purpuratus'],
+    paleoMap: {
+      supercontinentVi: 'Quần đảo Laurentia, Baltica & Vành đai Gondwana Cổ',
+      supercontinentEn: 'Proto-Gondwana & Laurentian Island Arc System',
+      oceanVi: 'Siêu Đại dương Toàn cầu Panthalassa & Biển Iapetus',
+      oceanEn: 'Global Panthalassa Ocean & Iapetus Seaway',
+      climateZoneVi: 'Khí hậu nhà kính ấm áp, hầu như không có băng ở hai cực; biển nông xích đạo bao phủ phần lớn lục địa.',
+      climateZoneEn: 'Super-greenhouse ice-free planet; vast shallow warm epicontinental shelves.',
+      landmassPath: 'M 160 170 Q 230 150 290 190 Q 260 250 190 240 Z M 360 190 Q 430 170 470 210 Q 440 260 370 240 Z M 510 290 Q 660 240 830 310 Q 860 410 690 430 Q 560 410 490 350 Z M 660 150 Q 730 130 770 170 Q 740 210 670 190 Z',
+      shallowSeasPath: 'M 140 150 Q 250 130 310 180 Q 280 270 170 260 Z M 490 270 Q 680 220 850 290 Q 880 430 670 450 Q 540 430 470 340 Z',
+      specimens: [
+        {
+          id: 'cb_1',
+          nameVi: 'Haikouichthys ercaicunensis',
+          nameEn: 'Haikouichthys (First Vertebrate Fish)',
+          scientific: 'Haikouichthys ercaicunensis',
+          icon: '🐟',
+          x: 720,
+          y: 170,
+          paleoLocationVi: 'Rạn đá ngầm Trừng Giang (Chengjiang, Nam Trung Hoa Cổ)',
+          paleoLocationEn: 'Chengjiang Lagerstätte (South China Shelf)',
+          habitatVi: 'Biển nông xích đạo, bơi uốn lượn lơ lửng gần đáy bùn.',
+          habitatEn: 'Shallow equatorial shelf, undulating above microbial mats.',
+          distributionVi: 'Mẫu vật dài 2.5 cm, sở hữu cột sống sụn sơ khai, vây lưng và mắt thấu kính đầu tiên trên Trái Đất.',
+          distributionEn: '2.5cm proto-fish with earliest cartilaginous vertebral column, dorsal fin, and camera eyes.',
+          descendantNameVi: 'Cá sụn & Toàn bộ Động vật Có xương sống',
+          descendantNameEn: 'Chondrichthyes & Vertebrates',
+          descendantSlug: 'carcharodon-carcharias',
+        },
+        {
+          id: 'cb_2',
+          nameVi: 'Pikaia & Anomalocaris',
+          nameEn: 'Pikaia & Anomalocaris (Apex Apex Predator)',
+          scientific: 'Anomalocaris canadensis',
+          icon: '🦐',
+          x: 220,
+          y: 200,
+          paleoLocationVi: 'Đới sạt trượt Burgess Shale, Biển Laurentia (Bắc Mỹ Cổ)',
+          paleoLocationEn: 'Burgess Shale, Laurentian Shelf (Ancient North America)',
+          habitatVi: 'Rìa thềm lục địa sâu giàu sinh vật trôi dạt.',
+          habitatEn: 'Deep-water carbonate reef escarpment.',
+          distributionVi: 'Quái vật săn mồi đầu bảng dài 1 mét với hai càng cuộn gai và mắt kép phân giải cao săn bọ ba thùy.',
+          distributionEn: '1-meter apex carnivore with segmented spiked grasping appendages and compound eyes.',
+          descendantNameVi: 'Tôm hùm & Động vật Chân khớp',
+          descendantNameEn: 'American Lobster & Arthropods',
+          descendantSlug: 'homarus-americanus',
+        },
+        {
+          id: 'cb_3',
+          nameVi: 'Trilobita (Bọ Ba Thùy Nguyên Thủy)',
+          nameEn: 'Primitive Trilobites (Olenellus)',
+          scientific: 'Olenellus thompsoni',
+          icon: '🪲',
+          x: 620,
+          y: 350,
+          paleoLocationVi: 'Thềm lục địa Proto-Gondwana (Australia & Nam Cực Cổ)',
+          paleoLocationEn: 'Proto-Gondwana Marine Shelf',
+          habitatVi: 'Đáy bùn biển cát giàu khoáng chất.',
+          habitatEn: 'Benthic sandy substrate and microbial reefs.',
+          distributionVi: 'Loài bò đáy thống trị đại dương Cambri với mắt khoáng calcite và lớp giáp chitin phân đốt.',
+          distributionEn: 'Ubiquitous benthic scavengers equipped with mineralized calcite lenses and rigid exoskeletons.',
+          descendantNameVi: 'Sam biển (Hóa thạch sống)',
+          descendantNameEn: 'Atlantic Horseshoe Crab',
+          descendantSlug: 'limulus-polyphemus',
+        },
+      ],
+    },
   },
   {
     id: 'devonian',
@@ -274,6 +375,72 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
       nameEn: 'Late Devonian Extinction (~372 Ma)',
       impactVi: 'Thiếu hụt oxy đại dương xóa sổ 70-80% loài biển, mở đường cho động vật 4 chân lan rộng lên lục địa.',
       impactEn: 'Severe ocean anoxia wiped out 75% of marine taxa, paving the evolutionary highway for land colonization.',
+    },
+    paleoMap: {
+      supercontinentVi: 'Lục địa Euramerica (Old Red Sandstone) & Gondwana',
+      supercontinentEn: 'Euramerica (Old Red Continent) & Gondwana Collision',
+      oceanVi: 'Đại dương Rheic & Panthalassa',
+      oceanEn: 'Rheic Ocean & Panthalassa Basin',
+      climateZoneVi: 'Ấm ẩm xích đạo; rừng cây thân gỗ sơ khai (Archaeopteris) bắt đầu hấp thụ CO2 tạo lớp đất bùn đầu tiên.',
+      climateZoneEn: 'Equatorial wet tropical; first progymnosperm forests stabilizing coastal floodplains.',
+      landmassPath: 'M 190 130 Q 330 110 430 160 Q 400 270 260 260 Q 190 220 190 130 Z M 490 230 Q 710 190 860 270 Q 890 420 660 450 Q 500 410 470 310 Z',
+      shallowSeasPath: 'M 160 110 Q 350 90 450 150 Q 420 300 240 280 Z',
+      specimens: [
+        {
+          id: 'dv_1',
+          nameVi: 'Tiktaalik roseae (Cá Bò Lên Cạn)',
+          nameEn: 'Tiktaalik roseae (The Fishapod)',
+          scientific: 'Tiktaalik roseae',
+          icon: '🦎',
+          x: 250,
+          y: 140,
+          paleoLocationVi: 'Hệ thống sông ngòi Đảo Ellesmere, Bắc Cực Cổ Canada',
+          paleoLocationEn: 'Ellesmere Island River Delta, Ancient Canada',
+          habitatVi: 'Đầm lầy cạn nước ngọt nghèo oxy ven biển xích đạo.',
+          habitatEn: 'Hypoxic shallow freshwater meander rivers.',
+          distributionVi: 'Sở hữu cổ xoay linh hoạt tách khỏi vai, vây ngực có xương cổ tay và xương ngón có thể nâng đỡ nửa thân trên bò lên bờ.',
+          distributionEn: 'Possessed a mobile neck distinct from shoulders, wrist joints, and primitive lungs for crawling out of water.',
+          descendantNameVi: 'Kỳ giông Axolotl & Lớp Lưỡng Cư',
+          descendantNameEn: 'Axolotl & Amphibians',
+          descendantSlug: 'ambystoma-mexicanum',
+        },
+        {
+          id: 'dv_2',
+          nameVi: 'Dunkleosteus terrelli (Quái Thú Cá Bọc Thép)',
+          nameEn: 'Dunkleosteus (Armored Placoderm Apex)',
+          scientific: 'Dunkleosteus terrelli',
+          icon: '🦈',
+          x: 370,
+          y: 210,
+          paleoLocationVi: 'Biển Nông Nội Địa Bắc Mỹ & Tây Âu Cổ',
+          paleoLocationEn: 'Euramerican Inland Epicontinental Seaway',
+          habitatVi: 'Biển sâu trung bình và vịnh mở.',
+          habitatEn: 'Pelagic and nearshore marine ecosystems.',
+          distributionVi: 'Dài tới 9 mét, nặng 4 tấn với đầu bọc giáp xương thép và phiến xương sắc như dao cạo với lực cắn khủng khiếp nhất thời bấy giờ.',
+          distributionEn: '9-meter armored hypercarnivore delivering 5,000 N shear bite force with self-sharpening gnathal plates.',
+          descendantNameVi: 'Cá mập trắng lớn',
+          descendantNameEn: 'Great White Shark',
+          descendantSlug: 'carcharodon-carcharias',
+        },
+        {
+          id: 'dv_3',
+          nameVi: 'Latimeria & Sarcopterygii (Cá Vây Tay)',
+          nameEn: 'Gogo Sarcopterygian Lungfish',
+          scientific: 'Gogonasus andrewsae',
+          icon: '🐟',
+          x: 770,
+          y: 330,
+          paleoLocationVi: 'Rạn San Hô Cổ Gogo, Tây Úc',
+          paleoLocationEn: 'Gogo Fossil Reef, Western Australia',
+          habitatVi: 'Rạn san hô đá vôi nhiệt đới ấm áp.',
+          habitatEn: 'Thriving tropical barrier reef lagoon.',
+          distributionVi: 'Cá có vây cơ bắp gắn vào đai hông và đai vai, tiền thân giải phẫu của 4 chân động vật có xương sống trên cạn.',
+          distributionEn: 'Lobe-finned fish preserving exquisite 3D internal anatomy of humerus and radius precursors.',
+          descendantNameVi: 'Cá Coelacanth Hóa Thạch Sống',
+          descendantNameEn: 'Living Coelacanth',
+          descendantSlug: 'latimeria-chalumnae',
+        },
+      ],
     },
   },
   {
@@ -297,6 +464,73 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
       impactVi: 'Núi lửa bẫy đá Siberia phun trào khiến 95% sinh vật biển và 70% sinh vật trên cạn diệt vong hoàn toàn.',
       impactEn: 'Siberian Traps mega-volcanism eradicated 96% of marine species and 70% of land vertebrates.',
     },
+    paleoMap: {
+      supercontinentVi: 'SIÊU LỤC ĐỊA PANGEA DUY NHẤT (THE SUPERCONTINENT PANGEA)',
+      supercontinentEn: 'Single Supercontinent Pangea',
+      oceanVi: 'Đại dương Khổng lồ Panthalassa & Vịnh Tethys Cổ',
+      oceanEn: 'Vast Panthalassa & Paleo-Tethys Bay',
+      climateZoneVi: 'Vành đai đầm lầy xích đạo siêu oxy hóa nhường chỗ cho hoang mạc khô cằn khắc nghiệt ở vùng trung tâm siêu lục địa Pangea.',
+      climateZoneEn: 'Equatorial hyperoxic coal swamps evolving into hyper-arid red desert interiors.',
+      landmassPath: 'M 350 60 Q 530 50 590 110 Q 490 170 430 210 Q 390 260 450 300 Q 550 330 690 310 Q 650 420 470 450 Q 330 430 290 330 Q 270 210 310 120 Z',
+      shallowSeasPath: 'M 400 240 Q 550 280 660 270 Q 580 340 450 320 Z',
+      iceCapsPath: 'M 330 410 Q 470 430 630 400 Q 530 460 380 450 Z',
+      specimens: [
+        {
+          id: 'cp_1',
+          nameVi: 'Dimetrodon grandis (Tổ Tiên Nhánh Thú)',
+          nameEn: 'Dimetrodon grandis (Stem-Mammal)',
+          scientific: 'Dimetrodon grandis',
+          icon: '🦁',
+          x: 350,
+          y: 200,
+          paleoLocationVi: 'Bãi Đất Đỏ Texas Red Beds (Nội Địa Pangea)',
+          paleoLocationEn: 'Texas Red Beds (Pangea Equatorial Basin)',
+          habitatVi: 'Đồng bằng đất trũng bán khô hạn xích đạo.',
+          habitatEn: 'Semi-arid floodplain and ephemeral river margins.',
+          distributionVi: 'Thú bò sát Synapsid có "cánh buồm" xương sống điều hòa thân nhiệt và răng nanh phân hóa chuyên biệt.',
+          distributionEn: 'Carnivorous synapsid with dorsal neural spine sail for thermoregulation and differentiated heterodont teeth.',
+          descendantNameVi: 'Hổ & Toàn bộ Lớp Thú hiện đại',
+          descendantNameEn: 'Tiger & All Living Mammals',
+          descendantSlug: 'panthera-tigris',
+        },
+        {
+          id: 'cp_2',
+          nameVi: 'Arthropleura & Meganeura (Côn Trùng Khổng Lồ)',
+          nameEn: 'Arthropleura (Giant Millipede)',
+          scientific: 'Arthropleura armata',
+          icon: '🐛',
+          x: 430,
+          y: 150,
+          paleoLocationVi: 'Rừng Dương Xỉ Đầm Lầy Than Đá, Châu Âu Pangea',
+          paleoLocationEn: 'Equatorial Coal Forest Basin, Pangea',
+          habitatVi: 'Rừng đầm lầy rậm rạp nồng độ oxy đạt mức kỷ lục 35%.',
+          habitatEn: 'Hyperoxic lepidodendron swamp canopy.',
+          distributionVi: 'Rết nhiều chân dài 2.5 mét nặng 50 kg bò lướt qua thảm lá mục; chuồn chuồn Meganeura sải cánh 70 cm săn mồi trên không.',
+          distributionEn: '2.5-meter giant myriapod crawling through peat swamps fueled by 35% atmospheric oxygen.',
+          descendantNameVi: 'Rết khổng lồ châu Á',
+          descendantNameEn: 'Giant Asian Centipede',
+          descendantSlug: 'scolopendra-subspinipes',
+        },
+        {
+          id: 'cp_3',
+          nameVi: 'Scutosaurus & Thú Bò Sát Phương Bắc',
+          nameEn: 'Scutosaurus (Armored Pareiasaur)',
+          scientific: 'Scutosaurus karpinskii',
+          icon: '🦏',
+          x: 490,
+          y: 100,
+          paleoLocationVi: 'Lưu Vực Sông Bắc Dvina, Nga (Phía Bắc Pangea)',
+          paleoLocationEn: 'Northern Pangea River Basins, Urals',
+          habitatVi: 'Vùng đất trũng khô cằn cận cực bắc.',
+          habitatEn: 'High-latitude seasonal semi-deserts.',
+          distributionVi: 'Bò sát bọc vảy giáp xương nặng 1.5 tấn ăn rễ cây khô và thực vật gai góc.',
+          distributionEn: 'Heavily osteoderm-armored 1.5-ton herbivore adapted to grinding abrasive desert vegetation.',
+          descendantNameVi: 'Rùa cạn & Rùa biển',
+          descendantNameEn: 'Green Sea Turtle',
+          descendantSlug: 'chelonia-mydas',
+        },
+      ],
+    },
   },
   {
     id: 'mesozoic',
@@ -319,6 +553,72 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
       impactVi: 'Thiên thạch Chicxulub va chạm bán đảo Yucatan xóa sạch khủng long phi điểu, mở toang cánh cửa cho Lớp Thú trỗi dậy.',
       impactEn: 'Chicxulub asteroid impact eradicated non-avian dinosaurs, unlocking a vacant biosphere for mammalian radiation.',
     },
+    paleoMap: {
+      supercontinentVi: 'LAURASIA (BẮC MỸ / Á-ÂU) & GONDWANA (NAM MỸ / CHÂU PHI / ÚC)',
+      supercontinentEn: 'Laurasia (North) & Gondwana (South) Continental Split',
+      oceanVi: 'Biển Tethys Mở Rộng & Đại Tây Dương Sơ Khai',
+      oceanEn: 'Widening Tethys Seaway & Proto-Atlantic Rift',
+      climateZoneVi: 'Khí hậu nhiệt đới đồng đều từ xích đạo tới hai cực; không có chỏm băng vĩnh cửu; rừng lá kim rậm rạp.',
+      climateZoneEn: 'Equable warm greenhouse globally; lush conifers and ferns reaching the polar circles.',
+      landmassPath: 'M 140 100 Q 320 90 400 140 Q 360 220 220 230 Q 150 190 130 130 Z M 440 100 Q 760 80 840 150 Q 780 230 600 240 Q 480 200 440 140 Z M 220 270 Q 340 270 340 380 Q 280 450 220 410 Z M 440 260 Q 600 250 580 380 Q 520 440 440 370 Z M 720 340 Q 840 330 840 430 Q 760 450 700 390 Z',
+      shallowSeasPath: 'M 350 130 Q 480 180 580 200 Q 460 240 340 220 Z',
+      specimens: [
+        {
+          id: 'mz_1',
+          nameVi: 'Archaeopteryx lithographica (Chim Đầu Tiên)',
+          nameEn: 'Archaeopteryx (The First Feathered Bird)',
+          scientific: 'Archaeopteryx lithographica',
+          icon: '🦅',
+          x: 520,
+          y: 160,
+          paleoLocationVi: 'Quần Đảo Đầm Phá Solnhofen, Đức (Laurasia Châu Âu)',
+          paleoLocationEn: 'Solnhofen Archipelago Lagoons, Germany',
+          habitatVi: 'Quần đảo san hô bán khô hạn với các đầm nước mặn yên bình.',
+          habitatEn: 'Hypersaline arid island archipelago with calm lagoons.',
+          distributionVi: 'Hóa thạch chuyển tiếp vĩ đại: Đôi cánh lông vũ hoàn chỉnh giúp lướt gió nhưng vẫn giữ hàm răng nhọn và móng vuốt trên cánh.',
+          distributionEn: 'The iconic transitional fossil displaying asymmetric flight feathers, clawed wing digits, and sharp dinosaurian teeth.',
+          descendantNameVi: 'Đại bàng vàng & Lớp Chim hiện đại',
+          descendantNameEn: 'Golden Eagle & All Modern Birds',
+          descendantSlug: 'aquila-chrysaetos',
+        },
+        {
+          id: 'mz_2',
+          nameVi: 'Morganucodon & Thú Kiếm Ăn Đêm',
+          nameEn: 'Morganucodon (Nocturnal Mammaliaform)',
+          scientific: 'Morganucodon watsoni',
+          icon: '🐀',
+          x: 230,
+          y: 140,
+          paleoLocationVi: 'Lục Địa Đảo Laramidia (Tây Bắc Mỹ Cổ)',
+          paleoLocationEn: 'Laramidian Subtropical Woodland',
+          habitatVi: 'Hang hốc và gốc cây dương xỉ cổ dưới bóng của Khủng long.',
+          habitatEn: 'Subterranean burrows and leaf litter under dinosaur feet.',
+          distributionVi: 'Thú cổ nhỏ bằng chuột, tiến hóa lông mao cách nhiệt và tai giữa siêu nhạy để săn côn trùng trong bóng đêm.',
+          distributionEn: 'Tiny shrew-sized ancestor that evolved endothermy, pelage, and 3 middle ear bones for nocturnal foraging.',
+          descendantNameVi: 'Khỉ & Động vật Linh trưởng',
+          descendantNameEn: 'Chimpanzee & Primates',
+          descendantSlug: 'pan-troglodytes',
+        },
+        {
+          id: 'mz_3',
+          nameVi: 'Ornithorhynchus Ancestor (Thú Đơn Huyệt Cổ)',
+          nameEn: 'Steropodon (Gondwana Monotreme)',
+          scientific: 'Steropodon galmani',
+          icon: '🦆',
+          x: 780,
+          y: 390,
+          paleoLocationVi: 'Rừng Lá Rộng Nam Cực - Úc (Đông Gondwana)',
+          paleoLocationEn: 'Lightning Ridge, Ancient Australia-Antarctica',
+          habitatVi: 'Hồ nước ngọt vùng cực ôn đới ẩm ướt.',
+          habitatEn: 'Cool temperate polar floodplain river.',
+          distributionVi: 'Nhánh thú đẻ trứng sơ khai phân lập tại vùng đất cô lập Gondwana, giữ nguyên cơ chế đẻ trứng và thụ cảm điện từ ở mỏ.',
+          distributionEn: 'Basal egg-laying monotreme developing electroreceptive bills in isolated southern Gondwanan waters.',
+          descendantNameVi: 'Thú mỏ vịt độc đáo',
+          descendantNameEn: 'Platypus',
+          descendantSlug: 'ornithorhynchus-anatinus',
+        },
+      ],
+    },
   },
   {
     id: 'cenozoic_early',
@@ -335,6 +635,72 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
     evolutionaryLeapVi: 'Não bộ vỏ mới (Neocortex) bành trướng; tổ tiên cá voi chuyển từ cạn xuống biển; răng nanh và vuốt thú săn mồi phân hóa tột bậc.',
     evolutionaryLeapEn: 'Massive encephalization of the neocortex; evolutionary return of cetaceans to the sea; extreme dental carnassial specialization.',
     connectedSpeciesSlugs: ['balaenoptera-musculus', 'orcinus-orca', 'elephas-maximus', 'loxodonta-africana', 'panthera-tigris', 'panthera-leo'],
+    paleoMap: {
+      supercontinentVi: 'CÁC LỤC ĐỊA TRÔI DẠT & BIỂN TETHYS DẦN KHÉP LẠI',
+      supercontinentEn: 'Modernizing Continents & Tethys Closure',
+      oceanVi: 'Đại Tây Dương Rộng Mở & Dòng Hải Lưu Vòng Nam Cực',
+      oceanEn: 'Circum-Antarctic Current & Atlantic Expansion',
+      climateZoneVi: 'Trái Đất bắt đầu hạ nhiệt sau đợt cực nhiệt Eocene (PETM); đồng cỏ savanna thay thế rừng rậm xích đạo.',
+      climateZoneEn: 'Cooling from the PETM thermal maximum; expansion of open grasslands and savannas.',
+      landmassPath: 'M 120 80 Q 260 70 320 130 Q 280 220 180 230 Z M 420 90 Q 780 70 860 160 Q 800 240 620 230 Q 480 210 420 140 Z M 230 260 Q 330 260 320 390 Q 270 450 210 390 Z M 440 220 Q 580 210 570 370 Q 510 420 440 340 Z M 640 220 Q 690 200 700 260 Q 660 270 640 240 Z M 750 330 Q 860 320 870 400 Q 800 430 740 380 Z',
+      shallowSeasPath: 'M 480 200 Q 640 180 670 230 Q 560 250 470 230 Z',
+      specimens: [
+        {
+          id: 'cz_1',
+          nameVi: 'Pakicetus inachus (Tổ Tiên Cá Voi 4 Chân)',
+          nameEn: 'Pakicetus inachus (Amphibious Proto-Cetacean)',
+          scientific: 'Pakicetus inachus',
+          icon: '🐋',
+          x: 650,
+          y: 200,
+          paleoLocationVi: 'Bờ Biển Nông Tethys, Pakistan Cổ (Nam Á)',
+          paleoLocationEn: 'Kuldana Formation, Ancient Pakistan',
+          habitatVi: 'Vùng nước lợ ven cửa sông và vịnh Tethys cạn.',
+          habitatEn: 'Hypersaline shallow estuaries of the narrowing Tethys.',
+          distributionVi: 'Thú ăn thịt 4 chân lội nước săn cá; xương tai trong dày đặc (involucrum) chuyên hóa thu âm dưới nước - bước đầu chuyển từ cạn xuống đại dương!',
+          distributionEn: 'Quadrupedal land mammal diving for fish; thick auditory bulla involucrum adapted for underwater acoustics.',
+          descendantNameVi: 'Cá voi xanh & Cá voi sát thủ',
+          descendantNameEn: 'Blue Whale & Orca',
+          descendantSlug: 'balaenoptera-musculus',
+        },
+        {
+          id: 'cz_2',
+          nameVi: 'Moeritherium lyonsi (Tổ Tiên Cổ Của Loài Voi)',
+          nameEn: 'Moeritherium (Basal Proboscidean)',
+          scientific: 'Moeritherium lyonsi',
+          icon: '🐘',
+          x: 500,
+          y: 230,
+          paleoLocationVi: 'Đầm Lầy Rừng Ngập Mặn Faiyum, Ai Cập (Bắc Phi Cổ)',
+          paleoLocationEn: 'Qasr el Sagha Formation, Faiyum, Egypt',
+          habitatVi: 'Đầm lầy nhiệt đới nước ngọt và rừng đước ven biển.',
+          habitatEn: 'Tropical river swamps and coastal mangrove lagoons.',
+          distributionVi: 'Kích thước như heo vòi (dài 2m), sống bán thủy sinh; môi trên và mũi bắt đầu kéo dài thành vòi ngắn để hít thở khi lặn ngập dưới nước.',
+          distributionEn: 'Tapir-like semi-aquatic feeder with elongated upper lip and incisor tusks browsing aquatic flora.',
+          descendantNameVi: 'Voi châu Á & Voi châu Phi',
+          descendantNameEn: 'Asian & African Elephants',
+          descendantSlug: 'elephas-maximus',
+        },
+        {
+          id: 'cz_3',
+          nameVi: 'Miacidae & Pseudaelurus (Tổ Tiên Họ Mèo)',
+          nameEn: 'Pseudaelurus (First True Felid)',
+          scientific: 'Pseudaelurus lorteti',
+          icon: '🐅',
+          x: 520,
+          y: 130,
+          paleoLocationVi: 'Rừng Thảo Nguyên Ôn Đới Sansan, Pháp (Tây Á-Âu)',
+          paleoLocationEn: 'Sansan Basin, France (Eurasian Forest Mosaic)',
+          habitatVi: 'Rừng cây thưa xen lẫn trảng cỏ savanna.',
+          habitatEn: 'Temperate mixed woodland and savanna mosaic.',
+          distributionVi: 'Thú săn mồi có vuốt co rút linh hoạt, răng hàm biến thành lưỡi kéo xé thịt (carnassial shear) - tổ tiên trực tiếp của tất cả loài Mèo lớn.',
+          distributionEn: 'Slender digitigrade stalker with retractable claws and perfected shearing carnassials.',
+          descendantNameVi: 'Hổ Bengal & Báo săn',
+          descendantNameEn: 'Bengal Tiger & Cheetah',
+          descendantSlug: 'panthera-tigris',
+        },
+      ],
+    },
   },
   {
     id: 'quaternary',
@@ -351,6 +717,73 @@ const GEOLOGICAL_EPOCHS: GeologicalEpoch[] = [
     evolutionaryLeapVi: 'Thích nghi cực hạn với giá rét (mỡ dày, lớp lông tơ kép), hành vi xã hội săn mồi theo đàn phối hợp cao độ.',
     evolutionaryLeapEn: 'Extreme cryo-insulation (thick adipose blubber and dense woolly underfur), complex cooperative pack sociality.',
     connectedSpeciesSlugs: ['ursus-maritimus', 'canis-lupus', 'pan-troglodytes', 'gorilla-beringei', 'bison-bison'],
+    paleoMap: {
+      supercontinentVi: 'KỶ BĂNG HÀ PLEISTOCENE - CẦU ĐẤT BERINGIA & THỀM LỤC ĐỊA SUNDA',
+      supercontinentEn: 'Last Glacial Maximum - Beringia & Sunda Shelf Landbridges',
+      oceanVi: 'Mực nước biển toàn cầu hạ thấp 120 mét; Băng bao phủ 30% lục địa',
+      oceanEn: 'Sea Level Drop -120m; 30% Terrestrial Ice Sheets',
+      climateZoneVi: 'Khí hậu khô lạnh cực hạn; thảo nguyên lãnh nguyên khô hạn (Mammoth Steppe) trải dài từ Tây Âu qua Siberia sang Alaska.',
+      climateZoneEn: 'Arid hyper-cold; vast hyper-productive Mammoth Steppe spanning 10,000 miles.',
+      landmassPath: 'M 110 90 Q 280 80 340 140 Q 290 240 170 240 Z M 410 90 Q 820 70 890 170 Q 820 250 640 250 Q 480 220 410 150 Z M 220 260 Q 320 260 310 400 Q 270 460 200 400 Z M 430 200 Q 580 200 580 380 Q 520 430 430 350 Z M 760 320 Q 870 310 880 410 Q 810 440 750 380 Z',
+      iceCapsPath: 'M 110 50 Q 320 50 360 120 Q 240 150 120 120 Z M 430 50 Q 720 50 700 110 Q 560 120 440 90 Z',
+      shallowSeasPath: 'M 880 90 Q 940 70 990 80 L 120 80 M 710 240 Q 770 260 760 310 Q 700 300 680 260 Z',
+      specimens: [
+        {
+          id: 'qt_1',
+          nameVi: 'Mammuthus primigenius (Voi Ma Mút Lông Xoăn)',
+          nameEn: 'Woolly Mammoth (Beringian Keystone)',
+          scientific: 'Mammuthus primigenius',
+          icon: '🦣',
+          x: 890,
+          y: 90,
+          paleoLocationVi: 'Cầu Đất Beringia Nối Siberia & Alaska',
+          paleoLocationEn: 'Bering Land Bridge (Mammoth Steppe)',
+          habitatVi: 'Thảo nguyên lãnh nguyên băng giá bão tuyết âm 60°C.',
+          habitatEn: 'Permafrost dry mammoth steppe grassland.',
+          distributionVi: 'Lớp mỡ dày 10 cm, lông mao kép dài 1 mét và cặp ngà xoắn khổng lồ dài 4 mét gạt tuyết kiếm cỏ khô.',
+          distributionEn: '10cm adipose blubber, dense underwool, and 4-meter sweeping curved tusks clearing snow crusts.',
+          descendantNameVi: 'Voi châu Á (Họ hàng gần nhất)',
+          descendantNameEn: 'Asian Elephant (Closest Living Relative)',
+          descendantSlug: 'elephas-maximus',
+        },
+        {
+          id: 'qt_2',
+          nameVi: 'Panthera tigris (Hổ Thềm Lục Địa Sunda)',
+          nameEn: 'Sunda Tigers (Panthera tigris)',
+          scientific: 'Panthera tigris',
+          icon: '🐅',
+          x: 730,
+          y: 280,
+          paleoLocationVi: 'Thềm Lục Địa Sunda Nối Liền Việt Nam - Mã Lai - Java - Sumatra',
+          paleoLocationEn: 'Sunda Shelf Landmass (Indochina to Java Bridge)',
+          habitatVi: 'Rừng mưa nhiệt đới gió mùa liên tục kết nối các hòn đảo.',
+          habitatEn: 'Continuous continental tropical rainforest corridor.',
+          distributionVi: 'Nhờ mực nước biển rút 120 mét lộ ra đồng bằng Sundaland khổng lồ, quần thể hổ di cư tự do từ Đông Dương qua Sumatra và Java tạo nên các phân loài trứ danh.',
+          distributionEn: 'Lowered sea levels exposed Sundaland, allowing tiger lineages to migrate seamlessly across Southeast Asia.',
+          descendantNameVi: 'Hổ Đông Dương & Hổ Bengal',
+          descendantNameEn: 'Indochinese & Bengal Tiger',
+          descendantSlug: 'panthera-tigris',
+        },
+        {
+          id: 'qt_3',
+          nameVi: 'Smilodon populator (Hổ Răng Kiếm Nam Mỹ)',
+          nameEn: 'Smilodon populator (Saber-toothed Cat)',
+          scientific: 'Smilodon populator',
+          icon: '🐯',
+          x: 280,
+          y: 310,
+          paleoLocationVi: 'Đồng Cỏ Thảo Nguyên Pampas, Nam Mỹ',
+          paleoLocationEn: 'Pampas Savanna, South America',
+          habitatVi: 'Thảo nguyên mở rộng lớn nhiều thú ăn cỏ khổng lồ.',
+          habitatEn: 'Open pampas plains hunting giant ground sloths.',
+          distributionVi: 'Cặp răng nanh hình thanh kiếm dài 28 cm cắn đứt yết hầu con mồi nặng hàng tấn chỉ trong một cú vồ bộc phát.',
+          distributionEn: 'Colossal 400kg ambush predator wielding 28cm serrated saber canines delivering fatal throat bites.',
+          descendantNameVi: 'Báo đốm Mỹ',
+          descendantNameEn: 'Jaguar',
+          descendantSlug: 'panthera-onca',
+        },
+      ],
+    },
   },
 ];
 
@@ -554,7 +987,7 @@ export const EvolutionPage: React.FC = () => {
   const [searchParams] = useSearchParams();
 
   // Active Main Tab
-  const [activeTab, setActiveTab] = useState<'tree' | 'timeline' | 'homology'>('tree');
+  const [activeTab, setActiveTab] = useState<'tree' | 'timeline' | 'homology'>('timeline');
 
   // Search in tree
   const [searchQuery, setSearchQuery] = useState('');
@@ -567,8 +1000,10 @@ export const EvolutionPage: React.FC = () => {
     Echinodermata: false,
   });
 
-  // Timeline active epoch
-  const [selectedEpochId, setSelectedEpochId] = useState<string>('cenozoic_early');
+  // Timeline active epoch & Paleomap Specimen
+  const [selectedEpochIndex, setSelectedEpochIndex] = useState<number>(5); // Default to Pleistocene Ice Age
+  const [selectedPaleoSpecimenId, setSelectedPaleoSpecimenId] = useState<string>('qt_1');
+  const [isTimeMachinePlaying, setIsTimeMachinePlaying] = useState<boolean>(false);
 
   // Homology bone highlight toggle
   const [highlightedBone, setHighlightedBone] = useState<string | null>(null);
@@ -618,8 +1053,30 @@ export const EvolutionPage: React.FC = () => {
   };
 
   const selectedEpoch = useMemo(() => {
-    return GEOLOGICAL_EPOCHS.find((e) => e.id === selectedEpochId) || GEOLOGICAL_EPOCHS[4];
-  }, [selectedEpochId]);
+    return GEOLOGICAL_EPOCHS[selectedEpochIndex] || GEOLOGICAL_EPOCHS[5];
+  }, [selectedEpochIndex]);
+
+  // Selected Paleo specimen point on the map
+  const activePaleoSpecimen = useMemo(() => {
+    const specs = selectedEpoch.paleoMap.specimens;
+    return specs.find((sp) => sp.id === selectedPaleoSpecimenId) || specs[0];
+  }, [selectedEpoch, selectedPaleoSpecimenId]);
+
+  // Auto-play Geological Time Machine
+  useEffect(() => {
+    if (!isTimeMachinePlaying) return;
+    const timer = setInterval(() => {
+      setSelectedEpochIndex((prev) => {
+        const next = (prev + 1) % GEOLOGICAL_EPOCHS.length;
+        const nextEpoch = GEOLOGICAL_EPOCHS[next];
+        if (nextEpoch && nextEpoch.paleoMap.specimens.length > 0) {
+          setSelectedPaleoSpecimenId(nextEpoch.paleoMap.specimens[0].id);
+        }
+        return next;
+      });
+    }, 4500);
+    return () => clearInterval(timer);
+  }, [isTimeMachinePlaying]);
 
   return (
     <div className="min-h-screen bg-expedition-dark text-stone-100 font-sans pb-24 selection:bg-natgeo-yellow selection:text-black">
@@ -633,20 +1090,32 @@ export const EvolutionPage: React.FC = () => {
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-natgeo-yellow">
-                  {isEn ? 'DEEP-TIME PHYLOGENY & ADAPTIVE EVOLUTION' : 'PHẢ HỆ ĐỊA CHẤT & TIẾN HÓA THÍCH NGHI'}
+                  {isEn ? 'DEEP-TIME PHYLOGENY & PALEOGEOGRAPHY' : 'PHẢ HỆ ĐỊA CHẤT & BẢN ĐỒ CỔ ĐỊA LÝ'}
                 </span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-500/40 font-mono">
                   540 Ma - Present
                 </span>
               </div>
               <div className="text-[11px] font-mono text-stone-400">
-                {isEn ? '160 Taxa mapped across Tree of Life' : 'Định danh 160 loài trên bản đồ tiến hóa sự sống'}
+                {isEn ? 'Continental drift & ancient animal distributions' : 'Sự trôi dạt lục địa & phân bố sinh vật qua các kỷ địa chất'}
               </div>
             </div>
           </div>
 
           {/* Tab Navigation Buttons */}
           <div className="flex items-center gap-1.5 p-1 bg-expedition-canvas rounded-xl border border-white/10 text-xs font-mono">
+            <button
+              onClick={() => setActiveTab('timeline')}
+              className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
+                activeTab === 'timeline'
+                  ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
+                  : 'text-stone-300 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {isEn ? 'Paleomap & Epochs' : 'Bản Đồ Cổ Địa Lý & Các Kỷ'}
+            </button>
+
             <button
               onClick={() => setActiveTab('tree')}
               className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
@@ -657,18 +1126,6 @@ export const EvolutionPage: React.FC = () => {
             >
               <GitFork className="w-3.5 h-3.5" />
               {isEn ? 'Phylogenetic Tree' : 'Cây Phả Hệ Sự Sống'}
-            </button>
-
-            <button
-              onClick={() => setActiveTab('timeline')}
-              className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
-                activeTab === 'timeline'
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              <Clock className="w-3.5 h-3.5" />
-              {isEn ? 'Deep-Time Timeline' : 'Biên Niên Sử Địa Chất'}
             </button>
 
             <button
@@ -687,6 +1144,396 @@ export const EvolutionPage: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        {/* =========================================================================
+            TAB 2: PALEOGEOGRAPHIC MAP & DEEP-TIME TIMELINE (DEFAULT / HIGHLIGHTED)
+        ========================================================================= */}
+        {activeTab === 'timeline' && (
+          <div className="space-y-8 animate-fadeIn">
+            {/* Mission Briefing Header */}
+            <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/30 relative overflow-hidden shadow-2xl">
+              <div className="space-y-2 max-w-3xl relative z-10">
+                <div className="flex items-center gap-2 text-xs font-mono text-natgeo-yellow uppercase tracking-widest">
+                  <Clock className="w-3.5 h-3.5 text-natgeo-yellow" />
+                  <span>{isEn ? 'CONTINENTAL DRIFT & PALEONTOLOGICAL DISTRIBUTION' : 'SỰ TRÔI DẠT LỤC ĐỊA & PHÂN BỐ CỔ SINH VẬT'}</span>
+                </div>
+                <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+                  {isEn ? 'Paleogeographic Map: Animals Across Geological Time' : 'Bản Đồ Cổ Địa Lý & Phân Bố Sinh Giới Qua Các Thời Kỳ'}
+                </h1>
+                <p className="text-sm text-stone-300 leading-relaxed font-sans">
+                  {isEn
+                    ? 'Watch the continents drift across 540 million years from the ocean world of the Cambrian, through the colossal supercontinent Pangea, to the frozen Beringia landbridge of the Ice Age. Click the fossil specimen pins on the paleomap to trace where ancient life lived and how modern animals evolved from them.'
+                    : 'Chiêm ngưỡng sự trôi dạt của các mảng lục địa suốt 540 triệu năm từ đại dương Cambri, qua siêu lục địa Pangea vĩ đại, cho đến Cầu đất Beringia và Thềm lục địa Sunda trong Kỷ Băng Hà. Bấm vào các điểm tọa độ hóa thạch trên bản đồ để khám phá nơi sinh sống của các loài cổ sinh và mối liên kết với động vật hiện đại ngày nay.'}
+                </p>
+              </div>
+            </div>
+
+            {/* Epoch Timeline Scrubber / Horizontal Selector Strip */}
+            <div className="space-y-3">
+              <div className="flex items-center justify-between px-2 text-xs font-mono text-stone-400">
+                <span className="flex items-center gap-2">
+                  <Radio className="w-3 h-3 text-natgeo-yellow animate-pulse" />
+                  <span>{isEn ? 'GEOLOGICAL EPOCH CHRONO-STRIP' : 'DÒNG THỜI GIAN ĐỊA CHẤT (540 Ma ➔ HIỆN TẠI)'}</span>
+                </span>
+
+                <button
+                  onClick={() => setIsTimeMachinePlaying(!isTimeMachinePlaying)}
+                  className="px-3 py-1 rounded-lg bg-black/60 border border-natgeo-yellow/40 text-natgeo-yellow hover:bg-natgeo-yellow hover:text-black transition-all flex items-center gap-1.5 text-xs font-bold font-mono"
+                >
+                  {isTimeMachinePlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+                  <span>{isTimeMachinePlaying ? (isEn ? 'Pause Drift' : 'Tạm Dừng Trôi Dạt') : (isEn ? 'Time-Lapse Drift' : 'Tua Nhanh Trôi Dạt')}</span>
+                </button>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                {GEOLOGICAL_EPOCHS.map((epoch, index) => {
+                  const isSelected = index === selectedEpochIndex;
+                  return (
+                    <button
+                      key={epoch.id}
+                      onClick={() => {
+                        setSelectedEpochIndex(index);
+                        setIsTimeMachinePlaying(false);
+                        if (epoch.paleoMap.specimens.length > 0) {
+                          setSelectedPaleoSpecimenId(epoch.paleoMap.specimens[0].id);
+                        }
+                      }}
+                      className={`p-4 rounded-2xl text-left transition-all border flex flex-col justify-between h-36 relative overflow-hidden group ${
+                        isSelected
+                          ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-natgeo font-bold scale-105'
+                          : 'bg-stone-950/70 border-white/10 hover:border-natgeo-yellow/40 text-stone-300'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between text-[10px] font-mono">
+                        <span>{`0${index + 1}`}</span>
+                        <span className={isSelected ? 'text-stone-900 font-extrabold' : 'text-natgeo-yellow'}>
+                          {epoch.myaStart} Ma
+                        </span>
+                      </div>
+
+                      <div>
+                        <div className="font-display text-xs font-extrabold uppercase leading-tight line-clamp-2">
+                          {isEn ? epoch.nameEn.split('-')[0] : epoch.nameVi.split('-')[0]}
+                        </div>
+                        <div className={`text-[10px] font-mono mt-1 ${isSelected ? 'text-stone-900' : 'text-stone-400'}`}>
+                          {epoch.timeRange.split('(')[0]}
+                        </div>
+                      </div>
+
+                      {epoch.extinctionEvent ? (
+                        <div className="flex items-center gap-1 text-[9px] text-rose-500 font-mono font-bold">
+                          <Flame className="w-2.5 h-2.5" />
+                          <span>EXTINCTION</span>
+                        </div>
+                      ) : (
+                        <div className="text-[9px] font-mono text-stone-400">
+                          {epoch.paleoMap.specimens.length} {isEn ? 'specimens' : 'hóa thạch'}
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* THE INTERACTIVE PALEOGEOGRAPHIC WORLD MAP VIEWPORT */}
+            <div className="p-6 sm:p-8 rounded-3xl field-panel border-2 border-natgeo-yellow/40 shadow-2xl space-y-6 relative overflow-hidden">
+              {/* Map Header Status Bar */}
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-4 border-b border-natgeo-yellow/20">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="field-stamp field-stamp-success text-xs">
+                      {selectedEpoch.timeRange}
+                    </span>
+                    <span className="text-xs font-mono text-natgeo-yellow font-bold uppercase">
+                      {isEn ? selectedEpoch.paleoMap.supercontinentEn : selectedEpoch.paleoMap.supercontinentVi}
+                    </span>
+                  </div>
+                  <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white uppercase mt-1">
+                    {isEn ? selectedEpoch.nameEn : selectedEpoch.nameVi}
+                  </h2>
+                </div>
+
+                <div className="text-right text-xs font-mono text-stone-300 bg-black/60 p-2.5 rounded-xl border border-white/10">
+                  <div className="text-[10px] text-natgeo-yellow uppercase">{isEn ? 'Paleo-Ocean Basin' : 'Bồn Địa Siêu Đại Dương'}</div>
+                  <div className="font-bold text-white">{isEn ? selectedEpoch.paleoMap.oceanEn : selectedEpoch.paleoMap.oceanVi}</div>
+                </div>
+              </div>
+
+              {/* Paleogeographic Vector Map (SVG Canvas 1000x500) */}
+              <div className="relative w-full aspect-[2/1] rounded-2xl bg-[#090d14] border border-white/10 overflow-hidden shadow-inner">
+                {/* Viewfinder reticles */}
+                <div className="viewfinder-corner-tl" />
+                <div className="viewfinder-corner-tr" />
+                <div className="viewfinder-corner-bl" />
+                <div className="viewfinder-corner-br" />
+
+                {/* Latitude & Longitude Paleogrid */}
+                <div className="absolute inset-0 pointer-events-none opacity-20">
+                  <div className="w-full h-full grid grid-cols-6 grid-rows-4 divide-x divide-y divide-white/20" />
+                </div>
+
+                <svg viewBox="0 0 1000 500" className="w-full h-full">
+                  {/* Deep Ocean Water Background */}
+                  <rect width="1000" height="500" fill="#090d14" />
+
+                  {/* Shallow Seas / Continental Shelves (Cyan Glow) */}
+                  {selectedEpoch.paleoMap.shallowSeasPath && (
+                    <path
+                      d={selectedEpoch.paleoMap.shallowSeasPath}
+                      fill="#0e7490"
+                      opacity="0.35"
+                    />
+                  )}
+
+                  {/* Main Paleocontinental Landmasses */}
+                  <path
+                    d={selectedEpoch.paleoMap.landmassPath}
+                    fill="#27272a"
+                    stroke="#ca8a04"
+                    strokeWidth="1.5"
+                    opacity="0.95"
+                    className="transition-all duration-700 ease-in-out"
+                  />
+
+                  {/* Polar Ice Caps (White/Pale Blue) if applicable */}
+                  {selectedEpoch.paleoMap.iceCapsPath && (
+                    <path
+                      d={selectedEpoch.paleoMap.iceCapsPath}
+                      fill="#e0f2fe"
+                      stroke="#38bdf8"
+                      strokeWidth="1"
+                      opacity="0.8"
+                    />
+                  )}
+
+                  {/* Interactive Specimen Distribution Radar Pins */}
+                  {selectedEpoch.paleoMap.specimens.map((specimen, idx) => {
+                    const isSelected = specimen.id === activePaleoSpecimen?.id;
+                    return (
+                      <g
+                        key={specimen.id}
+                        className="cursor-pointer group"
+                        onClick={() => setSelectedPaleoSpecimenId(specimen.id)}
+                      >
+                        {/* Radar Ping Ripple for Selected Pin */}
+                        {isSelected && (
+                          <circle
+                            cx={specimen.x}
+                            cy={specimen.y}
+                            r="18"
+                            fill="none"
+                            stroke="#f5b800"
+                            strokeWidth="2"
+                            className="animate-ping origin-center"
+                          />
+                        )}
+
+                        {/* Outer Ring */}
+                        <circle
+                          cx={specimen.x}
+                          cy={specimen.y}
+                          r={isSelected ? '10' : '7'}
+                          fill={isSelected ? '#f5b800' : '#18181b'}
+                          stroke="#f5b800"
+                          strokeWidth="2"
+                          className="group-hover:scale-125 transition-transform origin-center"
+                        />
+
+                        {/* Center Icon/Dot */}
+                        <circle
+                          cx={specimen.x}
+                          cy={specimen.y}
+                          r="3"
+                          fill={isSelected ? '#000000' : '#f5b800'}
+                        />
+
+                        {/* Specimen Name Tag */}
+                        <text
+                          x={specimen.x}
+                          y={specimen.y - 14}
+                          textAnchor="middle"
+                          fill={isSelected ? '#f5b800' : '#e7e5e4'}
+                          fontSize="11"
+                          fontFamily="monospace"
+                          fontWeight="bold"
+                          className="drop-shadow-md select-none pointer-events-none"
+                        >
+                          {idx + 1}. {specimen.icon} {isEn ? specimen.nameEn.split('(')[0] : specimen.nameVi.split('(')[0]}
+                        </text>
+                      </g>
+                    );
+                  })}
+                </svg>
+
+                {/* Map Bottom Legend Overlay */}
+                <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/85 backdrop-blur-md border border-white/10 flex flex-wrap items-center justify-between gap-4 text-[11px] font-mono">
+                  <div className="flex items-center gap-3">
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-3 h-3 rounded-full bg-natgeo-yellow border border-black animate-pulse" />
+                      <span className="text-white font-bold">{isEn ? 'Fossil Specimens / Lineages' : 'Điểm Định Danh Hóa Thạch'}</span>
+                    </span>
+
+                    <span className="flex items-center gap-1.5">
+                      <span className="w-3 h-3 rounded-sm bg-cyan-700/60 border border-cyan-400/40" />
+                      <span className="text-stone-300">{isEn ? 'Shallow Seas' : 'Biển Nông Biển Cạn'}</span>
+                    </span>
+
+                    {selectedEpoch.paleoMap.iceCapsPath && (
+                      <span className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded-sm bg-sky-100 border border-sky-400" />
+                        <span className="text-stone-300">{isEn ? 'Glacial Ice Sheets' : 'Băng Hà Cực Đại'}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="text-natgeo-yellow italic">
+                    {isEn ? selectedEpoch.paleoMap.climateZoneEn : selectedEpoch.paleoMap.climateZoneVi}
+                  </div>
+                </div>
+              </div>
+
+              {/* SPECIMEN DETAIL INSPECTOR CARD: CLICKED PIN DOSSIER */}
+              {activePaleoSpecimen && (
+                <div className="p-6 rounded-2xl bg-black/70 border-2 border-natgeo-yellow/50 shadow-xl space-y-4 relative overflow-hidden">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 pb-3 border-b border-natgeo-yellow/20">
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">{activePaleoSpecimen.icon}</span>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-mono font-bold text-natgeo-yellow uppercase">
+                            {isEn ? activePaleoSpecimen.paleoLocationEn : activePaleoSpecimen.paleoLocationVi}
+                          </span>
+                          <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-400/30 font-mono">
+                            {isEn ? 'PALEONTOLOGY PIN' : 'TỌA ĐỘ CỔ SINH'}
+                          </span>
+                        </div>
+                        <h3 className="font-display text-xl font-extrabold text-white uppercase mt-0.5">
+                          {isEn ? activePaleoSpecimen.nameEn : activePaleoSpecimen.nameVi}
+                        </h3>
+                        <div className="text-xs font-serif italic text-stone-400">
+                          {activePaleoSpecimen.scientific}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Modern Descendant Link if available */}
+                    {activePaleoSpecimen.descendantSlug && (
+                      <div className="shrink-0">
+                        <Link
+                          to={`/species/${activePaleoSpecimen.descendantSlug}`}
+                          className="px-4 py-2.5 rounded-xl bg-natgeo-yellow text-stone-950 font-mono font-bold text-xs uppercase tracking-wider shadow-natgeo hover:bg-amber-400 transition-all flex items-center gap-2"
+                        >
+                          <span>{isEn ? 'Trace Living Descendant 3D' : 'Xem Hậu Duệ Hiện Đại 3D'}</span>
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
+                    <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                      <div className="font-mono font-bold text-natgeo-yellow uppercase text-[11px]">
+                        {isEn ? 'Paleo-Habitat & Ancient Climate:' : 'Sinh Cảnh Cổ Điển & Môi Trường:'}
+                      </div>
+                      <p className="text-stone-300 leading-relaxed">
+                        {isEn ? activePaleoSpecimen.habitatEn : activePaleoSpecimen.habitatVi}
+                      </p>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                      <div className="font-mono font-bold text-natgeo-yellow uppercase text-[11px]">
+                        {isEn ? 'Geographic Distribution & Evolutionary Role:' : 'Phân Bố Địa Lý & Vai Trò Tiến Hóa:'}
+                      </div>
+                      <p className="text-stone-300 leading-relaxed">
+                        {isEn ? activePaleoSpecimen.distributionEn : activePaleoSpecimen.distributionVi}
+                      </p>
+                    </div>
+                  </div>
+
+                  {activePaleoSpecimen.descendantNameVi && (
+                    <div className="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-xs flex items-center justify-between">
+                      <div className="flex items-center gap-2 font-mono">
+                        <span className="text-emerald-400 font-bold">↳ {isEn ? 'Direct Lineage in Zoopedia DB:' : 'Dòng Dõi Trực Tiếp Trong Zoopedia:'}</span>
+                        <span className="text-white font-bold">{isEn ? activePaleoSpecimen.descendantNameEn : activePaleoSpecimen.descendantNameVi}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-emerald-400 uppercase">100% PHYLOGENETIC MATCH</span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Epoch Details Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-white/10">
+                {/* Geological Environment */}
+                <div className="space-y-3 p-6 rounded-2xl bg-black/40 border border-white/10">
+                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
+                    <Globe className="w-4 h-4" />
+                    <span>{isEn ? 'Paleoclimate & Geological Setting' : 'Bối Cảnh Cổ Địa Lý & Khí Hậu'}</span>
+                  </div>
+                  <p className="text-sm text-stone-300 leading-relaxed font-sans">
+                    {isEn ? selectedEpoch.geologicalContextEn : selectedEpoch.geologicalContextVi}
+                  </p>
+                </div>
+
+                {/* Major Evolutionary Leap */}
+                <div className="space-y-3 p-6 rounded-2xl bg-natgeo-yellow/5 border border-natgeo-yellow/30">
+                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
+                    <Sparkles className="w-4 h-4" />
+                    <span>{isEn ? 'Key Anatomical Leap' : 'Đột Phá Hình Thái Học Then Chốt'}</span>
+                  </div>
+                  <p className="text-sm text-stone-200 leading-relaxed font-sans">
+                    {isEn ? selectedEpoch.evolutionaryLeapEn : selectedEpoch.evolutionaryLeapVi}
+                  </p>
+                </div>
+              </div>
+
+              {/* Mass Extinction Event Warning if applicable */}
+              {selectedEpoch.extinctionEvent && (
+                <div className="p-6 rounded-2xl bg-rose-950/40 border border-rose-500/40 flex items-start gap-4">
+                  <Flame className="w-6 h-6 text-rose-400 shrink-0 mt-0.5" />
+                  <div className="space-y-1">
+                    <div className="text-xs font-mono font-bold text-rose-400 uppercase tracking-wider">
+                      {isEn ? selectedEpoch.extinctionEvent.nameEn : selectedEpoch.extinctionEvent.nameVi}
+                    </div>
+                    <p className="text-xs text-rose-200/90 leading-relaxed">
+                      {isEn ? selectedEpoch.extinctionEvent.impactEn : selectedEpoch.extinctionEvent.impactVi}
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {/* Living Species Inheriting Traits From This Era */}
+              <div className="space-y-3 pt-4 border-t border-white/10">
+                <div className="text-xs font-mono font-bold uppercase text-stone-300">
+                  {isEn
+                    ? 'Living Specimens In Database Rooted in this Epoch:'
+                    : 'Các Mẫu Vật Trong Cơ Sở Dữ Liệu Thừa Hưởng Đặc Điểm Từ Cột Mốc Này:'}
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                  {selectedEpoch.connectedSpeciesSlugs.map((slug) => {
+                    const sp = allSpecies.find((s) => s.id === slug);
+                    if (!sp) return null;
+                    return (
+                      <Link
+                        key={sp.id}
+                        to={`/species/${sp.id}`}
+                        className="p-3 rounded-xl bg-black/60 hover:bg-natgeo-yellow/20 border border-white/10 hover:border-natgeo-yellow/40 transition-all group block text-left"
+                      >
+                        <div className="text-xs font-bold text-white group-hover:text-natgeo-yellow truncate">
+                          {isEn ? sp.nameEn : sp.nameVi}
+                        </div>
+                        <div className="text-[10px] font-serif italic text-stone-400 truncate">
+                          {sp.scientific}
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* =========================================================================
             TAB 1: PHYLOGENETIC TREE EXPLORER
         ========================================================================= */}
@@ -1023,165 +1870,6 @@ export const EvolutionPage: React.FC = () => {
                     <span>{isEn ? 'Inspect Full 3D Specimen Profile' : 'Khảo Sát Mô Hình 3D & Giải Phẫu'}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* =========================================================================
-            TAB 2: DEEP-TIME GEOLOGICAL TIMELINE
-        ========================================================================= */}
-        {activeTab === 'timeline' && (
-          <div className="space-y-8 animate-fadeIn">
-            {/* Mission Briefing */}
-            <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/30 relative overflow-hidden shadow-2xl">
-              <div className="space-y-2 max-w-3xl">
-                <div className="flex items-center gap-2 text-xs font-mono text-natgeo-yellow uppercase tracking-widest">
-                  <Clock className="w-3.5 h-3.5 text-natgeo-yellow" />
-                  <span>{isEn ? '540 MILLION YEARS OF GEOLOGICAL DEEP TIME' : '540 TRIỆU NĂM ĐỊA CHẤT SÂU'}</span>
-                </div>
-                <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
-                  {isEn ? 'Evolutionary Chronology & Mass Extinctions' : 'Biên Niên Sử Tiến Hóa & Các Đại Tuyệt Chủng'}
-                </h1>
-                <p className="text-sm text-stone-300 leading-relaxed font-sans">
-                  {isEn
-                    ? 'Travel across the geological epochs to witness the great leaps of morphology: the Cambrian explosion of body plans, the water-to-land tetrapod transition, amniote terrestrial conquests, and the explosive rise of mammals following asteroid impacts.'
-                    : 'Hành trình xuyên qua các kỷ địa chất để chứng kiến những bước nhảy vọt hình thái học vĩ đại: vụ nổ Cambri khai sinh cấu trúc cơ thể, cuộc đổ bộ lên cạn của động vật 4 chân, cuộc cách mạng trứng màng ối và sự trỗi dậy của Lớp Thú sau thảm họa thiên thạch.'}
-                </p>
-              </div>
-            </div>
-
-            {/* Horizontal Epoch Selector Strip */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-              {GEOLOGICAL_EPOCHS.map((epoch, index) => {
-                const isSelected = epoch.id === selectedEpochId;
-                return (
-                  <button
-                    key={epoch.id}
-                    onClick={() => setSelectedEpochId(epoch.id)}
-                    className={`p-4 rounded-2xl text-left transition-all border flex flex-col justify-between h-36 relative overflow-hidden group ${
-                      isSelected
-                        ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-natgeo font-bold scale-105'
-                        : 'bg-stone-950/70 border-white/10 hover:border-natgeo-yellow/40 text-stone-300'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between text-[10px] font-mono">
-                      <span>{`0${index + 1}`}</span>
-                      <span className={isSelected ? 'text-stone-900 font-extrabold' : 'text-natgeo-yellow'}>
-                        {epoch.myaStart} Ma
-                      </span>
-                    </div>
-
-                    <div>
-                      <div className="font-display text-xs font-extrabold uppercase leading-tight line-clamp-2">
-                        {isEn ? epoch.nameEn.split('-')[0] : epoch.nameVi.split('-')[0]}
-                      </div>
-                      <div className={`text-[10px] font-mono mt-1 ${isSelected ? 'text-stone-900' : 'text-stone-400'}`}>
-                        {epoch.timeRange.split('(')[0]}
-                      </div>
-                    </div>
-
-                    {epoch.extinctionEvent && (
-                      <div className="flex items-center gap-1 text-[9px] text-rose-500 font-mono font-bold">
-                        <Flame className="w-2.5 h-2.5" />
-                        <span>EXTINCTION</span>
-                      </div>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Selected Epoch Detailed Field Dossier */}
-            <div className="p-6 sm:p-10 rounded-3xl field-panel border-2 border-natgeo-yellow/40 shadow-2xl space-y-8 relative overflow-hidden">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-6 border-b border-natgeo-yellow/20">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="field-stamp field-stamp-success text-xs">
-                      {selectedEpoch.timeRange}
-                    </span>
-                    <span className="text-xs font-mono text-stone-400">
-                      {isEn ? 'GEOLOGICAL CHRONO-STRATUM' : 'TẦNG ĐỊA TẦNG ĐỘC QUYỀN'}
-                    </span>
-                  </div>
-                  <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
-                    {isEn ? selectedEpoch.nameEn : selectedEpoch.nameVi}
-                  </h2>
-                </div>
-
-                <div className="p-3 rounded-2xl bg-black/60 border border-white/10 text-right">
-                  <div className="text-[10px] font-mono text-natgeo-yellow uppercase">{isEn ? 'Keystone Ancestral Taxon' : 'Tổ Tiên Hóa Thạch Điển Hình'}</div>
-                  <div className="text-sm font-bold text-white font-serif italic">{selectedEpoch.highlightAncestorVi}</div>
-                </div>
-              </div>
-
-              {/* Epoch Details Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* Geological Environment */}
-                <div className="space-y-3 p-6 rounded-2xl bg-black/40 border border-white/10">
-                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
-                    <Globe className="w-4 h-4" />
-                    <span>{isEn ? 'Paleoclimate & Geological Setting' : 'Bối Cảnh Cổ Địa Lý & Khí Hậu'}</span>
-                  </div>
-                  <p className="text-sm text-stone-300 leading-relaxed font-sans">
-                    {isEn ? selectedEpoch.geologicalContextEn : selectedEpoch.geologicalContextVi}
-                  </p>
-                </div>
-
-                {/* Major Evolutionary Leap */}
-                <div className="space-y-3 p-6 rounded-2xl bg-natgeo-yellow/5 border border-natgeo-yellow/30">
-                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
-                    <Sparkles className="w-4 h-4" />
-                    <span>{isEn ? 'Key Anatomical Leap' : 'Đột Phá Hình Thái Học Then Chốt'}</span>
-                  </div>
-                  <p className="text-sm text-stone-200 leading-relaxed font-sans">
-                    {isEn ? selectedEpoch.evolutionaryLeapEn : selectedEpoch.evolutionaryLeapVi}
-                  </p>
-                </div>
-              </div>
-
-              {/* Mass Extinction Event Warning if applicable */}
-              {selectedEpoch.extinctionEvent && (
-                <div className="p-6 rounded-2xl bg-rose-950/40 border border-rose-500/40 flex items-start gap-4">
-                  <Flame className="w-6 h-6 text-rose-400 shrink-0 mt-0.5" />
-                  <div className="space-y-1">
-                    <div className="text-xs font-mono font-bold text-rose-400 uppercase tracking-wider">
-                      {isEn ? selectedEpoch.extinctionEvent.nameEn : selectedEpoch.extinctionEvent.nameVi}
-                    </div>
-                    <p className="text-xs text-rose-200/90 leading-relaxed">
-                      {isEn ? selectedEpoch.extinctionEvent.impactEn : selectedEpoch.extinctionEvent.impactVi}
-                    </p>
-                  </div>
-                </div>
-              )}
-
-              {/* Living Species Inheriting Traits From This Era */}
-              <div className="space-y-3 pt-4 border-t border-white/10">
-                <div className="text-xs font-mono font-bold uppercase text-stone-300">
-                  {isEn
-                    ? 'Living Specimens In Database Rooted in this Epoch:'
-                    : 'Các Mẫu Vật Trong Cơ Sở Dữ Liệu Thừa Hưởng Đặc Điểm Từ Cột Mốc Này:'}
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-                  {selectedEpoch.connectedSpeciesSlugs.map((slug) => {
-                    const sp = allSpecies.find((s) => s.id === slug);
-                    if (!sp) return null;
-                    return (
-                      <Link
-                        key={sp.id}
-                        to={`/species/${sp.id}`}
-                        className="p-3 rounded-xl bg-black/60 hover:bg-natgeo-yellow/20 border border-white/10 hover:border-natgeo-yellow/40 transition-all group block text-left"
-                      >
-                        <div className="text-xs font-bold text-white group-hover:text-natgeo-yellow truncate">
-                          {isEn ? sp.nameEn : sp.nameVi}
-                        </div>
-                        <div className="text-[10px] font-serif italic text-stone-400 truncate">
-                          {sp.scientific}
-                        </div>
-                      </Link>
-                    );
-                  })}
                 </div>
               </div>
             </div>
