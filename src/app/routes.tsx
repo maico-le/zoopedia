@@ -8,6 +8,7 @@ import { ExplorePage } from '../features/explore/ExplorePage';
 import { EcosystemPage } from '../features/ecosystem/EcosystemPage';
 import { EvolutionPage } from '../features/evolution/EvolutionPage';
 import { MigrationPage } from '../features/migration/MigrationPage';
+import { VisionPage } from '../features/vision/VisionPage';
 import { CreditsPage } from '../features/credits/CreditsPage';
 import { DataQualityPage } from '../features/admin/DataQualityPage';
 
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: 'migration',
         element: <MigrationPage />,
+      },
+      {
+        path: 'vision',
+        element: <VisionPage />,
       },
       {
         path: 'species/:slug',

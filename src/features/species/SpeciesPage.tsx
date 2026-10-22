@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
-import { Copy, Check, Layers, ExternalLink, ArrowRightLeft, Sparkles, HeartHandshake, AlertTriangle, MapPin, Compass, Network, ArrowRight, GitFork } from 'lucide-react';
+import { Copy, Check, Layers, ExternalLink, ArrowRightLeft, Sparkles, HeartHandshake, AlertTriangle, MapPin, Compass, Network, ArrowRight, GitFork, Eye } from 'lucide-react';
 import { AnimalViewer } from '../viewer/AnimalViewer';
 import { loadSpeciesBySlug } from '../../lib/data-loader';
 import { SpeciesCompareModal } from './SpeciesCompareModal';
@@ -206,6 +206,15 @@ export const SpeciesPage: React.FC = () => {
           >
             <GitFork className="w-3.5 h-3.5 text-natgeo-yellow" />
             <span>{isEn ? 'Phylogeny Tree' : 'Cây Tiến Hóa'}</span>
+          </Link>
+
+          <Link
+            to="/vision"
+            className="btn-expedition-secondary text-xs"
+            title={isEn ? 'Animal Sensory Vision Optics' : 'Thị Giác & Giác Quan Động Vật'}
+          >
+            <Eye className="w-3.5 h-3.5 text-natgeo-yellow" />
+            <span>{isEn ? 'Sensory Vision' : 'Thị Giác'}</span>
           </Link>
 
           <span className="px-3.5 py-2 rounded-xl bg-black/60 text-natgeo-yellow text-xs font-mono font-bold flex items-center gap-1.5 border border-natgeo-yellow/40">
