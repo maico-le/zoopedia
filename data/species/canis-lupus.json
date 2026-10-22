@@ -47,13 +47,19 @@
     "subspecies": []
   },
   "morphology": {
-    "lengthCm": null,
-    "weightKg": null,
+    "lengthCm": [
+      105,
+      160
+    ],
+    "weightKg": [
+      30,
+      80
+    ],
     "description": {
       "vi": "Loài Chó sói xám (Canis lupus) thuộc ngành Chordata, lớp Mammalia.",
       "en": "Gray Wolf (Canis lupus) is a species in the phylum Chordata, class Mammalia."
     },
-    "sexualDimorphism": null
+    "sexualDimorphism": "Chó sói đực thường nặng hơn cá thể cái khoảng 20% và có hộp sọ rộng hơn."
   },
   "habitat": {
     "biomes": [
@@ -77,7 +83,12 @@
   },
   "diet": {
     "type": "carnivore",
-    "preyOrFood": [],
+    "preyOrFood": [
+      "Hươu Bắc Mỹ",
+      "Tuần lộc",
+      "Nai sừng tấm",
+      "Thỏ rừng"
+    ],
     "feedingBehavior": {
       "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Canidae.",
       "en": "Characteristic foraging behavior of the family Canidae."
@@ -86,25 +97,95 @@
   "behavior": {
     "activityPattern": "nocturnal",
     "social": "gregarious",
-    "communication": null,
+    "communication": {
+      "vi": "Tiếng hú đồng thanh để tập hợp bầy, định vị và đánh dấu ranh giới với các đàn lân cận.",
+      "en": "Harmonized pack howling to assemble members, coordinate moves, and claim territory."
+    },
     "migration": null,
-    "defense": null,
+    "defense": {
+      "vi": "Bảo vệ nghiêm ngặt ranh giới lãnh thổ bằng mùi nước tiểu và giao tranh quyết liệt với bầy đối thủ.",
+      "en": "Aggressively defends pack boundaries via scent-marking and lethal conflicts with rival packs."
+    },
     "text": {
       "vi": "Tập tính sinh thái của loài Chó sói xám.",
       "en": "Ecological behavioral patterns of Gray Wolf."
     }
   },
   "lifeCycle": {
-    "stages": [],
-    "lifespanYears": null
+    "stages": [
+      {
+        "key": "pup",
+        "name": {
+          "vi": "Sói con",
+          "en": "Pup"
+        },
+        "description": {
+          "vi": "Sinh ra trong hang ngầm, phụ thuộc sữa mẹ và sự bảo bọc của cả đàn.",
+          "en": "Born deaf and blind in underground dens; fed and cared for by all pack adults."
+        },
+        "durationDays": [
+          0,
+          60
+        ]
+      },
+      {
+        "key": "yearling",
+        "name": {
+          "vi": "Sói niên thiếu",
+          "en": "Yearling"
+        },
+        "description": {
+          "vi": "Học tập cấp bậc bầy đàn và hỗ trợ trông nom lứa sói con kế tiếp.",
+          "en": "Integrated into hunting operations and aids in pup-rearing duties."
+        },
+        "durationDays": [
+          60,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Sói trưởng thành",
+          "en": "Adult"
+        },
+        "description": {
+          "vi": "Đạt kích thước hoàn chỉnh, có thể ở lại bầy hoặc tách đàn đơn độc tìm bạn đời.",
+          "en": "Fully mature; either ascends pack hierarchy or disperses to establish a new pack."
+        },
+        "durationDays": [
+          730,
+          4745
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        6,
+        8
+      ],
+      "captivity": [
+        12,
+        16
+      ]
+    }
   },
   "reproduction": {
     "mode": "viviparous",
     "matingSystem": null,
     "season": null,
-    "gestationDays": null,
-    "clutchOrLitterSize": null,
-    "parentalCare": null,
+    "gestationDays": [
+      60,
+      65
+    ],
+    "clutchOrLitterSize": [
+      4,
+      6
+    ],
+    "parentalCare": {
+      "vi": "Cả bầy sói cùng tham gia mớm thức ăn nôn ra cho sói con (alloparenting).",
+      "en": "Pack-wide alloparental care: all adults regurgitate partially digested meat for pups."
+    },
     "text": null
   },
   "conservation": {
@@ -173,6 +254,38 @@
       "retrievedAt": "2026-10-22",
       "method": "curated",
       "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "PanTHERIA / AnAge / ADW",
+      "url": "https://genomics.senescence.info/species/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "reproduction.traits",
+      "source": "Amniote Database / AnAge",
+      "url": "https://www.esapubs.org/archive/ecol/E096/269/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic / Smithsonian",
+      "url": "https://www.smithsonianmag.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
     }
   ]
 }

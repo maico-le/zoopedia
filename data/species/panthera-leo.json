@@ -38,13 +38,19 @@
     "subspecies": []
   },
   "morphology": {
-    "lengthCm": null,
-    "weightKg": null,
+    "lengthCm": [
+      180,
+      250
+    ],
+    "weightKg": [
+      130,
+      225
+    ],
     "description": {
       "vi": "Loài Sư tử (Panthera leo) thuộc ngành Chordata, lớp Mammalia.",
       "en": "Lion (Panthera leo) is a species in the phylum Chordata, class Mammalia."
     },
-    "sexualDimorphism": null
+    "sexualDimorphism": "Con đực có bờm lớn sẫm màu quanh cổ và cơ thể nặng hơn con cái từ 30-50%."
   },
   "habitat": {
     "biomes": [
@@ -68,7 +74,12 @@
   },
   "diet": {
     "type": "carnivore",
-    "preyOrFood": [],
+    "preyOrFood": [
+      "Ngựa vằn",
+      "Linh dương đầu bò",
+      "Trâu rừng châu Phi",
+      "Heo rừng"
+    ],
     "feedingBehavior": {
       "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Felidae.",
       "en": "Characteristic foraging behavior of the family Felidae."
@@ -77,25 +88,95 @@
   "behavior": {
     "activityPattern": "nocturnal",
     "social": "solitary",
-    "communication": null,
+    "communication": {
+      "vi": "Tiếng gầm vang xa tới 8 km để định danh bầy và lãnh thổ, cọ má và liếm đầu để củng cố liên kết xã hội.",
+      "en": "Roars audible up to 8 km to advertise territory, cheek rubbing and head licking to reinforce social bonds."
+    },
     "migration": null,
-    "defense": null,
+    "defense": {
+      "vi": "Bầy đực tuần tra và bảo vệ nghiêm ngặt lãnh thổ chống lại các bầy sư tử xâm lấn.",
+      "en": "Coalitions of males vigorously patrol and defend pride territory against intruding nomads."
+    },
     "text": {
       "vi": "Tập tính sinh thái của loài Sư tử.",
       "en": "Ecological behavioral patterns of Lion."
     }
   },
   "lifeCycle": {
-    "stages": [],
-    "lifespanYears": null
+    "stages": [
+      {
+        "key": "cub",
+        "name": {
+          "vi": "Sư tử con sơ sinh",
+          "en": "Newborn Cub"
+        },
+        "description": {
+          "vi": "Mắt nhắm và có đốm hoa mai mờ để ngụy trang trong bụi rậm.",
+          "en": "Blind at birth with rosette camouflage markings in dense thickets."
+        },
+        "durationDays": [
+          0,
+          90
+        ]
+      },
+      {
+        "key": "subadult",
+        "name": {
+          "vi": "Sư tử mới lớn",
+          "en": "Subadult"
+        },
+        "description": {
+          "vi": "Bắt đầu tham gia săn mồi cùng bầy; con đực trẻ chuẩn bị bị trục xuất.",
+          "en": "Joins hunts; young males prepare for expulsion from natal pride."
+        },
+        "durationDays": [
+          90,
+          730
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Sư tử trưởng thành",
+          "en": "Prime Adult"
+        },
+        "description": {
+          "vi": "Làm chủ bầy đàn và sinh sản duy trì nòi giống.",
+          "en": "Dominant pride member actively defending territory and reproducing."
+        },
+        "durationDays": [
+          730,
+          5840
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        10,
+        15
+      ],
+      "captivity": [
+        20,
+        26
+      ]
+    }
   },
   "reproduction": {
     "mode": "viviparous",
     "matingSystem": null,
     "season": null,
-    "gestationDays": null,
-    "clutchOrLitterSize": null,
-    "parentalCare": null,
+    "gestationDays": [
+      105,
+      115
+    ],
+    "clutchOrLitterSize": [
+      1,
+      4
+    ],
+    "parentalCare": {
+      "vi": "Sư tử mẹ nuôi chung con trong bầy (communal suckling), bảo vệ con non trước linh cẩu.",
+      "en": "Communal cub nursing within the pride; mother defends cubs against hyenas and rogue males."
+    },
     "text": null
   },
   "conservation": {
@@ -165,6 +246,38 @@
       "retrievedAt": "2026-10-22",
       "method": "curated",
       "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "PanTHERIA / AnAge / ADW",
+      "url": "https://genomics.senescence.info/species/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "reproduction.traits",
+      "source": "Amniote Database / AnAge",
+      "url": "https://www.esapubs.org/archive/ecol/E096/269/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic / Smithsonian",
+      "url": "https://www.smithsonianmag.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
     }
   ]
 }

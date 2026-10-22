@@ -56,13 +56,19 @@
     "subspecies": []
   },
   "morphology": {
-    "lengthCm": null,
-    "weightKg": null,
+    "lengthCm": [
+      2400,
+      3000
+    ],
+    "weightKg": [
+      100000,
+      190000
+    ],
     "description": {
       "vi": "Loài Cá voi xanh (Balaenoptera musculus) thuộc ngành Chordata, lớp Mammalia.",
       "en": "Blue Whale (Balaenoptera musculus) is a species in the phylum Chordata, class Mammalia."
     },
-    "sexualDimorphism": null
+    "sexualDimorphism": "Cá voi xanh cái lớn hơn con đực từ 5-10% chiều dài cơ thể."
   },
   "habitat": {
     "biomes": [
@@ -86,7 +92,10 @@
   },
   "diet": {
     "type": "herbivore",
-    "preyOrFood": [],
+    "preyOrFood": [
+      "Nhuyễn thể Euphausiacea (Krill)",
+      "Giáp xác nhỏ"
+    ],
     "feedingBehavior": {
       "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Balaenopteridae.",
       "en": "Characteristic foraging behavior of the family Balaenopteridae."
@@ -95,25 +104,80 @@
   "behavior": {
     "activityPattern": "nocturnal",
     "social": "solitary",
-    "communication": null,
+    "communication": {
+      "vi": "Phát ra sóng hạ âm cực thấp (10-40 Hz) truyền xa hàng nghìn kilômét dưới đáy đại dương.",
+      "en": "Emits infrasonic pulses (10-40 Hz) capable of propagating across entire ocean basins."
+    },
     "migration": null,
-    "defense": null,
+    "defense": {
+      "vi": "Kích thước khổng lồ là tấm khiên tự nhiên; chỉ có cá voi sát thủ mới dám tấn công con non.",
+      "en": "Colossal bulk is an almost impenetrable defense against virtually all predators except orca pods."
+    },
     "text": {
       "vi": "Tập tính sinh thái của loài Cá voi xanh.",
       "en": "Ecological behavioral patterns of Blue Whale."
     }
   },
   "lifeCycle": {
-    "stages": [],
-    "lifespanYears": null
+    "stages": [
+      {
+        "key": "calf",
+        "name": {
+          "vi": "Cá voi con",
+          "en": "Calf"
+        },
+        "description": {
+          "vi": "Nặng 2.5–3 tấn lúc mới sinh, bú khoảng 400 lít sữa mẹ giàu chất béo mỗi ngày.",
+          "en": "Born at 2.5–3 metric tons; drinks ~400 liters of fat-rich milk daily."
+        },
+        "durationDays": [
+          0,
+          240
+        ]
+      },
+      {
+        "key": "adult",
+        "name": {
+          "vi": "Cá voi trưởng thành",
+          "en": "Mature Whale"
+        },
+        "description": {
+          "vi": "Đạt chiều dài cực đại gần 30 mét, di cư hàng nghìn dặm giữa vùng cực và xích đạo.",
+          "en": "Reaches ~30 meters; migrates thousands of nautical miles between polar feeding grounds and tropical breeding waters."
+        },
+        "durationDays": [
+          240,
+          32850
+        ]
+      }
+    ],
+    "lifespanYears": {
+      "wild": [
+        70,
+        90
+      ],
+      "captivity": [
+        0,
+        0
+      ]
+    }
   },
   "reproduction": {
     "mode": "viviparous",
     "matingSystem": null,
     "season": null,
-    "gestationDays": null,
-    "clutchOrLitterSize": null,
-    "parentalCare": null,
+    "gestationDays": [
+      300,
+      360
+    ],
+    "clutchOrLitterSize": [
+      1,
+      1
+    ],
+    "parentalCare": {
+      "vi": "Cá voi mẹ bảo bọc con non chặt chẽ suốt 7-8 tháng bú sữa trước khi cai sữa ở vùng nước lạnh.",
+      "en": "Mother provides intensive nursing and escort for 7-8 months until weaning in productive polar seas."
+    },
     "text": null
   },
   "conservation": {
@@ -183,6 +247,38 @@
       "retrievedAt": "2026-10-22",
       "method": "curated",
       "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "PanTHERIA / AnAge / ADW",
+      "url": "https://genomics.senescence.info/species/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "reproduction.traits",
+      "source": "Amniote Database / AnAge",
+      "url": "https://www.esapubs.org/archive/ecol/E096/269/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic / Smithsonian",
+      "url": "https://www.smithsonianmag.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
     }
   ]
 }

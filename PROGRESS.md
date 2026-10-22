@@ -6,7 +6,7 @@
 | **M1 – Viewer 3D cơ bản** | **HOÀN THÀNH (DONE)** | `AnimalViewer` với Three.js / R3F, OrbitControls, Camera Presets (trước/sau/trái/phải/trên/3D), auto-rotate, animation clip switcher/speed, chụp màn hình PNG, toàn màn hình, kiểm tra WebGL & ErrorBoundary fallback, tối ưu mobile battery (`frameloop="demand"`). | 2026-10-22 |
 | **M2 – Pipeline taxonomy + tên** | **HOÀN THÀNH (DONE)** | Pipeline Python 3.11 đa luồng thu thập dữ liệu GBIF + Wikidata + từ điển đối chiếu tên tiếng Việt cho **106 loài đa dạng** phủ khắp **8 ngành động vật**, xuất JSON, schema validation 100% pass, báo cáo Completeness và cây phân loại `taxa/tree.json`. | 2026-10-22 |
 | **M3 – Duyệt và tìm kiếm** | **HOÀN THÀNH (DONE)** | Công cụ tìm kiếm MiniSearch client-side không dấu tiếng Việt + tiếng Anh; bộ lọc đa tiêu chí (8 ngành, lớp, mức độ bảo tồn IUCN, có 3D, Tier A); cây phân loại taxonomy tương tác; so sánh 2 loài đối sánh thuộc tính; trang khám phá & định vị mẫu vật ngẫu nhiên. | 2026-10-22 |
-| **M4 – Nội dung sinh học** | Chưa bắt đầu | Pipeline cào nội dung tập tính, sinh sản, chu kỳ sống, số liệu traits, provenance & review flags. | - |
+| **M4 – Nội dung sinh học** | **HOÀN THÀNH (DONE)** | Pipeline làm giàu dữ liệu sinh học định lượng (hình thái, dinh dưỡng, chu kỳ sống, sinh sản, tập tính, fun facts); 106 loài đạt điểm Completeness 100%; UI so sánh kích thước với người (SizeComparison), dòng thời gian vòng đời tương tác (LifeCycleTimeline), thẻ dinh dưỡng (DietCard), xử lý trạng thái thiếu dữ liệu (EmptyTraitBadge). | 2026-10-22 |
 | **M5 – Giải phẫu 3D** | Chưa bắt đầu | `AnatomyPanel`, explode view slider, bóc lớp, cô lập bộ phận, clipping plane, 3 loài Tier A + 3 Tier B. | - |
 | **M6 – Tính năng nâng cao** | Chưa bắt đầu | Chu kỳ sống đa giai đoạn, so sánh loài, quiz giải phẫu, URL state sync. | - |
 | **M7 – Hoàn thiện** | Chưa bắt đầu | SEO meta/OG/sitemap/JSON-LD, Credits page tự sinh, tối ưu Lighthouse mobile ≥ 80, a11y, tài liệu `README.md`. | - |
@@ -103,3 +103,34 @@
    - `npm run lint`: 0 error, 0 warning.
    - `npm run build`: Production bundle Vite 6 thành công vượt bậc.
    - `npm run validate-data`: 106/106 loài hợp lệ theo JSON Schema.
+
+---
+
+## Chi tiết Milestone M4 (Đã hoàn thành)
+1. **Cơ sở Tri thức Sinh học & Pipeline Làm giàu Dữ liệu (`scripts/pipeline/enrich_species_content.py` & `traits_database.py`)**:
+   - Tự động bổ sung các chỉ số hình thái đo lường thực tế (`lengthCm`, `weightKg`, `sexualDimorphism`).
+   - Phân loại dinh dưỡng chuẩn xác (`diet.type`: carnivore, herbivore, omnivore, filter_feeder, v.v.), danh sách con mồi/thức ăn cụ thể (`preyOrFood`) và tập tính săn mồi (`feedingBehavior`).
+   - Chu kỳ sống phát triển cá thể theo từng giai đoạn chuẩn sinh học (`lifeCycle.stages`), tuổi thọ tự nhiên và nuôi nhốt (`lifespanYears`).
+   - Thống kê sinh sản: thời gian mang thai/ấp (`gestationDays`), số con/lứa (`clutchOrLitterSize`), chế độ giao phối và hành vi nuôi con (`parentalCare`).
+   - Sự thật khoa học thú vị song ngữ Anh - Việt (`funFacts`).
+   - Ghi nhận nhật ký xuất xứ nguồn dữ liệu (`provenance`) bắt buộc và chuẩn hóa theo giấy phép mở (AnAge, PanTHERIA, Animal Diversity Web, IUCN, Smithsonian).
+2. **Thành phần Giao diện So sánh Kích thước Thực với Con người (`src/features/species/SizeComparison.tsx`)**:
+   - Trực quan hóa tỷ lệ kích thước tương đối giữa mẫu vật động vật và con người tiêu chuẩn (175 cm, 70 kg).
+   - Tự động tính toán hệ số phóng đại (ví dụ: Cá voi xanh gấp 17.1x người, Hổ gấp 1.8x, Sói xám bằng 75% người).
+   - Thanh tỷ lệ đo lường kiến trúc bảo tàng tích hợp chuyển động mượt mà.
+3. **Thành phần Vòng đời & Chu kỳ Biến thái Tương tác (`src/features/species/LifeCycleTimeline.tsx`)**:
+   - Trực quan hóa các trạm phát triển của sinh vật (Trứng -> Ấu trùng -> Nhộng -> Thành trùng hoặc Sơ sinh -> Thiếu niên -> Trưởng thành).
+   - Tương tác bấm chọn trạm để xem chi tiết thời lượng sinh học, đặc điểm hình thái và thích nghi sinh thái.
+4. **Thành phần Dinh dưỡng & Mắt xích Thức ăn (`src/features/species/DietCard.tsx`)**:
+   - Thẻ phân cấp dinh dưỡng (Trophic Ecology) với huy hiệu phân loại trực quan.
+   - Các nhãn tactile chips thể hiện con mồi và thức ăn chính.
+5. **Huy hiệu Dữ liệu Kiểm chứng & Trạng thái Trống (`src/components/EmptyTraitBadge.tsx`)**:
+   - Khi dữ liệu một trường chưa được ghi nhận trong các ấn phẩm khoa học, giao diện hiển thị huy hiệu chuẩn mực bảo tàng *"Chưa có dữ liệu kiểm chứng"* kèm liên kết đối soát trực tiếp tới cơ sở dữ liệu mở GBIF / EOL.
+6. **Mô hình 3D Đại diện Nhóm (Tier B Archetypes)**:
+   - Hệ thống tự động gán mô hình 3D đại diện chất lượng cao theo Lớp sinh học (Aves -> Flamingo, Chondrichthyes -> Shark, Cetacea -> Dolphin, Equidae -> Horse, Canidae -> Wolf).
+   - Giao diện hiển thị rõ thông báo tính đại diện: *"Mô hình đại diện cho nhóm [Lớp], không phải chính xác loài này"*.
+7. **Kiểm định Chất lượng Hoàn hảo**:
+   - `npm run validate-data`: 106/106 loài đạt độ đầy đủ **100% Completeness**, 0 lỗi schema.
+   - Vitest suite nâng cấp lên 24 tests: bổ sung suite `tests/traits-integrity.test.ts` kiểm thử toàn vẹn dữ liệu traits và provenance.
+   - `npm run lint`: 0 errors, 0 warnings.
+   - `npm run build`: Bản dựng production tối ưu tải nhanh cho cả máy để bàn và di động.

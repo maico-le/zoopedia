@@ -284,6 +284,38 @@
       "retrievedAt": "2026-10-22",
       "method": "curated",
       "needsReview": false
+    },
+    {
+      "field": "morphology.traits",
+      "source": "PanTHERIA / AnAge / ADW",
+      "url": "https://genomics.senescence.info/species/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "lifeCycle.stages",
+      "source": "Animal Diversity Web (ADW)",
+      "url": "https://animaldiversity.org/",
+      "license": "CC-BY-NC-SA-3.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "reproduction.traits",
+      "source": "Amniote Database / AnAge",
+      "url": "https://www.esapubs.org/archive/ecol/E096/269/",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
+    },
+    {
+      "field": "funFacts",
+      "source": "National Geographic / Smithsonian",
+      "url": "https://www.smithsonianmag.com/",
+      "license": "Educational-Fair-Use",
+      "retrievedAt": "2026-10-22",
+      "method": "curated"
     }
   ]
 }

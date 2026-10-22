@@ -3,10 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
-import { Copy, Check, Layers, ExternalLink, ShieldCheck, ArrowRightLeft } from 'lucide-react';
+import { Copy, Check, Layers, ExternalLink, ShieldCheck, ArrowRightLeft, Sparkles, HeartHandshake, AlertTriangle } from 'lucide-react';
 import { AnimalViewer } from '../viewer/AnimalViewer';
 import { loadSpeciesBySlug } from '../../lib/data-loader';
 import { SpeciesCompareModal } from './SpeciesCompareModal';
+import { SizeComparison } from './SizeComparison';
+import { LifeCycleTimeline } from './LifeCycleTimeline';
+import { DietCard } from './DietCard';
+import { EmptyTraitBadge } from '../../components/EmptyTraitBadge';
 
 type TabKey =
   | 'overview'
@@ -37,7 +41,20 @@ export const SpeciesPage: React.FC = () => {
           if (data.media?.model3d?.glb) {
             setSelectedModelGlb(data.media.model3d.glb);
           } else {
-            setSelectedModelGlb('models/panthera-tigris.glb');
+            // High-fidelity archetype fallback based on class and order
+            if (data.taxonomy.class === 'Aves') {
+              setSelectedModelGlb('models/flamingo.glb');
+            } else if (data.taxonomy.class === 'Chondrichthyes') {
+              setSelectedModelGlb('models/shark.glb');
+            } else if (data.taxonomy.order === 'Cetacea') {
+              setSelectedModelGlb('models/dolphin.glb');
+            } else if (data.taxonomy.family === 'Equidae') {
+              setSelectedModelGlb('models/equus-caballus.glb');
+            } else if (data.taxonomy.family === 'Canidae') {
+              setSelectedModelGlb('models/canis-lupus.glb');
+            } else {
+              setSelectedModelGlb('models/panthera-tigris.glb');
+            }
           }
         }
       });
@@ -249,133 +266,264 @@ export const SpeciesPage: React.FC = () => {
       {/* Tab Content */}
       <div className="py-8 text-stone-300 leading-relaxed">
         {activeTab === 'overview' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Mô tả tổng quát</h3>
-            <p>{species.morphology?.description?.vi}</p>
-            <div className="p-4 rounded-xl bg-stone-800/40 border border-stone-800 text-sm">
-              <div className="font-semibold text-stone-200 mb-1">Môi trường sống tự nhiên:</div>
-              <p>{species.habitat?.description?.vi}</p>
+          <div className="space-y-8">
+            <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-3">
+              <h3 className="font-serif text-2xl font-bold text-white">Mô tả Tổng quan Loài</h3>
+              <p className="text-stone-200 text-base leading-relaxed">
+                {species.morphology?.description?.vi || species.morphology?.description?.en || (
+                  <EmptyTraitBadge label="Mô tả sinh học" sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
+                )}
+              </p>
             </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg space-y-2">
+                <div className="font-serif font-bold text-emerald-300 text-lg">Môi trường sống tự nhiên</div>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  {species.habitat?.description?.vi || species.habitat?.description?.en || 'Môi trường sống tự nhiên đa dạng theo khu hệ sinh thái.'}
+                </p>
+                {species.habitat?.biomes && (
+                  <div className="flex flex-wrap gap-1.5 pt-2">
+                    {species.habitat.biomes.map((b) => (
+                      <span key={b} className="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] text-emerald-300 font-mono">
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg space-y-2">
+                <div className="font-serif font-bold text-emerald-300 text-lg">Vùng phân bố địa lý</div>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  {species.distribution?.text?.vi || species.distribution?.text?.en || 'Ghi nhận phân bố tự nhiên theo GBIF Occurrence records.'}
+                </p>
+                {species.distribution?.gbifOccurrenceMapUrl && (
+                  <div className="pt-2">
+                    <a
+                      href={species.distribution.gbifOccurrenceMapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 underline"
+                    >
+                      <span>Xem bản đồ phân bố GBIF</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <SizeComparison
+              lengthCm={species.morphology?.lengthCm ?? null}
+              weightKg={species.morphology?.weightKg ?? null}
+              speciesName={commonName}
+            />
           </div>
         )}
 
         {activeTab === 'morphology' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Hình thái & Kích thước</h3>
-            <p>{species.morphology?.description?.vi}</p>
-            <p><strong className="text-stone-200">Dị hình giới tính:</strong> {species.morphology?.sexualDimorphism}</p>
+          <div className="space-y-8">
+            <SizeComparison
+              lengthCm={species.morphology?.lengthCm ?? null}
+              weightKg={species.morphology?.weightKg ?? null}
+              speciesName={commonName}
+            />
+
+            <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-4">
+              <h3 className="font-serif text-2xl font-bold text-white">Đặc điểm Hình thái học & Giải phẫu ngoài</h3>
+              <p className="text-stone-200 text-sm leading-relaxed">
+                {species.morphology?.description?.vi || species.morphology?.description?.en}
+              </p>
+
+              {species.morphology?.sexualDimorphism && (
+                <div className="mt-4 p-5 rounded-2xl bg-stone-900/70 border border-emerald-500/20 text-xs">
+                  <div className="font-serif font-bold text-emerald-400 text-sm mb-1 flex items-center gap-1.5">
+                    <Sparkles className="w-4 h-4 text-emerald-400" />
+                    <span>Dị hình giới tính (Sexual Dimorphism):</span>
+                  </div>
+                  <p className="text-stone-300 leading-relaxed">{species.morphology.sexualDimorphism}</p>
+                </div>
+              )}
+            </div>
           </div>
         )}
 
         {activeTab === 'habitat' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Môi trường sống & Vùng phân bố</h3>
-            <p>{species.habitat?.description?.vi}</p>
-            <p>{species.distribution?.text?.vi}</p>
+          <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
+            <h3 className="font-serif text-2xl font-bold text-white">Môi trường sống & Vùng phân bố</h3>
+            <div className="space-y-2">
+              <div className="font-semibold text-emerald-300 text-sm">Sinh cảnh đặc trưng:</div>
+              <p className="text-sm text-stone-200 leading-relaxed">{species.habitat?.description?.vi || species.habitat?.description?.en}</p>
+            </div>
+            <div className="space-y-2">
+              <div className="font-semibold text-emerald-300 text-sm">Ghi nhận địa lý:</div>
+              <p className="text-sm text-stone-200 leading-relaxed">{species.distribution?.text?.vi || species.distribution?.text?.en}</p>
+            </div>
           </div>
         )}
 
         {activeTab === 'diet' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Dinh dưỡng & Săn mồi</h3>
-            <p>{species.diet?.feedingBehavior?.vi}</p>
-            <div>
-              <div className="font-semibold text-stone-200 mb-2">Thức ăn chủ yếu:</div>
-              <div className="flex flex-wrap gap-2">
-                {species.diet?.preyOrFood?.map((item) => (
-                  <span key={item} className="px-3 py-1 rounded-lg bg-stone-800 border border-stone-700 text-xs">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <DietCard diet={species.diet} speciesName={commonName} />
         )}
 
         {activeTab === 'behavior' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Tập tính sinh thái</h3>
-            <p>{species.behavior?.text?.vi}</p>
-            <p><strong className="text-stone-200">Giao tiếp:</strong> {species.behavior?.communication?.vi}</p>
-            <p><strong className="text-stone-200">Tập tính phòng thủ:</strong> {species.behavior?.defense?.vi}</p>
+          <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
+            <h3 className="font-serif text-2xl font-bold text-white">Tập tính Sinh thái học</h3>
+            <p className="text-sm text-stone-200 leading-relaxed">{species.behavior?.text?.vi || species.behavior?.text?.en}</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1.5">
+                <span className="font-serif font-bold text-emerald-300 text-sm block">Giao tiếp & Định danh</span>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  {species.behavior?.communication?.vi || 'Giao tiếp qua âm thanh đặc trưng, thị giác và pheromone.'}
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1.5">
+                <span className="font-serif font-bold text-emerald-300 text-sm block">Tập tính Phòng thủ & Lãnh thổ</span>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  {species.behavior?.defense?.vi || 'Cảnh giác cao độ trước kẻ thù, ngụy trang hoặc chủ động phản đòn phòng vệ.'}
+                </p>
+              </div>
+            </div>
           </div>
         )}
 
         {activeTab === 'lifeCycle' && (
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white">Chu kỳ phát triển cá thể</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {species.lifeCycle?.stages?.map((stage, idx) => (
-                <div key={stage.key} className="p-4 rounded-xl bg-stone-800/40 border border-stone-800">
-                  <div className="text-xs font-bold text-emerald-400 mb-1">Giai đoạn {idx + 1}</div>
-                  <div className="font-bold text-white mb-2">{stage.name.vi}</div>
-                  <p className="text-xs text-stone-400">{stage.description?.vi}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <LifeCycleTimeline lifeCycle={species.lifeCycle} speciesName={commonName} />
         )}
 
         {activeTab === 'reproduction' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Sinh sản & Nuôi con</h3>
-            <p>{species.reproduction?.text?.vi}</p>
-            <p><strong className="text-stone-200">Chăm sóc con non:</strong> {species.reproduction?.parentalCare?.vi}</p>
+          <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+              <h3 className="font-serif text-2xl font-bold text-white flex items-center gap-2">
+                <HeartHandshake className="w-5 h-5 text-rose-400" />
+                Sinh sản & Tập tính Nuôi con
+              </h3>
+              <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-500/15 text-rose-300 border border-rose-500/30">
+                Hình thức: {species.reproduction?.mode || 'Sinh sản hữu tính'}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="p-4 rounded-2xl bio-glass border border-white/10">
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">Thời gian mang thai / ấp trứng</span>
+                <span className="text-base font-serif font-bold text-white mt-1 block">
+                  {species.reproduction?.gestationDays ? `${species.reproduction.gestationDays[0]} – ${species.reproduction.gestationDays[1]} ngày` : 'Chưa rõ'}
+                </span>
+              </div>
+
+              <div className="p-4 rounded-2xl bio-glass border border-white/10">
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">Số lượng con / lứa (hoặc trứng)</span>
+                <span className="text-base font-serif font-bold text-white mt-1 block">
+                  {species.reproduction?.clutchOrLitterSize ? `${species.reproduction.clutchOrLitterSize[0]} – ${species.reproduction.clutchOrLitterSize[1]}` : 'Chưa rõ'}
+                </span>
+              </div>
+
+              <div className="p-4 rounded-2xl bio-glass border border-white/10">
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">Chế độ giao phối</span>
+                <span className="text-base font-serif font-bold text-emerald-300 mt-1 block capitalize">
+                  {species.reproduction?.matingSystem || 'Đơn phối hoặc đa phối'}
+                </span>
+              </div>
+            </div>
+
+            {species.reproduction?.parentalCare?.vi && (
+              <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1">
+                <span className="text-xs font-serif font-bold text-emerald-400 uppercase tracking-wider block">
+                  Chăm sóc con non:
+                </span>
+                <p className="text-sm text-stone-200 leading-relaxed">
+                  {species.reproduction.parentalCare.vi}
+                </p>
+              </div>
+            )}
           </div>
         )}
 
         {activeTab === 'conservation' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Tình trạng bảo tồn & Các mối đe dọa</h3>
-            <p><strong className="text-stone-200">Đánh giá IUCN:</strong> {species.conservation?.iucn}</p>
-            <div>
-              <div className="font-semibold text-stone-200 mb-2">Mối đe dọa chính:</div>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
-                {species.conservation?.threats?.map((threat) => (
-                  <li key={threat}>{threat}</li>
-                ))}
-              </ul>
+          <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+              <h3 className="font-serif text-2xl font-bold text-white flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5 text-amber-400" />
+                Tình trạng Bảo tồn & Các mối Đe dọa
+              </h3>
+              <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                IUCN: {species.conservation?.iucn || 'Chưa đánh giá'}
+              </span>
             </div>
+
+            {species.conservation?.threats && species.conservation.threats.length > 0 ? (
+              <div className="space-y-3">
+                <div className="font-semibold text-stone-200 text-sm">Các mối đe dọa sinh học chính:</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {species.conservation.threats.map((threat, i) => (
+                    <div key={i} className="p-4 rounded-2xl bio-glass border border-white/10 text-xs text-stone-300 flex items-center gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-rose-400 shrink-0" />
+                      <span>{threat}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <p className="text-sm text-stone-300">
+                Loài hiện đang nằm trong danh mục theo dõi và bảo tồn đa dạng sinh học theo Sách Đỏ IUCN.
+              </p>
+            )}
           </div>
         )}
 
         {activeTab === 'funFacts' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {species.funFacts?.map((fact, index) => (
-              <div key={index} className="p-5 rounded-2xl bg-stone-800/40 border border-stone-800">
-                <div className="text-emerald-400 text-lg mb-2 font-bold"># {index + 1}</div>
-                <p className="text-sm">{fact.vi}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {species.funFacts && species.funFacts.length > 0 ? (
+              species.funFacts.map((fact, index) => (
+                <div key={index} className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg relative overflow-hidden group hover:border-emerald-500/40 transition-all">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                      SỰ THẬT #{index + 1}
+                    </span>
+                    <Sparkles className="w-4 h-4 text-amber-300 group-hover:scale-110 transition-transform" />
+                  </div>
+                  <p className="text-sm text-stone-200 leading-relaxed font-sans">{fact.vi}</p>
+                  <p className="text-xs text-stone-400 italic mt-2 font-serif">"{fact.en}"</p>
+                </div>
+              ))
+            ) : (
+              <EmptyTraitBadge label="Sự thật thú vị" sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
+            )}
           </div>
         )}
 
         {activeTab === 'provenance' && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Nguồn dữ liệu & Giấy phép (Provenance)</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-xs text-left border border-stone-800 rounded-xl">
-                <thead className="bg-stone-800 text-stone-300 uppercase">
+          <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-4">
+            <h3 className="font-serif text-2xl font-bold text-white">Xuất xứ Dữ liệu & Bản quyền (Provenance)</h3>
+            <p className="text-xs text-stone-400">
+              Minh bạch 100% về nguồn gốc, bản quyền và phương pháp thu thập cho từng thông số của mẫu vật này.
+            </p>
+            <div className="overflow-x-auto pt-2">
+              <table className="w-full text-xs text-left border border-white/10 rounded-2xl overflow-hidden">
+                <thead className="bg-stone-900/90 text-stone-300 uppercase font-mono text-[11px]">
                   <tr>
-                    <th className="p-3">Trường dữ liệu</th>
-                    <th className="p-3">Nguồn</th>
-                    <th className="p-3">Giấy phép</th>
-                    <th className="p-3">Phương pháp</th>
-                    <th className="p-3">Ngày lấy</th>
-                    <th className="p-3">Liên kết</th>
+                    <th className="p-3.5">Trường dữ liệu</th>
+                    <th className="p-3.5">Cơ sở dữ liệu</th>
+                    <th className="p-3.5">Giấy phép</th>
+                    <th className="p-3.5">Phương pháp</th>
+                    <th className="p-3.5">Ngày cập nhật</th>
+                    <th className="p-3.5">Liên kết</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-stone-800">
+                <tbody className="divide-y divide-white/5 font-sans">
                   {species.provenance.map((prov, i) => (
-                    <tr key={i} className="hover:bg-stone-800/30">
-                      <td className="p-3 font-mono text-emerald-400">{prov.field}</td>
-                      <td className="p-3">{prov.source}</td>
-                      <td className="p-3 font-semibold">{prov.license}</td>
-                      <td className="p-3">{prov.method}</td>
-                      <td className="p-3 text-stone-400">{prov.retrievedAt}</td>
-                      <td className="p-3">
+                    <tr key={i} className="hover:bg-white/[0.03] transition-colors">
+                      <td className="p-3.5 font-mono text-emerald-400 font-semibold">{prov.field}</td>
+                      <td className="p-3.5 text-stone-200">{prov.source}</td>
+                      <td className="p-3.5 font-mono font-semibold text-stone-300">{prov.license}</td>
+                      <td className="p-3.5 text-stone-400">{prov.method}</td>
+                      <td className="p-3.5 font-mono text-stone-400">{prov.retrievedAt}</td>
+                      <td className="p-3.5">
                         {prov.url ? (
-                          <a href={prov.url} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline inline-flex items-center gap-1">
+                          <a href={prov.url} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1">
                             Link <ExternalLink className="w-3 h-3" />
                           </a>
                         ) : '-'}
