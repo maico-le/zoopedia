@@ -600,20 +600,20 @@ export const EcosystemPage: React.FC = () => {
       </div>
 
       {/* Main Field Header HUD */}
-      <div className="field-journal-card p-6 sm:p-8 bg-gradient-to-br from-stone-900/95 via-stone-900/90 to-amber-950/20 border-natgeo-yellow/30 relative overflow-hidden">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-natgeo-yellow/20">
+      <div className="p-6 sm:p-8 bg-white rounded-3xl border-2 border-emerald-200 shadow-md relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-emerald-100">
           <div>
             <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <span className="ink-stamp-badge border-natgeo-yellow/50 text-natgeo-yellow bg-natgeo-yellow/10">
+              <span className="px-3 py-1 rounded-full font-mono text-[10px] font-bold border border-emerald-200 text-emerald-800 bg-emerald-50">
                 ECOSYSTEM BIOLOGY LAB • LEVEL IV
               </span>
-              <span className="font-mono text-xs text-amber-400/80 tracking-widest uppercase">
+              <span className="font-mono text-xs text-emerald-700 tracking-widest uppercase font-semibold">
                 #TROPHIC-CASCADE-SIMULATOR
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl font-serif font-black text-white tracking-wide flex items-center gap-3">
-              <Network className="w-8 h-8 text-natgeo-yellow" />
+            <h1 className="text-3xl sm:text-4xl font-serif font-black text-slate-900 tracking-wide flex items-center gap-3">
+              <Network className="w-8 h-8 text-emerald-600" />
               <span>
                 {currentLang === 'en'
                   ? 'Ecosystem Food Web & Trophic Cascades'
@@ -621,7 +621,7 @@ export const EcosystemPage: React.FC = () => {
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base text-stone-300 font-serif max-w-3xl mt-2 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 font-serif max-w-3xl mt-2 leading-relaxed">
               {currentLang === 'en'
                 ? 'Explore multileveled energy transfer, keystone predators, and trophic cascade dynamics. Simulate how the loss of an apex predator collapses entire biomes according to Lotka-Volterra dynamics.'
                 : 'Khám phá dòng năng lượng sinh thái, vai trò của loài chủ chốt và cơ chế thác sinh thái. Mô phỏng tác động dây chuyền khi một loài săn mồi đầu bảng biến mất làm sụp đổ toàn bộ thảm thực vật.'}
@@ -639,7 +639,7 @@ export const EcosystemPage: React.FC = () => {
               className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
                 activeBiomeId === 'rainforest'
                   ? 'btn-expedition-primary !py-2.5 !px-4'
-                  : 'bg-stone-900 text-stone-300 border border-white/10 hover:border-natgeo-yellow/40'
+                  : 'bg-slate-50 text-slate-700 border border-slate-200 hover:border-emerald-400 hover:text-emerald-700'
               }`}
             >
               🌴 {currentLang === 'en' ? 'Rainforest' : 'Rừng Mưa'}
@@ -654,7 +654,7 @@ export const EcosystemPage: React.FC = () => {
               className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
                 activeBiomeId === 'savanna'
                   ? 'btn-expedition-primary !py-2.5 !px-4'
-                  : 'bg-stone-900 text-stone-300 border border-white/10 hover:border-natgeo-yellow/40'
+                  : 'bg-slate-50 text-slate-700 border border-slate-200 hover:border-emerald-400 hover:text-emerald-700'
               }`}
             >
               🦁 {currentLang === 'en' ? 'Savanna' : 'Xavan'}
@@ -669,7 +669,7 @@ export const EcosystemPage: React.FC = () => {
               className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
                 activeBiomeId === 'marine'
                   ? 'btn-expedition-primary !py-2.5 !px-4'
-                  : 'bg-stone-900 text-stone-300 border border-white/10 hover:border-natgeo-yellow/40'
+                  : 'bg-slate-50 text-slate-700 border border-slate-200 hover:border-emerald-400 hover:text-emerald-700'
               }`}
             >
               🌊 {currentLang === 'en' ? 'Ocean Reef' : 'Đại Dương'}
@@ -679,23 +679,23 @@ export const EcosystemPage: React.FC = () => {
 
         {/* Biome Overview Sub-bar */}
         <div className="pt-4 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
-          <div className="flex items-center gap-4 text-stone-300">
-            <span className="text-natgeo-yellow font-bold uppercase">
+          <div className="flex items-center gap-4 text-slate-600">
+            <span className="text-emerald-700 font-bold uppercase">
               {activeBiome[currentLang === 'en' ? 'titleEn' : 'titleVi']}
             </span>
-            <span className="text-stone-600">•</span>
-            <span className="text-stone-400">
+            <span className="text-slate-300">•</span>
+            <span className="text-slate-500 font-medium">
               Shannon-Wiener (H&apos;):{' '}
-              <strong className="text-amber-300">{activeBiome.shannonIndex}</strong>
+              <strong className="text-emerald-700 font-bold">{activeBiome.shannonIndex}</strong>
             </span>
-            <span className="text-stone-600">•</span>
-            <span className="text-stone-400">
+            <span className="text-slate-300">•</span>
+            <span className="text-slate-500 font-medium">
               {currentLang === 'en' ? 'Resilience:' : 'Độ ổn định:'}{' '}
-              <strong className="text-emerald-400">{activeBiome.resilienceRating}</strong>
+              <strong className="text-emerald-700 font-bold">{activeBiome.resilienceRating}</strong>
             </span>
           </div>
 
-          <div className="text-[11px] text-stone-400 italic font-serif">
+          <div className="text-[11px] text-slate-500 italic font-serif">
             {activeBiome[currentLang === 'en' ? 'subtitleEn' : 'subtitleVi']}
           </div>
         </div>
@@ -705,10 +705,10 @@ export const EcosystemPage: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left Column: Trophic Levels Diagram */}
         <div className="lg:col-span-8 space-y-6">
-          <div className="field-journal-card p-6 bg-stone-900/90 border-natgeo-yellow/20 relative">
-            <div className="flex items-center justify-between pb-4 border-b border-white/10">
-              <h2 className="text-sm font-mono font-bold uppercase tracking-wider text-natgeo-yellow flex items-center gap-2">
-                <Compass className="w-4 h-4 text-natgeo-yellow" />
+          <div className="p-6 bg-white rounded-3xl border-2 border-emerald-200 shadow-md relative">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-100">
+              <h2 className="text-sm font-mono font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-2">
+                <Compass className="w-4 h-4 text-emerald-600" />
                 <span>
                   {currentLang === 'en'
                     ? 'Trophic Web Hierarchy & Energy Transfer'
@@ -770,16 +770,16 @@ export const EcosystemPage: React.FC = () => {
                         const isPrey = selectedNode.eats.includes(node.id);
                         const isPredator = node.eats.includes(selectedNode.id);
 
-                        let cardRing = 'border-white/10 bg-stone-900/90 text-stone-200';
+                        let cardRing = 'border-slate-200 bg-white text-slate-800 shadow-sm';
                         if (isSelected) {
                           cardRing =
-                            'border-natgeo-yellow bg-amber-950/50 text-white shadow-glow ring-2 ring-natgeo-yellow';
+                            'border-emerald-600 bg-emerald-50 text-emerald-950 shadow-md ring-2 ring-emerald-500 font-bold';
                         } else if (isPrey) {
                           cardRing =
-                            'border-emerald-500/60 bg-emerald-950/30 text-emerald-200 ring-1 ring-emerald-500/50';
+                            'border-teal-500/60 bg-teal-50/70 text-teal-900 ring-1 ring-teal-500/40';
                         } else if (isPredator) {
                           cardRing =
-                            'border-rose-500/60 bg-rose-950/30 text-rose-200 ring-1 ring-rose-500/50';
+                            'border-rose-500/60 bg-rose-50/70 text-rose-900 ring-1 ring-rose-500/40';
                         }
 
                         return (
@@ -832,28 +832,28 @@ export const EcosystemPage: React.FC = () => {
         {/* Right Column: Node Telemetry & Trophic Connections */}
         <div className="lg:col-span-4 space-y-6">
           {/* Active Node Detail Card */}
-          <div className="field-journal-card p-6 bg-stone-900/95 border-natgeo-yellow/30 space-y-5">
-            <div className="flex items-center justify-between pb-3 border-b border-natgeo-yellow/20">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-natgeo-yellow">
+          <div className="p-6 bg-white rounded-3xl border-2 border-emerald-200 shadow-md space-y-5">
+            <div className="flex items-center justify-between pb-3 border-b border-emerald-100">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
                 {currentLang === 'en' ? 'Trophic Node Inspector' : 'Phân Tích Nút Sinh Thái'}
               </span>
-              <span className="text-[10px] font-mono text-amber-300 bg-amber-500/20 px-2 py-0.5 rounded border border-amber-500/30">
+              <span className="text-[10px] font-mono text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-200 font-bold">
                 LEVEL {selectedNode.trophicLevel}
               </span>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-black border-2 border-natgeo-yellow/40 flex items-center justify-center text-3xl shadow-xl shrink-0">
+              <div className="w-14 h-14 rounded-2xl bg-emerald-50 border-2 border-emerald-200 flex items-center justify-center text-3xl shadow-sm shrink-0">
                 {selectedNode.icon}
               </div>
               <div>
-                <h3 className="text-xl font-serif font-black text-white">
+                <h3 className="text-xl font-serif font-black text-slate-900">
                   {selectedNode[currentLang === 'en' ? 'nameEn' : 'nameVi']}
                 </h3>
-                <div className="text-xs font-serif italic text-amber-300/80">
+                <div className="text-xs font-serif italic text-emerald-700 font-medium">
                   {selectedNode.scientific}
                 </div>
-                <div className="mt-1 inline-block text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-natgeo-yellow/15 text-natgeo-yellow border border-natgeo-yellow/30">
+                <div className="mt-1 inline-block text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
                   {selectedNode.tierLevelLabel[currentLang === 'en' ? 'en' : 'vi']}
                 </div>
               </div>
@@ -933,20 +933,20 @@ export const EcosystemPage: React.FC = () => {
       </div>
 
       {/* Trophic Cascade Real-time Simulator Section */}
-      <div className="field-journal-card p-6 sm:p-8 bg-stone-900/90 border-natgeo-yellow/30 space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-natgeo-yellow/20">
+      <div className="p-6 sm:p-8 bg-white rounded-3xl border-2 border-emerald-200 shadow-md space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-emerald-100">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-natgeo-yellow border border-amber-500/40">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
                 DYNAMIC POPULATION SIMULATION
               </span>
-              <span className="text-xs font-mono text-stone-500">•</span>
-              <span className="text-xs font-mono text-stone-300">
-                YEAR: <strong className="text-natgeo-yellow font-bold">{simYear} / 20</strong>
+              <span className="text-xs font-mono text-slate-300">•</span>
+              <span className="text-xs font-mono text-slate-600">
+                YEAR: <strong className="text-emerald-700 font-bold">{simYear} / 20</strong>
               </span>
             </div>
-            <h2 className="text-2xl font-serif font-black text-white flex items-center gap-2.5">
-              <Activity className="w-6 h-6 text-natgeo-yellow" />
+            <h2 className="text-2xl font-serif font-black text-slate-900 flex items-center gap-2.5">
+              <Activity className="w-6 h-6 text-emerald-600" />
               <span>
                 {currentLang === 'en'
                   ? 'Trophic Cascade Simulator (Lotka-Volterra Mechanics)'
@@ -959,10 +959,10 @@ export const EcosystemPage: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsSimulating(!isSimulating)}
-              className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all shadow-md ${
+              className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all shadow-sm ${
                 isSimulating
-                  ? 'bg-amber-400 text-stone-950 shadow-glow font-extrabold'
-                  : 'bg-natgeo-yellow/20 text-natgeo-yellow border border-natgeo-yellow/40 hover:bg-natgeo-yellow/30'
+                  ? 'bg-emerald-600 text-white shadow-md font-extrabold'
+                  : 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100'
               }`}
             >
               {isSimulating ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current" />}
@@ -971,7 +971,7 @@ export const EcosystemPage: React.FC = () => {
 
             <button
               onClick={() => resetSimulation(scenario)}
-              className="p-2.5 rounded-xl bg-stone-950 border border-white/10 text-stone-400 hover:text-natgeo-yellow transition-all"
+              className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 hover:text-emerald-700 transition-all"
               title="Khôi phục lại từ đầu"
             >
               <RotateCcw className="w-4 h-4" />
@@ -986,20 +986,20 @@ export const EcosystemPage: React.FC = () => {
             <span>{currentLang === 'en' ? 'Select Intervention Scenario:' : 'Chọn Kịch Bản Can Thiệp Thực Địa:'}</span>
           </label>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
             <button
               onClick={() => resetSimulation('baseline')}
               className={`p-3.5 rounded-xl border text-left transition-all ${
                 scenario === 'baseline'
-                  ? 'bg-amber-950/40 border-natgeo-yellow text-white ring-1 ring-natgeo-yellow'
-                  : 'bg-stone-950/60 border-white/10 text-stone-400 hover:border-white/30'
+                  ? 'bg-emerald-50 border-emerald-500 text-slate-900 ring-1 ring-emerald-500 shadow-sm'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-emerald-300'
               }`}
             >
-              <div className="font-mono text-xs font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <div className="font-mono text-xs font-bold text-slate-900 flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                 <span>{currentLang === 'en' ? 'Natural Equilibrium' : 'Cân Bằng Tự Nhiên'}</span>
               </div>
-              <div className="text-[11px] font-serif text-stone-400 mt-1">
+              <div className="text-[11px] font-serif text-slate-500 mt-1">
                 {currentLang === 'en'
                   ? 'All trophic levels operate in steady harmonic equilibrium.'
                   : 'Các loài săn mồi và con mồi dao động điều hòa ổn định.'}
@@ -1010,15 +1010,15 @@ export const EcosystemPage: React.FC = () => {
               onClick={() => resetSimulation('extirpate_apex')}
               className={`p-3.5 rounded-xl border text-left transition-all ${
                 scenario === 'extirpate_apex'
-                  ? 'bg-rose-950/40 border-rose-500 text-white ring-1 ring-rose-500'
-                  : 'bg-stone-950/60 border-white/10 text-stone-400 hover:border-rose-500/40'
+                  ? 'bg-rose-50 border-rose-500 text-slate-900 ring-1 ring-rose-500 shadow-sm'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-rose-400'
               }`}
             >
-              <div className="font-mono text-xs font-bold text-rose-300 flex items-center gap-2">
-                <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
+              <div className="font-mono text-xs font-bold text-rose-700 flex items-center gap-2">
+                <ShieldAlert className="w-3.5 h-3.5 text-rose-600" />
                 <span>{currentLang === 'en' ? 'Extirpate Apex Predator' : 'Tuyệt Diệt Thú Đầu Bảng'}</span>
               </div>
-              <div className="text-[11px] font-serif text-stone-400 mt-1">
+              <div className="text-[11px] font-serif text-slate-500 mt-1">
                 {currentLang === 'en'
                   ? 'Remove tiger/lion -> herbivore population explodes -> forest wiped out.'
                   : 'Bắt hết Hổ/Sói -> thú ăn cỏ bùng nổ -> rừng bị gặm trơ trọi.'}
@@ -1029,15 +1029,15 @@ export const EcosystemPage: React.FC = () => {
               onClick={() => resetSimulation('deforestation')}
               className={`p-3.5 rounded-xl border text-left transition-all ${
                 scenario === 'deforestation'
-                  ? 'bg-amber-950/40 border-amber-500 text-white ring-1 ring-amber-500'
-                  : 'bg-stone-950/60 border-white/10 text-stone-400 hover:border-amber-500/40'
+                  ? 'bg-amber-50 border-amber-500 text-slate-900 ring-1 ring-amber-500 shadow-sm'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-amber-400'
               }`}
             >
-              <div className="font-mono text-xs font-bold text-amber-300 flex items-center gap-2">
-                <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+              <div className="font-mono text-xs font-bold text-amber-700 flex items-center gap-2">
+                <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
                 <span>{currentLang === 'en' ? 'Habitat Deforestation' : 'Mất Thảm Thực Vật (Phá Rừng)'}</span>
               </div>
-              <div className="text-[11px] font-serif text-stone-400 mt-1">
+              <div className="text-[11px] font-serif text-slate-500 mt-1">
                 {currentLang === 'en'
                   ? 'Severe loss of primary producers triggers bottom-up starvation.'
                   : 'Mất sinh khối thô kéo sụt giảm toàn bộ chuỗi thức ăn.'}
@@ -1048,15 +1048,15 @@ export const EcosystemPage: React.FC = () => {
               onClick={() => resetSimulation('invasive_species')}
               className={`p-3.5 rounded-xl border text-left transition-all ${
                 scenario === 'invasive_species'
-                  ? 'bg-purple-950/40 border-purple-500 text-white ring-1 ring-purple-500'
-                  : 'bg-stone-950/60 border-white/10 text-stone-400 hover:border-purple-500/40'
+                  ? 'bg-purple-50 border-purple-500 text-slate-900 ring-1 ring-purple-500 shadow-sm'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-purple-400'
               }`}
             >
-              <div className="font-mono text-xs font-bold text-purple-300 flex items-center gap-2">
-                <Radio className="w-3.5 h-3.5 text-purple-400" />
+              <div className="font-mono text-xs font-bold text-purple-700 flex items-center gap-2">
+                <Radio className="w-3.5 h-3.5 text-purple-600" />
                 <span>{currentLang === 'en' ? 'Invasive Species Invasion' : 'Loài Ngoại Lai Xâm Lấn'}</span>
               </div>
-              <div className="text-[11px] font-serif text-stone-400 mt-1">
+              <div className="text-[11px] font-serif text-slate-500 mt-1">
                 {currentLang === 'en'
                   ? 'Foreign consumer displaces native species and exhausts vegetation.'
                   : 'Loài ngoại lai cạnh tranh khốc liệt, vắt kiệt nguồn cỏ rừng.'}

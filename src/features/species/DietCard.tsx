@@ -14,7 +14,7 @@ export const DietCard: React.FC<DietCardProps> = ({ diet, speciesName }) => {
 
   if (!diet) {
     return (
-      <div className="p-6 rounded-3xl field-panel border border-white/10 text-stone-400 text-sm font-mono">
+      <div className="p-6 rounded-3xl bg-white border border-slate-200 text-slate-500 text-sm font-mono shadow-sm">
         {t('diet.noData')}
       </div>
     );
@@ -46,14 +46,14 @@ export const DietCard: React.FC<DietCardProps> = ({ diet, speciesName }) => {
     : (diet.feedingBehavior?.vi || diet.feedingBehavior?.en || `Tập tính tìm kiếm và hấp thu chất dinh dưỡng của ${speciesName}.`);
 
   return (
-    <div className="p-6 sm:p-8 rounded-3xl field-panel border-2 border-natgeo-yellow/25 shadow-2xl space-y-6 relative overflow-hidden">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+    <div className="p-6 sm:p-8 rounded-3xl bg-white border-2 border-emerald-200 shadow-md space-y-6 relative overflow-hidden">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
         <div>
-          <div className="text-[10px] font-mono uppercase tracking-widest text-natgeo-yellow font-bold mb-1">
+          <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-700 font-bold mb-1">
             {t('diet.subtitle')}
           </div>
-          <h3 className="font-display text-2xl font-extrabold text-white flex items-center gap-2 uppercase">
-            <Utensils className="w-5 h-5 text-natgeo-yellow" />
+          <h3 className="font-display text-2xl font-extrabold text-slate-900 flex items-center gap-2 uppercase">
+            <Utensils className="w-5 h-5 text-emerald-600" />
             {t('diet.title')}
           </h3>
         </div>
@@ -65,11 +65,11 @@ export const DietCard: React.FC<DietCardProps> = ({ diet, speciesName }) => {
 
       {/* Foraging Description */}
       <div>
-        <h4 className="text-xs font-mono uppercase tracking-wider text-natgeo-yellow mb-2 font-bold flex items-center gap-2">
+        <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-700 mb-2 font-bold flex items-center gap-2">
           <span>//</span>
           <span>{t('diet.foragingBehavior')}</span>
         </h4>
-        <p className="text-sm text-stone-200 leading-relaxed bg-black/60 p-5 rounded-2xl border border-white/10 font-sans">
+        <p className="text-sm text-slate-700 leading-relaxed bg-slate-50 p-5 rounded-2xl border border-slate-200 font-sans">
           {feedingBehavior}
         </p>
       </div>
@@ -77,8 +77,8 @@ export const DietCard: React.FC<DietCardProps> = ({ diet, speciesName }) => {
       {/* Primary Diet / Prey Tags */}
       {diet.preyOrFood && diet.preyOrFood.length > 0 && (
         <div>
-          <h4 className="text-xs font-mono uppercase tracking-wider text-natgeo-yellow mb-3 font-bold flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-natgeo-yellow" />
+          <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-700 mb-3 font-bold flex items-center gap-2">
+            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
             <span>{t('diet.foodSources')}</span>
           </h4>
           <div className="flex flex-wrap gap-2">
@@ -87,7 +87,7 @@ export const DietCard: React.FC<DietCardProps> = ({ diet, speciesName }) => {
                 key={i}
                 className="btn-field-tag !text-xs !py-1.5 !px-3"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-natgeo-yellow" />
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
                 {food}
               </span>
             ))}

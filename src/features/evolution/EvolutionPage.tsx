@@ -1079,37 +1079,37 @@ export const EvolutionPage: React.FC = () => {
   }, [isTimeMachinePlaying]);
 
   return (
-    <div className="min-h-screen bg-expedition-dark text-stone-100 font-sans pb-24 selection:bg-natgeo-yellow selection:text-black">
+    <div className="min-h-screen bg-[#f8faf9] text-slate-800 font-sans pb-24 selection:bg-emerald-500/20 selection:text-emerald-900">
       {/* Top Telemetry Header Bar */}
-      <div className="bg-black/60 border-b border-natgeo-yellow/20 backdrop-blur-md sticky top-20 z-40">
+      <div className="bg-white/95 border-b border-emerald-100 backdrop-blur-md sticky top-20 z-40 text-slate-800 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-natgeo-yellow/20 border border-natgeo-yellow flex items-center justify-center text-natgeo-yellow">
+            <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700">
               <Dna className="w-4 h-4 animate-spin-slow" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-natgeo-yellow">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
                   {isEn ? 'DEEP-TIME PHYLOGENY & PALEOGEOGRAPHY' : 'PHẢ HỆ ĐỊA CHẤT & BẢN ĐỒ CỔ ĐỊA LÝ'}
                 </span>
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-500/40 font-mono">
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-mono font-bold">
                   540 Ma - Present
                 </span>
               </div>
-              <div className="text-[11px] font-mono text-stone-400">
+              <div className="text-[11px] font-mono text-slate-500">
                 {isEn ? 'Continental drift & ancient animal distributions' : 'Sự trôi dạt lục địa & phân bố sinh vật qua các kỷ địa chất'}
               </div>
             </div>
           </div>
 
           {/* Tab Navigation Buttons */}
-          <div className="flex items-center gap-1.5 p-1 bg-expedition-canvas rounded-xl border border-white/10 text-xs font-mono">
+          <div className="flex items-center gap-1.5 p-1 bg-slate-100 rounded-xl border border-slate-200 text-xs font-mono">
             <button
               onClick={() => setActiveTab('timeline')}
               className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
                 activeTab === 'timeline'
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
               }`}
             >
               <Globe className="w-3.5 h-3.5" />
@@ -1120,8 +1120,8 @@ export const EvolutionPage: React.FC = () => {
               onClick={() => setActiveTab('tree')}
               className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
                 activeTab === 'tree'
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
               }`}
             >
               <GitFork className="w-3.5 h-3.5" />
@@ -1132,8 +1132,8 @@ export const EvolutionPage: React.FC = () => {
               onClick={() => setActiveTab('homology')}
               className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-2 transition-all ${
                 activeTab === 'homology'
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
@@ -1150,16 +1150,16 @@ export const EvolutionPage: React.FC = () => {
         {activeTab === 'timeline' && (
           <div className="space-y-8 animate-fadeIn">
             {/* Mission Briefing Header */}
-            <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/30 relative overflow-hidden shadow-2xl">
+            <div className="p-6 sm:p-8 rounded-3xl bg-white border border-emerald-200 relative overflow-hidden shadow-md">
               <div className="space-y-2 max-w-3xl relative z-10">
-                <div className="flex items-center gap-2 text-xs font-mono text-natgeo-yellow uppercase tracking-widest">
-                  <Clock className="w-3.5 h-3.5 text-natgeo-yellow" />
+                <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 uppercase tracking-widest font-bold">
+                  <Clock className="w-3.5 h-3.5 text-emerald-600" />
                   <span>{isEn ? 'CONTINENTAL DRIFT & PALEONTOLOGICAL DISTRIBUTION' : 'SỰ TRÔI DẠT LỤC ĐỊA & PHÂN BỐ CỔ SINH VẬT'}</span>
                 </div>
-                <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+                <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight uppercase">
                   {isEn ? 'Paleogeographic Map: Animals Across Geological Time' : 'Bản Đồ Cổ Địa Lý & Phân Bố Sinh Giới Qua Các Thời Kỳ'}
                 </h1>
-                <p className="text-sm text-stone-300 leading-relaxed font-sans">
+                <p className="text-sm text-slate-600 leading-relaxed font-sans">
                   {isEn
                     ? 'Watch the continents drift across 540 million years from the ocean world of the Cambrian, through the colossal supercontinent Pangea, to the frozen Beringia landbridge of the Ice Age. Click the fossil specimen pins on the paleomap to trace where ancient life lived and how modern animals evolved from them.'
                     : 'Chiêm ngưỡng sự trôi dạt của các mảng lục địa suốt 540 triệu năm từ đại dương Cambri, qua siêu lục địa Pangea vĩ đại, cho đến Cầu đất Beringia và Thềm lục địa Sunda trong Kỷ Băng Hà. Bấm vào các điểm tọa độ hóa thạch trên bản đồ để khám phá nơi sinh sống của các loài cổ sinh và mối liên kết với động vật hiện đại ngày nay.'}
@@ -1199,8 +1199,8 @@ export const EvolutionPage: React.FC = () => {
                       }}
                       className={`p-4 rounded-2xl text-left transition-all border flex flex-col justify-between h-36 relative overflow-hidden group ${
                         isSelected
-                          ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-natgeo font-bold scale-105'
-                          : 'bg-stone-950/70 border-white/10 hover:border-natgeo-yellow/40 text-stone-300'
+                          ? 'bg-emerald-600 text-white border-emerald-600 shadow-md font-bold scale-105'
+                          : 'bg-white border-slate-200 hover:border-emerald-400 text-slate-700 shadow-sm'
                       }`}
                     >
                       <div className="flex items-center justify-between text-[10px] font-mono">

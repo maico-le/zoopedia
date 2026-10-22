@@ -83,34 +83,34 @@ export const ExplorePage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       {/* Expedition Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase tracking-widest mb-2">
-          <Radio className="w-4 h-4 text-natgeo-yellow animate-pulse" />
+        <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest mb-2">
+          <Radio className="w-4 h-4 text-emerald-600 animate-pulse" />
           {t('explore.badge')}
         </div>
-        <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight">
+        <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
           {t('explore.title')}
         </h1>
-        <p className="text-stone-400 text-sm mt-1 max-w-2xl font-sans">
+        <p className="text-slate-600 text-sm mt-1 max-w-2xl font-sans">
           {t('explore.desc')}
         </p>
       </div>
 
       {/* Main Expedition Search Bar */}
       <div className="relative mb-6">
-        <div className="relative flex items-center field-panel field-ruler-bottom rounded-2xl border-2 border-natgeo-yellow/30 shadow-2xl focus-within:border-natgeo-yellow focus-within:shadow-natgeo transition-all overflow-hidden">
-          <div className="w-2.5 self-stretch bg-natgeo-yellow shrink-0" />
-          <Search className="w-5 h-5 absolute left-6 text-natgeo-yellow pointer-events-none" />
+        <div className="relative flex items-center bg-white field-ruler-bottom rounded-2xl border-2 border-emerald-200 shadow-md focus-within:border-emerald-500 focus-within:ring-4 focus-within:ring-emerald-500/10 transition-all overflow-hidden">
+          <div className="w-2.5 self-stretch bg-emerald-600 shrink-0" />
+          <Search className="w-5 h-5 absolute left-6 text-emerald-600 pointer-events-none" />
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={isEn ? "Search specimen archive (e.g. tiger, wolf, shark, octopus, Panthera)..." : "Tra cứu kho mẫu vật (ví dụ: hổ, chó sói, ca map, bach tuoc, Panthera)..."}
-            className="w-full pl-14 pr-12 py-4 bg-transparent text-white placeholder-stone-400 text-sm focus:outline-none font-sans"
+            placeholder={isEn ? "Search specimen archive (e.g. tiger, wolf, shark, octopus, Panthera)..." : "Tra cứu kho mẫu vật (ví dụ: hổ, chó sói, cá mập, bạch tuộc, Panthera)..."}
+            className="w-full pl-14 pr-12 py-4 bg-transparent text-slate-800 placeholder-slate-400 text-sm focus:outline-none font-sans"
           />
           {query && (
             <button
               onClick={() => setQuery('')}
-              className="absolute right-4 p-1.5 rounded-lg text-stone-400 hover:text-natgeo-yellow"
+              className="absolute right-4 p-1.5 rounded-lg text-slate-400 hover:text-emerald-700"
             >
               <X className="w-4 h-4" />
             </button>
@@ -119,10 +119,10 @@ export const ExplorePage: React.FC = () => {
       </div>
 
       {/* Field Filter Control Drawer */}
-      <div className="p-6 rounded-3xl field-panel border-2 border-natgeo-yellow/20 mb-8 shadow-2xl">
-        <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
-          <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-natgeo-yellow">
-            <Filter className="w-4 h-4 text-natgeo-yellow" />
+      <div className="p-6 rounded-3xl bg-white border-2 border-emerald-200 mb-8 shadow-lg">
+        <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-100">
+          <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-emerald-700">
+            <Filter className="w-4 h-4 text-emerald-600" />
             {t('explore.filterBoxTitle')}
           </div>
 
@@ -130,20 +130,20 @@ export const ExplorePage: React.FC = () => {
             {hasActiveFilters && (
               <button
                 onClick={handleResetFilters}
-                className="text-xs text-rose-400 hover:text-rose-300 font-mono font-bold flex items-center gap-1 uppercase tracking-wider"
+                className="text-xs text-rose-600 hover:text-rose-700 font-mono font-bold flex items-center gap-1 uppercase tracking-wider"
               >
                 <X className="w-3.5 h-3.5" />
                 {t('explore.resetFilters')}
               </button>
             )}
 
-            <div className="flex items-center gap-1.5 text-xs text-stone-300 font-mono">
-              <ArrowUpDown className="w-3.5 h-3.5 text-natgeo-yellow" />
+            <div className="flex items-center gap-1.5 text-xs text-slate-600 font-mono font-semibold">
+              <ArrowUpDown className="w-3.5 h-3.5 text-emerald-600" />
               <span>{isEn ? 'Sort:' : 'Sắp xếp:'}</span>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'name' | 'scientific' | 'iucn')}
-                className="bg-black/80 border border-natgeo-yellow/30 rounded-lg px-2.5 py-1 text-white text-xs cursor-pointer focus:outline-none focus:border-natgeo-yellow font-sans"
+                className="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-slate-800 text-xs cursor-pointer focus:outline-none focus:border-emerald-500 font-sans font-medium"
               >
                 <option value="name">{t('explore.sortByName')}</option>
                 <option value="scientific">{t('explore.sortByScientific')}</option>
@@ -157,7 +157,7 @@ export const ExplorePage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 text-xs font-mono">
           {/* Phylum Filter */}
           <div>
-            <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5 font-bold">
+            <label className="block text-[11px] font-mono uppercase text-slate-500 mb-1.5 font-bold">
               {t('explore.phylum')}
             </label>
             <select
@@ -166,7 +166,7 @@ export const ExplorePage: React.FC = () => {
                 setSelectedPhylum(e.target.value);
                 setSelectedClass('ALL');
               }}
-              className="w-full bg-black/70 border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-natgeo-yellow cursor-pointer"
+              className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-slate-800 text-xs focus:outline-none focus:border-emerald-500 cursor-pointer font-sans"
             >
               {phyla.map((p) => (
                 <option key={p} value={p}>
@@ -178,13 +178,13 @@ export const ExplorePage: React.FC = () => {
 
           {/* Class Filter */}
           <div>
-            <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5 font-bold">
+            <label className="block text-[11px] font-mono uppercase text-slate-500 mb-1.5 font-bold">
               {t('explore.class')}
             </label>
             <select
               value={selectedClass}
               onChange={(e) => setSelectedClass(e.target.value)}
-              className="w-full bg-black/70 border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-natgeo-yellow cursor-pointer"
+              className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-slate-800 text-xs focus:outline-none focus:border-emerald-500 cursor-pointer font-sans"
             >
               {classes.map((c) => (
                 <option key={c} value={c}>
@@ -196,7 +196,7 @@ export const ExplorePage: React.FC = () => {
 
           {/* IUCN Red List Filter: Stamped Style */}
           <div>
-            <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5 font-bold">
+            <label className="block text-[11px] font-mono uppercase text-slate-500 mb-1.5 font-bold">
               {t('explore.iucn')}
             </label>
             <div className="flex items-center gap-1">
@@ -206,8 +206,8 @@ export const ExplorePage: React.FC = () => {
                   onClick={() => setSelectedIucn(status)}
                   className={`flex-1 py-1.5 rounded-lg font-mono text-[11px] font-bold transition-all border ${
                     selectedIucn === status
-                      ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-glow font-extrabold'
-                      : 'bg-black/60 border-white/10 text-stone-400 hover:text-white'
+                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm font-extrabold'
+                      : 'bg-slate-50 border-slate-200 text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
                   }`}
                 >
                   {status}
@@ -218,7 +218,7 @@ export const ExplorePage: React.FC = () => {
 
           {/* 3D Capabilities Toggle */}
           <div>
-            <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5 font-bold">
+            <label className="block text-[11px] font-mono uppercase text-slate-500 mb-1.5 font-bold">
               {isEn ? '3D Models' : 'Mô hình 3D'}
             </label>
             <div className="flex gap-2">
@@ -226,8 +226,8 @@ export const ExplorePage: React.FC = () => {
                 onClick={() => setHas3DOnly(!has3DOnly)}
                 className={`flex-1 py-2 rounded-xl text-xs font-mono font-bold flex items-center justify-center gap-1.5 transition-all border ${
                   has3DOnly
-                    ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-glow'
-                    : 'bg-black/60 border-white/10 text-stone-400 hover:text-white'
+                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
+                    : 'bg-slate-50 border-slate-200 text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
@@ -238,8 +238,8 @@ export const ExplorePage: React.FC = () => {
                 onClick={() => setTierAOnly(!tierAOnly)}
                 className={`flex-1 py-2 rounded-xl text-xs font-mono font-bold flex items-center justify-center gap-1.5 transition-all border ${
                   tierAOnly
-                    ? 'bg-gradient-to-r from-natgeo-yellow to-amber-500 text-stone-950 border-natgeo-yellow shadow-glow'
-                    : 'bg-black/60 border-white/10 text-stone-400 hover:text-white'
+                    ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
+                    : 'bg-slate-50 border-slate-200 text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
                 }`}
               >
                 <span>Tier A</span>
@@ -251,19 +251,19 @@ export const ExplorePage: React.FC = () => {
 
       {/* Results Header */}
       <div className="flex items-center justify-between mb-6">
-        <div className="text-xs font-mono font-bold text-stone-400 tracking-wider uppercase">
+        <div className="text-xs font-mono font-bold text-slate-500 tracking-wider uppercase">
           {t('explore.showingResults', { count: results.length })}
         </div>
       </div>
 
       {/* Results Grid: Field Specimen Cards */}
       {results.length === 0 ? (
-        <div className="py-24 text-center field-panel rounded-3xl border-2 border-natgeo-yellow/20 p-8">
+        <div className="py-24 text-center bg-white rounded-3xl border-2 border-emerald-200 p-8 shadow-sm">
           <div className="text-4xl mb-3">🔍</div>
-          <h3 className="font-display text-xl font-bold text-white mb-2 uppercase">
+          <h3 className="font-display text-xl font-bold text-slate-900 mb-2">
             {isEn ? 'No matching specimens found' : 'Không tìm thấy mẫu vật phù hợp'}
           </h3>
-          <p className="text-xs text-stone-400 max-w-sm mx-auto mb-4 font-sans">
+          <p className="text-xs text-slate-500 max-w-sm mx-auto mb-4 font-sans">
             {isEn
               ? 'Try adjusting your search query, searching by Latin binomial name, or clearing filters.'
               : 'Thử thay đổi từ khóa tìm kiếm (bỏ dấu tiếng Việt, tìm theo tên Latin hoặc đổi bộ lọc).'}
@@ -281,11 +281,11 @@ export const ExplorePage: React.FC = () => {
             <Link
               key={specimen.id}
               to={`/species/${specimen.id}`}
-              className="p-5 rounded-3xl field-panel field-panel-interactive transition-all group flex flex-col justify-between border border-natgeo-yellow/20 hover:border-natgeo-yellow/60"
+              className="p-5 rounded-3xl bg-white transition-all group flex flex-col justify-between border border-emerald-100 hover:border-emerald-400 hover:shadow-xl shadow-sm"
             >
               <div>
                 {/* Thumbnail / 3D Badge */}
-                <div className="h-44 rounded-2xl bg-black/80 mb-4 overflow-hidden relative border border-white/10 flex items-center justify-center">
+                <div className="h-44 rounded-2xl bg-slate-900 mb-4 overflow-hidden relative border border-slate-200 flex items-center justify-center">
                   {specimen.thumbnail ? (
                     <img
                       src={specimen.thumbnail}
@@ -304,32 +304,32 @@ export const ExplorePage: React.FC = () => {
                   <div className="viewfinder-corner-br !w-2 !h-2" />
 
                   {/* Top-right Stamped IUCN Badge */}
-                  <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded font-mono text-[10px] font-extrabold bg-black/85 backdrop-blur-md text-amber-400 border border-amber-400/40">
+                  <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded font-mono text-[10px] font-extrabold bg-white/90 backdrop-blur-md text-amber-700 border border-amber-300 shadow-sm">
                     IUCN: {specimen.iucn}
                   </div>
 
                   {/* Bottom-left 3D Tier Pill */}
-                  <div className="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-natgeo-yellow/20 backdrop-blur-md text-natgeo-yellow border border-natgeo-yellow/40">
+                  <div className="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-700/85 backdrop-blur-md text-white border border-emerald-500 shadow-sm">
                     Tier {specimen.tier} {specimen.has3D ? '3D' : '2D'}
                   </div>
                 </div>
 
                 {/* Specimen Names */}
-                <h3 className="font-serif text-xl font-bold text-white group-hover:text-natgeo-yellow transition-colors">
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                   {isEn ? (specimen.nameEn || specimen.nameVi) : specimen.nameVi}
                 </h3>
-                <div className="text-xs text-stone-400 font-serif italic mb-2">
+                <div className="text-xs text-emerald-600 font-serif italic mb-2">
                   {specimen.scientific}
                 </div>
 
                 {/* Taxonomy breadcrumb pills */}
-                <div className="flex flex-wrap gap-1 text-[10px] font-mono text-stone-400">
-                  <span className="px-2 py-0.5 rounded bg-black/60 border border-white/5">{specimen.phylum}</span>
-                  <span className="px-2 py-0.5 rounded bg-black/60 border border-white/5">{specimen.class}</span>
+                <div className="flex flex-wrap gap-1 text-[10px] font-mono text-slate-500">
+                  <span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">{specimen.phylum}</span>
+                  <span className="px-2 py-0.5 rounded bg-slate-50 text-slate-700 border border-slate-200">{specimen.class}</span>
                 </div>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono font-bold text-natgeo-yellow">
+              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-mono font-bold text-emerald-700">
                 <span>{isEn ? 'View Dossier' : 'Xem hồ sơ'}</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </div>

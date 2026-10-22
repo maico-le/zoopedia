@@ -241,18 +241,18 @@ export const SubspeciesSection: React.FC<SubspeciesSectionProps> = ({
   };
 
   return (
-    <div className="p-6 sm:p-8 rounded-3xl field-panel border-2 border-natgeo-yellow/25 shadow-2xl relative overflow-hidden field-ruler-bottom">
+    <div className="p-6 sm:p-8 rounded-3xl bg-white border-2 border-emerald-200 shadow-md relative overflow-hidden field-ruler-bottom">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-natgeo-yellow/20 gap-3 mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-emerald-100 gap-3 mb-6">
         <div>
-          <div className="text-[10px] font-mono uppercase tracking-widest text-natgeo-yellow font-bold mb-1 flex items-center gap-1.5">
-            <GitBranch className="w-3.5 h-3.5 text-natgeo-yellow" />
+          <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-700 font-bold mb-1 flex items-center gap-1.5">
+            <GitBranch className="w-3.5 h-3.5 text-emerald-600" />
             <span>PHYLOGENETIC SUBSPECIES & LINEAGES TAXONOMY</span>
           </div>
-          <h3 className="font-display text-2xl font-extrabold text-white flex items-center gap-2 uppercase tracking-tight">
+          <h3 className="font-display text-2xl font-extrabold text-slate-900 flex items-center gap-2 uppercase tracking-tight">
             <span>{isEn ? `Subspecies & Genetic Lineages (${subspeciesList.length})` : `Các Phân Loài & Dòng Dõi Tiến Hóa (${subspeciesList.length} Dòng)`}</span>
           </h3>
-          <p className="text-xs text-stone-400 mt-1 font-sans">
+          <p className="text-xs text-slate-600 mt-1 font-sans">
             {isEn
               ? `Detailed biological breakdown of recognized geographic subspecies, evolutionary adaptations, and regional conservation status for ${speciesName}.`
               : `Bảng đối chiếu chi tiết các phân loài địa lý, đặc điểm hình thái thích nghi và tình trạng bảo tồn từng dòng của ${speciesName}.`}
@@ -260,7 +260,7 @@ export const SubspeciesSection: React.FC<SubspeciesSectionProps> = ({
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="px-3 py-1.5 rounded-xl bg-black/60 border border-natgeo-yellow/30 text-xs font-mono font-bold text-natgeo-yellow">
+          <span className="px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs font-mono font-bold text-emerald-700 shadow-sm">
             GBIF INTRA-SPECIES TAXA
           </span>
         </div>
@@ -271,29 +271,29 @@ export const SubspeciesSection: React.FC<SubspeciesSectionProps> = ({
         {subspeciesList.map((sub, idx) => (
           <div
             key={sub.scientific}
-            className="p-5 rounded-2xl bg-black/60 border border-natgeo-yellow/20 hover:border-natgeo-yellow/60 transition-all flex flex-col justify-between group shadow-lg"
+            className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-400 hover:shadow-md transition-all flex flex-col justify-between group"
           >
             <div>
               <div className="flex items-start justify-between gap-2 mb-3">
-                <span className="w-7 h-7 rounded-lg bg-natgeo-yellow/15 border border-natgeo-yellow/30 text-natgeo-yellow font-mono font-extrabold text-xs flex items-center justify-center">
+                <span className="w-7 h-7 rounded-lg bg-emerald-100 border border-emerald-200 text-emerald-800 font-mono font-extrabold text-xs flex items-center justify-center">
                   #{idx + 1}
                 </span>
                 {getStatusBadge(sub.iucn)}
               </div>
 
-              <h4 className="font-serif text-xl font-bold text-white group-hover:text-natgeo-yellow transition-colors">
+              <h4 className="font-serif text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                 {isEn ? sub.nameEn : sub.nameVi}
               </h4>
-              <div className="text-xs font-serif italic text-natgeo-yellow mb-3 font-semibold">
+              <div className="text-xs font-serif italic text-emerald-700 mb-3 font-semibold">
                 {sub.scientific}
               </div>
 
-              <div className="mb-3 flex items-start gap-1.5 text-xs font-mono text-stone-300">
-                <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
-                <span className="font-sans text-[11px] text-stone-300">{isEn ? sub.rangeEn : sub.rangeVi}</span>
+              <div className="mb-3 flex items-start gap-1.5 text-xs font-mono text-slate-600">
+                <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                <span className="font-sans text-[11px] text-slate-600 font-medium">{isEn ? sub.rangeEn : sub.rangeVi}</span>
               </div>
 
-              <p className="text-xs text-stone-300 leading-relaxed font-sans bg-black/40 p-3 rounded-xl border border-white/5">
+              <p className="text-xs text-slate-700 leading-relaxed font-sans bg-white p-3 rounded-xl border border-slate-200">
                 {isEn ? sub.notesEn : sub.notesVi}
               </p>
             </div>

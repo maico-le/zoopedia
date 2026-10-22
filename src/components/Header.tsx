@@ -58,32 +58,32 @@ export const Header: React.FC = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-[#080c14]/90 border-b border-slate-800/80 text-slate-100 transition-colors shadow-2xl">
-      {/* Top Luminous Accent Line */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-80" />
+    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-white/95 border-b border-emerald-100 text-slate-800 transition-colors shadow-sm">
+      {/* Top Luminous Emerald Accent Line */}
+      <div className="h-[2.5px] w-full bg-gradient-to-r from-transparent via-emerald-500 to-transparent opacity-85" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-        {/* Brand Emblem: Modern Wildlife Discovery */}
+        {/* Brand Emblem: Modern Botanical & Wildlife Discovery */}
         <Link to="/" className="flex items-center gap-3.5 group shrink-0">
           <div className="relative">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-500 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-all flex items-center justify-center">
-              <div className="w-full h-full bg-[#080c14] rounded-[14px] flex items-center justify-center">
-                <span className="text-xl group-hover:scale-110 transition-transform">🦁</span>
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-600 to-emerald-700 p-0.5 shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-all flex items-center justify-center">
+              <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+                <span className="text-xl group-hover:scale-110 transition-transform">🌿</span>
               </div>
             </div>
-            <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-amber-400 rounded-full border-2 border-[#080c14] flex items-center justify-center" />
+            <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-500 rounded-full border-2 border-white flex items-center justify-center" />
           </div>
 
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-display text-2xl font-extrabold tracking-tight text-white group-hover:text-amber-400 transition-colors">
+              <span className="font-display text-2xl font-extrabold tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
                 Zoopedia
               </span>
-              <span className="text-[10px] font-mono uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/30">
+              <span className="text-[10px] font-mono uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                 PRO 3D
               </span>
             </div>
-            <div className="text-[11px] font-sans text-slate-400 tracking-wide">
+            <div className="text-[11px] font-sans text-slate-500 tracking-wide font-medium">
               {t('nav.subBrand')}
             </div>
           </div>
@@ -95,11 +95,11 @@ export const Header: React.FC = () => {
             to="/explore"
             className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 ${
               isCurrent('/explore')
-                ? 'bg-amber-400/15 text-amber-400 border border-amber-400/40 shadow-sm font-bold'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm font-bold'
+                : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50/70'
             }`}
           >
-            <Search className="w-4 h-4 text-amber-400" />
+            <Search className="w-4 h-4 text-emerald-600" />
             <span>{t('nav.explore')}</span>
           </Link>
 
@@ -107,11 +107,11 @@ export const Header: React.FC = () => {
             to="/taxa"
             className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 ${
               isCurrent('/taxa')
-                ? 'bg-amber-400/15 text-amber-400 border border-amber-400/40 shadow-sm font-bold'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm font-bold'
+                : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50/70'
             }`}
           >
-            <Compass className="w-4 h-4 text-amber-400" />
+            <Compass className="w-4 h-4 text-emerald-600" />
             <span>{t('nav.taxonomy')}</span>
           </Link>
 
@@ -119,11 +119,11 @@ export const Header: React.FC = () => {
             to="/species/panthera-tigris"
             className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 ${
               location.pathname.startsWith('/species')
-                ? 'bg-amber-400/15 text-amber-400 border border-amber-400/40 shadow-sm font-bold'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm font-bold'
+                : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50/70'
             }`}
           >
-            <Layers className="w-4 h-4 text-amber-400" />
+            <Layers className="w-4 h-4 text-emerald-600" />
             <span>{t('nav.anatomy')}</span>
           </Link>
 
@@ -133,36 +133,36 @@ export const Header: React.FC = () => {
               onClick={() => setIsExpeditionDropdownOpen(!isExpeditionDropdownOpen)}
               className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 ${
                 isExpeditionActive
-                  ? 'bg-amber-400/15 text-amber-400 border border-amber-400/40 shadow-sm font-bold'
-                  : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm font-bold'
+                  : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50/70'
               }`}
             >
-              <Sparkles className="w-4 h-4 text-amber-400" />
+              <Sparkles className="w-4 h-4 text-emerald-600" />
               <span>{language === 'en' ? 'Expeditions & Labs' : 'Chuyên đề dã ngoại'}</span>
               <ChevronDown
                 className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                  isExpeditionDropdownOpen ? 'rotate-180 text-amber-400' : 'text-slate-400'
+                  isExpeditionDropdownOpen ? 'rotate-180 text-emerald-600' : 'text-slate-400'
                 }`}
               />
             </button>
 
             {/* Dropdown Menu Panel */}
             {isExpeditionDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-72 rounded-2xl bg-[#0f172a] border border-slate-700/80 shadow-2xl p-2 z-50 divide-y divide-slate-800 animate-fadeIn backdrop-blur-2xl">
+              <div className="absolute top-full left-0 mt-2 w-72 rounded-2xl bg-white border border-emerald-100 shadow-xl p-2 z-50 divide-y divide-slate-100 animate-fadeIn backdrop-blur-2xl">
                 <div className="space-y-1 pb-1">
                   <Link
                     to="/ecosystem"
                     onClick={() => setIsExpeditionDropdownOpen(false)}
-                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-800 transition-colors group"
+                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-700 group-hover:scale-105 transition-transform">
                       <Network className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-bold text-white text-xs group-hover:text-amber-400">
+                      <div className="font-bold text-slate-800 text-xs group-hover:text-emerald-700">
                         {language === 'en' ? 'Food Web & Ecosystem' : 'Chuỗi thức ăn & Hệ sinh thái'}
                       </div>
-                      <div className="text-[10px] text-slate-400">
+                      <div className="text-[10px] text-slate-500">
                         {language === 'en' ? 'Trophic cascade simulator' : 'Mô phỏng động lực quần thể'}
                       </div>
                     </div>
@@ -171,16 +171,16 @@ export const Header: React.FC = () => {
                   <Link
                     to="/evolution"
                     onClick={() => setIsExpeditionDropdownOpen(false)}
-                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-800 transition-colors group"
+                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 transition-transform">
+                    <div className="w-8 h-8 rounded-lg bg-teal-100 border border-teal-200 flex items-center justify-center text-teal-700 group-hover:scale-105 transition-transform">
                       <GitFork className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-bold text-white text-xs group-hover:text-amber-400">
+                      <div className="font-bold text-slate-800 text-xs group-hover:text-emerald-700">
                         {language === 'en' ? 'Evolution & Paleomap' : 'Cây tiến hóa & Bản đồ cổ địa lý'}
                       </div>
-                      <div className="text-[10px] text-slate-400">
+                      <div className="text-[10px] text-slate-500">
                         {language === 'en' ? 'Continental drift 540 Ma' : 'Phân bố loài 540 triệu năm'}
                       </div>
                     </div>
@@ -189,16 +189,16 @@ export const Header: React.FC = () => {
                   <Link
                     to="/migration"
                     onClick={() => setIsExpeditionDropdownOpen(false)}
-                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-800 transition-colors group"
+                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 group-hover:scale-105 transition-transform">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-700 group-hover:scale-105 transition-transform">
                       <Navigation className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-bold text-white text-xs group-hover:text-amber-400">
+                      <div className="font-bold text-slate-800 text-xs group-hover:text-emerald-700">
                         {language === 'en' ? 'Migration Radar' : 'Radar di cư toàn cầu'}
                       </div>
-                      <div className="text-[10px] text-slate-400">
+                      <div className="text-[10px] text-slate-500">
                         {language === 'en' ? 'Flyways & oceanic currents' : 'Tuyến bay & hải lưu xuyên biển'}
                       </div>
                     </div>
@@ -207,16 +207,16 @@ export const Header: React.FC = () => {
                   <Link
                     to="/vision"
                     onClick={() => setIsExpeditionDropdownOpen(false)}
-                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-800 transition-colors group"
+                    className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:scale-105 transition-transform">
+                    <div className="w-8 h-8 rounded-lg bg-teal-100 border border-teal-200 flex items-center justify-center text-teal-700 group-hover:scale-105 transition-transform">
                       <Eye className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-bold text-white text-xs group-hover:text-amber-400">
+                      <div className="font-bold text-slate-800 text-xs group-hover:text-emerald-700">
                         {language === 'en' ? 'Animal Sensory Vision' : 'Thị giác & Giác quan động vật'}
                       </div>
-                      <div className="text-[10px] text-slate-400">
+                      <div className="text-[10px] text-slate-500">
                         {language === 'en' ? 'FLIR thermal, UV & night optics' : 'Kính tầm nhiệt, tia cực tím UV'}
                       </div>
                     </div>
@@ -230,11 +230,11 @@ export const Header: React.FC = () => {
             to="/credits"
             className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 ${
               isCurrent('/credits')
-                ? 'bg-amber-400/15 text-amber-400 border border-amber-400/40 shadow-sm font-bold'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm font-bold'
+                : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50/70'
             }`}
           >
-            <Award className="w-4 h-4 text-amber-400" />
+            <Award className="w-4 h-4 text-emerald-600" />
             <span>{t('nav.credits')}</span>
           </Link>
         </nav>
@@ -246,7 +246,7 @@ export const Header: React.FC = () => {
             className="btn-expedition-secondary hidden sm:inline-flex text-xs"
             title={language === 'en' ? 'Examine random specimen' : 'Xem mẫu vật ngẫu nhiên'}
           >
-            <Shuffle className="w-3.5 h-3.5 text-amber-400" />
+            <Shuffle className="w-3.5 h-3.5 text-emerald-600" />
             <span>{t('nav.random')}</span>
           </button>
 
@@ -255,16 +255,16 @@ export const Header: React.FC = () => {
             className="btn-expedition-secondary text-xs"
             title={language === 'en' ? 'Switch Language (Vietnamese / English)' : 'Đổi ngôn ngữ (Tiếng Việt / English)'}
           >
-            <Globe className="w-3.5 h-3.5 text-amber-400" />
-            <span className="font-mono font-bold text-amber-400">{language.toUpperCase()}</span>
+            <Globe className="w-3.5 h-3.5 text-emerald-600" />
+            <span className="font-mono font-bold text-emerald-700">{language.toUpperCase()}</span>
           </button>
 
           <button
             onClick={toggleDarkMode}
-            className="p-2.5 rounded-xl border border-slate-700/80 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-amber-400 transition-all"
+            className="p-2.5 rounded-xl border border-emerald-200 bg-white hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 transition-all shadow-sm"
             aria-label="Toggle Theme"
           >
-            {darkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-sky-400" />}
+            {darkMode ? <Sun className="w-4 h-4 text-emerald-600" /> : <Moon className="w-4 h-4 text-emerald-600" />}
           </button>
         </div>
       </div>

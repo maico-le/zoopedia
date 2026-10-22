@@ -438,24 +438,24 @@ export const BioacousticsPlayer: React.FC<BioacousticsPlayerProps> = ({
   }, [isPlaying]);
 
   return (
-    <div className={`field-journal-card p-5 sm:p-6 bg-stone-900/90 border-natgeo-yellow/20 relative overflow-hidden ${className}`}>
+    <div className={`p-5 sm:p-6 bg-white rounded-3xl border-2 border-emerald-200 shadow-md relative overflow-hidden ${className}`}>
       {/* Top Banner Tag */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-natgeo-yellow/20">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-emerald-100">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-black border border-natgeo-yellow/40 flex items-center justify-center text-natgeo-yellow shrink-0">
+          <div className="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0">
             <Radio className="w-5 h-5 animate-pulse" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-natgeo-yellow bg-natgeo-yellow/10 px-2 py-0.5 rounded border border-natgeo-yellow/30">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                 BIOACOUSTIC SONOGRAM • V.{profile.fundamentalHz}HZ
               </span>
-              <span className="text-xs font-mono text-stone-500">•</span>
-              <span className="text-xs font-mono text-amber-400 font-bold">{profile.peakDb} dB SPL</span>
+              <span className="text-xs font-mono text-slate-300">•</span>
+              <span className="text-xs font-mono text-emerald-700 font-bold">{profile.peakDb} dB SPL</span>
             </div>
-            <h3 className="text-base sm:text-lg font-bold font-serif text-white tracking-wide mt-0.5 flex items-center gap-2 flex-wrap">
+            <h3 className="text-base sm:text-lg font-bold font-serif text-slate-900 tracking-wide mt-0.5 flex items-center gap-2 flex-wrap">
               <span>{profile[currentLang === 'en' ? 'callNameEn' : 'callNameVi']}</span>
-              <span className="text-xs font-serif italic text-stone-400 font-normal">
+              <span className="text-xs font-serif italic text-slate-500 font-normal">
                 ({scientificName} • {currentLang === 'en' ? speciesNameEn : speciesNameVi})
               </span>
             </h3>
@@ -466,10 +466,10 @@ export const BioacousticsPlayer: React.FC<BioacousticsPlayerProps> = ({
         <div className="flex items-center gap-3 self-end sm:self-auto">
           <button
             onClick={handleTogglePlay}
-            className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all shadow-md ${
+            className={`px-4 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all shadow-sm ${
               isPlaying
-                ? 'bg-amber-400 text-stone-950 shadow-glow font-extrabold scale-105'
-                : 'bg-natgeo-yellow/15 text-natgeo-yellow border border-natgeo-yellow/50 hover:bg-natgeo-yellow/25'
+                ? 'bg-emerald-600 text-white shadow-md font-extrabold scale-105'
+                : 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100'
             }`}
           >
             {isPlaying ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current" />}
@@ -478,10 +478,10 @@ export const BioacousticsPlayer: React.FC<BioacousticsPlayerProps> = ({
 
           <button
             onClick={() => setIsMuted(!isMuted)}
-            className="p-2.5 rounded-xl border border-white/10 bg-stone-950 text-stone-300 hover:text-natgeo-yellow transition-all"
+            className="p-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 hover:text-emerald-700 transition-all"
             title={isMuted ? 'Bật âm thanh' : 'Tắt tiếng'}
           >
-            {isMuted ? <VolumeX className="w-4 h-4 text-rose-400" /> : <Volume2 className="w-4 h-4 text-emerald-400" />}
+            {isMuted ? <VolumeX className="w-4 h-4 text-rose-500" /> : <Volume2 className="w-4 h-4 text-emerald-600" />}
           </button>
         </div>
       </div>
@@ -489,50 +489,50 @@ export const BioacousticsPlayer: React.FC<BioacousticsPlayerProps> = ({
       {/* Waveform & Sonogram Display */}
       <div className="mt-4 grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
         {/* Oscilloscope Canvas */}
-        <div className="md:col-span-7 bg-stone-950 rounded-2xl p-2.5 border border-natgeo-yellow/20 relative shadow-inner">
+        <div className="md:col-span-7 bg-slate-900 rounded-2xl p-2.5 border border-emerald-200 relative shadow-inner">
           <canvas
             ref={canvasRef}
             width={400}
             height={85}
             className="w-full h-[85px] rounded-xl block"
           />
-          <div className="absolute bottom-4 right-4 text-[9px] font-mono text-natgeo-yellow/70 tracking-widest uppercase bg-stone-900/80 px-1.5 py-0.5 rounded border border-natgeo-yellow/20">
+          <div className="absolute bottom-4 right-4 text-[9px] font-mono text-emerald-400 tracking-widest uppercase bg-slate-900/90 px-1.5 py-0.5 rounded border border-emerald-500/30">
             FFT OSCILLOSCOPE
           </div>
         </div>
 
         {/* Acoustic Telemetry Metrics */}
         <div className="md:col-span-5 grid grid-cols-2 gap-2.5 text-xs font-mono">
-          <div className="p-2.5 rounded-xl bg-stone-950/80 border border-white/5">
-            <span className="text-[10px] text-stone-500 uppercase block mb-0.5 flex items-center gap-1">
-              <Activity className="w-3 h-3 text-natgeo-yellow" />
+          <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+            <span className="text-[10px] text-slate-500 uppercase block mb-0.5 flex items-center gap-1 font-semibold">
+              <Activity className="w-3 h-3 text-emerald-600" />
               <span>{currentLang === 'en' ? 'Fundamental (F0)' : 'Tần số cơ bản'}</span>
             </span>
-            <span className="text-sm font-bold text-amber-300 font-mono">
+            <span className="text-sm font-bold text-slate-900 font-mono">
               {profile.fundamentalHz} Hz
             </span>
           </div>
 
-          <div className="p-2.5 rounded-xl bg-stone-950/80 border border-white/5">
-            <span className="text-[10px] text-stone-500 uppercase block mb-0.5 flex items-center gap-1">
-              <Gauge className="w-3 h-3 text-emerald-400" />
+          <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+            <span className="text-[10px] text-slate-500 uppercase block mb-0.5 flex items-center gap-1 font-semibold">
+              <Gauge className="w-3 h-3 text-emerald-600" />
               <span>{currentLang === 'en' ? 'Max Intensity' : 'Cường độ đỉnh'}</span>
             </span>
-            <span className="text-sm font-bold text-emerald-300 font-mono">
+            <span className="text-sm font-bold text-emerald-700 font-mono">
               {profile.peakDb} dB
             </span>
           </div>
 
-          <div className="p-2.5 rounded-xl bg-stone-950/80 border border-white/5 col-span-2">
-            <span className="text-[10px] text-stone-500 uppercase block mb-0.5 flex items-center gap-1">
-              <Waves className="w-3 h-3 text-sky-400" />
+          <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 col-span-2">
+            <span className="text-[10px] text-slate-500 uppercase block mb-0.5 flex items-center gap-1 font-semibold">
+              <Waves className="w-3 h-3 text-teal-600" />
               <span>{currentLang === 'en' ? 'Acoustic Range' : 'Bán kính truyền âm'}</span>
             </span>
             <div className="flex items-center justify-between">
-              <span className="text-sm font-bold text-sky-300 font-mono">
+              <span className="text-sm font-bold text-teal-700 font-mono">
                 ~{profile.acousticRangeKm} km
               </span>
-              <span className="text-[10px] text-stone-400 italic font-serif">
+              <span className="text-[10px] text-slate-500 italic font-serif">
                 {currentLang === 'en' ? 'In natural habitat' : 'Trong sinh cảnh tự nhiên'}
               </span>
             </div>
@@ -541,8 +541,8 @@ export const BioacousticsPlayer: React.FC<BioacousticsPlayerProps> = ({
       </div>
 
       {/* Acoustic Purpose Note */}
-      <div className="mt-4 pt-3 border-t border-white/5 text-xs font-serif text-stone-300 leading-relaxed flex items-start gap-2.5">
-        <span className="text-natgeo-yellow font-mono text-[10px] uppercase font-bold shrink-0 mt-0.5 px-1.5 py-0.5 rounded bg-natgeo-yellow/10 border border-natgeo-yellow/30">
+      <div className="mt-4 pt-3 border-t border-slate-100 text-xs font-serif text-slate-700 leading-relaxed flex items-start gap-2.5">
+        <span className="text-emerald-800 font-mono text-[10px] uppercase font-bold shrink-0 mt-0.5 px-1.5 py-0.5 rounded bg-emerald-50 border border-emerald-200">
           FUNCTION
         </span>
         <p>

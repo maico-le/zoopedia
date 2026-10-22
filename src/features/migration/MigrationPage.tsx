@@ -661,24 +661,24 @@ export const MigrationPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-expedition-dark text-stone-100 font-sans pb-24 selection:bg-natgeo-yellow selection:text-black">
+    <div className="min-h-screen bg-[#f8faf9] text-slate-800 font-sans pb-24 selection:bg-emerald-500/20 selection:text-emerald-900">
       {/* Top Operations Header Bar */}
-      <div className="bg-black/60 border-b border-natgeo-yellow/20 backdrop-blur-md sticky top-20 z-40">
+      <div className="bg-white/95 border-b border-emerald-100 backdrop-blur-md sticky top-20 z-40 text-slate-800 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-natgeo-yellow/20 border border-natgeo-yellow flex items-center justify-center text-natgeo-yellow">
+            <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700">
               <Satellite className="w-4 h-4 animate-pulse" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-natgeo-yellow">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
                   {isEn ? 'GLOBAL WILDLIFE TELEMETRY RADAR & CORRIDORS' : 'TRẠM RADAR ĐỊNH VỊ DI CƯ & HÀNH LANG KHÍ HẬU'}
                 </span>
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-500/40 font-mono">
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-mono font-bold">
                   ARGOS LIVE FEED
                 </span>
               </div>
-              <div className="text-[11px] font-mono text-stone-400">
+              <div className="text-[11px] font-mono text-slate-500">
                 {isEn ? 'Planetary flyways, oceanic drifts and continental circuits' : 'Theo dõi hải trình biển sâu, tuyến bay xuyên lục địa và đại di cư'}
               </div>
             </div>
@@ -690,8 +690,8 @@ export const MigrationPage: React.FC = () => {
               onClick={() => setShowOceanCurrents(!showOceanCurrents)}
               className={`px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1.5 ${
                 showOceanCurrents
-                  ? 'bg-sky-500/20 text-sky-300 border-sky-400 font-bold'
-                  : 'bg-black/60 text-stone-400 border-white/10 hover:text-white'
+                  ? 'bg-sky-50 text-sky-800 border-sky-300 font-bold'
+                  : 'bg-white text-slate-600 border-slate-200 hover:text-sky-700'
               }`}
             >
               <Waves className="w-3.5 h-3.5" />
@@ -702,8 +702,8 @@ export const MigrationPage: React.FC = () => {
               onClick={() => setShowWindVectors(!showWindVectors)}
               className={`px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1.5 ${
                 showWindVectors
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-400 font-bold'
-                  : 'bg-black/60 text-stone-400 border-white/10 hover:text-white'
+                  ? 'bg-amber-50 text-amber-800 border-amber-300 font-bold'
+                  : 'bg-white text-slate-600 border-slate-200 hover:text-amber-700'
               }`}
             >
               <Wind className="w-3.5 h-3.5" />
@@ -714,8 +714,8 @@ export const MigrationPage: React.FC = () => {
               onClick={() => setShowTelemetryPings(!showTelemetryPings)}
               className={`px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1.5 ${
                 showTelemetryPings
-                  ? 'bg-natgeo-yellow/20 text-natgeo-yellow border-natgeo-yellow font-bold'
-                  : 'bg-black/60 text-stone-400 border-white/10 hover:text-white'
+                  ? 'bg-emerald-50 text-emerald-800 border-emerald-300 font-bold'
+                  : 'bg-white text-slate-600 border-slate-200 hover:text-emerald-700'
               }`}
             >
               <Radio className="w-3.5 h-3.5 animate-pulse" />
@@ -727,16 +727,16 @@ export const MigrationPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
         {/* Mission Briefing Banner */}
-        <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/30 relative overflow-hidden shadow-2xl">
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-emerald-200 relative overflow-hidden shadow-md">
           <div className="space-y-2 max-w-3xl relative z-10">
-            <div className="flex items-center gap-2 text-xs font-mono text-natgeo-yellow uppercase tracking-widest">
-              <Navigation className="w-3.5 h-3.5 text-natgeo-yellow" />
+            <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 uppercase tracking-widest font-bold">
+              <Navigation className="w-3.5 h-3.5 text-emerald-600" />
               <span>{isEn ? 'GLOBAL CORRIDORS & ANTHROPOGENIC CHOKEPOINTS' : 'CÁC ĐẠI HẢI TRÌNH & NÚT THẮT KHÍ HẬU TOÀN CẦU'}</span>
             </div>
-            <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+            <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight uppercase">
               {isEn ? 'Planetary Wildlife Migrations & Climate Radar' : 'Hành Trình Di Cư Toàn Cầu & Radar Khí Hậu'}
             </h1>
-            <p className="text-sm text-stone-300 leading-relaxed font-sans">
+            <p className="text-sm text-slate-600 leading-relaxed font-sans">
               {isEn
                 ? 'From deep-sea leatherbacks traversing the entire Pacific to humpbacks fasting along subpolar currents and eagles scaling Himalayan thermals: discover how wildlife relies on Earth’s fluid oceanic and atmospheric systems to survive.'
                 : 'Từ những chú rùa da vượt 19.000 km qua Thái Bình Dương, cá voi lưng gù nhịn đói men theo dòng hải lưu Nam Cực đến đại bàng lướt trên cột nhiệt dãy Himalaya: khám phá cách các loài sinh vật nương tựa vào các dòng chảy của Trái Đất để duy trì sự sống.'}
@@ -757,8 +757,8 @@ export const MigrationPage: React.FC = () => {
                 }}
                 className={`p-4 rounded-2xl text-left transition-all border flex flex-col justify-between h-40 relative overflow-hidden group ${
                   isSelected
-                    ? 'bg-natgeo-yellow text-stone-950 border-natgeo-yellow shadow-natgeo font-bold scale-105'
-                    : 'bg-stone-950/70 border-white/10 hover:border-natgeo-yellow/40 text-stone-300'
+                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-md font-bold scale-105'
+                    : 'bg-white border-slate-200 hover:border-emerald-300 text-slate-700 shadow-sm'
                 }`}
               >
                 <div className="flex items-center justify-between text-xs font-mono">

@@ -11,7 +11,7 @@ export interface AppState {
 
 export const useAppStore = create<AppState>((set) => ({
   language: 'vi',
-  darkMode: true,
+  darkMode: false,
   performanceMode: 'high',
   setLanguage: (language) => set({ language }),
   toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),

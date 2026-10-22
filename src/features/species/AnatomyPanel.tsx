@@ -62,60 +62,90 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
   speciesId,
   speciesNameVi,
   speciesNameEn,
-  scientificName,
+  scientificName
 }) => {
   const { i18n } = useTranslation();
-  const currentLang = i18n.language.startsWith('en') ? 'en' : 'vi';
-
-  const [anatomyData, setAnatomyData] = useState<AnatomyData | null>(null);
-  const [_loading, setLoading] = useState<boolean>(true);
+  const currentLang = i18n.language === 'en' ? 'en' : 'vi';
 
   const {
     isAnatomyMode,
     setIsAnatomyMode,
     activeLayers,
-    toggleLayer,
     setLayerActive,
+    toggleLayer,
     explodeAmount,
     setExplodeAmount,
     selectedAnatomyPart,
-    setSelectedAnatomyPart,
+    setSelectedAnatomyPart
   } = useViewerStore();
 
-  // Load anatomy JSON descriptor for this species
+  const [anatomyData, setAnatomyData] = useState<AnatomyData | null>(null);
+
   useEffect(() => {
     let isMounted = true;
-    setLoading(true);
-
-    fetch(`/anatomy/${speciesId}.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error('No specific anatomy descriptor');
-        return res.json();
-      })
-      .then((data: AnatomyData) => {
-        if (isMounted) {
-          setAnatomyData(data);
-          setLoading(false);
-        }
-      })
-      .catch(() => {
-        // Fallback for tiger or archetypes
-        if (speciesId.includes('tigris') || speciesId.includes('leo') || speciesId.includes('panthera')) {
-          fetch('/anatomy/panthera-tigris.json')
-            .then((r) => r.json())
-            .then((data) => {
-              if (isMounted) {
-                setAnatomyData(data);
-                setLoading(false);
+    const loadAnatomy = async () => {
+      try {
+        const res = await fetch(`/data/anatomy/panthera-tigris-anatomy.json`);
+        if (res.ok) {
+          const json = await res.json();
+          if (isMounted) {
+            setAnatomyData(json);
+            json.layers.forEach((l: AnatomyLayer) => {
+              if (activeLayers[l.id] === undefined) {
+                setLayerActive(l.id, l.default !== false);
               }
-            })
-            .catch(() => {
-              if (isMounted) setLoading(false);
             });
-        } else {
-          if (isMounted) setLoading(false);
+          }
         }
-      });
+      } catch (err) {
+        console.warn('Could not load specific anatomy profile, using mock fallback', err);
+        const fallback: AnatomyData = {
+          model: 'models/panthera-tigris-anatomy.glb',
+          layers: [
+            { id: 'skin', name: { vi: 'Lớp Da & Lông Ngoài', en: 'Integument & Pelage' }, default: true },
+            { id: 'muscle', name: { vi: 'Hệ Cơ Vân Săn Mồi', en: 'Striated Musculature' }, default: true },
+            { id: 'skeleton', name: { vi: 'Bộ Khung Xương Đòn Bẩy', en: 'Endoskeleton' }, default: true },
+            { id: 'circulatory', name: { vi: 'Hệ Tuần Hoàn Áp Lực Cao', en: 'Circulatory System' }, default: false },
+            { id: 'respiratory', name: { vi: 'Hệ Hô Hấp Dung Tích Lớn', en: 'Respiratory System' }, default: false },
+          ],
+          parts: [
+            {
+              node: 'Cranium_Jaws',
+              layer: 'skeleton',
+              name: { vi: 'Hộp Sọ & Khớp Hàm Khóa Chặt', en: 'Cranium & Temporal Condyle', latin: 'Cranium & Mandibula' },
+              function: { vi: 'Tạo lực cắn 1,050 psi bóp nghẹt khí quản con mồi', en: 'Delivers 1,050 psi bite force capable of severing spinal vertebrae' },
+              description: { vi: 'Cung gò má mở rộng chứa bó cơ thái dương khổng lồ', en: 'Flared zygomatic arches accommodating immense temporalis muscle mass' }
+            },
+            {
+              node: 'Pectoral_Deltoid',
+              layer: 'muscle',
+              name: { vi: 'Khối Cơ Bả Vai & Chi Trước', en: 'Deltoid & Pectoral Muscle Complex', latin: 'Musculus pectoralis major' },
+              function: { vi: 'Giữ chặt con mồi nặng gấp 3 lần trọng lượng cơ thể', en: 'Stabilizes and pins heavy prey down with explosive lateral torque' },
+              description: { vi: 'Sợi cơ co nhanh loại II chiếm tỷ lệ 80% cho cú vồ chết người', en: 'Fast-twitch type II fibers dominate enabling sudden dynamic bursts' }
+            },
+            {
+              node: 'Heart_Hypertrophy',
+              layer: 'circulatory',
+              name: { vi: 'Tim 4 Ngăn Bơm Áp Suất Cao', en: 'High-Volume 4-Chambered Heart', latin: 'Cor' },
+              function: { vi: 'Đẩy máu giàu oxy đến các chi chỉ trong vài nhịp đập', en: 'Accelerates oxygenated hemoglobin to locomotor muscles instantaneously' },
+              description: { vi: 'Thất trái phì đại thích nghi với các pha rượt đuổi tốc độ cao', en: 'Hypertrophied left ventricle adapted for explosive short-sprint chases' }
+            },
+            {
+              node: 'Spine_Flex',
+              layer: 'skeleton',
+              name: { vi: 'Cột Sống Đàn Hồi Giảm Chấn', en: 'Flexible Lumbar Spine', latin: 'Columna vertebralis' },
+              function: { vi: 'Kéo dài bước nhảy lên tới 10 mét trong một nhịp thở', en: 'Acts like a biological spring stretching strides up to 10 meters' },
+              description: { vi: 'Đĩa đệm dày với dây chằng đàn hồi cao bảo vệ tủy sống', en: 'Thick intervertebral discs dissipate landing kinetic shock loads' }
+            }
+          ]
+        };
+        if (isMounted) {
+          setAnatomyData(fallback);
+        }
+      }
+    };
+
+    loadAnatomy();
 
     return () => {
       isMounted = false;
@@ -123,11 +153,11 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
   }, [speciesId]);
 
   const layerIcons: Record<string, React.ReactNode> = {
-    skin: <Layers className="w-4 h-4 text-amber-500" />,
+    skin: <Layers className="w-4 h-4 text-emerald-600" />,
     muscle: <Activity className="w-4 h-4 text-rose-500" />,
-    skeleton: <ShieldAlert className="w-4 h-4 text-stone-200" />,
+    skeleton: <ShieldAlert className="w-4 h-4 text-slate-700" />,
     circulatory: <Heart className="w-4 h-4 text-red-500 animate-pulse" />,
-    respiratory: <Wind className="w-4 h-4 text-sky-400" />,
+    respiratory: <Wind className="w-4 h-4 text-teal-600" />,
   };
 
   const handleIsolateLayer = (layerId: string) => {
@@ -147,22 +177,22 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
   return (
     <div className="space-y-6">
       {/* Field Expedition Anatomy HUD Card */}
-      <div className="field-journal-card p-6 sm:p-8 bg-gradient-to-br from-stone-900/95 via-stone-900/90 to-amber-950/20 border-natgeo-yellow/30">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-natgeo-yellow/20">
+      <div className="p-6 sm:p-8 bg-white rounded-3xl border-2 border-emerald-200 shadow-md">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-emerald-100">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="ink-stamp-badge border-natgeo-yellow/50 text-natgeo-yellow bg-natgeo-yellow/10">
+              <span className="px-3 py-1 rounded-full font-mono text-[10px] font-bold border border-emerald-200 text-emerald-800 bg-emerald-50">
                 FIELD ANATOMY LAB • BIO-SCAN 3D
               </span>
-              <span className="font-mono text-xs text-amber-400/80 tracking-widest uppercase">
+              <span className="font-mono text-xs text-emerald-700 tracking-widest uppercase font-semibold">
                 #ANAT-{speciesId.slice(0, 8).toUpperCase()}
               </span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-serif font-black text-white tracking-wide flex items-center gap-3">
+            <h2 className="text-2xl sm:text-3xl font-serif font-black text-slate-900 tracking-wide flex items-center gap-3">
               <span>{currentLang === 'en' ? 'Internal Anatomy & Biomechanics' : 'Giải Phẫu Học & Cơ Sinh Học'}</span>
-              <span className="text-sm font-sans font-normal text-stone-400 italic">({scientificName})</span>
+              <span className="text-sm font-sans font-normal text-slate-500 italic">({scientificName})</span>
             </h2>
-            <p className="text-sm text-stone-300 font-serif max-w-3xl mt-1 leading-relaxed">
+            <p className="text-sm text-slate-600 font-serif max-w-3xl mt-1 leading-relaxed">
               {currentLang === 'en'
                 ? 'High-precision anatomical dissection view. Explore internal systems, musculoskeletal leverage, cardiac capacity, and evolutionary hunting adaptations.'
                 : 'Mô phỏng giải phẫu học đa lớp độ nét cao. Bóc tách từng tầng cơ quan, hệ cơ bắp bộc phát, cấu trúc hộp sọ và tim mạch thích nghi săn mồi đỉnh cao.'}
@@ -173,10 +203,10 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsAnatomyMode(!isAnatomyMode)}
-              className={`px-5 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-lg ${
+              className={`px-5 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-sm ${
                 isAnatomyMode
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-glow font-black border-2 border-amber-300 scale-105'
-                  : 'bg-stone-800 text-stone-200 border border-natgeo-yellow/40 hover:bg-stone-700 hover:text-natgeo-yellow'
+                  ? 'bg-emerald-600 text-white shadow-md font-black scale-105'
+                  : 'bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100'
               }`}
             >
               <Sparkles className="w-4 h-4" />
@@ -191,19 +221,19 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
 
         {/* Explode View Slider HUD */}
         <div className="pt-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-          <div className="md:col-span-5 bg-stone-950/70 p-4 rounded-2xl border border-natgeo-yellow/20">
+          <div className="md:col-span-5 bg-slate-50 p-4 rounded-2xl border border-slate-200">
             <div className="flex items-center justify-between mb-2">
-              <label className="text-xs font-mono font-bold tracking-wider text-natgeo-yellow uppercase flex items-center gap-2">
+              <label className="text-xs font-mono font-bold tracking-wider text-emerald-700 uppercase flex items-center gap-2">
                 <Maximize2 className="w-3.5 h-3.5" />
                 <span>{currentLang === 'en' ? 'Explode View Separation' : 'Bung Tách Không Gian (Explode)'}</span>
               </label>
-              <span className="font-mono text-xs font-bold text-amber-300 bg-amber-500/20 px-2 py-0.5 rounded border border-amber-500/30">
+              <span className="font-mono text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-200">
                 {Math.round(explodeAmount * 100)}%
               </span>
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="text-[10px] font-mono text-stone-500">0mm</span>
+              <span className="text-[10px] font-mono text-slate-400 font-semibold">0mm</span>
               <input
                 type="range"
                 min="0"
@@ -211,11 +241,11 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
                 step="0.02"
                 value={explodeAmount}
                 onChange={(e) => setExplodeAmount(parseFloat(e.target.value))}
-                className="w-full accent-natgeo-yellow h-2 bg-stone-800 rounded-lg cursor-pointer transition-all"
+                className="w-full accent-emerald-600 h-2 bg-slate-200 rounded-lg cursor-pointer transition-all"
               />
-              <span className="text-[10px] font-mono text-stone-500">300mm</span>
+              <span className="text-[10px] font-mono text-slate-400 font-semibold">300mm</span>
             </div>
-            <p className="text-[11px] font-mono text-stone-400 mt-2">
+            <p className="text-[11px] font-mono text-slate-500 mt-2">
               {currentLang === 'en'
                 ? 'Slide to mechanically separate organ assemblies in 3D coordinate space.'
                 : 'Kéo thanh trượt để bung tách các lớp cơ và nội tạng theo tọa độ không gian 3D.'}
@@ -226,25 +256,25 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
           <div className="md:col-span-7 flex flex-wrap items-center gap-2">
             <button
               onClick={() => handleIsolateLayer('skeleton')}
-              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-stone-800/90 text-stone-200 border border-stone-700 hover:border-natgeo-yellow hover:text-natgeo-yellow transition-all"
+              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-slate-50 text-slate-700 border border-slate-200 hover:border-emerald-400 hover:text-emerald-700 transition-all"
             >
               💀 {currentLang === 'en' ? 'Skeleton Only' : 'Chỉ Xem Xương Khớp'}
             </button>
             <button
               onClick={() => handleIsolateLayer('circulatory')}
-              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-stone-800/90 text-stone-200 border border-stone-700 hover:border-red-400 hover:text-red-400 transition-all"
+              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-slate-50 text-slate-700 border border-slate-200 hover:border-red-400 hover:text-red-600 transition-all"
             >
               🫀 {currentLang === 'en' ? 'Cardiovascular' : 'Hệ Tim Mạch'}
             </button>
             <button
               onClick={() => handleIsolateLayer('muscle')}
-              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-stone-800/90 text-stone-200 border border-stone-700 hover:border-rose-400 hover:text-rose-400 transition-all"
+              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-slate-50 text-slate-700 border border-slate-200 hover:border-rose-400 hover:text-rose-600 transition-all"
             >
               🥩 {currentLang === 'en' ? 'Musculature' : 'Hệ Cơ Bắp'}
             </button>
             <button
               onClick={handleShowAllLayers}
-              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-amber-500/10 text-natgeo-yellow border border-amber-500/30 hover:bg-amber-500/20 transition-all flex items-center gap-1.5"
+              className="px-3 py-2 rounded-xl text-xs font-mono font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition-all flex items-center gap-1.5"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>{currentLang === 'en' ? 'Show All Layers' : 'Hiện Toàn Bộ Lớp'}</span>
@@ -257,13 +287,13 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Column: Layer Peeling Switches */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="field-journal-card p-5 bg-stone-900/90 border-natgeo-yellow/20">
-            <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10">
-              <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-natgeo-yellow flex items-center gap-2">
+          <div className="p-5 bg-white rounded-3xl border border-emerald-100 shadow-sm">
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+              <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-2">
                 <Layers className="w-4 h-4" />
                 <span>{currentLang === 'en' ? 'Layer Peeling' : 'Bóc Tách Từng Tầng Lớp'}</span>
               </h3>
-              <span className="text-[10px] font-mono text-stone-400">
+              <span className="text-[10px] font-mono text-slate-400 font-semibold">
                 {anatomyData ? `${anatomyData.layers.length} Layers` : 'Layers'}
               </span>
             </div>
@@ -276,19 +306,19 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
                     key={layer.id}
                     className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
                       isActive
-                        ? 'bg-stone-950/80 border-natgeo-yellow/30 text-white'
-                        : 'bg-stone-950/30 border-white/5 text-stone-500'
+                        ? 'bg-emerald-50/60 border-emerald-200 text-slate-900 font-semibold'
+                        : 'bg-slate-50 border-slate-200 text-slate-400'
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className="p-1.5 rounded-lg bg-stone-900 border border-white/10">
-                        {layerIcons[layer.id] || <Layers className="w-4 h-4 text-stone-400" />}
+                      <div className="p-1.5 rounded-lg bg-white border border-slate-200">
+                        {layerIcons[layer.id] || <Layers className="w-4 h-4 text-slate-400" />}
                       </div>
                       <div>
                         <div className="text-xs font-bold font-mono">
                           {layer.name[currentLang] || layer.name.vi}
                         </div>
-                        <div className="text-[10px] font-mono text-stone-500 uppercase">
+                        <div className="text-[10px] font-mono text-slate-400 uppercase">
                           ID: {layer.id}
                         </div>
                       </div>
@@ -298,8 +328,8 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
                       onClick={() => toggleLayer(layer.id)}
                       className={`p-2 rounded-lg border transition-all ${
                         isActive
-                          ? 'bg-natgeo-yellow/20 border-natgeo-yellow/50 text-natgeo-yellow hover:bg-natgeo-yellow/30'
-                          : 'bg-stone-900 border-stone-800 text-stone-500 hover:text-stone-300'
+                          ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
+                          : 'bg-white border-slate-200 text-slate-400 hover:text-slate-600'
                       }`}
                       title={isActive ? 'Ẩn lớp này' : 'Hiện lớp này'}
                     >
@@ -312,9 +342,9 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
           </div>
 
           {/* Biomechanical Field Notes */}
-          <div className="field-journal-card p-5 bg-stone-900/90 border-natgeo-yellow/20 text-xs font-serif leading-relaxed text-stone-300 space-y-3">
-            <div className="flex items-center gap-2 text-natgeo-yellow font-mono font-bold uppercase tracking-wider text-[11px]">
-              <Info className="w-3.5 h-3.5" />
+          <div className="p-5 bg-emerald-50/50 rounded-3xl border border-emerald-200 text-xs font-serif leading-relaxed text-slate-700 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-mono font-bold uppercase tracking-wider text-[11px]">
+              <Info className="w-3.5 h-3.5 text-emerald-600" />
               <span>{currentLang === 'en' ? 'Expedition Anatomical Note' : 'Ghi Chú Sinh Học Dã Ngoại'}</span>
             </div>
             <p>
@@ -328,11 +358,11 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
         {/* Right Column: Detailed Organ & Part Breakdown */}
         <div className="lg:col-span-8 space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-natgeo-yellow flex items-center gap-2">
+            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-2">
               <Activity className="w-4 h-4" />
               <span>{currentLang === 'en' ? 'Organ Registry & Biomechanics' : 'Hồ Sơ Chi Tiết Cơ Quan Giải Phẫu'}</span>
             </h3>
-            <span className="text-xs font-mono text-stone-400">
+            <span className="text-xs font-mono text-slate-500 font-semibold">
               {currentLang === 'en' ? 'Click card to highlight in 3D' : 'Click thẻ để định vị trên mô hình 3D'}
             </span>
           </div>
@@ -346,48 +376,48 @@ export const AnatomyPanel: React.FC<AnatomyPanelProps> = ({
                   onClick={() => setSelectedAnatomyPart(isSelected ? null : part.node)}
                   className={`p-5 rounded-2xl border transition-all cursor-pointer relative overflow-hidden group ${
                     isSelected
-                      ? 'bg-amber-950/40 border-natgeo-yellow shadow-glow text-white'
-                      : 'bg-stone-900/80 border-natgeo-yellow/20 hover:border-natgeo-yellow/50 hover:bg-stone-900 text-stone-200'
+                      ? 'bg-emerald-50 border-emerald-500 shadow-md text-slate-900'
+                      : 'bg-white border-slate-200 hover:border-emerald-300 hover:shadow-md text-slate-700'
                   }`}
                 >
                   {/* Active reticle badge */}
                   {isSelected && (
-                    <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-natgeo-yellow text-stone-950 font-mono text-[9px] font-extrabold uppercase tracking-widest">
+                    <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[9px] font-extrabold uppercase tracking-widest">
                       ACTIVE PIN
                     </div>
                   )}
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-xl bg-stone-950 border border-white/10 shrink-0">
-                      {layerIcons[part.layer] || <Layers className="w-4 h-4 text-amber-500" />}
+                    <div className="p-2 rounded-xl bg-slate-50 border border-slate-200 shrink-0">
+                      {layerIcons[part.layer] || <Layers className="w-4 h-4 text-emerald-600" />}
                     </div>
                     <div>
-                      <h4 className="text-base font-bold font-serif text-white group-hover:text-natgeo-yellow transition-colors">
+                      <h4 className="text-base font-bold font-serif text-slate-900 group-hover:text-emerald-700 transition-colors">
                         {part.name[currentLang] || part.name.vi}
                       </h4>
                       {part.name.latin && (
-                        <div className="text-xs font-serif italic text-amber-300/80 mb-2">
+                        <div className="text-xs font-serif italic text-emerald-700 mb-2">
                           {part.name.latin}
                         </div>
                       )}
                     </div>
                   </div>
 
-                  <div className="mt-3 pt-3 border-t border-white/10 space-y-2 text-xs">
+                  <div className="mt-3 pt-3 border-t border-slate-100 space-y-2 text-xs">
                     <div>
-                      <span className="font-mono text-[10px] text-natgeo-yellow uppercase font-bold tracking-wider block mb-0.5">
+                      <span className="font-mono text-[10px] text-emerald-800 uppercase font-bold tracking-wider block mb-0.5">
                         {currentLang === 'en' ? 'Biological Function:' : 'Chức năng cơ sinh học:'}
                       </span>
-                      <p className="font-serif text-stone-300 leading-relaxed">
+                      <p className="font-serif text-slate-700 leading-relaxed">
                         {part.function[currentLang] || part.function.vi}
                       </p>
                     </div>
 
                     <div>
-                      <span className="font-mono text-[10px] text-stone-400 uppercase font-bold tracking-wider block mb-0.5">
+                      <span className="font-mono text-[10px] text-slate-500 uppercase font-bold tracking-wider block mb-0.5">
                         {currentLang === 'en' ? 'Histology & Anatomy:' : 'Chi tiết giải phẫu học:'}
                       </span>
-                      <p className="font-serif text-stone-400 leading-relaxed">
+                      <p className="font-serif text-slate-600 leading-relaxed">
                         {part.description[currentLang] || part.description.vi}
                       </p>
                     </div>

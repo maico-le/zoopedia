@@ -107,31 +107,31 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
   const selectedHotspot = activeRegion || hotspots[0];
 
   return (
-    <div className="p-6 sm:p-8 rounded-3xl field-panel border-2 border-natgeo-yellow/25 shadow-2xl relative overflow-hidden field-ruler-bottom">
+    <div className="p-6 sm:p-8 rounded-3xl bg-white border-2 border-emerald-200 shadow-md relative overflow-hidden field-ruler-bottom">
       {/* Header Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-natgeo-yellow/20 gap-4 mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-emerald-100 gap-4 mb-6">
         <div>
-          <div className="text-[10px] font-mono uppercase tracking-widest text-natgeo-yellow font-bold mb-1 flex items-center gap-1.5">
-            <Radio className="w-3.5 h-3.5 text-natgeo-yellow animate-pulse" />
+          <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-700 font-bold mb-1 flex items-center gap-1.5">
+            <Radio className="w-3.5 h-3.5 text-emerald-600 animate-pulse" />
             <span>GEO-SPATIAL EXPEDITION SURVEY // IUCN & GBIF</span>
           </div>
-          <h3 className="font-display text-2xl font-extrabold text-white flex items-center gap-2 uppercase tracking-tight">
-            <Globe className="w-6 h-6 text-natgeo-yellow" />
+          <h3 className="font-display text-2xl font-extrabold text-slate-900 flex items-center gap-2 uppercase tracking-tight">
+            <Globe className="w-6 h-6 text-emerald-600" />
             <span>{isEn ? 'Geographical Distribution & Range' : 'Bản Đồ Vùng Phân Bố Tự Nhiên'}</span>
           </h3>
-          <p className="text-xs text-stone-400 mt-1 font-sans">
+          <p className="text-xs text-slate-600 mt-1 font-sans">
             {distribution?.text?.vi || distribution?.text?.en || (isEn ? 'Global geographical native distribution based on museum field records.' : 'Khu vực phân bố tự nhiên và sinh cảnh đặc trưng của loài theo dữ liệu GBIF.')}
           </p>
         </div>
 
         {/* Mode Switcher */}
-        <div className="flex items-center gap-2 bg-black/60 p-1.5 rounded-2xl border border-natgeo-yellow/30">
+        <div className="flex items-center gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
           <button
             onClick={() => setMapMode('svg')}
             className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-1.5 ${
               mapMode === 'svg'
-                ? 'bg-natgeo-yellow text-stone-950 shadow-glow font-extrabold'
-                : 'text-stone-300 hover:text-white'
+                ? 'bg-emerald-600 text-white shadow-sm font-extrabold'
+                : 'text-slate-600 hover:text-emerald-700'
             }`}
           >
             <Compass className="w-3.5 h-3.5" />
@@ -143,8 +143,8 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
               onClick={() => setMapMode('gbif')}
               className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all flex items-center gap-1.5 ${
                 mapMode === 'gbif'
-                  ? 'bg-natgeo-yellow text-stone-950 shadow-glow font-extrabold'
-                  : 'text-stone-300 hover:text-white'
+                  ? 'bg-emerald-600 text-white shadow-sm font-extrabold'
+                  : 'text-slate-600 hover:text-emerald-700'
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
@@ -156,7 +156,7 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
 
       {/* Map Content Viewport */}
       {mapMode === 'svg' ? (
-        <div className="relative rounded-2xl overflow-hidden border-2 border-natgeo-yellow/30 bg-[#070d0a] shadow-inner">
+        <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-200 bg-[#061e16] shadow-inner">
           {/* Corner Viewfinder brackets */}
           <div className="viewfinder-corner-tl !w-3 !h-3" />
           <div className="viewfinder-corner-tr !w-3 !h-3" />
@@ -164,13 +164,13 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
           <div className="viewfinder-corner-br !w-3 !h-3" />
 
           {/* Map Top HUD Telemetry */}
-          <div className="absolute top-3 left-3 z-10 flex items-center gap-2 bg-black/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-natgeo-yellow/30 text-xs font-mono">
-            <span className="w-2 h-2 rounded-full bg-natgeo-yellow animate-ping" />
-            <span className="text-natgeo-yellow font-extrabold">LIVE RADAR:</span>
-            <span className="text-stone-300">{selectedHotspot.lat} • {selectedHotspot.lon}</span>
+          <div className="absolute top-3 left-3 z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-emerald-200 text-xs font-mono shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+            <span className="text-emerald-700 font-extrabold">LIVE RADAR:</span>
+            <span className="text-slate-700 font-bold">{selectedHotspot.lat} • {selectedHotspot.lon}</span>
           </div>
 
-          <div className="absolute top-3 right-3 z-10 hidden sm:flex items-center gap-1.5 bg-black/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10 text-[11px] font-mono text-stone-400">
+          <div className="absolute top-3 right-3 z-10 hidden sm:flex items-center gap-1.5 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-emerald-100 text-[11px] font-mono text-slate-600 shadow-sm">
             <span>PROJECTION: MERCATOR 1:50M</span>
           </div>
 
@@ -308,16 +308,16 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
           </div>
 
           {/* Active Hotspot Radar Readout Card */}
-          <div className="p-4 bg-black/90 border-t-2 border-natgeo-yellow/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="p-4 bg-white border-t-2 border-emerald-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-xl bg-natgeo-yellow text-stone-950 flex items-center justify-center font-bold font-mono text-sm shadow-glow shrink-0">
+              <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold font-mono text-sm shadow-sm shrink-0">
                 <MapPin className="w-4 h-4" />
               </div>
               <div>
-                <div className="text-xs font-display font-extrabold text-white uppercase flex items-center gap-2">
+                <div className="text-xs font-display font-extrabold text-slate-900 uppercase flex items-center gap-2">
                   <span>{isEn ? selectedHotspot.nameEn : selectedHotspot.nameVi}</span>
                 </div>
-                <div className="text-[11px] font-mono text-natgeo-yellow mt-0.5">
+                <div className="text-[11px] font-mono text-emerald-700 mt-0.5">
                   Tọa độ thực địa: <span className="font-bold">{selectedHotspot.lat} • {selectedHotspot.lon}</span>
                 </div>
               </div>
@@ -340,12 +340,12 @@ export const DistributionMap: React.FC<DistributionMapProps> = ({
         </div>
       ) : (
         /* Embedded Live GBIF Occurrence Map */
-        <div className="relative rounded-2xl overflow-hidden border-2 border-natgeo-yellow/30 bg-black h-[420px] flex flex-col items-center justify-center p-6 text-center">
-          <Globe className="w-12 h-12 text-natgeo-yellow mb-3 animate-spin" />
-          <h4 className="font-display text-lg font-bold text-white mb-2 uppercase">
+        <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-200 bg-emerald-50/50 h-[420px] flex flex-col items-center justify-center p-6 text-center">
+          <Globe className="w-12 h-12 text-emerald-600 mb-3 animate-spin" />
+          <h4 className="font-display text-lg font-bold text-slate-900 mb-2 uppercase">
             {isEn ? 'Global GBIF Biodiversity Occurrence Network' : 'Mạng Lưới Tọa Độ Phân Bố Sinh Học Toàn Cầu (GBIF)'}
           </h4>
-          <p className="text-xs text-stone-300 max-w-lg mb-6 font-sans">
+          <p className="text-xs text-slate-600 max-w-lg mb-6 font-sans">
             {isEn
               ? `Real-time occurrence density records for ${scientificName} gathered from international museums, satellite collars, and field research surveys.`
               : `Bản đồ mật độ tọa độ thực tế của ${scientificName} được tổng hợp từ các trạm quan sát vệ tinh và mẫu vật bảo tàng quốc tế.`}

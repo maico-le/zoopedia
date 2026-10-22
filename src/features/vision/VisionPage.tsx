@@ -196,39 +196,39 @@ export const VisionPage: React.FC = () => {
   }, [selectedSceneId]);
 
   return (
-    <div className="min-h-screen bg-expedition-dark text-stone-100 font-sans pb-24 selection:bg-natgeo-yellow selection:text-black">
+    <div className="min-h-screen bg-[#f8faf9] text-slate-800 font-sans pb-24 selection:bg-emerald-500/20 selection:text-emerald-900">
       {/* Top Operations Header Bar */}
-      <div className="bg-black/60 border-b border-natgeo-yellow/20 backdrop-blur-md sticky top-20 z-40">
+      <div className="bg-white/95 border-b border-emerald-100 backdrop-blur-md sticky top-20 z-40 text-slate-800 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-natgeo-yellow/20 border border-natgeo-yellow flex items-center justify-center text-natgeo-yellow">
+            <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700">
               <Eye className="w-4 h-4 animate-pulse" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-natgeo-yellow">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
                   {isEn ? 'ANIMAL SENSORY OPTICS & SIGHT SIMULATOR' : 'PHÒNG THÍ NGHIỆM THỊ GIÁC & GIÁC QUAN ĐỘNG VẬT'}
                 </span>
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-500/40 font-mono">
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-mono font-bold">
                   MULTISPECTRAL SENSORS
                 </span>
               </div>
-              <div className="text-[11px] font-mono text-stone-400">
+              <div className="text-[11px] font-mono text-slate-500">
                 {isEn ? 'Thermal FLIR, Ultraviolet, Dichromatic, Telescopic & Night Optics' : 'Kính tầm nhiệt, tia cực tím UV, thị giác nhị sắc hổ, kính nhìn đêm & phân cực'}
               </div>
             </div>
           </div>
 
           {/* Quick Scene Tabs Strip */}
-          <div className="flex items-center gap-1 bg-expedition-canvas p-1 rounded-xl border border-white/10 text-xs font-mono overflow-x-auto max-w-full">
+          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-mono overflow-x-auto max-w-full">
             {VISION_SCENES.map((scene) => (
               <button
                 key={scene.id}
                 onClick={() => setSelectedSceneId(scene.id)}
                 className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition-all whitespace-nowrap ${
                   selectedSceneId === scene.id
-                    ? 'bg-natgeo-yellow text-stone-950 shadow-natgeo'
-                    : 'text-stone-300 hover:text-white hover:bg-white/5'
+                    ? 'bg-emerald-600 text-white shadow-sm'
+                    : 'text-slate-600 hover:text-emerald-700 hover:bg-emerald-50'
                 }`}
               >
                 <span>{scene.icon}</span>
@@ -241,16 +241,16 @@ export const VisionPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
         {/* Mission Briefing Header */}
-        <div className="p-6 sm:p-8 rounded-3xl field-panel border border-natgeo-yellow/30 relative overflow-hidden shadow-2xl">
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-emerald-200 relative overflow-hidden shadow-md">
           <div className="space-y-2 max-w-3xl relative z-10">
-            <div className="flex items-center gap-2 text-xs font-mono text-natgeo-yellow uppercase tracking-widest">
-              <Scan className="w-3.5 h-3.5 text-natgeo-yellow" />
+            <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 uppercase tracking-widest font-bold">
+              <Scan className="w-3.5 h-3.5 text-emerald-600" />
               <span>{isEn ? 'BEYOND THE HUMAN VISIBLE SPECTRUM' : 'VƯỢT RA NGOÀI QUANG PHỔ THỊ GIÁC CON NGƯỜI'}</span>
             </div>
-            <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+            <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight uppercase">
               {isEn ? 'How Animals Truly See The World' : 'Thế Giới Qua Đôi Mắt Các Loài Động Vật'}
             </h1>
-            <p className="text-sm text-stone-300 leading-relaxed font-sans">
+            <p className="text-sm text-slate-600 leading-relaxed font-sans">
               {isEn
                 ? 'Human vision is trapped in a narrow slice of wavelengths between 380 and 700 nm. Use the interactive comparison slider below to experience how snakes hunt using heat, why deer cannot see the orange coat of a stalking tiger, and how bees follow glowing ultraviolet runways on flowers.'
                 : 'Mắt con người chỉ cảm nhận được một dải sóng hẹp từ 380 đến 700 nm. Hãy kéo thanh trượt so sánh phân đôi bên dưới để trải nghiệm cách loài rắn săn mồi bằng cảm biến nhiệt, lý do tại sao hươu không nhìn thấy màu cam của hổ, và cách ong lần theo những đường bay tia cực tím trên cánh hoa.'}
@@ -544,42 +544,42 @@ export const VisionPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Biological Mechanism & Retinal Architecture (7 Cols) */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="p-6 rounded-3xl field-panel border border-natgeo-yellow/30 shadow-xl space-y-6">
-              <div className="flex items-center justify-between pb-4 border-b border-natgeo-yellow/20">
-                <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
-                  <Glasses className="w-4 h-4" />
+            <div className="p-6 rounded-3xl bg-white border border-emerald-200 shadow-md space-y-6">
+              <div className="flex items-center justify-between pb-4 border-b border-emerald-100">
+                <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-700 uppercase">
+                  <Glasses className="w-4 h-4 text-emerald-600" />
                   <span>{isEn ? 'RETINAL OPTOELECTRONICS & RECEPTORS' : 'QUANG SINH HỌC & TẾ BÀO THỤ CẢM VÕNG MẠC'}</span>
                 </div>
-                <span className="field-stamp field-stamp-success text-[10px]">GBIF-{activeScene.speciesSlug}</span>
+                <span className="field-stamp field-stamp-verified text-[10px]">GBIF-{activeScene.speciesSlug}</span>
               </div>
 
               {/* Photoreceptor Spec */}
-              <div className="p-4 rounded-2xl bg-black/60 border border-white/10 space-y-1.5">
-                <div className="text-[11px] font-mono text-natgeo-yellow uppercase font-bold">
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <div className="text-[11px] font-mono text-emerald-700 uppercase font-bold">
                   {isEn ? 'Photoreceptor Opsins & Sensors:' : 'Tế Bào Thụ Cảm & Cảm Biến Sinh Học:'}
                 </div>
-                <div className="text-sm font-bold text-white font-sans">
+                <div className="text-sm font-bold text-slate-900 font-sans">
                   {isEn ? activeScene.photoreceptorsEn : activeScene.photoreceptorsVi}
                 </div>
               </div>
 
               {/* Biological Mechanism Description */}
               <div className="space-y-2">
-                <div className="text-xs font-mono font-bold uppercase text-stone-200">
+                <div className="text-xs font-mono font-bold uppercase text-slate-800">
                   {isEn ? 'How The Optical Mechanism Works:' : 'Cơ Chế Quang Học Hoạt Động Như Thế Nào:'}
                 </div>
-                <p className="text-sm text-stone-300 font-sans leading-relaxed">
+                <p className="text-sm text-slate-600 font-sans leading-relaxed">
                   {isEn ? activeScene.biologicalMechanismEn : activeScene.biologicalMechanismVi}
                 </p>
               </div>
 
               {/* Evolutionary Advantage */}
-              <div className="p-4 rounded-2xl bg-natgeo-yellow/10 border border-natgeo-yellow/30 space-y-1.5">
-                <div className="text-[11px] font-mono text-natgeo-yellow uppercase font-bold flex items-center gap-2">
-                  <Sparkles className="w-3.5 h-3.5" />
+              <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1.5">
+                <div className="text-[11px] font-mono text-emerald-800 uppercase font-bold flex items-center gap-2">
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
                   <span>{isEn ? 'Adaptive Evolutionary Advantage:' : 'Ưu Thế Tiến Hóa Sinh Tồn:'}</span>
                 </div>
-                <p className="text-xs text-stone-200 font-sans leading-relaxed">
+                <p className="text-xs text-slate-700 font-sans leading-relaxed">
                   {isEn ? activeScene.evolutionaryAdvantageEn : activeScene.evolutionaryAdvantageVi}
                 </p>
               </div>
@@ -587,7 +587,7 @@ export const VisionPage: React.FC = () => {
               {/* Action Button to Full 3D Model */}
               <Link
                 to={`/species/${activeScene.speciesSlug}`}
-                className="w-full py-3 rounded-2xl bg-natgeo-yellow text-stone-950 font-mono font-bold text-xs uppercase tracking-wider shadow-natgeo hover:bg-amber-400 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3.5 rounded-2xl btn-expedition-primary font-mono font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2"
               >
                 <span>{isEn ? 'Inspect Animal in 3D Anatomy Lab' : 'Khảo Sát Giải Phẫu 3D Của Loài Này'}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -598,16 +598,16 @@ export const VisionPage: React.FC = () => {
           {/* Right Column: Electromagnetic Spectrum Tuner & Anatomical Secrets (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
             {/* Wavelength Spectrum Tuner */}
-            <div className="p-6 rounded-3xl field-panel border border-natgeo-yellow/30 shadow-xl space-y-4">
-              <div className="flex items-center gap-2 text-xs font-mono font-bold text-natgeo-yellow uppercase">
-                <Sliders className="w-4 h-4" />
+            <div className="p-6 rounded-3xl bg-white border border-emerald-200 shadow-md space-y-4">
+              <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-700 uppercase">
+                <Sliders className="w-4 h-4 text-emerald-600" />
                 <span>{isEn ? 'ELECTROMAGNETIC SPECTRUM TUNER' : 'MÁY DÒ BƯỚC SÓNG ĐIỆN TỪ'}</span>
               </div>
 
-              <div className="space-y-3 p-4 rounded-2xl bg-black/60 border border-white/10">
+              <div className="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                 <div className="flex justify-between items-center text-xs font-mono">
-                  <span className="text-stone-400">{isEn ? 'Current Wavelength:' : 'Bước Sóng Đang Chọn:'}</span>
-                  <span className="text-natgeo-yellow font-bold text-sm">{currentWavelength} nm</span>
+                  <span className="text-slate-500 font-semibold">{isEn ? 'Current Wavelength:' : 'Bước Sóng Đang Chọn:'}</span>
+                  <span className="text-emerald-700 font-bold text-sm">{currentWavelength} nm</span>
                 </div>
 
                 {/* Spectrum Color Bar */}
@@ -619,10 +619,10 @@ export const VisionPage: React.FC = () => {
                   max="1000"
                   value={currentWavelength}
                   onChange={(e) => setCurrentWavelength(Number(e.target.value))}
-                  className="w-full accent-amber-400 cursor-pointer"
+                  className="w-full accent-emerald-600 cursor-pointer"
                 />
 
-                <div className="flex justify-between text-[10px] font-mono text-stone-400 pt-1">
+                <div className="flex justify-between text-[10px] font-mono text-slate-500 pt-1 font-semibold">
                   <span>300nm (UV)</span>
                   <span>550nm (Lục)</span>
                   <span>700nm (Đỏ)</span>
@@ -631,19 +631,19 @@ export const VisionPage: React.FC = () => {
               </div>
 
               {/* Spectrum Verdict */}
-              <div className="text-xs text-stone-300 font-sans p-3 rounded-xl bg-white/[0.02] border border-white/5">
+              <div className="text-xs text-slate-700 font-sans p-3 rounded-xl bg-slate-50 border border-slate-200">
                 {currentWavelength < 380 && (
-                  <span className="text-purple-300">
+                  <span className="text-purple-700">
                     🟣 <strong>Tia Cực Tím (UV):</strong> Mắt người mù hoàn toàn; mắt Ong Mật & Chim phát hiện các đường dẫn mật hoa rực rỡ.
                   </span>
                 )}
                 {currentWavelength >= 380 && currentWavelength <= 700 && (
-                  <span className="text-emerald-300">
+                  <span className="text-emerald-800">
                     🟢 <strong>Ánh Sáng Khả Kiến:</strong> Dải quang phổ con người nhìn thấy; hươu và thú săn mồi chỉ nhận biết được xanh lam và xanh lục.
                   </span>
                 )}
                 {currentWavelength > 700 && (
-                  <span className="text-rose-300">
+                  <span className="text-rose-700">
                     🔴 <strong>Hồng Ngoại Nhiệt (Infrared):</strong> Mắt người chỉ cảm thấy nóng; hố nhiệt của Rắn chuyển thành hình ảnh nhiệt 3D sắc nét.
                   </span>
                 )}
@@ -651,39 +651,39 @@ export const VisionPage: React.FC = () => {
             </div>
 
             {/* Quick Anatomical Wonders Cards */}
-            <div className="p-6 rounded-3xl bg-black/70 border border-natgeo-yellow/30 space-y-4">
-              <div className="text-xs font-mono font-bold text-natgeo-yellow uppercase flex items-center gap-2">
-                <Zap className="w-3.5 h-3.5" />
+            <div className="p-6 rounded-3xl bg-white border border-emerald-200 shadow-md space-y-4">
+              <div className="text-xs font-mono font-bold text-emerald-700 uppercase flex items-center gap-2">
+                <Zap className="w-3.5 h-3.5 text-emerald-600" />
                 <span>{isEn ? 'OPTICAL ADAPTATIONS CHEAT SHEET' : 'BẢNG KỲ QUAN GIẢI PHẪU THỊ GIÁC'}</span>
               </div>
 
               <div className="space-y-3 text-xs font-sans">
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
-                  <div className="font-bold text-white flex items-center gap-1.5 font-mono">
+                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                  <div className="font-bold text-slate-900 flex items-center gap-1.5 font-mono">
                     <span>🪞</span>
                     <span>Tapetum Lucidum (Màng Gương)</span>
                   </div>
-                  <p className="text-stone-300 text-[11px]">
+                  <p className="text-slate-600 text-[11px]">
                     Lớp tế bào gương phản chiếu ánh sáng lần thứ hai ở mèo rừng, cú và cá mập giúp nhìn rõ trong đêm tối.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
-                  <div className="font-bold text-white flex items-center gap-1.5 font-mono">
+                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                  <div className="font-bold text-slate-900 flex items-center gap-1.5 font-mono">
                     <span>👁️</span>
                     <span>Dual Fovea (Hai Hố Thị Giác)</span>
                   </div>
-                  <p className="text-stone-300 text-[11px]">
+                  <p className="text-slate-600 text-[11px]">
                     Đại bàng và chim ưng sở hữu 2 hố thị giác độc lập trên mỗi mắt: vừa bao quát toàn cảnh, vừa zoom viễn vọng 8x cực nét.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
-                  <div className="font-bold text-white flex items-center gap-1.5 font-mono">
+                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                  <div className="font-bold text-slate-900 flex items-center gap-1.5 font-mono">
                     <span>🌡️</span>
                     <span>Loreal Pit Organ (Hố Nhiệt)</span>
                   </div>
-                  <p className="text-stone-300 text-[11px]">
+                  <p className="text-slate-600 text-[11px]">
                     Màng tế bào chứa kênh TRPA1 giúp rắn phát hiện bức xạ nhiệt từ khoảng cách 1 mét với độ nhạy 0.003°C.
                   </p>
                 </div>
