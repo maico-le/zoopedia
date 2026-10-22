@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
-import { Copy, Check, Layers, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Copy, Check, Layers, ExternalLink, ShieldCheck, PlayCircle } from 'lucide-react';
+import { AnimalViewer } from '../viewer/AnimalViewer';
 
 type TabKey =
   | 'overview'
@@ -22,6 +23,7 @@ export const SpeciesPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState<TabKey>('overview');
   const [copied, setCopied] = useState(false);
+  const [selectedModelGlb, setSelectedModelGlb] = useState<string>('models/panthera-tigris.glb');
 
   // In M0/M1, we have tigerData seeded
   const species: Species = (tigerData as unknown) as Species;
@@ -76,29 +78,49 @@ export const SpeciesPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          {/* Quick Model Selector to test animations or anatomical layers */}
+          <div className="flex items-center gap-1 p-1 bg-stone-800 rounded-xl border border-stone-700 text-xs">
+            <button
+              onClick={() => setSelectedModelGlb('models/panthera-tigris.glb')}
+              className={`px-3 py-1.5 rounded-lg font-semibold transition-all ${
+                selectedModelGlb === 'models/panthera-tigris.glb'
+                  ? 'bg-emerald-500 text-stone-950 shadow'
+                  : 'text-stone-300 hover:text-white'
+              }`}
+            >
+              Hổ (Giải phẫu 3D)
+            </button>
+            <button
+              onClick={() => setSelectedModelGlb('models/vulpes-vulpes.glb')}
+              className={`px-3 py-1.5 rounded-lg font-semibold flex items-center gap-1 transition-all ${
+                selectedModelGlb === 'models/vulpes-vulpes.glb'
+                  ? 'bg-emerald-500 text-stone-950 shadow'
+                  : 'text-stone-300 hover:text-white'
+              }`}
+            >
+              <PlayCircle className="w-3.5 h-3.5" />
+              Cáo đỏ (Animation)
+            </button>
+          </div>
+
           <span className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold flex items-center gap-1.5">
             <Layers className="w-4 h-4" />
-            Tier {species.media.model3d?.tier || 'A'} 3D Model
+            Tier {species.media.model3d?.tier || 'A'} 3D
           </span>
         </div>
       </div>
 
-      {/* Main 3D Canvas / Media Placeholder Area */}
+      {/* Main 3D Canvas Viewer */}
       <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div className="lg:col-span-8 bg-stone-950 rounded-3xl border border-stone-800 overflow-hidden relative min-h-[460px] flex flex-col items-center justify-center p-6 text-center shadow-2xl">
-          <div className="w-24 h-24 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-4xl mb-4">
-            🐅
-          </div>
-          <h3 className="text-xl font-bold text-white mb-2">3D Animal Viewer</h3>
-          <p className="text-stone-400 text-sm max-w-md mb-4">
-            Mô hình giải phẫu 3D (Panthera tigris) sẽ được kích hoạt ở Milestone M1 với OrbitControls, giải phẫu nhiều tầng và camera presets.
-          </p>
-          <div className="flex items-center gap-2 text-xs text-stone-500">
-            <span>Model: {species.media.model3d?.glb}</span>
-            <span>•</span>
-            <span>Giấy phép: {species.media.model3d?.license}</span>
-          </div>
+        <div className="lg:col-span-8">
+          <AnimalViewer
+            modelGlb={selectedModelGlb}
+            images={species.media.images}
+            speciesName={commonName}
+            isRepresentative={species.media.model3d?.isRepresentative}
+            representativeFor={species.media.model3d?.representativeFor}
+          />
         </div>
 
         {/* Quick Biological Facts Column */}

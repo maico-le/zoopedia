@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Search, Compass, Sparkles, AlertTriangle } from 'lucide-react';
+import { Search, Compass, Sparkles, AlertTriangle, Eye } from 'lucide-react';
 import { matchVietnameseText } from '../../lib/normalize-vi';
+import { AnimalViewer } from '../viewer/AnimalViewer';
 
 // Initial seed index
 const FEATURED_SPECIES = [
@@ -93,7 +94,7 @@ export const HomePage: React.FC = () => {
           </form>
 
           {/* Quick links */}
-          <div className="flex flex-wrap items-center justify-center gap-3 text-xs">
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs mb-10">
             <span className="text-stone-500 font-medium">Lối tắt:</span>
             <Link
               to="/species/panthera-tigris"
@@ -108,6 +109,20 @@ export const HomePage: React.FC = () => {
               <Compass className="w-3.5 h-3.5 text-emerald-400" />
               Cây phân loại 8 ngành
             </Link>
+          </div>
+
+          {/* Interactive Hero 3D Preview */}
+          <div className="max-w-2xl mx-auto rounded-3xl overflow-hidden border border-stone-800 shadow-2xl bg-stone-950">
+            <div className="px-4 py-2.5 bg-stone-900 border-b border-stone-800 flex items-center justify-between text-xs text-stone-400">
+              <span className="flex items-center gap-1.5 font-semibold text-emerald-400">
+                <Eye className="w-3.5 h-3.5" />
+                Mô hình 3D tương tác trực tiếp
+              </span>
+              <span className="text-[11px] text-stone-500">Giữ chuột kéo để xoay • Cuộn để phóng to</span>
+            </div>
+            <div className="h-[320px] sm:h-[380px] relative">
+              <AnimalViewer modelGlb="models/panthera-tigris.glb" speciesName="Panthera tigris" />
+            </div>
           </div>
         </div>
       </section>
