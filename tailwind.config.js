@@ -4,20 +4,34 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Outfit"', 'system-ui', 'sans-serif'],
+        mono: ['"Space Grotesk"', 'monospace'],
+      },
       colors: {
-        nature: {
-          50: '#f4f7f4',
-          100: '#e5ece5',
-          200: '#ceddce',
-          300: '#a8c3a9',
-          400: '#7ca27e',
-          500: '#5a845c',
-          600: '#456a47',
-          700: '#38543a',
-          800: '#2f4431',
-          900: '#273829',
-          950: '#131e15',
+        specimen: {
+          dark: '#08090a',
+          card: '#0f1115',
+          border: 'rgba(255, 255, 255, 0.08)',
+          glow: 'rgba(16, 185, 129, 0.15)',
         },
+        bio: {
+          gold: '#d4af37',
+          amber: '#f59e0b',
+          moss: '#10b981',
+          cyan: '#06b6d4',
+          slate: '#1c2024',
+        },
+      },
+      boxShadow: {
+        specimen: '0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(16, 185, 129, 0.08)',
+        glow: '0 0 25px rgba(16, 185, 129, 0.25)',
+        gold: '0 0 20px rgba(212, 175, 55, 0.2)',
+      },
+      backgroundImage: {
+        'radial-vignette': 'radial-gradient(circle at 50% 40%, rgba(16, 185, 129, 0.08) 0%, transparent 70%)',
+        'museum-grid': 'linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)',
       },
     },
   },
