@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Search, Compass, Sparkles, ArrowRight, Layers, AlertTriangle, Shuffle, ShieldCheck } from 'lucide-react';
 import { matchVietnameseText } from '../../lib/normalize-vi';
 import { getRandomSpeciesSlug } from '../../lib/data-loader';
@@ -14,7 +15,8 @@ interface ExhibitSpecimen {
   order: string;
   iucn: string;
   modelGlb: string;
-  desc: string;
+  descVi: string;
+  descEn: string;
   icon: string;
 }
 
@@ -28,7 +30,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'EN',
     modelGlb: 'models/panthera-tigris.glb',
-    desc: 'Loài thú ăn thịt đầu bảng với bộ lông sọc vằn chân thực, cấu trúc giải phẫu uy lực.',
+    descVi: 'Loài thú ăn thịt đầu bảng với bộ lông sọc vằn chân thực, cấu trúc giải phẫu uy lực.',
+    descEn: 'Apex hypercarnivore featuring distinctive striped camouflage and formidable biomechanical musculature.',
     icon: '🐅',
   },
   {
@@ -40,7 +43,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'VU',
     modelGlb: 'models/panthera-leo.glb',
-    desc: 'Chúa tể thảo nguyên với bờm vàng oai vệ, sinh sống theo bầy đàn có tổ chức cao.',
+    descVi: 'Chúa tể thảo nguyên với bờm vàng oai vệ, sinh sống theo bầy đàn có tổ chức cao.',
+    descEn: 'Monarch of the savanna exhibiting prominent sexual dimorphism with majestic manes and coordinated cooperative hunting.',
     icon: '🦁',
   },
   {
@@ -52,7 +56,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'LC',
     modelGlb: 'models/canis-lupus.glb',
-    desc: 'Thú săn mồi có tổ chức bầy đàn chặt chẽ, khứu giác tinh nhạy và tiếng hú định danh.',
+    descVi: 'Thú săn mồi có tổ chức bầy đàn chặt chẽ, khứu giác tinh nhạy và tiếng hú định danh.',
+    descEn: 'Highly social apex canid with sophisticated pack coordination, extraordinary olfactory acuity, and acoustic territorial howling.',
     icon: '🐺',
   },
   {
@@ -64,7 +69,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'LC',
     modelGlb: 'models/ursus-arctos.glb',
-    desc: 'Loài thú ăn tạp to lớn với lớp mỡ dày, vuốt khỏe thích nghi bắt cá hồi và đào bới.',
+    descVi: 'Loài thú ăn tạp to lớn với lớp mỡ dày, vuốt khỏe thích nghi bắt cá hồi và đào bới.',
+    descEn: 'Massive omnivorous carnivoran adapted for seasonal hyperphagia, hibernation, and versatile foraging with powerful excavating claws.',
     icon: '🐻',
   },
   {
@@ -76,7 +82,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Carnivora',
     iucn: 'VU',
     modelGlb: 'models/ailuropoda-melanoleuca.glb',
-    desc: 'Bảo vật tự nhiên với hai màu lông đen trắng tương phản, ăn trúc chuyên biệt.',
+    descVi: 'Bảo vật tự nhiên với hai màu lông đen trắng tương phản, ăn trúc chuyên biệt.',
+    descEn: 'Iconic folivorous bear specialized in bamboo consumption, characterized by its distinctive pseudo-thumb and striking bicolored pelage.',
     icon: '🐼',
   },
   {
@@ -88,7 +95,8 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Lamniformes',
     iucn: 'VU',
     modelGlb: 'models/carcharodon-carcharias.glb',
-    desc: 'Kẻ săn mồi đỉnh chóp đại dương với cơ thể hình thoi khí động học và khứu giác siêu đẳng.',
+    descVi: 'Kẻ săn mồi đỉnh chóp đại dương với cơ thể hình thoi khí động học và khứu giác siêu đẳng.',
+    descEn: 'Apex marine predator possessing a hydrodynamic fusiform body, serrated triangular dentition, and electroreceptive ampullae of Lorenzini.',
     icon: '🦈',
   },
   {
@@ -100,16 +108,19 @@ const EXHIBIT_SPECIMENS: ExhibitSpecimen[] = [
     order: 'Testudines',
     iucn: 'EN',
     modelGlb: 'models/chelonia-mydas.glb',
-    desc: 'Loài bò sát biển cổ xưa với mai sừng phẳng lướt nước và hành trình di cư nghìn dặm.',
+    descVi: 'Loài bò sát biển cổ xưa với mai sừng phẳng lướt nước và hành trình di cư nghìn dặm.',
+    descEn: 'Ancient marine chelonian with a streamlined carapace, paddle-like flippers, and transatlantic natal homing navigation.',
     icon: '🐢',
   },
 ];
 
 export const HomePage: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [activeSpecimenIndex, setActiveSpecimenIndex] = useState(0);
 
+  const isEn = i18n.language === 'en';
   const activeSpecimen = EXHIBIT_SPECIMENS[activeSpecimenIndex];
 
   const filtered = EXHIBIT_SPECIMENS.filter(
@@ -128,6 +139,49 @@ export const HomePage: React.FC = () => {
     }
   };
 
+  const getSpecimenPrimaryName = (s: ExhibitSpecimen) => (isEn ? s.nameEn : s.nameVi);
+  const getSpecimenSecondaryName = (s: ExhibitSpecimen) => (isEn ? s.nameVi : s.nameEn);
+  const getSpecimenDesc = (s: ExhibitSpecimen) => (isEn ? s.descEn : s.descVi);
+
+  const phylaCards = [
+    {
+      phylum: 'Chordata',
+      nameVi: 'Ngành Dây sống',
+      nameEn: 'Phylum Chordata',
+      icon: '🐅',
+      count: '~65,000',
+      descVi: 'Động vật có xương sống: thú, chim, bò sát, lưỡng cư, cá.',
+      descEn: 'Vertebrates including mammals, birds, reptiles, amphibians, and fishes.',
+    },
+    {
+      phylum: 'Arthropoda',
+      nameVi: 'Ngành Chân khớp',
+      nameEn: 'Phylum Arthropoda',
+      icon: '🦋',
+      count: '>1,300,000',
+      descVi: 'Đa dạng nhất hành tinh: côn trùng, nhện, giáp xác.',
+      descEn: 'The most diverse phylum: insects, arachnids, crustaceans, and myriapods.',
+    },
+    {
+      phylum: 'Mollusca',
+      nameVi: 'Ngành Thân mềm',
+      nameEn: 'Phylum Mollusca',
+      icon: '🐙',
+      count: '~85,000',
+      descVi: 'Bạch tuộc, mực, ốc sên, sò trai đối xứng hai bên.',
+      descEn: 'Octopuses, squids, snails, and bivalves with soft unsegmented bodies.',
+    },
+    {
+      phylum: 'Cnidaria',
+      nameVi: 'Ngành Thích ty bào',
+      nameEn: 'Phylum Cnidaria',
+      icon: '🪼',
+      count: '~11,000',
+      descVi: 'Sứa biển, san hô, hải quỳ với tế bào gai châm đốt độc đáo.',
+      descEn: 'Jellyfish, corals, and sea anemones characterized by cnidocyte stinging cells.',
+    },
+  ];
+
   return (
     <div className="relative min-h-screen">
       {/* Background Ambience */}
@@ -140,18 +194,18 @@ export const HomePage: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bio-glass border border-emerald-500/30 text-emerald-300 text-xs font-mono tracking-wider uppercase mb-6 shadow-glow">
             <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Phòng Trưng Bày Động Vật Học Tương Tác 3D</span>
+            <span>{t('home.galleryBadge')}</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.08]">
-            Khám phá Giới Động Vật qua{' '}
+            {t('home.heroTitle1')}{' '}
             <span className="italic font-normal bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200 bg-clip-text text-transparent">
-              Mẫu vật 3D Sống động
+              {t('home.heroTitleHighlight')}
             </span>
           </h1>
 
           <p className="text-base sm:text-lg text-stone-300 font-sans max-w-2xl mx-auto leading-relaxed">
-            Học tập sinh học đa chiều chuẩn mực. Quan sát hình thái học, cấu trúc giải phẫu và dữ liệu phân loại học chính xác theo chuẩn dữ liệu bảo tàng quốc tế.
+            {t('home.heroSubtitle')}
           </p>
         </div>
 
@@ -167,7 +221,7 @@ export const HomePage: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tra cứu mẫu vật (Hổ Đông Dương, Chó sói, Panthera tigris)..."
+                placeholder={t('home.searchPlaceholder')}
                 className="w-full pl-3.5 pr-24 py-4 bg-transparent text-white placeholder-stone-400 text-sm focus:outline-none"
               />
 
@@ -191,7 +245,10 @@ export const HomePage: React.FC = () => {
                       <span className="text-2xl">{s.icon}</span>
                       <div>
                         <div className="font-semibold text-white group-hover:text-emerald-300 transition-colors">
-                          {s.nameVi} <span className="text-stone-400 text-xs font-normal">({s.nameEn})</span>
+                          {getSpecimenPrimaryName(s)}{' '}
+                          <span className="text-stone-400 text-xs font-normal">
+                            ({getSpecimenSecondaryName(s)})
+                          </span>
                         </div>
                         <div className="text-xs text-stone-400 font-serif italic">{s.scientific}</div>
                       </div>
@@ -216,7 +273,7 @@ export const HomePage: React.FC = () => {
               className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
             >
               <Compass className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Khám phá theo ngành</span>
+              <span>{t('home.byPhylum')}</span>
             </Link>
 
             <button
@@ -224,7 +281,7 @@ export const HomePage: React.FC = () => {
               className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
             >
               <Shuffle className="w-3.5 h-3.5 text-amber-300" />
-              <span>Mẫu vật ngẫu nhiên</span>
+              <span>{t('home.randomSpecimen')}</span>
             </button>
 
             <Link
@@ -232,7 +289,7 @@ export const HomePage: React.FC = () => {
               className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
             >
               <Layers className="w-3.5 h-3.5 text-emerald-300" />
-              <span>Mô hình 3D Tier A</span>
+              <span>{t('home.tierAModels')}</span>
             </Link>
 
             <Link
@@ -240,13 +297,13 @@ export const HomePage: React.FC = () => {
               className="btn-specimen flex items-center gap-1.5 py-1.5 px-3"
             >
               <AlertTriangle className="w-3.5 h-3.5 text-rose-400" />
-              <span>Sắp nguy cấp (IUCN)</span>
+              <span>{t('home.endangeredIucn')}</span>
             </Link>
           </div>
 
           {/* Botanical Filter Chips */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs">
-            <span className="text-stone-400 font-medium mr-1">Mẫu vật tuyển chọn:</span>
+            <span className="text-stone-400 font-medium mr-1">{t('home.curatedSpecimens')}</span>
             {EXHIBIT_SPECIMENS.map((specimen, idx) => (
               <button
                 key={specimen.id}
@@ -256,7 +313,7 @@ export const HomePage: React.FC = () => {
                 }`}
               >
                 <span>{specimen.icon}</span>
-                <span>{specimen.nameVi}</span>
+                <span>{getSpecimenPrimaryName(specimen)}</span>
               </button>
             ))}
           </div>
@@ -273,13 +330,13 @@ export const HomePage: React.FC = () => {
                   <span className="text-2xl">{activeSpecimen.icon}</span>
                   <div>
                     <h3 className="font-serif text-lg font-bold text-white flex items-center gap-2">
-                      {activeSpecimen.nameVi}
+                      {getSpecimenPrimaryName(activeSpecimen)}
                       <span className="font-sans text-xs text-stone-400 font-normal">
-                        ({activeSpecimen.nameEn})
+                        ({getSpecimenSecondaryName(activeSpecimen)})
                       </span>
                     </h3>
                     <p className="text-xs text-emerald-400 font-serif italic">
-                      {activeSpecimen.scientific} • Lớp {activeSpecimen.class}
+                      {activeSpecimen.scientific} • {t('home.class')} {activeSpecimen.class}
                     </p>
                   </div>
                 </div>
@@ -292,7 +349,7 @@ export const HomePage: React.FC = () => {
                     to={`/species/${activeSpecimen.id}`}
                     className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition-all"
                   >
-                    Hồ sơ chi tiết &rarr;
+                    {t('home.specimenDetailLink')} &rarr;
                   </Link>
                 </div>
               </div>
@@ -302,7 +359,7 @@ export const HomePage: React.FC = () => {
                 <AnimalViewer
                   key={activeSpecimen.id}
                   modelGlb={activeSpecimen.modelGlb}
-                  speciesName={activeSpecimen.nameVi}
+                  speciesName={getSpecimenPrimaryName(activeSpecimen)}
                   className="w-full h-full rounded-none border-none shadow-none"
                   hideTitleBadge={true}
                 />
@@ -315,35 +372,35 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-xl">
               <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 mb-3">
                 <ShieldCheck className="w-4 h-4" />
-                Hồ sơ định danh mẫu vật
+                {t('home.specimenProfile')}
               </div>
 
               <h4 className="font-serif text-2xl font-bold text-white mb-2">
-                {activeSpecimen.nameVi}
+                {getSpecimenPrimaryName(activeSpecimen)}
               </h4>
               <p className="text-xs text-stone-400 font-serif italic mb-4">
                 {activeSpecimen.scientific}
               </p>
 
               <p className="text-sm text-stone-300 leading-relaxed mb-6">
-                {activeSpecimen.desc}
+                {getSpecimenDesc(activeSpecimen)}
               </p>
 
               <div className="space-y-3 pt-4 border-t border-white/10 text-xs font-mono">
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-stone-400">Giới (Kingdom)</span>
+                  <span className="text-stone-400">{t('home.kingdom')} (Kingdom)</span>
                   <span className="text-stone-200">Animalia</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-stone-400">Ngành (Phylum)</span>
-                  <span className="text-emerald-400">Chordata (Dây sống)</span>
+                  <span className="text-stone-400">{t('home.phylum')} (Phylum)</span>
+                  <span className="text-emerald-400">Chordata</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-stone-400">Lớp (Class)</span>
+                  <span className="text-stone-400">{t('home.class')} (Class)</span>
                   <span className="text-stone-200">{activeSpecimen.class}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-stone-400">Bộ (Order)</span>
+                  <span className="text-stone-400">{t('home.order')} (Order)</span>
                   <span className="text-stone-200">{activeSpecimen.order}</span>
                 </div>
               </div>
@@ -352,7 +409,7 @@ export const HomePage: React.FC = () => {
                 to={`/species/${activeSpecimen.id}`}
                 className="mt-6 w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-stone-950 font-bold text-sm text-center shadow-lg shadow-emerald-900/40 transition-all flex items-center justify-center gap-2"
               >
-                <span>Xem giải phẫu & đặc điểm sinh học</span>
+                <span>{t('home.viewBioDetails')}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -370,7 +427,7 @@ export const HomePage: React.FC = () => {
                 >
                   <div className="text-2xl mb-1 group-hover:scale-110 transition-transform">{other.icon}</div>
                   <div className="text-xs font-bold text-white group-hover:text-emerald-300 truncate">
-                    {other.nameVi}
+                    {getSpecimenPrimaryName(other)}
                   </div>
                   <div className="text-[10px] text-stone-400 font-serif italic truncate">
                     {other.scientific}
@@ -387,13 +444,13 @@ export const HomePage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
           <div>
             <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
-              Phân loại học sinh vật học (Taxonomy)
+              GBIF Backbone Taxonomy System
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
-              Cây phân loại 8 Ngành Động Vật
+              {t('home.taxonomyTitle')}
             </h2>
             <p className="text-sm text-stone-400 mt-1 max-w-xl">
-              Từ ngành Dây sống (Chordata), Chân khớp (Arthropoda) đến Thân mềm (Mollusca).
+              {t('home.taxonomySub')}
             </p>
           </div>
 
@@ -402,18 +459,13 @@ export const HomePage: React.FC = () => {
             className="btn-specimen flex items-center gap-2 text-xs"
           >
             <Compass className="w-4 h-4 text-emerald-400" />
-            <span>Xem toàn bộ sơ đồ 8 ngành</span>
+            <span>{t('home.viewFullTree')}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {[
-            { phylum: 'Chordata', name: 'Ngành Dây sống', icon: '🐅', count: '~65,000 loài', desc: 'Động vật có xương sống: thú, chim, bò sát, lưỡng cư, cá.' },
-            { phylum: 'Arthropoda', name: 'Ngành Chân khớp', icon: '🦋', count: '>1,300,000 loài', desc: 'Đa dạng nhất hành tinh: côn trùng, nhện, giáp xác.' },
-            { phylum: 'Mollusca', name: 'Ngành Thân mềm', icon: '🐙', count: '~85,000 loài', desc: 'Bạch tuộc, mực, ốc sên, sò trai đối xứng hai bên.' },
-            { phylum: 'Cnidaria', name: 'Ngành Ruột khoang', icon: '🪼', count: '~11,000 loài', desc: 'Sứa biển, san hô, hải quỳ với tế bào gai châm đốt độc đáo.' },
-          ].map((item) => (
+          {phylaCards.map((item) => (
             <Link
               key={item.phylum}
               to="/taxa"
@@ -424,14 +476,16 @@ export const HomePage: React.FC = () => {
                   {item.icon}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">
-                  {item.name}
+                  {isEn ? item.nameEn : item.nameVi}
                 </h3>
-                <div className="text-xs font-mono text-emerald-400 mb-2">{item.phylum} • {item.count}</div>
-                <p className="text-xs text-stone-300 leading-relaxed">{item.desc}</p>
+                <div className="text-xs font-mono text-emerald-400 mb-2">{item.phylum} • {item.count} {isEn ? 'species' : 'loài'}</div>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  {isEn ? item.descEn : item.descVi}
+                </p>
               </div>
 
               <div className="mt-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-emerald-400">
-                <span>Khám phá ngành</span>
+                <span>{t('home.explorePhylum')}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Compass, ArrowRight, ChevronDown, ChevronRight, Layers } from 'lucide-react';
 import taxaTreeData from '../../../data/taxa/tree.json';
 import speciesIndexData from '../../../data/species-index.json';
@@ -16,6 +17,8 @@ interface TaxonPhylumData {
 
 export const TaxonDetailPage: React.FC = () => {
   const { rank, name } = useParams<{ rank: string; name: string }>();
+  const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const [treeExpanded, setTreeExpanded] = useState(true);
 
   const taxonRank = (rank || 'phylum').toLowerCase();
@@ -42,9 +45,9 @@ export const TaxonDetailPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       {/* Breadcrumb Navigation */}
       <nav className="flex items-center gap-2 text-xs font-mono text-stone-400 mb-8 flex-wrap">
-        <Link to="/" className="hover:text-emerald-400">TRANG CHỦ</Link>
+        <Link to="/" className="hover:text-emerald-400 uppercase">{t('nav.home')}</Link>
         <span>/</span>
-        <Link to="/taxa" className="hover:text-emerald-400">ANIMALIA (8 NGÀNH)</Link>
+        <Link to="/taxa" className="hover:text-emerald-400">ANIMALIA (8 PHYLA)</Link>
         <span>/</span>
         <span className="text-stone-300 uppercase">{taxonRank}</span>
         <span>/</span>
@@ -57,20 +60,22 @@ export const TaxonDetailPage: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
               <Compass className="w-3.5 h-3.5" />
-              Cấp phân loại: {taxonRank.toUpperCase()}
+              {isEn ? `Taxon Rank: ${taxonRank.toUpperCase()}` : `Cấp phân loại: ${taxonRank.toUpperCase()}`}
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl font-bold text-white mb-2">
               {taxonName}
             </h1>
             <p className="text-sm text-stone-300 max-w-2xl leading-relaxed">
-              Nhóm phân loại sinh học trực thuộc cơ sở dữ liệu GBIF Backbone Taxonomy. Bao gồm các bộ và loài thích nghi đặc trưng.
+              {isEn
+                ? `Biological taxon classified under the GBIF Backbone Taxonomy. Includes representative orders and morphologically specialized species.`
+                : `Nhóm phân loại sinh học trực thuộc cơ sở dữ liệu GBIF Backbone Taxonomy. Bao gồm các bộ và loài thích nghi đặc trưng.`}
             </p>
           </div>
 
           <div className="flex sm:flex-col items-center sm:items-end justify-between gap-2 p-4 rounded-2xl bg-white/5 border border-white/10 font-mono text-right">
-            <div className="text-xs text-stone-400 uppercase">Mẫu vật ghi nhận</div>
+            <div className="text-xs text-stone-400 uppercase">{isEn ? 'Catalogued' : 'Mẫu vật ghi nhận'}</div>
             <div className="font-serif text-3xl font-bold text-emerald-400">{matchedSpecies.length}</div>
-            <div className="text-[10px] text-stone-500">Loài đã định danh</div>
+            <div className="text-[10px] text-stone-500">{isEn ? 'Identified species' : 'Loài đã định danh'}</div>
           </div>
         </div>
       </div>
@@ -84,7 +89,7 @@ export const TaxonDetailPage: React.FC = () => {
           >
             <span className="flex items-center gap-2">
               <Layers className="w-4 h-4 text-emerald-400" />
-              Sơ đồ các Lớp (Classes) trực thuộc ngành {taxonName}
+              {isEn ? `Classes under Phylum ${taxonName}` : `Sơ đồ các Lớp (Classes) trực thuộc ngành ${taxonName}`}
             </span>
             {treeExpanded ? <ChevronDown className="w-4 h-4 text-stone-400" /> : <ChevronRight className="w-4 h-4 text-stone-400" />}
           </button>
@@ -99,10 +104,10 @@ export const TaxonDetailPage: React.FC = () => {
                 >
                   <div>
                     <div className="text-xs font-serif font-bold text-white group-hover:text-emerald-300">
-                      Lớp {className}
+                      Class {className}
                     </div>
                     <div className="text-[10px] font-mono text-stone-400">
-                      {classData.speciesCount || 0} loài • {Object.keys(classData.orders || {}).length} bộ
+                      {classData.speciesCount || 0} {isEn ? 'species' : 'loài'} • {Object.keys(classData.orders || {}).length} {isEn ? 'orders' : 'bộ'}
                     </div>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-stone-500 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all" />
@@ -116,10 +121,10 @@ export const TaxonDetailPage: React.FC = () => {
       {/* Species in this Taxon Grid */}
       <div className="mb-6 flex items-center justify-between">
         <h2 className="font-serif text-2xl font-bold text-white">
-          Danh Sách Mẫu Vật Trong Nhóm ({matchedSpecies.length})
+          {isEn ? `Specimens in this Group (${matchedSpecies.length})` : `Danh Sách Mẫu Vật Trong Nhóm (${matchedSpecies.length})`}
         </h2>
         <Link to="/explore" className="text-xs text-emerald-400 hover:underline">
-          Tra cứu toàn bộ giới động vật &rarr;
+          {isEn ? 'Explore all species \u2192' : 'Tra cứu toàn bộ giới động vật \u2192'}
         </Link>
       </div>
 
@@ -135,7 +140,7 @@ export const TaxonDetailPage: React.FC = () => {
                 {s.thumbnail ? (
                   <img
                     src={s.thumbnail}
-                    alt={s.nameVi}
+                    alt={isEn ? (s.nameEn || s.nameVi) : s.nameVi}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
@@ -151,7 +156,7 @@ export const TaxonDetailPage: React.FC = () => {
               </div>
 
               <h3 className="font-serif text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
-                {s.nameVi}
+                {isEn ? (s.nameEn || s.nameVi) : s.nameVi}
               </h3>
               <div className="text-xs text-stone-400 font-serif italic mb-2">{s.scientific}</div>
               <div className="flex flex-wrap gap-1 text-[10px] font-mono text-stone-400">
@@ -161,7 +166,7 @@ export const TaxonDetailPage: React.FC = () => {
             </div>
 
             <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-emerald-400">
-              <span>Khám phá 3D</span>
+              <span>{isEn ? 'View 3D Record' : 'Khám phá 3D'}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>

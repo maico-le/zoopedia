@@ -1,55 +1,74 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Compass, ArrowRight } from 'lucide-react';
 import taxaTreeData from '../../../data/taxa/tree.json';
 import speciesIndexData from '../../../data/species-index.json';
 
-const PHYLA_META: Record<string, { nameVi: string; icon: string; desc: string }> = {
+const PHYLA_META: Record<string, { nameVi: string; nameEn: string; icon: string; descVi: string; descEn: string }> = {
   Chordata: {
     nameVi: 'Ngành Dây sống',
+    nameEn: 'Phylum Chordata (Vertebrates & Allies)',
     icon: '🐅',
-    desc: 'Động vật có dây sống / xương sống: lớp Thú, Chim, Bò sát, Lưỡng cư và các nhóm Cá.',
+    descVi: 'Động vật có dây sống / xương sống: lớp Thú, Chim, Bò sát, Lưỡng cư và các nhóm Cá.',
+    descEn: 'Vertebrates with notochord or vertebral column: mammals, birds, reptiles, amphibians, and fishes.',
   },
   Arthropoda: {
     nameVi: 'Ngành Chân khớp',
+    nameEn: 'Phylum Arthropoda (Joint-legged Invertebrates)',
     icon: '🦋',
-    desc: 'Ngành động vật phong phú nhất: Côn trùng, Hình nhện, Giáp xác và Nhiều chân.',
+    descVi: 'Ngành động vật phong phú nhất: Côn trùng, Hình nhện, Giáp xác và Nhiều chân.',
+    descEn: 'The most diverse animal phylum: insects, arachnids, crustaceans, and myriapods with chitinous exoskeletons.',
   },
   Mollusca: {
     nameVi: 'Ngành Thân mềm',
+    nameEn: 'Phylum Mollusca (Mollusks)',
     icon: '🐙',
-    desc: 'Bạch tuộc, Mực ống, Ốc sên, Sò trai với cơ thể mềm và nhiều loài có vỏ đá vôi.',
+    descVi: 'Bạch tuộc, Mực ống, Ốc sên, Sò trai với cơ thể mềm và nhiều loài có vỏ đá vôi.',
+    descEn: 'Octopuses, squids, snails, and bivalves with soft unsegmented bodies, radula, and calcareous shells.',
   },
   Cnidaria: {
     nameVi: 'Ngành Thích ty bào',
+    nameEn: 'Phylum Cnidaria (Stinging Animals)',
     icon: '🪼',
-    desc: 'Sứa biển, San hô, Hải quỳ có các tế bào gai châm độc quyền bảo vệ và bắt mồi.',
+    descVi: 'Sứa biển, San hô, Hải quỳ có các tế bào gai châm độc quyền bảo vệ và bắt mồi.',
+    descEn: 'Jellyfish, corals, and sea anemones possessing specialized stinging cnidocytes for prey capture and defense.',
   },
   Echinodermata: {
     nameVi: 'Ngành Da gai',
+    nameEn: 'Phylum Echinodermata (Echinoderms)',
     icon: '⭐',
-    desc: 'Sao biển, Nhím biển, Hải sâm sở hữu cấu trúc cơ thể đối xứng tỏa tròn năm cạnh.',
+    descVi: 'Sao biển, Nhím biển, Hải sâm sở hữu cấu trúc cơ thể đối xứng tỏa tròn năm cạnh.',
+    descEn: 'Sea stars, sea urchins, and sea cucumbers exhibiting pentaradial symmetry and a water vascular system.',
   },
   Annelida: {
     nameVi: 'Ngành Giun đốt',
+    nameEn: 'Phylum Annelida (Segmented Worms)',
     icon: '🪱',
-    desc: 'Giun đất, Đỉa, Rươi biển với các đốt cơ thể lặp lại và hệ tuần hoàn khép kín.',
+    descVi: 'Giun đất, Đỉa, Rươi biển với các đốt cơ thể lặp lại và hệ tuần hoàn khép kín.',
+    descEn: 'Earthworms, leeches, and marine polychaetes with true metameric segmentation and a closed circulatory system.',
   },
   Porifera: {
     nameVi: 'Ngành Thân lỗ (Hải miên)',
+    nameEn: 'Phylum Porifera (Sponges)',
     icon: '🧽',
-    desc: 'Bọt biển nguyên sơ cấu tạo từ các tế bào cổ áo lọc nước, không có mô chuyên hóa.',
+    descVi: 'Bọt biển nguyên sơ cấu tạo từ các tế bào cổ áo lọc nước, không có mô chuyên hóa.',
+    descEn: 'Basal aquatic sponges with porous bodies and choanocytes filtering nutrients without true organized tissues.',
   },
   Platyhelminthes: {
     nameVi: 'Ngành Giun dẹp',
+    nameEn: 'Phylum Platyhelminthes (Flatworms)',
     icon: '〰️',
-    desc: 'Sán lá, Sán dây, Giun dẹp tự do không có xoang cơ thể với khả năng tái sinh cao.',
+    descVi: 'Sán lá, Sán dây, Giun dẹp tự do không có xoang cơ thể với khả năng tái sinh cao.',
+    descEn: 'Free-living planarians, flukes, and tapeworms characterized by dorsoventrally flattened acoelomate bodies.',
   },
 };
 
 export const TaxonomyPage: React.FC = () => {
+  const { i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const tree = taxaTreeData as Record<string, { speciesCount: number; classes: Record<string, unknown> }>;
-  const speciesList = speciesIndexData as Array<{ id: string; nameVi: string; scientific: string; phylum: string }>;
+  const speciesList = speciesIndexData as Array<{ id: string; nameVi: string; nameEn?: string; scientific: string; phylum: string }>;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -60,10 +79,12 @@ export const TaxonomyPage: React.FC = () => {
           GBIF Backbone Taxonomy System
         </div>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-white">
-          Cây Phân Loại 8 Ngành Động Vật (Animalia)
+          {isEn ? 'Taxonomy of the 8 Animal Phyla (Kingdom Animalia)' : 'Cây Phân Loại 8 Ngành Động Vật (Animalia)'}
         </h1>
         <p className="text-stone-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-          Hệ thống phát sinh chủng loại từ Ngành (Phylum) &rarr; Lớp (Class) &rarr; Bộ (Order) &rarr; Họ (Family) &rarr; Chi (Genus) &rarr; Loài (Species).
+          {isEn
+            ? 'Phylogenetic hierarchy from Phylum \u2192 Class \u2192 Order \u2192 Family \u2192 Genus \u2192 Species according to international catalog standards.'
+            : 'Hệ thống phát sinh chủng loại từ Ngành (Phylum) \u2192 Lớp (Class) \u2192 Bộ (Order) \u2192 Họ (Family) \u2192 Chi (Genus) \u2192 Loài (Species).'}
         </p>
       </div>
 
@@ -92,17 +113,17 @@ export const TaxonomyPage: React.FC = () => {
                 </div>
 
                 <h2 className="font-serif text-2xl font-bold text-white mb-1 group-hover:text-emerald-300 transition-colors">
-                  {meta.nameVi}
+                  {isEn ? meta.nameEn : meta.nameVi}
                 </h2>
 
                 <div className="flex items-center gap-2 text-xs font-mono text-stone-400 mb-3">
-                  <span>{count} loài mẫu</span>
+                  <span>{count} {isEn ? 'specimens' : 'loài mẫu'}</span>
                   <span>•</span>
-                  <span>{classesCount} lớp</span>
+                  <span>{classesCount} {isEn ? 'classes' : 'lớp'}</span>
                 </div>
 
                 <p className="text-xs text-stone-300 leading-relaxed mb-6">
-                  {meta.desc}
+                  {isEn ? meta.descEn : meta.descVi}
                 </p>
               </div>
 
@@ -111,7 +132,7 @@ export const TaxonomyPage: React.FC = () => {
                   to={`/taxa/phylum/${phylumKey}`}
                   className="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-emerald-500/20 text-emerald-300 border border-white/10 hover:border-emerald-500/30 flex items-center justify-between text-xs font-semibold transition-all"
                 >
-                  <span>Xem cây ngành {phylumKey}</span>
+                  <span>{isEn ? `Explore ${phylumKey} Tree` : `Xem cây ngành ${phylumKey}`}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
 
@@ -120,7 +141,7 @@ export const TaxonomyPage: React.FC = () => {
                     to={`/species/${representativeSpecies.id}`}
                     className="flex items-center justify-between text-[11px] text-stone-400 hover:text-white transition-colors px-1"
                   >
-                    <span>Đại diện: {representativeSpecies.nameVi}</span>
+                    <span>{isEn ? 'Representative:' : 'Đại diện:'} {isEn ? (representativeSpecies.nameEn || representativeSpecies.nameVi) : representativeSpecies.nameVi}</span>
                     <span>&rarr;</span>
                   </Link>
                 )}

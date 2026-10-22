@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Clock, CircleDot, ChevronRight, Sparkles } from 'lucide-react';
 import { SpeciesLifeCycle } from '../../types/species';
 
@@ -11,12 +12,14 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
   lifeCycle,
   speciesName,
 }) => {
+  const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const [selectedStageIdx, setSelectedStageIdx] = useState<number>(0);
 
   if (!lifeCycle || !lifeCycle.stages || lifeCycle.stages.length === 0) {
     return (
       <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 text-stone-400 text-sm">
-        Chưa có dữ liệu phân kỳ chu kỳ sống cho loài này.
+        {t('lifecycle.noData')}
       </div>
     );
   }
@@ -25,46 +28,50 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
   const activeStage = stages[selectedStageIdx] || stages[0];
 
   const formatDays = (days?: number[] | null) => {
-    if (!days || days.length < 2) return 'Không cố định';
+    if (!days || days.length < 2) return t('lifecycle.variable');
     const min = days[0];
     const max = days[1];
-    if (max <= 60) return `${min} – ${max} ngày`;
-    if (max <= 730) return `${(min / 30).toFixed(0)} – ${(max / 30).toFixed(0)} tháng`;
-    return `${(min / 365).toFixed(1)} – ${(max / 365).toFixed(1)} năm`;
+    if (max <= 60) return `${min} – ${max} ${t('lifecycle.days')}`;
+    if (max <= 730) return `${(min / 30).toFixed(0)} – ${(max / 30).toFixed(0)} ${t('lifecycle.months')}`;
+    return `${(min / 365).toFixed(1)} – ${(max / 365).toFixed(1)} ${t('lifecycle.years')}`;
   };
+
+  const getStageName = (stg: typeof activeStage) => (isEn ? (stg.name.en || stg.name.vi) : (stg.name.vi || stg.name.en));
+  const getStageSecondary = (stg: typeof activeStage) => (isEn ? stg.name.vi : stg.name.en);
+  const getStageDesc = (stg: typeof activeStage) => (isEn ? (stg.description?.en || stg.description?.vi || 'Ontogenetic description pending.') : (stg.description?.vi || stg.description?.en || 'Mô tả sinh lý học đang cập nhật.'));
 
   return (
     <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-white/10 gap-4 mb-8">
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold mb-1">
-            Sinh học phát triển cá thể (Ontogeny)
+            {t('lifecycle.subtitle')}
           </div>
           <h3 className="font-serif text-2xl font-bold text-white flex items-center gap-2">
             <Clock className="w-5 h-5 text-emerald-400" />
-            Chu kỳ Sống & Biến thái Phát triển
+            {t('lifecycle.title')}
           </h3>
           <p className="text-xs text-stone-400 mt-1">
-            Các giai đoạn sinh trưởng đặc trưng của {speciesName} qua thời gian.
+            {t('lifecycle.desc', { name: speciesName })}
           </p>
         </div>
 
         {lifeCycle.lifespanYears && (
           <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-2xl text-xs font-mono">
             <div>
-              <span className="text-stone-400 block text-[10px]">TỰ NHIÊN</span>
+              <span className="text-stone-400 block text-[10px]">{t('lifecycle.wild')}</span>
               <span className="font-bold text-emerald-300">
                 {lifeCycle.lifespanYears.wild
-                  ? `${lifeCycle.lifespanYears.wild[0]}–${lifeCycle.lifespanYears.wild[1]} năm`
+                  ? `${lifeCycle.lifespanYears.wild[0]}–${lifeCycle.lifespanYears.wild[1]} ${t('lifecycle.years')}`
                   : 'N/A'}
               </span>
             </div>
             <div className="w-px h-6 bg-white/10" />
             <div>
-              <span className="text-stone-400 block text-[10px]">NUÔI NHỐT</span>
+              <span className="text-stone-400 block text-[10px]">{t('lifecycle.captivity')}</span>
               <span className="font-bold text-amber-300">
                 {lifeCycle.lifespanYears.captivity
-                  ? `${lifeCycle.lifespanYears.captivity[0]}–${lifeCycle.lifespanYears.captivity[1]} năm`
+                  ? `${lifeCycle.lifespanYears.captivity[0]}–${lifeCycle.lifespanYears.captivity[1]} ${t('lifecycle.years')}`
                   : 'N/A'}
               </span>
             </div>
@@ -94,7 +101,7 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
                       : 'bg-white/5 text-stone-400'
                   }`}
                 >
-                  Trạm {idx + 1}
+                  {t('lifecycle.station')} {idx + 1}
                 </span>
                 <CircleDot
                   className={`w-3.5 h-3.5 ${
@@ -108,7 +115,7 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
                   isSelected ? 'text-white' : 'text-stone-300'
                 }`}
               >
-                {stage.name.vi}
+                {getStageName(stage)}
               </div>
               <div className="text-[11px] font-mono text-stone-400 truncate mt-1">
                 {formatDays(stage.durationDays)}
@@ -127,25 +134,25 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
             </span>
             <div>
               <h4 className="font-serif text-lg font-bold text-white flex items-center gap-2">
-                {activeStage.name.vi}
+                {getStageName(activeStage)}
                 <span className="text-xs font-sans font-normal text-stone-400">
-                  ({activeStage.name.en})
+                  ({getStageSecondary(activeStage)})
                 </span>
               </h4>
               <span className="text-xs font-mono text-emerald-400">
-                Mã định danh: {activeStage.key}
+                {t('lifecycle.identifier')} {activeStage.key}
               </span>
             </div>
           </div>
 
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-stone-300">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>Thời lượng: {formatDays(activeStage.durationDays)}</span>
+            <span>{t('lifecycle.duration')} {formatDays(activeStage.durationDays)}</span>
           </div>
         </div>
 
         <p className="text-sm text-stone-300 leading-relaxed">
-          {activeStage.description?.vi || activeStage.description?.en || 'Mô tả sinh lý học đang cập nhật.'}
+          {getStageDesc(activeStage)}
         </p>
 
         {selectedStageIdx < stages.length - 1 && (
@@ -154,7 +161,7 @@ export const LifeCycleTimeline: React.FC<LifeCycleTimelineProps> = ({
               onClick={() => setSelectedStageIdx(selectedStageIdx + 1)}
               className="hover:text-emerald-300 flex items-center gap-1 transition-colors"
             >
-              <span>Xem giai đoạn tiếp theo: {stages[selectedStageIdx + 1].name.vi}</span>
+              <span>{t('lifecycle.nextStage')} {getStageName(stages[selectedStageIdx + 1])}</span>
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>

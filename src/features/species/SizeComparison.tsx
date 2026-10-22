@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { User, Ruler } from 'lucide-react';
 
 interface SizeComparisonProps {
@@ -12,10 +13,12 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
   weightKg,
   speciesName,
 }) => {
+  const { t } = useTranslation();
+
   if (!lengthCm || lengthCm.length < 2) {
     return (
       <div className="p-5 rounded-2xl bio-glass border border-white/10 text-xs text-stone-400">
-        Chưa có số liệu kích thước kiểm chứng cho loài này.
+        {t('morphometrics.noData')}
       </div>
     );
   }
@@ -43,18 +46,18 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
       <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold mb-1">
-            Hình thái học định lượng (Morphometrics)
+            {t('morphometrics.subtitle')}
           </div>
           <h3 className="font-serif text-xl font-bold text-white flex items-center gap-2">
             <Ruler className="w-5 h-5 text-emerald-400" />
-            Tỷ lệ Kích thước so với Con người
+            {t('morphometrics.title')}
           </h3>
         </div>
 
         <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-white/5 border border-white/10 text-stone-300">
           {ratio >= 1
-            ? `Lớn gấp ${(ratio).toFixed(1)}x người`
-            : `Bằng ${(ratio * 100).toFixed(0)}% chiều cao người`}
+            ? t('morphometrics.largerThanHuman', { val: ratio.toFixed(1) })
+            : t('morphometrics.percentOfHuman', { val: (ratio * 100).toFixed(0) })}
         </span>
       </div>
 
@@ -85,7 +88,7 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
           <div className="flex justify-between items-center text-xs mb-2">
             <span className="text-stone-400 flex items-center gap-1.5 font-medium">
               <User className="w-4 h-4 text-stone-400" />
-              Con người trưởng thành (Homo sapiens mẫu)
+              {t('morphometrics.humanRef')}
             </span>
             <span className="font-mono text-stone-400">
               {humanHeightCm} cm • ~{humanWeightKg} kg
@@ -100,12 +103,6 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Archival Museum Footnote */}
-      <div className="mt-6 pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-stone-400">
-        <span>QUY CHUẨN ĐO LƯỜNG: CHIỀU DÀI CƠ THỂ ĐẦU ĐẾN ĐUÔI / ĐỈNH ĐẦU</span>
-        <span className="text-emerald-400 font-semibold">NGUỒN DỮ LIỆU: AnAge & PanTHERIA DATABASE</span>
       </div>
     </div>
   );

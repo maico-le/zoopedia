@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   RotateCcw,
   Play,
@@ -24,6 +25,9 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
   onScreenshot,
   onToggleFullscreen,
 }) => {
+  const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
+
   const {
     cameraPreset,
     setCameraPreset,
@@ -46,14 +50,23 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
     toggleShowWireframe,
   } = useViewerStore();
 
-  const presets: { id: CameraPreset; label: string; sub: string }[] = [
-    { id: 'isometric', label: '3D Toàn Cảnh', sub: 'ISO' },
-    { id: 'front', label: 'Trực Diện', sub: 'FRONT' },
-    { id: 'left', label: 'Cạnh Trái', sub: 'LEFT' },
-    { id: 'right', label: 'Cạnh Phải', sub: 'RIGHT' },
-    { id: 'back', label: 'Phía Sau', sub: 'BACK' },
-    { id: 'top', label: 'Nhìn Trên', sub: 'DORSAL' },
-  ];
+  const presets: { id: CameraPreset; label: string; sub: string }[] = isEn
+    ? [
+        { id: 'isometric', label: 'Isometric 3D', sub: 'ISO' },
+        { id: 'front', label: 'Frontal', sub: 'FRONT' },
+        { id: 'left', label: 'Left Lateral', sub: 'LEFT' },
+        { id: 'right', label: 'Right Lateral', sub: 'RIGHT' },
+        { id: 'back', label: 'Posterior', sub: 'BACK' },
+        { id: 'top', label: 'Dorsal View', sub: 'DORSAL' },
+      ]
+    : [
+        { id: 'isometric', label: '3D Toàn Cảnh', sub: 'ISO' },
+        { id: 'front', label: 'Trực Diện', sub: 'FRONT' },
+        { id: 'left', label: 'Cạnh Trái', sub: 'LEFT' },
+        { id: 'right', label: 'Cạnh Phải', sub: 'RIGHT' },
+        { id: 'back', label: 'Phía Sau', sub: 'BACK' },
+        { id: 'top', label: 'Nhìn Trên', sub: 'DORSAL' },
+      ];
 
   return (
     <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-3 sm:p-5 z-20">
@@ -63,7 +76,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
         <div className="hidden sm:flex items-center gap-2.5 px-3 py-1.5 bio-glass rounded-full border border-emerald-500/20 text-xs">
           <div className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
           <span className="font-mono text-[11px] uppercase tracking-wider text-emerald-300 font-semibold">
-            3D Specimen Viewfinder
+            {t('viewer.viewfinder')}
           </span>
           <span className="text-stone-500 text-[10px]">|</span>
           <span className="text-[11px] text-stone-400 font-mono">PBR ACES Filmic</span>
@@ -74,7 +87,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
           <button
             onClick={resetViewer}
             className="p-2 rounded-xl text-stone-300 hover:text-white hover:bg-white/10 active:scale-95 transition-all"
-            title="Đặt lại camera về góc chuẩn (Double-click)"
+            title={t('viewer.resetCamera')}
           >
             <RotateCcw className="w-4 h-4" />
           </button>
@@ -82,7 +95,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
           <button
             onClick={onScreenshot}
             className="p-2 rounded-xl text-stone-300 hover:text-emerald-400 hover:bg-emerald-500/10 active:scale-95 transition-all"
-            title="Chụp ảnh mẫu vật chuẩn HD (PNG)"
+            title={isEn ? "Capture High-Definition Specimen Screenshot (PNG)" : "Chụp ảnh mẫu vật chuẩn HD (PNG)"}
           >
             <Camera className="w-4 h-4" />
           </button>
@@ -92,7 +105,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
           <button
             onClick={onToggleFullscreen}
             className="p-2 rounded-xl text-stone-300 hover:text-white hover:bg-white/10 active:scale-95 transition-all"
-            title="Xem toàn màn hình"
+            title={t('viewer.fullscreen')}
           >
             {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
           </button>
@@ -106,7 +119,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
           <div className="flex items-center gap-1.5 p-1.5 bio-glass-panel rounded-2xl border border-white/10 shadow-xl">
             <div className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-stone-400 flex items-center gap-1">
               <Compass className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="hidden md:inline">Góc nhìn</span>
+              <span className="hidden md:inline">{isEn ? 'Angles' : 'Góc nhìn'}</span>
             </div>
 
             {presets.map((p) => {
@@ -137,7 +150,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
             <button
               onClick={() => setBackgroundMode(backgroundMode === 'dark' ? 'light' : 'dark')}
               className="p-2 rounded-xl text-stone-300 hover:text-white hover:bg-white/10 transition-colors"
-              title="Chuyển đổi phông nền (Tối / Sáng)"
+              title={isEn ? "Toggle Background (Dark / Light)" : "Chuyển đổi phông nền (Tối / Sáng)"}
             >
               {backgroundMode === 'dark' ? <Moon className="w-3.5 h-3.5" /> : <Sun className="w-3.5 h-3.5 text-amber-400" />}
             </button>
@@ -149,7 +162,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
                   ? 'text-emerald-400 hover:bg-emerald-500/10'
                   : 'text-amber-400 bg-amber-500/10'
               }`}
-              title="Độ phân giải & hiệu ứng bóng đổ"
+              title={t('viewer.quality')}
             >
               {quality === 'high' ? <Sparkles className="w-3.5 h-3.5" /> : <Zap className="w-3.5 h-3.5" />}
               <span className="text-[10px] uppercase font-mono">{quality}</span>
@@ -167,7 +180,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
                 className="p-2 rounded-xl bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 transition-colors flex items-center gap-1 text-xs font-bold"
               >
                 {isPlayingAnimation ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-                <span className="hidden sm:inline">{isPlayingAnimation ? 'Tạm dừng' : 'Chuyển động'}</span>
+                <span className="hidden sm:inline">{isPlayingAnimation ? (isEn ? 'Pause' : 'Tạm dừng') : (isEn ? 'Play' : 'Chuyển động')}</span>
               </button>
 
               <div className="h-4 w-px bg-white/10" />
@@ -196,7 +209,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
                   setAnimationSpeed(nextSpeed);
                 }}
                 className="px-2 py-1 rounded-lg text-[10px] font-mono font-bold text-stone-300 hover:text-white hover:bg-white/10 transition-colors"
-                title="Tốc độ diễn hoạt"
+                title={t('viewer.speed')}
               >
                 {animationSpeed}x
               </button>
@@ -212,7 +225,7 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
                 }`}
               >
                 <RotateCcw className={`w-3.5 h-3.5 ${autoRotate ? 'animate-spin' : ''}`} />
-                <span>{autoRotate ? 'Đang xoay mẫu vật' : 'Tự xoay (Auto-Rotate)'}</span>
+                <span>{autoRotate ? (isEn ? 'Rotating specimen' : 'Đang xoay mẫu vật') : (isEn ? 'Auto-Rotate' : 'Tự xoay (Auto-Rotate)')}</span>
               </button>
 
               <button
@@ -224,14 +237,14 @@ export const ViewerControls: React.FC<ViewerControlsProps> = ({
                 }`}
               >
                 <Box className="w-3.5 h-3.5" />
-                <span>Lưới đa giác (Wireframe)</span>
+                <span>{isEn ? 'Anatomy Wireframe' : 'Lưới đa giác (Wireframe)'}</span>
               </button>
             </div>
           )}
 
           {/* Touch gesture guidance note */}
           <div className="text-[10px] text-stone-500 font-mono tracking-wider uppercase px-2 py-1">
-            Kéo để xoay • Cuộn/Chụm ngón tay để zoom
+            {isEn ? 'Drag to rotate • Scroll/Pinch to zoom' : 'Kéo để xoay • Cuộn/Chụm ngón tay để zoom'}
           </div>
         </div>
       </div>

@@ -43,11 +43,11 @@ export const SpeciesPage: React.FC = () => {
           } else {
             // High-fidelity archetype fallback based on class and order
             if (data.taxonomy.class === 'Aves') {
-              setSelectedModelGlb('models/flamingo.glb');
+              setSelectedModelGlb('models/aquila-chrysaetos.glb');
             } else if (data.taxonomy.class === 'Chondrichthyes') {
-              setSelectedModelGlb('models/shark.glb');
-            } else if (data.taxonomy.order === 'Cetacea') {
-              setSelectedModelGlb('models/dolphin.glb');
+              setSelectedModelGlb('models/carcharodon-carcharias.glb');
+            } else if (data.taxonomy.order === 'Testudines') {
+              setSelectedModelGlb('models/chelonia-mydas.glb');
             } else if (data.taxonomy.family === 'Equidae') {
               setSelectedModelGlb('models/equus-caballus.glb');
             } else if (data.taxonomy.family === 'Canidae') {
@@ -76,7 +76,7 @@ export const SpeciesPage: React.FC = () => {
       {/* Specimen Breadcrumb & Ref Code */}
       <div className="flex flex-wrap items-center justify-between gap-3 text-xs mb-8 pb-4 border-b border-white/[0.08]">
         <nav className="flex items-center gap-2 text-stone-400 flex-wrap font-mono">
-          <Link to="/" className="hover:text-emerald-400 transition-colors">TRANG CHỦ</Link>
+          <Link to="/" className="hover:text-emerald-400 transition-colors uppercase">{t('nav.home')}</Link>
           <span className="text-stone-600">/</span>
           <Link to="/taxa" className="hover:text-emerald-400 transition-colors uppercase">{species.taxonomy.phylum}</Link>
           <span className="text-stone-600">/</span>
@@ -88,7 +88,7 @@ export const SpeciesPage: React.FC = () => {
         </nav>
 
         <div className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-stone-400">
-          CATALOG REF: <span className="text-emerald-400 font-bold">GBIF-{species.taxonKey?.gbif || '5219416'}</span>
+          {t('species.catalogRef')} <span className="text-emerald-400 font-bold">GBIF-{species.taxonKey?.gbif || '5219416'}</span>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ export const SpeciesPage: React.FC = () => {
 
             {species.conservation?.iucn && (
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 shadow-sm">
-                IUCN: {species.conservation.iucn} • NGUY CẤP
+                IUCN: {species.conservation.iucn}
               </span>
             )}
           </div>
@@ -114,7 +114,7 @@ export const SpeciesPage: React.FC = () => {
             <button
               onClick={handleCopyScientific}
               className="p-1.5 rounded-lg text-stone-400 hover:text-white hover:bg-white/10 transition-colors"
-              title="Sao chép tên khoa học"
+              title={copied ? t('species.copiedScientific') : t('species.copyScientific')}
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
             </button>
@@ -133,7 +133,7 @@ export const SpeciesPage: React.FC = () => {
                     : 'text-stone-300 hover:text-white hover:bg-white/5'
                 }`}
               >
-                🔬 {commonName} (3D Thực)
+                🔬 {commonName} ({isEn ? '3D Model' : '3D Thực'})
               </button>
 
               {species.id !== 'panthera-tigris' && (
@@ -145,7 +145,7 @@ export const SpeciesPage: React.FC = () => {
                       : 'text-stone-300 hover:text-white hover:bg-white/5'
                   }`}
                 >
-                  🐅 Hổ Bengal
+                  🐅 {isEn ? 'Bengal Tiger' : 'Hổ Bengal'}
                 </button>
               )}
 
@@ -158,7 +158,7 @@ export const SpeciesPage: React.FC = () => {
                       : 'text-stone-300 hover:text-white hover:bg-white/5'
                   }`}
                 >
-                  🦁 Sư tử
+                  🦁 {isEn ? 'African Lion' : 'Sư tử'}
                 </button>
               )}
             </div>
@@ -167,10 +167,10 @@ export const SpeciesPage: React.FC = () => {
           <button
             onClick={() => setShowCompareModal(true)}
             className="btn-specimen flex items-center gap-2 text-xs py-2 px-3.5"
-            title="So sánh với loài khác"
+            title={t('species.compareSpecies')}
           >
             <ArrowRightLeft className="w-3.5 h-3.5 text-amber-300" />
-            <span>So sánh loài</span>
+            <span>{t('species.compareSpecies')}</span>
           </button>
 
           <span className="px-3.5 py-2 rounded-2xl bio-glass text-emerald-300 text-xs font-mono font-semibold flex items-center gap-1.5 border border-emerald-500/30">
@@ -197,7 +197,7 @@ export const SpeciesPage: React.FC = () => {
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
             <h3 className="font-serif text-xl font-bold text-white flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              Thông số sinh học
+              {t('species.bioTraitsTitle')}
             </h3>
             <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-white/5 text-stone-400">
               Traited
@@ -206,37 +206,37 @@ export const SpeciesPage: React.FC = () => {
 
           <div className="space-y-3.5 text-sm">
             <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">Chiều dài</span>
+              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">{t('species.length')}</span>
               <span className="font-semibold text-stone-100 font-mono">
-                {species.morphology?.lengthCm ? `${species.morphology.lengthCm[0]} – ${species.morphology.lengthCm[1]} cm` : 'Chưa có dữ liệu'}
+                {species.morphology?.lengthCm ? `${species.morphology.lengthCm[0]} – ${species.morphology.lengthCm[1]} cm` : t('species.noData')}
               </span>
             </div>
 
             <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">Khối lượng</span>
+              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">{t('species.weight')}</span>
               <span className="font-semibold text-stone-100 font-mono">
-                {species.morphology?.weightKg ? `${species.morphology.weightKg[0]} – ${species.morphology.weightKg[1]} kg` : 'Chưa có dữ liệu'}
+                {species.morphology?.weightKg ? `${species.morphology.weightKg[0]} – ${species.morphology.weightKg[1]} kg` : t('species.noData')}
               </span>
             </div>
 
             <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">Chế độ ăn</span>
+              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">{t('species.dietType')}</span>
               <span className="font-semibold text-emerald-400 capitalize px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-xs">
-                {species.diet?.type || 'Chưa rõ'}
+                {species.diet?.type ? t(`diet.${species.diet.type}`, species.diet.type) : t('species.unspecified')}
               </span>
             </div>
 
             <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">Tập tính</span>
+              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">{t('species.activity')}</span>
               <span className="font-semibold text-stone-200 capitalize text-xs">
-                {species.behavior?.activityPattern || 'Chưa rõ'}
+                {species.behavior?.activityPattern || t('species.unspecified')}
               </span>
             </div>
 
             <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">Tuổi thọ tự nhiên</span>
+              <span className="text-stone-400 text-xs uppercase font-mono tracking-wider">{t('species.wildLifespan')}</span>
               <span className="font-semibold text-stone-100 font-mono">
-                {species.lifeCycle?.lifespanYears?.wild ? `${species.lifeCycle.lifespanYears.wild[0]} – ${species.lifeCycle.lifespanYears.wild[1]} năm` : 'Chưa rõ'}
+                {species.lifeCycle?.lifespanYears?.wild ? `${species.lifeCycle.lifespanYears.wild[0]} – ${species.lifeCycle.lifespanYears.wild[1]} ${t('lifecycle.years')}` : t('species.unspecified')}
               </span>
             </div>
           </div>
@@ -276,19 +276,19 @@ export const SpeciesPage: React.FC = () => {
         {activeTab === 'overview' && (
           <div className="space-y-8">
             <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-3">
-              <h3 className="font-serif text-2xl font-bold text-white">Mô tả Tổng quan Loài</h3>
+              <h3 className="font-serif text-2xl font-bold text-white">{t('species.overviewDescTitle')}</h3>
               <p className="text-stone-200 text-base leading-relaxed">
-                {species.morphology?.description?.vi || species.morphology?.description?.en || (
-                  <EmptyTraitBadge label="Mô tả sinh học" sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
+                {(isEn ? (species.morphology?.description?.en || species.morphology?.description?.vi) : (species.morphology?.description?.vi || species.morphology?.description?.en)) || (
+                  <EmptyTraitBadge label={t('species.overview')} sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
                 )}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg space-y-2">
-                <div className="font-serif font-bold text-emerald-300 text-lg">Môi trường sống tự nhiên</div>
+                <div className="font-serif font-bold text-emerald-300 text-lg">{t('species.habitatTitle')}</div>
                 <p className="text-xs text-stone-300 leading-relaxed">
-                  {species.habitat?.description?.vi || species.habitat?.description?.en || 'Môi trường sống tự nhiên đa dạng theo khu hệ sinh thái.'}
+                  {(isEn ? (species.habitat?.description?.en || species.habitat?.description?.vi) : (species.habitat?.description?.vi || species.habitat?.description?.en)) || (isEn ? 'Diverse ecological biomes and terrestrial niches.' : 'Môi trường sống tự nhiên đa dạng theo khu hệ sinh thái.')}
                 </p>
                 {species.habitat?.biomes && (
                   <div className="flex flex-wrap gap-1.5 pt-2">
@@ -302,9 +302,9 @@ export const SpeciesPage: React.FC = () => {
               </div>
 
               <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg space-y-2">
-                <div className="font-serif font-bold text-emerald-300 text-lg">Vùng phân bố địa lý</div>
+                <div className="font-serif font-bold text-emerald-300 text-lg">{t('species.distributionTitle')}</div>
                 <p className="text-xs text-stone-300 leading-relaxed">
-                  {species.distribution?.text?.vi || species.distribution?.text?.en || 'Ghi nhận phân bố tự nhiên theo GBIF Occurrence records.'}
+                  {(isEn ? (species.distribution?.text?.en || species.distribution?.text?.vi) : (species.distribution?.text?.vi || species.distribution?.text?.en)) || (isEn ? 'Recorded native distribution according to GBIF occurrences.' : 'Ghi nhận phân bố tự nhiên theo GBIF Occurrence records.')}
                 </p>
                 {species.distribution?.gbifOccurrenceMapUrl && (
                   <div className="pt-2">
@@ -314,7 +314,7 @@ export const SpeciesPage: React.FC = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 underline"
                     >
-                      <span>Xem bản đồ phân bố GBIF</span>
+                      <span>{t('species.viewGbifMap')}</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -339,16 +339,16 @@ export const SpeciesPage: React.FC = () => {
             />
 
             <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-4">
-              <h3 className="font-serif text-2xl font-bold text-white">Đặc điểm Hình thái học & Giải phẫu ngoài</h3>
+              <h3 className="font-serif text-2xl font-bold text-white">{t('species.morphologyTitle')}</h3>
               <p className="text-stone-200 text-sm leading-relaxed">
-                {species.morphology?.description?.vi || species.morphology?.description?.en}
+                {isEn ? (species.morphology?.description?.en || species.morphology?.description?.vi) : (species.morphology?.description?.vi || species.morphology?.description?.en)}
               </p>
 
               {species.morphology?.sexualDimorphism && (
                 <div className="mt-4 p-5 rounded-2xl bg-stone-900/70 border border-emerald-500/20 text-xs">
                   <div className="font-serif font-bold text-emerald-400 text-sm mb-1 flex items-center gap-1.5">
                     <Sparkles className="w-4 h-4 text-emerald-400" />
-                    <span>Dị hình giới tính (Sexual Dimorphism):</span>
+                    <span>{t('species.sexualDimorphism')}</span>
                   </div>
                   <p className="text-stone-300 leading-relaxed">{species.morphology.sexualDimorphism}</p>
                 </div>
@@ -359,14 +359,18 @@ export const SpeciesPage: React.FC = () => {
 
         {activeTab === 'habitat' && (
           <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
-            <h3 className="font-serif text-2xl font-bold text-white">Môi trường sống & Vùng phân bố</h3>
+            <h3 className="font-serif text-2xl font-bold text-white">{t('species.habitatSectionTitle')}</h3>
             <div className="space-y-2">
-              <div className="font-semibold text-emerald-300 text-sm">Sinh cảnh đặc trưng:</div>
-              <p className="text-sm text-stone-200 leading-relaxed">{species.habitat?.description?.vi || species.habitat?.description?.en}</p>
+              <div className="font-semibold text-emerald-300 text-sm">{t('species.characteristicBiome')}</div>
+              <p className="text-sm text-stone-200 leading-relaxed">
+                {isEn ? (species.habitat?.description?.en || species.habitat?.description?.vi) : (species.habitat?.description?.vi || species.habitat?.description?.en)}
+              </p>
             </div>
             <div className="space-y-2">
-              <div className="font-semibold text-emerald-300 text-sm">Ghi nhận địa lý:</div>
-              <p className="text-sm text-stone-200 leading-relaxed">{species.distribution?.text?.vi || species.distribution?.text?.en}</p>
+              <div className="font-semibold text-emerald-300 text-sm">{t('species.geoRecords')}</div>
+              <p className="text-sm text-stone-200 leading-relaxed">
+                {isEn ? (species.distribution?.text?.en || species.distribution?.text?.vi) : (species.distribution?.text?.vi || species.distribution?.text?.en)}
+              </p>
             </div>
           </div>
         )}
@@ -377,21 +381,23 @@ export const SpeciesPage: React.FC = () => {
 
         {activeTab === 'behavior' && (
           <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-6">
-            <h3 className="font-serif text-2xl font-bold text-white">Tập tính Sinh thái học</h3>
-            <p className="text-sm text-stone-200 leading-relaxed">{species.behavior?.text?.vi || species.behavior?.text?.en}</p>
+            <h3 className="font-serif text-2xl font-bold text-white">{t('species.behaviorTitle')}</h3>
+            <p className="text-sm text-stone-200 leading-relaxed">
+              {isEn ? (species.behavior?.text?.en || species.behavior?.text?.vi) : (species.behavior?.text?.vi || species.behavior?.text?.en)}
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
               <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1.5">
-                <span className="font-serif font-bold text-emerald-300 text-sm block">Giao tiếp & Định danh</span>
+                <span className="font-serif font-bold text-emerald-300 text-sm block">{t('species.communication')}</span>
                 <p className="text-xs text-stone-300 leading-relaxed">
-                  {species.behavior?.communication?.vi || 'Giao tiếp qua âm thanh đặc trưng, thị giác và pheromone.'}
+                  {(isEn ? species.behavior?.communication?.en : species.behavior?.communication?.vi) || (isEn ? 'Acoustic vocalizations, visual posturing, and chemical scent marking.' : 'Giao tiếp qua âm thanh đặc trưng, thị giác và pheromone.')}
                 </p>
               </div>
 
               <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1.5">
-                <span className="font-serif font-bold text-emerald-300 text-sm block">Tập tính Phòng thủ & Lãnh thổ</span>
+                <span className="font-serif font-bold text-emerald-300 text-sm block">{t('species.defense')}</span>
                 <p className="text-xs text-stone-300 leading-relaxed">
-                  {species.behavior?.defense?.vi || 'Cảnh giác cao độ trước kẻ thù, ngụy trang hoặc chủ động phản đòn phòng vệ.'}
+                  {(isEn ? species.behavior?.defense?.en : species.behavior?.defense?.vi) || (isEn ? 'High vigilance against predators, natural camouflage, or active counter-attacks.' : 'Cảnh giác cao độ trước kẻ thù, ngụy trang hoặc chủ động phản đòn phòng vệ.')}
                 </p>
               </div>
             </div>
@@ -407,43 +413,45 @@ export const SpeciesPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
               <h3 className="font-serif text-2xl font-bold text-white flex items-center gap-2">
                 <HeartHandshake className="w-5 h-5 text-rose-400" />
-                Sinh sản & Tập tính Nuôi con
+                {t('species.reproductionTitle')}
               </h3>
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-500/15 text-rose-300 border border-rose-500/30">
-                Hình thức: {species.reproduction?.mode || 'Sinh sản hữu tính'}
+                {t('species.reproductionMode')}: {species.reproduction?.mode || (isEn ? 'Sexual reproduction' : 'Sinh sản hữu tính')}
               </span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="p-4 rounded-2xl bio-glass border border-white/10">
-                <span className="text-[10px] font-mono text-stone-400 uppercase block">Thời gian mang thai / ấp trứng</span>
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">{t('species.gestationPeriod')}</span>
                 <span className="text-base font-serif font-bold text-white mt-1 block">
-                  {species.reproduction?.gestationDays ? `${species.reproduction.gestationDays[0]} – ${species.reproduction.gestationDays[1]} ngày` : 'Chưa rõ'}
+                  {species.reproduction?.gestationDays ? `${species.reproduction.gestationDays[0]} – ${species.reproduction.gestationDays[1]} ${t('lifecycle.days')}` : t('species.unspecified')}
                 </span>
               </div>
 
               <div className="p-4 rounded-2xl bio-glass border border-white/10">
-                <span className="text-[10px] font-mono text-stone-400 uppercase block">Số lượng con / lứa (hoặc trứng)</span>
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">{t('species.clutchSize')}</span>
                 <span className="text-base font-serif font-bold text-white mt-1 block">
-                  {species.reproduction?.clutchOrLitterSize ? `${species.reproduction.clutchOrLitterSize[0]} – ${species.reproduction.clutchOrLitterSize[1]}` : 'Chưa rõ'}
+                  {species.reproduction?.clutchOrLitterSize ? `${species.reproduction.clutchOrLitterSize[0]} – ${species.reproduction.clutchOrLitterSize[1]}` : t('species.unspecified')}
                 </span>
               </div>
 
               <div className="p-4 rounded-2xl bio-glass border border-white/10">
-                <span className="text-[10px] font-mono text-stone-400 uppercase block">Chế độ giao phối</span>
+                <span className="text-[10px] font-mono text-stone-400 uppercase block">{t('species.matingSystem')}</span>
                 <span className="text-base font-serif font-bold text-emerald-300 mt-1 block capitalize">
-                  {species.reproduction?.matingSystem || 'Đơn phối hoặc đa phối'}
+                  {species.reproduction?.matingSystem || (isEn ? 'Monogamous or polygynous' : 'Đơn phối hoặc đa phối')}
                 </span>
               </div>
             </div>
 
-            {species.reproduction?.parentalCare?.vi && (
+            {(species.reproduction?.parentalCare?.vi || species.reproduction?.parentalCare?.en) && (
               <div className="p-5 rounded-2xl bg-stone-900/60 border border-white/5 space-y-1">
                 <span className="text-xs font-serif font-bold text-emerald-400 uppercase tracking-wider block">
-                  Chăm sóc con non:
+                  {t('species.parentalCare')}
                 </span>
                 <p className="text-sm text-stone-200 leading-relaxed">
-                  {species.reproduction.parentalCare.vi}
+                  {isEn
+                    ? (species.reproduction.parentalCare.en || species.reproduction.parentalCare.vi)
+                    : (species.reproduction.parentalCare.vi || species.reproduction.parentalCare.en)}
                 </p>
               </div>
             )}
@@ -455,16 +463,16 @@ export const SpeciesPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
               <h3 className="font-serif text-2xl font-bold text-white flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 text-amber-400" />
-                Tình trạng Bảo tồn & Các mối Đe dọa
+                {t('species.conservationTitle')}
               </h3>
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
-                IUCN: {species.conservation?.iucn || 'Chưa đánh giá'}
+                IUCN: {species.conservation?.iucn || (isEn ? 'Not Evaluated' : 'Chưa đánh giá')}
               </span>
             </div>
 
             {species.conservation?.threats && species.conservation.threats.length > 0 ? (
               <div className="space-y-3">
-                <div className="font-semibold text-stone-200 text-sm">Các mối đe dọa sinh học chính:</div>
+                <div className="font-semibold text-stone-200 text-sm">{t('species.threatsTitle')}</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {species.conservation.threats.map((threat, i) => (
                     <div key={i} className="p-4 rounded-2xl bio-glass border border-white/10 text-xs text-stone-300 flex items-center gap-2.5">
@@ -476,7 +484,9 @@ export const SpeciesPage: React.FC = () => {
               </div>
             ) : (
               <p className="text-sm text-stone-300">
-                Loài hiện đang nằm trong danh mục theo dõi và bảo tồn đa dạng sinh học theo Sách Đỏ IUCN.
+                {isEn
+                  ? 'This species is monitored in biodiversity assessments under the IUCN Red List of Threatened Species.'
+                  : 'Loài hiện đang nằm trong danh mục theo dõi và bảo tồn đa dạng sinh học theo Sách Đỏ IUCN.'}
               </p>
             )}
           </div>
@@ -489,36 +499,40 @@ export const SpeciesPage: React.FC = () => {
                 <div key={index} className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-lg relative overflow-hidden group hover:border-emerald-500/40 transition-all">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                      SỰ THẬT #{index + 1}
+                      {t('species.funFactPrefix')} #{index + 1}
                     </span>
                     <Sparkles className="w-4 h-4 text-amber-300 group-hover:scale-110 transition-transform" />
                   </div>
-                  <p className="text-sm text-stone-200 leading-relaxed font-sans">{fact.vi}</p>
-                  <p className="text-xs text-stone-400 italic mt-2 font-serif">"{fact.en}"</p>
+                  <p className="text-sm text-stone-200 leading-relaxed font-sans">
+                    {isEn ? fact.en : fact.vi}
+                  </p>
+                  <p className="text-xs text-stone-400 italic mt-2 font-serif">
+                    "{isEn ? fact.vi : fact.en}"
+                  </p>
                 </div>
               ))
             ) : (
-              <EmptyTraitBadge label="Sự thật thú vị" sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
+              <EmptyTraitBadge label={t('species.funFacts')} sourceUrl={species.distribution?.gbifOccurrenceMapUrl} />
             )}
           </div>
         )}
 
         {activeTab === 'provenance' && (
           <div className="p-6 sm:p-8 rounded-3xl bio-glass-panel border border-white/10 shadow-xl space-y-4">
-            <h3 className="font-serif text-2xl font-bold text-white">Xuất xứ Dữ liệu & Bản quyền (Provenance)</h3>
+            <h3 className="font-serif text-2xl font-bold text-white">{t('species.provenanceTitle')}</h3>
             <p className="text-xs text-stone-400">
-              Minh bạch 100% về nguồn gốc, bản quyền và phương pháp thu thập cho từng thông số của mẫu vật này.
+              {t('species.provenanceDesc')}
             </p>
             <div className="overflow-x-auto pt-2">
               <table className="w-full text-xs text-left border border-white/10 rounded-2xl overflow-hidden">
                 <thead className="bg-stone-900/90 text-stone-300 uppercase font-mono text-[11px]">
                   <tr>
-                    <th className="p-3.5">Trường dữ liệu</th>
-                    <th className="p-3.5">Cơ sở dữ liệu</th>
-                    <th className="p-3.5">Giấy phép</th>
-                    <th className="p-3.5">Phương pháp</th>
-                    <th className="p-3.5">Ngày cập nhật</th>
-                    <th className="p-3.5">Liên kết</th>
+                    <th className="p-3.5">{t('species.fieldCol')}</th>
+                    <th className="p-3.5">{t('species.sourceCol')}</th>
+                    <th className="p-3.5">{t('species.licenseCol')}</th>
+                    <th className="p-3.5">{t('species.methodCol')}</th>
+                    <th className="p-3.5">{t('species.updatedCol')}</th>
+                    <th className="p-3.5">{t('species.linkCol')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5 font-sans">

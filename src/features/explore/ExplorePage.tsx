@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Search, Filter, Layers, X, ArrowUpDown, ArrowRight, Compass } from 'lucide-react';
 import { searchSpecies, getAllPhylaList, getAllClassesList, SearchableSpecies } from '../../lib/search-engine';
 
 export const ExplorePage: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const [searchParams, setSearchParams] = useSearchParams();
 
   const initialQuery = searchParams.get('q') || '';
@@ -54,7 +57,9 @@ export const ExplorePage: React.FC = () => {
       const order: Record<string, number> = { CR: 1, EN: 2, VU: 3, NT: 4, LC: 5 };
       return (order[a.iucn] || 99) - (order[b.iucn] || 99);
     }
-    return a.nameVi.localeCompare(b.nameVi);
+    const nameA = isEn ? (a.nameEn || a.nameVi) : a.nameVi;
+    const nameB = isEn ? (b.nameEn || b.nameVi) : b.nameVi;
+    return nameA.localeCompare(nameB);
   });
 
   const handleResetFilters = () => {
@@ -80,13 +85,13 @@ export const ExplorePage: React.FC = () => {
       <div className="mb-8">
         <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-2">
           <Compass className="w-4 h-4" />
-          Kho Mẫu Vật & Tra Cứu Toàn Diện
+          {t('explore.badge')}
         </div>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-white">
-          Khám Phá Giới Động Vật
+          {t('explore.title')}
         </h1>
         <p className="text-stone-400 text-sm mt-1 max-w-2xl">
-          Tìm kiếm nhanh có dấu/không dấu tiếng Việt, phân loại học theo 8 ngành, lọc theo cấp độ IUCN và mô hình 3D.
+          {t('explore.desc')}
         </p>
       </div>
 
@@ -98,7 +103,7 @@ export const ExplorePage: React.FC = () => {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Tra cứu (ví dụ: hổ, chó sói, ca map, bach tuoc, Panthera, Mammalia)..."
+            placeholder={isEn ? "Search (e.g. tiger, wolf, shark, octopus, Panthera, Mammalia)..." : "Tra cứu (ví dụ: hổ, chó sói, ca map, bach tuoc, Panthera, Mammalia)..."}
             className="w-full pl-12 pr-10 py-4 bg-transparent text-white placeholder-stone-500 text-sm focus:outline-none font-sans"
           />
           {query && (
@@ -117,7 +122,7 @@ export const ExplorePage: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/10">
           <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-400">
             <Filter className="w-4 h-4" />
-            Bộ lọc tiêu chí sinh học
+            {t('explore.filterBoxTitle')}
           </div>
 
           <div className="flex items-center gap-3">
@@ -127,21 +132,21 @@ export const ExplorePage: React.FC = () => {
                 className="text-xs text-rose-400 hover:text-rose-300 font-medium flex items-center gap-1"
               >
                 <X className="w-3.5 h-3.5" />
-                Xóa tất cả bộ lọc
+                {t('explore.resetFilters')}
               </button>
             )}
 
             <div className="flex items-center gap-1.5 text-xs text-stone-400">
               <ArrowUpDown className="w-3.5 h-3.5" />
-              <span>Sắp xếp:</span>
+              <span>{isEn ? 'Sort:' : 'Sắp xếp:'}</span>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'name' | 'scientific' | 'iucn')}
                 className="bg-stone-900 border border-white/15 rounded-lg px-2.5 py-1 text-white text-xs cursor-pointer focus:outline-none"
               >
-                <option value="name">Tên tiếng Việt (A-Z)</option>
-                <option value="scientific">Danh pháp Latin</option>
-                <option value="iucn">Mức độ đe dọa (IUCN)</option>
+                <option value="name">{t('explore.sortByName')}</option>
+                <option value="scientific">{t('explore.sortByScientific')}</option>
+                <option value="iucn">{t('explore.sortByIucn')}</option>
               </select>
             </div>
           </div>
@@ -152,7 +157,7 @@ export const ExplorePage: React.FC = () => {
           {/* Phylum Filter */}
           <div>
             <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5">
-              Ngành (Phylum)
+              {t('explore.phylum')}
             </label>
             <select
               value={selectedPhylum}
@@ -164,7 +169,7 @@ export const ExplorePage: React.FC = () => {
             >
               {phyla.map((p) => (
                 <option key={p} value={p}>
-                  {p === 'ALL' ? 'Tất cả các ngành' : p}
+                  {p === 'ALL' ? (isEn ? 'All Phyla' : 'Tất cả các ngành') : p}
                 </option>
               ))}
             </select>
@@ -173,7 +178,7 @@ export const ExplorePage: React.FC = () => {
           {/* Class Filter */}
           <div>
             <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5">
-              Lớp (Class)
+              {t('explore.class')}
             </label>
             <select
               value={selectedClass}
@@ -182,7 +187,7 @@ export const ExplorePage: React.FC = () => {
             >
               {classes.map((c) => (
                 <option key={c} value={c}>
-                  {c === 'ALL' ? 'Tất cả các lớp' : c}
+                  {c === 'ALL' ? (isEn ? 'All Classes' : 'Tất cả các lớp') : c}
                 </option>
               ))}
             </select>
@@ -191,7 +196,7 @@ export const ExplorePage: React.FC = () => {
           {/* IUCN Red List Filter */}
           <div>
             <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5">
-              Tình trạng bảo tồn (IUCN)
+              {t('explore.iucn')}
             </label>
             <div className="flex items-center gap-1">
               {iucnOptions.map((status) => (
@@ -213,7 +218,7 @@ export const ExplorePage: React.FC = () => {
           {/* 3D Capabilities Toggle */}
           <div>
             <label className="block text-[11px] font-mono uppercase text-stone-400 mb-1.5">
-              Mô hình 3D tương tác
+              {isEn ? '3D Models' : 'Mô hình 3D'}
             </label>
             <div className="flex gap-2">
               <button
@@ -225,7 +230,7 @@ export const ExplorePage: React.FC = () => {
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
-                <span>Có 3D</span>
+                <span>{isEn ? '3D Only' : 'Có 3D'}</span>
               </button>
 
               <button
@@ -246,7 +251,7 @@ export const ExplorePage: React.FC = () => {
       {/* Results Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="text-xs font-mono text-stone-400">
-          Tìm thấy <span className="text-emerald-400 font-bold">{results.length}</span> mẫu vật sinh học
+          {t('explore.showingResults', { count: results.length })}
         </div>
       </div>
 
@@ -254,15 +259,19 @@ export const ExplorePage: React.FC = () => {
       {results.length === 0 ? (
         <div className="py-24 text-center bio-glass-panel rounded-3xl border border-white/10 p-8">
           <div className="text-4xl mb-3">🔍</div>
-          <h3 className="font-serif text-xl font-bold text-white mb-2">Không tìm thấy mẫu vật phù hợp</h3>
+          <h3 className="font-serif text-xl font-bold text-white mb-2">
+            {isEn ? 'No matching specimens found' : 'Không tìm thấy mẫu vật phù hợp'}
+          </h3>
           <p className="text-xs text-stone-400 max-w-sm mx-auto mb-4">
-            Thử thay đổi từ khóa tìm kiếm (bỏ dấu tiếng Việt, tìm theo tên Latin hoặc đổi bộ lọc).
+            {isEn
+              ? 'Try adjusting your search query, searching by Latin binomial name, or clearing filters.'
+              : 'Thử thay đổi từ khóa tìm kiếm (bỏ dấu tiếng Việt, tìm theo tên Latin hoặc đổi bộ lọc).'}
           </p>
           <button
             onClick={handleResetFilters}
             className="btn-specimen text-xs"
           >
-            Đặt lại tất cả bộ lọc
+            {t('explore.resetFilters')}
           </button>
         </div>
       ) : (
@@ -279,7 +288,7 @@ export const ExplorePage: React.FC = () => {
                   {specimen.thumbnail ? (
                     <img
                       src={specimen.thumbnail}
-                      alt={specimen.nameVi}
+                      alt={isEn ? (specimen.nameEn || specimen.nameVi) : specimen.nameVi}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
@@ -300,7 +309,7 @@ export const ExplorePage: React.FC = () => {
 
                 {/* Specimen Names */}
                 <h3 className="font-serif text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
-                  {specimen.nameVi}
+                  {isEn ? (specimen.nameEn || specimen.nameVi) : specimen.nameVi}
                 </h3>
                 <div className="text-xs text-stone-400 font-serif italic mb-2">
                   {specimen.scientific}
@@ -314,7 +323,7 @@ export const ExplorePage: React.FC = () => {
               </div>
 
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-emerald-400">
-                <span>Xem hồ sơ</span>
+                <span>{isEn ? 'View Specimen' : 'Xem hồ sơ'}</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>

@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
               </span>
             </div>
             <span className="block text-[11px] text-stone-400 font-sans tracking-wider uppercase font-medium">
-              Bách khoa toàn thư sinh vật
+              {t('nav.subBrand')}
             </span>
           </div>
         </Link>
@@ -109,16 +109,16 @@ export const Header: React.FC = () => {
           <button
             onClick={handleRandomSpecimen}
             className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-stone-900/80 hover:bg-white/10 text-xs font-mono font-semibold uppercase tracking-wider text-amber-300 hover:text-amber-200 transition-all hover:border-amber-500/40"
-            title="Xem mẫu vật ngẫu nhiên"
+            title={language === 'en' ? 'View random specimen' : 'Xem mẫu vật ngẫu nhiên'}
           >
             <Shuffle className="w-3.5 h-3.5 text-amber-400" />
-            <span>Ngẫu nhiên</span>
+            <span>{t('nav.random')}</span>
           </button>
 
           <button
             onClick={handleLanguageToggle}
             className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-stone-900/80 hover:bg-white/10 text-xs font-mono font-semibold uppercase tracking-wider text-stone-200 transition-all hover:border-emerald-500/40"
-            title="Đổi ngôn ngữ (Tiếng Việt / English)"
+            title={language === 'en' ? 'Switch Language (Vietnamese / English)' : 'Đổi ngôn ngữ (Tiếng Việt / English)'}
           >
             <Globe className="w-3.5 h-3.5 text-emerald-400" />
             <span>{language.toUpperCase()}</span>
