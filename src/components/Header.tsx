@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../store/useAppStore';
-import { Globe, Moon, Sun, Layers, Compass, Award, Search, Shuffle, Radio, Network } from 'lucide-react';
+import { Globe, Moon, Sun, Layers, Compass, Award, Search, Shuffle, Radio, Network, GitFork } from 'lucide-react';
 import { getRandomSpeciesSlug } from '../lib/data-loader';
 
 export const Header: React.FC = () => {
@@ -96,6 +96,18 @@ export const Header: React.FC = () => {
           >
             <Network className="w-3.5 h-3.5 text-natgeo-yellow" />
             {t('nav.ecosystem')}
+          </Link>
+
+          <Link
+            to="/evolution"
+            className={`px-3.5 py-2 rounded-xl transition-all flex items-center gap-2 border ${
+              isActive('/evolution')
+                ? 'bg-natgeo-yellow/15 text-natgeo-yellow border-natgeo-yellow/50 shadow-glow font-extrabold'
+                : 'border-transparent text-stone-300 hover:text-natgeo-yellow hover:bg-white/[0.04]'
+            }`}
+          >
+            <GitFork className="w-3.5 h-3.5 text-natgeo-yellow" />
+            {t('nav.evolution')}
           </Link>
 
           <Link
