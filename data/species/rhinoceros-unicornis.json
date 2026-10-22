@@ -203,13 +203,15 @@
   ],
   "media": {
     "model3d": {
-      "glb": "models/vulpes-vulpes.glb",
+      "glb": "models/equus-caballus.glb",
       "tier": "B",
-      "license": "CC0 / CC-BY-4.0",
-      "author": "PixelMannen",
-      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
       "isRepresentative": true,
-      "representativeFor": "Mammalia"
+      "representativeFor": "động vật móng guốc (Perissodactyla)"
     },
     "images": [
       {

@@ -123,38 +123,46 @@ export const SpeciesPage: React.FC = () => {
 
         {/* Specimen 3D Model Variants Switcher */}
         <div className="flex flex-wrap items-center gap-2.5">
-          <div className="flex items-center gap-1.5 p-1.5 bio-glass-panel rounded-2xl border border-white/10 shadow-xl">
-            <button
-              onClick={() => setSelectedModelGlb('models/panthera-tigris.glb')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
-                selectedModelGlb === 'models/panthera-tigris.glb'
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              🐅 Hổ Bengal (3D Thực)
-            </button>
-            <button
-              onClick={() => setSelectedModelGlb('models/panthera-leo.glb')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
-                selectedModelGlb === 'models/panthera-leo.glb'
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              🦁 Sư tử (3D Thực)
-            </button>
-            <button
-              onClick={() => setSelectedModelGlb('models/canis-lupus.glb')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
-                selectedModelGlb === 'models/canis-lupus.glb'
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
-                  : 'text-stone-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              🐺 Sói xám (3D Thực)
-            </button>
-          </div>
+          {species.media.model3d?.glb && (
+            <div className="flex items-center gap-1.5 p-1.5 bio-glass-panel rounded-2xl border border-white/10 shadow-xl">
+              <button
+                onClick={() => setSelectedModelGlb(species.media.model3d!.glb)}
+                className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
+                  selectedModelGlb === species.media.model3d!.glb
+                    ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
+                    : 'text-stone-300 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                🔬 {commonName} (3D Thực)
+              </button>
+
+              {species.id !== 'panthera-tigris' && (
+                <button
+                  onClick={() => setSelectedModelGlb('models/panthera-tigris.glb')}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
+                    selectedModelGlb === 'models/panthera-tigris.glb'
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
+                      : 'text-stone-300 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  🐅 Hổ Bengal
+                </button>
+              )}
+
+              {species.id !== 'panthera-leo' && (
+                <button
+                  onClick={() => setSelectedModelGlb('models/panthera-leo.glb')}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
+                    selectedModelGlb === 'models/panthera-leo.glb'
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-stone-950 font-bold shadow-lg shadow-emerald-500/20'
+                      : 'text-stone-300 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  🦁 Sư tử
+                </button>
+              )}
+            </div>
+          )}
 
           <button
             onClick={() => setShowCompareModal(true)}
@@ -167,7 +175,7 @@ export const SpeciesPage: React.FC = () => {
 
           <span className="px-3.5 py-2 rounded-2xl bio-glass text-emerald-300 text-xs font-mono font-semibold flex items-center gap-1.5 border border-emerald-500/30">
             <Layers className="w-4 h-4 text-emerald-400" />
-            TIER A SPECIMEN
+            {species.media.model3d?.tier === 'A' ? 'TIER A SPECIMEN' : species.media.model3d?.tier === 'B' ? 'TIER B ARCHETYPE' : 'TIER C SPECIMEN'}
           </span>
         </div>
       </div>

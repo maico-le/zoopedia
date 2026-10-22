@@ -195,7 +195,17 @@
     }
   ],
   "media": {
-    "model3d": null,
+    "model3d": {
+      "glb": "models/python-bivittatus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "lớp Bò sát (Reptilia / Squamata)"
+    },
     "images": [
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/BennyTrapp_Chamaeleo_chamaeleon_Samos_Griechenland.jpg?width=1280",

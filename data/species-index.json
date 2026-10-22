@@ -359,7 +359,7 @@
     "order": "Sphenisciformes",
     "family": "Spheniscidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg?width=1280"
   },
@@ -373,7 +373,7 @@
     "order": "Accipitriformes",
     "family": "Accipitridae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Maakotka_(Aquila_chrysaetos)_by_Jarkko_Järvinen.jpg?width=1280"
   },
@@ -415,7 +415,7 @@
     "order": "Galliformes",
     "family": "Phasianidae",
     "iucn": "LC",
-    "tier": "B",
+    "tier": "A",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_jungle_fowl.png?width=1280"
   },
@@ -457,7 +457,7 @@
     "order": "Phoenicopteriformes",
     "family": "Phoenicopteridae",
     "iucn": "LC",
-    "tier": "A",
+    "tier": "B",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Flamant_rose_Thyna009.jpg?width=1280"
   },
@@ -513,8 +513,8 @@
     "order": "Myliobatiformes",
     "family": "Myliobatidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "B",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Manta_birostris-Thailand3.jpg?width=1280"
   },
   {
@@ -527,8 +527,8 @@
     "order": "Orectolobiformes",
     "family": "Rhincodontidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "B",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Whale_shark_Georgia_aquarium.jpg?width=1280"
   },
   {
@@ -597,7 +597,7 @@
     "order": "Cetacea",
     "family": "Delphinidae",
     "iucn": "LC",
-    "tier": "A",
+    "tier": "B",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphinus_delphis_326708883.jpg?width=1280"
   },
@@ -933,7 +933,7 @@
     "order": "Carnivora",
     "family": "Canidae",
     "iucn": "LC",
-    "tier": "A",
+    "tier": "B",
     "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox_at_the_British_Wildlife_Centre,_Newchapel,_Surrey_-_geograph.org.uk_-_2221750.jpg?width=1280"
   },
@@ -947,8 +947,8 @@
     "order": "Unknown",
     "family": "Chamaeleonidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "B",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/BennyTrapp_Chamaeleo_chamaeleon_Samos_Griechenland.jpg?width=1280"
   },
   {
@@ -961,8 +961,8 @@
     "order": "Unknown",
     "family": "Elapidae",
     "iucn": "EN",
-    "tier": "C",
-    "has3D": false,
+    "tier": "B",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Ophiophagus_hannah_381373252.jpg?width=1280"
   },
   {
@@ -989,8 +989,8 @@
     "order": "Unknown",
     "family": "Varanidae",
     "iucn": "LC",
-    "tier": "C",
-    "has3D": false,
+    "tier": "B",
+    "has3D": true,
     "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Komodo_dragon_Varanus_komodoensis_Ragunan_Zoo_2.JPG?width=1280"
   },
   {

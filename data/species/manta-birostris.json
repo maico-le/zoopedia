@@ -206,7 +206,17 @@
     }
   ],
   "media": {
-    "model3d": null,
+    "model3d": {
+      "glb": "models/carcharodon-carcharias.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "lớp Cá sụn (Chondrichthyes)"
+    },
     "images": [
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manta_birostris-Thailand3.jpg?width=1280",

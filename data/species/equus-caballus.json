@@ -227,9 +227,11 @@
     "model3d": {
       "glb": "models/equus-caballus.glb",
       "tier": "A",
-      "license": "CC0-1.0",
-      "author": "Three.js Sample Models",
-      "sourceUrl": "https://threejs.org",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
       "isRepresentative": false
     },
     "images": [

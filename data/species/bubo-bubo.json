@@ -200,13 +200,15 @@
   ],
   "media": {
     "model3d": {
-      "glb": "models/flamingo.glb",
+      "glb": "models/aquila-chrysaetos.glb",
       "tier": "B",
-      "license": "CC0-1.0",
-      "author": "Three.js Sample Models",
-      "sourceUrl": "https://threejs.org",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
       "isRepresentative": true,
-      "representativeFor": "Aves"
+      "representativeFor": "bộ Chim săn mồi (Accipitriformes/Strigiformes)"
     },
     "images": [
       {

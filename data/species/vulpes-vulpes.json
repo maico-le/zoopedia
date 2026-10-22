@@ -203,12 +203,15 @@
   ],
   "media": {
     "model3d": {
-      "glb": "models/vulpes-vulpes.glb",
-      "tier": "A",
-      "license": "CC0 / CC-BY-4.0",
-      "author": "PixelMannen & tomkranis",
-      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
-      "isRepresentative": false
+      "glb": "models/canis-lupus.glb",
+      "tier": "B",
+      "hasAnimations": true,
+      "source": "Google Search AR Photorealistic Assets",
+      "sourceUrl": "https://arvr.google.com/scene-viewer",
+      "license": "Educational-Fair-Use",
+      "author": "Google AR Research",
+      "isRepresentative": true,
+      "representativeFor": "họ Chó (Canidae)"
     },
     "images": [
       {

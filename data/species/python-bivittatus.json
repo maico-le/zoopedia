@@ -200,7 +200,7 @@
       "glb": "models/python-bivittatus.glb",
       "tier": "A",
       "hasAnimations": true,
-      "source": "Google Search AR Open Assets",
+      "source": "Google Search AR Photorealistic Assets",
       "sourceUrl": "https://arvr.google.com/scene-viewer",
       "license": "Educational-Fair-Use",
       "author": "Google AR Research",
