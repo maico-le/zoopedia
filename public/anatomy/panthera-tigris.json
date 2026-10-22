@@ -1,5 +1,5 @@
 {
-  "model": "models/panthera-tigris.glb",
+  "model": "models/panthera-tigris-anatomy.glb",
   "layers": [
     { "id": "skin", "name": { "vi": "Da & Lông vằn", "en": "Skin & Striped Fur" }, "default": true },
     { "id": "muscle", "name": { "vi": "Hệ cơ bắp", "en": "Muscular System" }, "default": false },

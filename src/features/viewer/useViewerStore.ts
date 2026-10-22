@@ -26,6 +26,12 @@ export interface ViewerState {
   isFullscreen: boolean;
   showAnatomyWireframe: boolean;
 
+  // Anatomy Controls
+  isAnatomyMode: boolean;
+  activeLayers: Record<string, boolean>;
+  explodeAmount: number;
+  selectedAnatomyPart: string | null;
+
   // Actions
   setCameraPreset: (preset: CameraPreset) => void;
   toggleAutoRotate: () => void;
@@ -39,8 +45,23 @@ export interface ViewerState {
   toggleQuality: () => void;
   setIsFullscreen: (full: boolean) => void;
   toggleShowWireframe: () => void;
+  setIsAnatomyMode: (enabled: boolean) => void;
+  toggleLayer: (layerId: string) => void;
+  setLayerActive: (layerId: string, active: boolean) => void;
+  setExplodeAmount: (amount: number) => void;
+  setSelectedAnatomyPart: (partId: string | null) => void;
   resetViewer: () => void;
 }
+
+const DEFAULT_LAYERS: Record<string, boolean> = {
+  skin: true,
+  muscle: true,
+  skeleton: true,
+  circulatory: true,
+  respiratory: true,
+  digestive: true,
+  nervous: true,
+};
 
 export const useViewerStore = create<ViewerState>((set) => ({
   cameraPreset: 'isometric',
@@ -59,6 +80,11 @@ export const useViewerStore = create<ViewerState>((set) => ({
 
   isFullscreen: false,
   showAnatomyWireframe: false,
+
+  isAnatomyMode: false,
+  activeLayers: { ...DEFAULT_LAYERS },
+  explodeAmount: 0,
+  selectedAnatomyPart: null,
 
   setCameraPreset: (preset) => set({ cameraPreset: preset }),
   toggleAutoRotate: () => set((state) => ({ autoRotate: !state.autoRotate })),
@@ -79,11 +105,36 @@ export const useViewerStore = create<ViewerState>((set) => ({
     }),
   setIsFullscreen: (isFullscreen) => set({ isFullscreen }),
   toggleShowWireframe: () => set((state) => ({ showAnatomyWireframe: !state.showAnatomyWireframe })),
+  setIsAnatomyMode: (isAnatomyMode) =>
+    set((state) => ({
+      isAnatomyMode,
+      activeLayers: isAnatomyMode ? { ...state.activeLayers, skin: false } : { ...DEFAULT_LAYERS },
+    })),
+  toggleLayer: (layerId) =>
+    set((state) => ({
+      activeLayers: {
+        ...state.activeLayers,
+        [layerId]: !state.activeLayers[layerId],
+      },
+    })),
+  setLayerActive: (layerId, active) =>
+    set((state) => ({
+      activeLayers: {
+        ...state.activeLayers,
+        [layerId]: active,
+      },
+    })),
+  setExplodeAmount: (amount) => set({ explodeAmount: Math.max(0, Math.min(1, amount)) }),
+  setSelectedAnatomyPart: (partId) => set({ selectedAnatomyPart: partId }),
   resetViewer: () =>
     set({
       cameraPreset: 'isometric',
       autoRotate: false,
       animationSpeed: 1,
       isPlayingAnimation: true,
+      isAnatomyMode: false,
+      activeLayers: { ...DEFAULT_LAYERS },
+      explodeAmount: 0,
+      selectedAnatomyPart: null,
     }),
 }));

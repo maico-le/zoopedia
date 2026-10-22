@@ -12,10 +12,14 @@ import { LifeCycleTimeline } from './LifeCycleTimeline';
 import { DietCard } from './DietCard';
 import { DistributionMap } from './DistributionMap';
 import { SubspeciesSection } from './SubspeciesSection';
+import { AnatomyPanel } from './AnatomyPanel';
+import { BioacousticsPlayer } from './BioacousticsPlayer';
+import { useViewerStore } from '../viewer/useViewerStore';
 import { EmptyTraitBadge } from '../../components/EmptyTraitBadge';
 
 type TabKey =
   | 'overview'
+  | 'anatomy'
   | 'morphology'
   | 'habitat'
   | 'diet'
@@ -34,6 +38,7 @@ export const SpeciesPage: React.FC = () => {
   const [selectedModelGlb, setSelectedModelGlb] = useState<string>('models/panthera-tigris.glb');
   const [species, setSpecies] = useState<Species>((tigerData as unknown) as Species);
   const [showCompareModal, setShowCompareModal] = useState(false);
+  const { setIsAnatomyMode } = useViewerStore();
 
   useEffect(() => {
     if (slug) {
@@ -75,15 +80,16 @@ export const SpeciesPage: React.FC = () => {
 
   const tabs: { key: TabKey; num: string; label: string }[] = [
     { key: 'overview', num: '01', label: t('species.overview') },
-    { key: 'morphology', num: '02', label: t('species.morphology') },
-    { key: 'habitat', num: '03', label: t('species.habitat') },
-    { key: 'diet', num: '04', label: t('species.diet') },
-    { key: 'behavior', num: '05', label: t('species.behavior') },
-    { key: 'lifeCycle', num: '06', label: t('species.lifeCycle') },
-    { key: 'reproduction', num: '07', label: t('species.reproduction') },
-    { key: 'conservation', num: '08', label: t('species.conservation') },
-    { key: 'funFacts', num: '09', label: t('species.funFacts') },
-    { key: 'provenance', num: '10', label: t('species.provenance') },
+    { key: 'anatomy', num: '02', label: isEn ? '3D Anatomy' : 'Giải Phẫu 3D' },
+    { key: 'morphology', num: '03', label: t('species.morphology') },
+    { key: 'habitat', num: '04', label: t('species.habitat') },
+    { key: 'diet', num: '05', label: t('species.diet') },
+    { key: 'behavior', num: '06', label: t('species.behavior') },
+    { key: 'lifeCycle', num: '07', label: t('species.lifeCycle') },
+    { key: 'reproduction', num: '08', label: t('species.reproduction') },
+    { key: 'conservation', num: '09', label: t('species.conservation') },
+    { key: 'funFacts', num: '10', label: t('species.funFacts') },
+    { key: 'provenance', num: '11', label: t('species.provenance') },
   ];
 
   return (
@@ -211,6 +217,7 @@ export const SpeciesPage: React.FC = () => {
 
           <AnimalViewer
             modelGlb={selectedModelGlb}
+            anatomyGlb={species.id.includes('tigris') ? 'models/panthera-tigris-anatomy.glb' : undefined}
             images={species.media.images}
             speciesName={commonName}
             isRepresentative={species.media.model3d?.isRepresentative}
@@ -269,12 +276,29 @@ export const SpeciesPage: React.FC = () => {
         </div>
       </div>
 
+      {/* Field Bioacoustics Sonogram Player */}
+      <div className="mt-8">
+        <BioacousticsPlayer
+          speciesId={species.id}
+          speciesNameVi={species.names.vi[0] || commonName}
+          speciesNameEn={species.names.en[0] || commonName}
+          scientificName={species.names.scientific}
+          order={species.taxonomy.order}
+          family={species.taxonomy.family}
+        />
+      </div>
+
       {/* Field Journal Index Tabs Bar */}
       <div className="mt-14 border-b-2 border-natgeo-yellow/20 flex gap-1 overflow-x-auto pb-px bg-expedition-canvas/50 rounded-t-2xl px-2">
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => {
+              setActiveTab(tab.key);
+              if (tab.key === 'anatomy') {
+                setIsAnatomyMode(true);
+              }
+            }}
             className={`field-journal-tab flex items-center gap-2 ${
               activeTab === tab.key ? 'field-journal-tab-active' : ''
             }`}
@@ -362,6 +386,15 @@ export const SpeciesPage: React.FC = () => {
               speciesName={commonName}
             />
           </div>
+        )}
+
+        {activeTab === 'anatomy' && (
+          <AnatomyPanel
+            speciesId={species.id}
+            speciesNameVi={species.names.vi[0] || commonName}
+            speciesNameEn={species.names.en[0] || commonName}
+            scientificName={species.names.scientific}
+          />
         )}
 
         {activeTab === 'morphology' && (

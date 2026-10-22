@@ -194,7 +194,7 @@ const exporter = new GLTFExporter();
 
 try {
   const gltf = await exporter.parseAsync(scene, { binary: true });
-  const outputPath = path.resolve('public/models/panthera-tigris.glb');
+  const outputPath = path.resolve('public/models/panthera-tigris-anatomy.glb');
   fs.writeFileSync(outputPath, Buffer.from(gltf));
   console.log(`✅ Generated anatomical model: ${outputPath} (${(gltf.byteLength / 1024).toFixed(1)} KB)`);
 } catch (err) {

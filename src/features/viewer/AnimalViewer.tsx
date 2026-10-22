@@ -8,6 +8,7 @@ import { SpeciesImage } from '../../types/species';
 
 interface AnimalViewerProps {
   modelGlb?: string | null;
+  anatomyGlb?: string | null;
   images?: SpeciesImage[];
   speciesName?: string;
   isRepresentative?: boolean;
@@ -54,6 +55,7 @@ class ViewerErrorBoundary extends React.Component<
 
 export const AnimalViewer: React.FC<AnimalViewerProps> = ({
   modelGlb,
+  anatomyGlb,
   images,
   speciesName,
   isRepresentative,
@@ -66,7 +68,7 @@ export const AnimalViewer: React.FC<AnimalViewerProps> = ({
   const [loadError, setLoadError] = useState<boolean>(false);
   const [retryKey, setRetryKey] = useState<number>(0);
 
-  const { isFullscreen, setIsFullscreen, resetViewer } = useViewerStore();
+  const { isFullscreen, setIsFullscreen, resetViewer, isAnatomyMode } = useViewerStore();
 
   useEffect(() => {
     setHasWebGL(isWebGLAvailable());
@@ -119,8 +121,9 @@ export const AnimalViewer: React.FC<AnimalViewerProps> = ({
 
   // Resolve model URL with optional CDN asset base
   const assetBase = import.meta.env.VITE_ASSET_BASE_URL || '';
-  const resolvedModelUrl = modelGlb
-    ? `${assetBase}${modelGlb.startsWith('/') ? '' : '/'}${modelGlb}`
+  const currentGlb = isAnatomyMode && anatomyGlb ? anatomyGlb : modelGlb;
+  const resolvedModelUrl = currentGlb
+    ? `${assetBase}${currentGlb.startsWith('/') ? '' : '/'}${currentGlb}`
     : null;
 
   if (!hasWebGL) {
