@@ -1,0 +1,173 @@
+{
+  "id": "macaca-mulatta",
+  "taxonKey": {
+    "gbif": 2436604,
+    "col": null,
+    "wikidata": "Q156606",
+    "inaturalist": 43460,
+    "eol": "327960"
+  },
+  "names": {
+    "scientific": "Macaca mulatta",
+    "authorship": "(Zimmermann, 1780) ",
+    "en": [
+      "Rhesus Macaque",
+      "Rhesus macaque",
+      "Macaca mulatta",
+      "M. mulatta",
+      "Rhesus monkey",
+      "Rhesus",
+      "Macaco rhesus",
+      "Nazuri monkey"
+    ],
+    "vi": [
+      "Khỉ vàng",
+      "Macaca mulatta",
+      "M. mulatta"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Primates",
+    "family": "Cercopithecidae",
+    "genus": "Macaca",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Khỉ vàng (Macaca mulatta) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Rhesus Macaque (Macaca mulatta) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Primates.",
+      "en": "Inhabits representative biomes corresponding to Primates."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2436604"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Cercopithecidae.",
+      "en": "Characteristic foraging behavior of the family Cercopithecidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Khỉ vàng.",
+      "en": "Ecological behavioral patterns of Rhesus Macaque."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Khỉ vàng là một đại diện tiêu biểu của nhóm phân loại Primates.",
+      "en": "Rhesus Macaque represents a key specimen in the order Primates."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Female_and_juvenile_rhesus_macaque_at_Galtaji,_Jaipur,_Rajasthan,_India.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Female and juvenile rhesus macaque at Galtaji, Jaipur, Rajasthan, India.jpg",
+        "caption": {
+          "vi": "Mẫu vật Khỉ vàng trong môi trường tự nhiên",
+          "en": "Rhesus Macaque specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2436604",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Kh%E1%BB%89_v%C3%A0ng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

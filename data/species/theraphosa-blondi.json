@@ -1,0 +1,163 @@
+{
+  "id": "theraphosa-blondi",
+  "taxonKey": {
+    "gbif": 5170451,
+    "col": null,
+    "wikidata": "Q617000",
+    "inaturalist": 205163,
+    "eol": "1182372"
+  },
+  "names": {
+    "scientific": "Theraphosa blondi",
+    "authorship": "(Latreille, 1804) ",
+    "en": [
+      "Goliath Birdeater",
+      "Goliath birdeater",
+      "Theraphosa blondi",
+      "Goliath bird-eating spider",
+      "Goliath tarantula",
+      "Goliath birdeater, goliath bird-eating spider",
+      "Goliath birdeater tarantula"
+    ],
+    "vi": [
+      "Nhện ăn chim Goliath",
+      "Nhện ăn chim goliath"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Araneae",
+    "family": "Theraphosidae",
+    "genus": "Theraphosa",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Nhện ăn chim Goliath (Theraphosa blondi) thuộc ngành Arthropoda, lớp Arachnida.",
+      "en": "Goliath Birdeater (Theraphosa blondi) is a species in the phylum Arthropoda, class Arachnida."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Araneae.",
+      "en": "Inhabits representative biomes corresponding to Araneae."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5170451"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Theraphosidae.",
+      "en": "Characteristic foraging behavior of the family Theraphosidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Nhện ăn chim Goliath.",
+      "en": "Ecological behavioral patterns of Goliath Birdeater."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Nhện ăn chim Goliath là một đại diện tiêu biểu của nhóm phân loại Araneae.",
+      "en": "Goliath Birdeater represents a key specimen in the order Araneae."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theraphosa_blondi_MHNT.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theraphosa blondi MHNT.jpg",
+        "caption": {
+          "vi": "Mẫu vật Nhện ăn chim Goliath trong môi trường tự nhiên",
+          "en": "Goliath Birdeater specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5170451",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Nh%E1%BB%87n_%C4%83n_chim_Goliath",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

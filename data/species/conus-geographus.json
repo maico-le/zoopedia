@@ -1,0 +1,163 @@
+{
+  "id": "conus-geographus",
+  "taxonKey": {
+    "gbif": 5728277,
+    "col": null,
+    "wikidata": "Q1780734",
+    "inaturalist": 136427,
+    "eol": "46454219"
+  },
+  "names": {
+    "scientific": "Conus geographus",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Geography Cone",
+      "Conus geographus",
+      "Geographic cone snail",
+      "Geography cone",
+      "Geography cone, geographer cone",
+      "Geographer cone",
+      "Geographic cone"
+    ],
+    "vi": [
+      "Ốc cối địa lý",
+      "Conus geographus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Gastropoda",
+    "order": "Neogastropoda",
+    "family": "Conidae",
+    "genus": "Conus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Ốc cối địa lý (Conus geographus) thuộc ngành Mollusca, lớp Gastropoda.",
+      "en": "Geography Cone (Conus geographus) is a species in the phylum Mollusca, class Gastropoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Neogastropoda.",
+      "en": "Inhabits representative biomes corresponding to Neogastropoda."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5728277"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Conidae.",
+      "en": "Characteristic foraging behavior of the family Conidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Ốc cối địa lý.",
+      "en": "Ecological behavioral patterns of Geography Cone."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ốc cối địa lý là một đại diện tiêu biểu của nhóm phân loại Neogastropoda.",
+      "en": "Geography Cone represents a key specimen in the order Neogastropoda."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conus-geographicus.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conus-geographicus.jpg",
+        "caption": {
+          "vi": "Mẫu vật Ốc cối địa lý trong môi trường tự nhiên",
+          "en": "Geography Cone specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5728277",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%E1%BB%90c_n%C3%B3n_%C4%91%E1%BB%8Ba_l%C3%BD",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "dynastes-hercules",
+  "taxonKey": {
+    "gbif": 1074504,
+    "col": null,
+    "wikidata": "Q503799",
+    "inaturalist": 267022,
+    "eol": "1026724"
+  },
+  "names": {
+    "scientific": "Dynastes hercules",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Hercules Beetle",
+      "Hercules beetle",
+      "Dynastes hercules"
+    ],
+    "vi": [
+      "Bọ cánh cứng Hercules",
+      "Dynastes hercules"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Coleoptera",
+    "family": "Scarabaeidae",
+    "genus": "Dynastes",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bọ cánh cứng Hercules (Dynastes hercules) thuộc ngành Arthropoda, lớp Insecta.",
+      "en": "Hercules Beetle (Dynastes hercules) is a species in the phylum Arthropoda, class Insecta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Coleoptera.",
+      "en": "Inhabits representative biomes corresponding to Coleoptera."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/1074504"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Scarabaeidae.",
+      "en": "Characteristic foraging behavior of the family Scarabaeidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bọ cánh cứng Hercules.",
+      "en": "Ecological behavioral patterns of Hercules Beetle."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bọ cánh cứng Hercules là một đại diện tiêu biểu của nhóm phân loại Coleoptera.",
+      "en": "Hercules Beetle represents a key specimen in the order Coleoptera."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dynastes_hercules_ecuatorianus_MHNT.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dynastes hercules ecuatorianus MHNT.jpg",
+        "caption": {
+          "vi": "Mẫu vật Bọ cánh cứng Hercules trong môi trường tự nhiên",
+          "en": "Hercules Beetle specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/1074504",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Dynastes_hercules",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

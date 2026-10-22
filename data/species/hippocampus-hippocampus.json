@@ -1,0 +1,163 @@
+{
+  "id": "hippocampus-hippocampus",
+  "taxonKey": {
+    "gbif": 5201134,
+    "col": null,
+    "wikidata": "Q302969",
+    "inaturalist": 84969,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Hippocampus hippocampus",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Short-snouted Seahorse",
+      "Short-snouted seahorse",
+      "Hippocampus hippocampus",
+      "Sea horse",
+      "Sea-horse",
+      "Short snouted seahorse",
+      "Seahorse"
+    ],
+    "vi": [
+      "Cá ngựa chấm",
+      "Hippocampus hippocampus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Unknown",
+    "order": "Syngnathiformes",
+    "family": "Syngnathidae",
+    "genus": "Hippocampus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cá ngựa chấm (Hippocampus hippocampus) thuộc ngành Chordata, lớp Unknown.",
+      "en": "Short-snouted Seahorse (Hippocampus hippocampus) is a species in the phylum Chordata, class Unknown."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Syngnathiformes.",
+      "en": "Inhabits representative biomes corresponding to Syngnathiformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5201134"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Syngnathidae.",
+      "en": "Characteristic foraging behavior of the family Syngnathidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cá ngựa chấm.",
+      "en": "Ecological behavioral patterns of Short-snouted Seahorse."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá ngựa chấm là một đại diện tiêu biểu của nhóm phân loại Syngnathiformes.",
+      "en": "Short-snouted Seahorse represents a key specimen in the order Syngnathiformes."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippocampus hippocampus (on Ascophyllum nodosum).jpg",
+        "caption": {
+          "vi": "Mẫu vật Cá ngựa chấm trong môi trường tự nhiên",
+          "en": "Short-snouted Seahorse specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5201134",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

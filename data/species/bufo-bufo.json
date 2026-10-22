@@ -1,0 +1,164 @@
+{
+  "id": "bufo-bufo",
+  "taxonKey": {
+    "gbif": 5217160,
+    "col": null,
+    "wikidata": "Q146375",
+    "inaturalist": 326296,
+    "eol": "333310"
+  },
+  "names": {
+    "scientific": "Bufo bufo",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Common Toad",
+      "Common toad",
+      "Bufo bufo",
+      "European toad",
+      "Toad",
+      "Common european toad",
+      "Giant toad",
+      "Granulated toad"
+    ],
+    "vi": [
+      "Cóc thông thường",
+      "Bufo bufo"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Anura",
+    "family": "Bufonidae",
+    "genus": "Bufo",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cóc thông thường (Bufo bufo) thuộc ngành Chordata, lớp Amphibia.",
+      "en": "Common Toad (Bufo bufo) is a species in the phylum Chordata, class Amphibia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Anura.",
+      "en": "Inhabits representative biomes corresponding to Anura."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5217160"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Bufonidae.",
+      "en": "Characteristic foraging behavior of the family Bufonidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cóc thông thường.",
+      "en": "Ecological behavioral patterns of Common Toad."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cóc thông thường là một đại diện tiêu biểu của nhóm phân loại Anura.",
+      "en": "Common Toad represents a key specimen in the order Anura."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bufo_bufo_2_(2005_07_11).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bufo bufo 2 (2005 07 11).jpg",
+        "caption": {
+          "vi": "Mẫu vật Cóc thông thường trong môi trường tự nhiên",
+          "en": "Common Toad specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5217160",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Bufo_bufo",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

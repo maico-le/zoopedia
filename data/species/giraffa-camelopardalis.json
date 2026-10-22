@@ -1,0 +1,183 @@
+{
+  "id": "giraffa-camelopardalis",
+  "taxonKey": {
+    "gbif": 2441205,
+    "col": null,
+    "wikidata": "Q15083",
+    "inaturalist": 42157,
+    "eol": "308378"
+  },
+  "names": {
+    "scientific": "Giraffa camelopardalis",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Giraffe",
+      "Northern giraffe",
+      "Giraffa camelopardalis sensu lato",
+      "Giraffa camelopardalis super-complex",
+      "Giraffa camelopardalis",
+      "Giraffa camelopardalis sensu stricto",
+      "Three-horned giraffe",
+      "Giraffa",
+      "Girafte",
+      "Kordofan giraffe (antiquorum)",
+      "Masai giraffe (tippelskirchi)",
+      "Nigerian giraffe",
+      "Nubian giraffe (camelopardalis)",
+      "Reticulated / somali giraffe (reticulata)",
+      "Rothschild giraffe (rothschildi)",
+      "Smoky / angolan giraffe (angolensis)",
+      "South african giraffe (giraffa)",
+      "Thornicroft / rhodesian giraffe (thornicrofti)",
+      "West african",
+      "West african / nigerian giraffe (peralta)"
+    ],
+    "vi": [
+      "Hươu cao cổ"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Giraffidae",
+    "genus": "Giraffa",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Hươu cao cổ (Giraffa camelopardalis) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Giraffe (Giraffa camelopardalis) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Artiodactyla.",
+      "en": "Inhabits representative biomes corresponding to Artiodactyla."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2441205"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Giraffidae.",
+      "en": "Characteristic foraging behavior of the family Giraffidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Hươu cao cổ.",
+      "en": "Ecological behavioral patterns of Giraffe."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Hươu cao cổ là một đại diện tiêu biểu của nhóm phân loại Artiodactyla.",
+      "en": "Giraffe represents a key specimen in the order Artiodactyla."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rothschild's_giraffe_(Giraffa_camelopardalis_rothschildi)_-_Murchison_Falls_National_Park.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rothschild's giraffe (Giraffa camelopardalis rothschildi) - Murchison Falls National Park.jpg",
+        "caption": {
+          "vi": "Mẫu vật Hươu cao cổ trong môi trường tự nhiên",
+          "en": "Giraffe specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2441205",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/H%C6%B0%C6%A1u_cao_c%E1%BB%95_ph%C6%B0%C6%A1ng_b%E1%BA%AFc",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

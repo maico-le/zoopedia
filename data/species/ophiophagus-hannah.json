@@ -1,0 +1,166 @@
+{
+  "id": "ophiophagus-hannah",
+  "taxonKey": {
+    "gbif": 2469850,
+    "col": null,
+    "wikidata": "Q48186",
+    "inaturalist": 30472,
+    "eol": "1055746"
+  },
+  "names": {
+    "scientific": "Ophiophagus hannah",
+    "authorship": "(Cantor, 1836) ",
+    "en": [
+      "King Cobra",
+      "King cobra",
+      "Ophiophagus hannah",
+      "Hamadryad",
+      "King cobra/hamadryad",
+      "Northern king cobra",
+      "Tu mama e maraka"
+    ],
+    "vi": [
+      "Rắn hổ mang chúa",
+      "Ophiophagus hannah",
+      "Rắn hổ chúa",
+      "Rắn hổ mây",
+      "Rắn hổ chúa phương bắc"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Squamata",
+    "order": "Unknown",
+    "family": "Elapidae",
+    "genus": "Ophiophagus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Rắn hổ mang chúa (Ophiophagus hannah) thuộc ngành Chordata, lớp Squamata.",
+      "en": "King Cobra (Ophiophagus hannah) is a species in the phylum Chordata, class Squamata."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Unknown.",
+      "en": "Inhabits representative biomes corresponding to Unknown."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2469850"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Elapidae.",
+      "en": "Characteristic foraging behavior of the family Elapidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Rắn hổ mang chúa.",
+      "en": "Ecological behavioral patterns of King Cobra."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Rắn hổ mang chúa là một đại diện tiêu biểu của nhóm phân loại Unknown.",
+      "en": "King Cobra represents a key specimen in the order Unknown."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ophiophagus_hannah_381373252.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ophiophagus hannah 381373252.jpg",
+        "caption": {
+          "vi": "Mẫu vật Rắn hổ mang chúa trong môi trường tự nhiên",
+          "en": "King Cobra specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2469850",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/R%E1%BA%AFn_h%E1%BB%95_mang_ch%C3%BAa",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

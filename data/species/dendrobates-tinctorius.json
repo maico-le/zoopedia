@@ -1,0 +1,166 @@
+{
+  "id": "dendrobates-tinctorius",
+  "taxonKey": {
+    "gbif": 9724339,
+    "col": null,
+    "wikidata": "Q1478869",
+    "inaturalist": 21141,
+    "eol": "313610"
+  },
+  "names": {
+    "scientific": "Dendrobates tinctorius",
+    "authorship": "(Cuvier, 1797) ",
+    "en": [
+      "Dyeing Poison Dart Frog",
+      "Dyeing dart frog",
+      "Dendrobates tinctorius",
+      "Dyeing poison frog",
+      "Dyeing poison dart frog",
+      "Tinc",
+      "Suriname cobalt poison frog",
+      "Cobalt poison frog",
+      "Dyeing poison-arrow frog",
+      "Tinging frog"
+    ],
+    "vi": [
+      "Ếch phi tiêu nhuộm",
+      "Dendrobates tinctorius"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Anura",
+    "family": "Dendrobatidae",
+    "genus": "Dendrobates",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Ếch phi tiêu nhuộm (Dendrobates tinctorius) thuộc ngành Chordata, lớp Amphibia.",
+      "en": "Dyeing Poison Dart Frog (Dendrobates tinctorius) is a species in the phylum Chordata, class Amphibia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Anura.",
+      "en": "Inhabits representative biomes corresponding to Anura."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/9724339"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Dendrobatidae.",
+      "en": "Characteristic foraging behavior of the family Dendrobatidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Ếch phi tiêu nhuộm.",
+      "en": "Ecological behavioral patterns of Dyeing Poison Dart Frog."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ếch phi tiêu nhuộm là một đại diện tiêu biểu của nhóm phân loại Anura.",
+      "en": "Dyeing Poison Dart Frog represents a key specimen in the order Anura."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dendrobates.tinctorius.7037.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendrobates.tinctorius.7037.jpg",
+        "caption": {
+          "vi": "Mẫu vật Ếch phi tiêu nhuộm trong môi trường tự nhiên",
+          "en": "Dyeing Poison Dart Frog specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/9724339",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Dendrobates_tinctorius",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

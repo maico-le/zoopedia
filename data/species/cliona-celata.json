@@ -1,0 +1,164 @@
+{
+  "id": "cliona-celata",
+  "taxonKey": {
+    "gbif": 5183631,
+    "col": null,
+    "wikidata": "Q965239",
+    "inaturalist": 117715,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Cliona celata",
+    "authorship": "Grant, 1826",
+    "en": [
+      "Red Boring Sponge",
+      "Cliona celata",
+      "Boring sponge",
+      "Red boring sponge",
+      "Sulfur sponge",
+      "Sulphur boring sponge",
+      "Yellow boring horny sponge",
+      "Yellow boring sponge"
+    ],
+    "vi": [
+      "Bọt biển đục đá",
+      "Cliona celata"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Porifera",
+    "class": "Demospongiae",
+    "order": "Clionaida",
+    "family": "Clionaidae",
+    "genus": "Cliona",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bọt biển đục đá (Cliona celata) thuộc ngành Porifera, lớp Demospongiae.",
+      "en": "Red Boring Sponge (Cliona celata) is a species in the phylum Porifera, class Demospongiae."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Clionaida.",
+      "en": "Inhabits representative biomes corresponding to Clionaida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5183631"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Clionaidae.",
+      "en": "Characteristic foraging behavior of the family Clionaidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bọt biển đục đá.",
+      "en": "Ecological behavioral patterns of Red Boring Sponge."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bọt biển đục đá là một đại diện tiêu biểu của nhóm phân loại Clionaida.",
+      "en": "Red Boring Sponge represents a key specimen in the order Clionaida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cliona_celeta.JPG?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cliona celeta.JPG",
+        "caption": {
+          "vi": "Mẫu vật Bọt biển đục đá trong môi trường tự nhiên",
+          "en": "Red Boring Sponge specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5183631",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

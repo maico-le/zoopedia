@@ -1,0 +1,174 @@
+{
+  "id": "ursus-maritimus",
+  "taxonKey": {
+    "gbif": 2433451,
+    "col": null,
+    "wikidata": "Q33609",
+    "inaturalist": 41644,
+    "eol": "46559143"
+  },
+  "names": {
+    "scientific": "Ursus maritimus",
+    "authorship": "Phipps, 1774",
+    "en": [
+      "Polar Bear",
+      "Ursus maritimus",
+      "Ice bear",
+      "White bear",
+      "Polar bear",
+      "Great white bear",
+      "Nanook",
+      "\\ white bear",
+      "\\\\ white bear"
+    ],
+    "vi": [
+      "Gấu bắc cực",
+      "Gấu trắng bắc cực",
+      "Ursus maritimus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Ursus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Gấu bắc cực (Ursus maritimus) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Polar Bear (Ursus maritimus) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Carnivora.",
+      "en": "Inhabits representative biomes corresponding to Carnivora."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2433451"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Ursidae.",
+      "en": "Characteristic foraging behavior of the family Ursidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Gấu bắc cực.",
+      "en": "Ecological behavioral patterns of Polar Bear."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Gấu bắc cực là một đại diện tiêu biểu của nhóm phân loại Carnivora.",
+      "en": "Polar Bear represents a key specimen in the order Carnivora."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polar_Bear_-_Alaska_(cropped).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polar Bear - Alaska (cropped).jpg",
+        "caption": {
+          "vi": "Mẫu vật Gấu bắc cực trong môi trường tự nhiên",
+          "en": "Polar Bear specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2433451",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/G%E1%BA%A5u_tr%E1%BA%AFng_B%E1%BA%AFc_C%E1%BB%B1c",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+scientific_name,name_vi,name_en,phylum,class
+Panthera tigris,Hổ,Tiger,Chordata,Mammalia
+Panthera leo,Sư tử,Lion,Chordata,Mammalia
+Panthera pardus,Báo hoa mai,Leopard,Chordata,Mammalia
+Acinonyx jubatus,Báo săn,Cheetah,Chordata,Mammalia
+Canis lupus,Chó sói xám,Gray Wolf,Chordata,Mammalia
+Vulpes vulpes,Cáo đỏ,Red Fox,Chordata,Mammalia
+Ursus arctos,Gấu nâu,Brown Bear,Chordata,Mammalia
+Ursus maritimus,Gấu bắc cực,Polar Bear,Chordata,Mammalia
+Ailuropoda melanoleuca,Gấu trúc lớn,Giant Panda,Chordata,Mammalia
+Elephas maximus,Voi châu Á,Asian Elephant,Chordata,Mammalia
+Loxodonta africana,Voi châu Phi,African Bush Elephant,Chordata,Mammalia
+Balaenoptera musculus,Cá voi xanh,Blue Whale,Chordata,Mammalia
+Megaptera novaeangliae,Cá voi lưng gù,Humpback Whale,Chordata,Mammalia
+Orcinus orca,Cá voi sát thủ,Killer Whale,Chordata,Mammalia
+Delphinus delphis,Cá heo thông thường,Short-beaked Common Dolphin,Chordata,Mammalia
+Equus caballus,Ngựa hoang,Wild Horse,Chordata,Mammalia
+Equus quagga,Ngựa vằn đồng bằng,Plains Zebra,Chordata,Mammalia
+Giraffa camelopardalis,Hươu cao cổ,Giraffe,Chordata,Mammalia
+Hippopotamus amphibius,Hà mã,Hippopotamus,Chordata,Mammalia
+Rhinoceros unicornis,Tê giác Ấn Độ,Indian Rhinoceros,Chordata,Mammalia
+Gorilla beringei,Khỉ đột núi,Eastern Gorilla,Chordata,Mammalia
+Pan troglodytes,Tinh tinh thông thường,Chimpanzee,Chordata,Mammalia
+Pongo pygmaeus,Đười ươi Borneo,Bornean Orangutan,Chordata,Mammalia
+Macaca mulatta,Khỉ vàng,Rhesus Macaque,Chordata,Mammalia
+Pteropus lylei,Dơi ngựa Thái Lan,Lyle's Flying Fox,Chordata,Mammalia
+Ornithorhynchus anatinus,Thú mỏ vịt,Platypus,Chordata,Mammalia
+Macropus giganteus,Chuột túi xám lớn,Eastern Gray Kangaroo,Chordata,Mammalia
+Phascolarctos cinereus,Gấu túi Koala,Koala,Chordata,Mammalia
+Manis javanica,Tê tê Java,Sunda Pangolin,Chordata,Mammalia
+Phoenicopterus roseus,Hồng hạc lớn,Greater Flamingo,Chordata,Aves
+Aquila chrysaetos,Đại bàng vàng,Golden Eagle,Chordata,Aves
+Haliaeetus leucocephalus,Đại bàng đầu trắng,Bald Eagle,Chordata,Aves
+Struthio camelus,Đà điểu châu Phi,Common Ostrich,Chordata,Aves
+Aptenodytes forsteri,Chim cánh cụt hoàng đế,Emperor Penguin,Chordata,Aves
+Pavo muticus,Công má vàng,Green Peafowl,Chordata,Aves
+Bubo bubo,Cú đại bàng,Eurasian Eagle-Owl,Chordata,Aves
+Ara macao,Vẹt đuôi dài đỏ tía,Scarlet Macaw,Chordata,Aves
+Gallus gallus,Gà rừng lông đỏ,Red Junglefowl,Chordata,Aves
+Crocodylus siamensis,Cá sấu Xiêm,Siamese Crocodile,Chordata,Reptilia
+Varanus komodoensis,Rồng Komodo,Komodo Dragon,Chordata,Reptilia
+Ophiophagus hannah,Rắn hổ mang chúa,King Cobra,Chordata,Reptilia
+Chelonia mydas,Rùa xanh,Green Sea Turtle,Chordata,Reptilia
+Python bivittatus,Trăn đất,Burmese Python,Chordata,Reptilia
+Chamaeleo chamaeleon,Tắc kè hoa thông thường,Common Chameleon,Chordata,Reptilia
+Rana temporaria,Ếch cỏ châu Âu,Common Frog,Chordata,Amphibia
+Hoplobatrachus rugulosus,Ếch đồng,East Asian Bullfrog,Chordata,Amphibia
+Bufo bufo,Cóc thông thường,Common Toad,Chordata,Amphibia
+Andrias davidianus,Kỳ giông khổng lồ Trung Quốc,Chinese Giant Salamander,Chordata,Amphibia
+Dendrobates tinctorius,Ếch phi tiêu nhuộm,Dyeing Poison Dart Frog,Chordata,Amphibia
+Salmo salar,Cá hồi Đại Tây Dương,Atlantic Salmon,Chordata,Actinopterygii
+Carcharodon carcharias,Cá mập trắng lớn,Great White Shark,Chordata,Chondrichthyes
+Rhincodon typus,Cá nhám voi,Whale Shark,Chordata,Chondrichthyes
+Manta birostris,Cá nạng hải Manta,Giant Oceanic Manta Ray,Chordata,Chondrichthyes
+Hippocampus hippocampus,Cá ngựa chấm,Short-snouted Seahorse,Chordata,Actinopterygii
+Thunnus thynnus,Cá ngừ vây xanh Đại Tây Dương,Atlantic Bluefin Tuna,Chordata,Actinopterygii
+Amphiprion ocellaris,Cá hề,False Clownfish,Chordata,Actinopterygii
+Danaus plexippus,Bướm vua,Monarch Butterfly,Arthropoda,Insecta
+Apis mellifera,Ong mật phương Tây,Western Honey Bee,Arthropoda,Insecta
+Vespa mandarinia,Ong bắp cày khổng lồ châu Á,Asian Giant Hornet,Arthropoda,Insecta
+Formica rufa,Kiến gỗ đỏ,Red Wood Ant,Arthropoda,Insecta
+Dynastes hercules,Bọ cánh cứng Hercules,Hercules Beetle,Arthropoda,Insecta
+Mantis religiosa,Bọ ngựa châu Âu,European Mantis,Arthropoda,Insecta
+Locusta migratoria,Châu chấu di cư,Migratory Locust,Arthropoda,Insecta
+Periplaneta americana,Gián Mỹ,American Cockroach,Arthropoda,Insecta
+Latrodectus mactans,Nhện góa phụ đen phương Nam,Southern Black Widow,Arthropoda,Arachnida
+Theraphosa blondi,Nhện ăn chim Goliath,Goliath Birdeater,Arthropoda,Arachnida
+Pandinus imperator,Bọ cạp hoàng đế,Emperor Scorpion,Arthropoda,Arachnida
+Homarus americanus,Tôm hùm Mỹ,American Lobster,Arthropoda,Malacostraca
+Scylla serrata,Cua bùn / Cua biển,Giant Mud Crab,Arthropoda,Malacostraca
+Scolopendra subspinipes,Rết khổng lồ châu Á,Chinese Red Head Centipede,Arthropoda,Chilopoda
+Limulus polyphemus,Sam biển Đại Tây Dương,Atlantic Horseshoe Crab,Arthropoda,Merostomata
+Octopus vulgaris,Bạch tuộc thông thường,Common Octopus,Mollusca,Cephalopoda
+Architeuthis dux,Mực khổng lồ,Giant Squid,Mollusca,Cephalopoda
+Sepia officinalis,Mực nang châu Âu,Common Cuttlefish,Mollusca,Cephalopoda
+Haliotis asinina,Bào ngư vành tai,Ass's-ear Abalone,Mollusca,Gastropoda
+Tridacna gigas,Sò tượng khổng lồ,Giant Clam,Mollusca,Bivalvia
+Nautilus pompilius,Ốc anh vũ,Chambered Nautilus,Mollusca,Cephalopoda
+Helix pomatia,Ốc sên La Mã,Roman Snail,Mollusca,Gastropoda
+Pinctada margaritifera,Trai ngọc môi đen,Black-lip Pearl Oyster,Mollusca,Bivalvia
+Conus geographus,Ốc cối địa lý,Geography Cone,Mollusca,Gastropoda
+Achatina fulica,Ốc sên khổng lồ châu Phi,Giant African Snail,Mollusca,Gastropoda
+Aurelia aurita,Sứa mặt trăng,Moon Jellyfish,Cnidaria,Scyphozoa
+Cyanea capillata,Sứa bờm sư tử,Lion's Mane Jellyfish,Cnidaria,Scyphozoa
+Chironex fleckeri,Sứa hộp Úc,Sea Wasp / Box Jellyfish,Cnidaria,Cubozoa
+Acropora cervicornis,San hô sừng hươu,Staghorn Coral,Cnidaria,Anthozoa
+Actinia equina,Hải quỳ đỏ,Beadlet Anemone,Cnidaria,Anthozoa
+Physalia physalis,Chiến hạm Bồ Đào Nha,Portuguese Man o' War,Cnidaria,Hydrozoa
+Asterias rubens,Sao biển thông thường,Common Starfish,Echinodermata,Asteroidea
+Acanthaster planci,Sao biển gai,Crown-of-thorns Starfish,Echinodermata,Asteroidea
+Strongylocentrotus purpuratus,Nhím biển tím,Pacific Purple Sea Urchin,Echinodermata,Echinoidea
+Holothuria edulis,Hải sâm đỏ,Edible Sea Cucumber,Echinodermata,Holothuroidea
+Ophiothrix fragilis,Sao biển đuôi rắn giòn,Common Brittle Star,Echinodermata,Ophiuroidea
+Antedon bifida,Huệ biển lông vũ,Rosy Feather Star,Echinodermata,Crinoidea
+Lumbricus terrestris,Giun đất thông thường,Common Earthworm,Annelida,Clitellata
+Hirudo medicinalis,Đỉa y tế,European Medicinal Leech,Annelida,Clitellata
+Arenicola marina,Giun cát biển,Lugworm,Annelida,Polychaeta
+Nereis virens,Rươi cát biển,King Ragworm,Annelida,Polychaeta
+Riftia pachyptila,Giun ống khổng lồ đáy biển,Giant Tube Worm,Annelida,Polychaeta
+Spongia officinalis,Bọt biển tắm thông thường,Bath Sponge,Porifera,Demospongiae
+Euplectella aspergillum,Bọt biển lẵng hoa Venus,Venus' Flower Basket,Porifera,Hexactinellida
+Halichondria panicea,Bọt biển bánh mì,Breadcrumb Sponge,Porifera,Demospongiae
+Cliona celata,Bọt biển đục đá,Red Boring Sponge,Porifera,Demospongiae
+Schmidtea mediterranea,Sán dẹp Planaria Địa Trung Hải,Freshwater Flatworm,Platyhelminthes,Rhabditophora
+Fasciola hepatica,Sán lá gan lớn,Common Liver Fluke,Platyhelminthes,Trematoda
+Taenia solium,Sán dây lợn,Pork Tapeworm,Platyhelminthes,Cestoda
+Pseudobiceros hancockanus,Sán dẹp biển sặc sỡ,Marine Flatworm,Platyhelminthes,Rhabditophora

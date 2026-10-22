@@ -1,0 +1,169 @@
+{
+  "id": "ara-macao",
+  "taxonKey": {
+    "gbif": 5959227,
+    "col": null,
+    "wikidata": "Q243761",
+    "inaturalist": 19022,
+    "eol": "45510825"
+  },
+  "names": {
+    "scientific": "Ara macao",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Scarlet Macaw",
+      "Scarlet macaw",
+      "Ara macao",
+      "Scarlet/red-and-green macaw"
+    ],
+    "vi": [
+      "Vẹt đuôi dài đỏ tía",
+      "Ara macao",
+      "Vẹt đỏ đuôi dài"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae",
+    "genus": "Ara",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Vẹt đuôi dài đỏ tía (Ara macao) thuộc ngành Chordata, lớp Aves.",
+      "en": "Scarlet Macaw (Ara macao) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Psittaciformes.",
+      "en": "Inhabits representative biomes corresponding to Psittaciformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5959227"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Psittacidae.",
+      "en": "Characteristic foraging behavior of the family Psittacidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Vẹt đuôi dài đỏ tía.",
+      "en": "Ecological behavioral patterns of Scarlet Macaw."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Vẹt đuôi dài đỏ tía là một đại diện tiêu biểu của nhóm phân loại Psittaciformes.",
+      "en": "Scarlet Macaw represents a key specimen in the order Psittaciformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "B",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": true,
+      "representativeFor": "Aves"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scarlet macaw (Ara macao cyanopterus) Copan.jpg",
+        "caption": {
+          "vi": "Mẫu vật Vẹt đuôi dài đỏ tía trong môi trường tự nhiên",
+          "en": "Scarlet Macaw specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5959227",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/V%E1%BA%B9t_%C4%91%E1%BB%8F_%C4%91u%C3%B4i_d%C3%A0i",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

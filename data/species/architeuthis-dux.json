@@ -1,0 +1,161 @@
+{
+  "id": "architeuthis-dux",
+  "taxonKey": {
+    "gbif": 2290184,
+    "col": null,
+    "wikidata": "Q13537131",
+    "inaturalist": 253698,
+    "eol": "488790"
+  },
+  "names": {
+    "scientific": "Architeuthis dux",
+    "authorship": "Steenstrup, 1857",
+    "en": [
+      "Giant Squid",
+      "Giant squid",
+      "Architeuthis dux",
+      "Atlantic giant squid",
+      "Giant oceanic squid"
+    ],
+    "vi": [
+      "Mực khổng lồ",
+      "Architeuthis dux"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Cephalopoda",
+    "order": "Oegopsida",
+    "family": "Architeuthidae",
+    "genus": "Architeuthis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Mực khổng lồ (Architeuthis dux) thuộc ngành Mollusca, lớp Cephalopoda.",
+      "en": "Giant Squid (Architeuthis dux) is a species in the phylum Mollusca, class Cephalopoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Oegopsida.",
+      "en": "Inhabits representative biomes corresponding to Oegopsida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2290184"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Architeuthidae.",
+      "en": "Characteristic foraging behavior of the family Architeuthidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Mực khổng lồ.",
+      "en": "Ecological behavioral patterns of Giant Squid."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Mực khổng lồ là một đại diện tiêu biểu của nhóm phân loại Oegopsida.",
+      "en": "Giant Squid represents a key specimen in the order Oegopsida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Riesenkalmar.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riesenkalmar.jpg",
+        "caption": {
+          "vi": "Mẫu vật Mực khổng lồ trong môi trường tự nhiên",
+          "en": "Giant Squid specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2290184",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

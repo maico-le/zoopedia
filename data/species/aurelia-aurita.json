@@ -1,0 +1,164 @@
+{
+  "id": "aurelia-aurita",
+  "taxonKey": {
+    "gbif": 2264442,
+    "col": null,
+    "wikidata": "Q26864",
+    "inaturalist": 48328,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Aurelia aurita",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Moon Jellyfish",
+      "Aurelia aurita",
+      "Common jellyfish",
+      "Moon jelly",
+      "Common moon jelly",
+      "Moon jelly, common jellyfish",
+      "Northern moon jelly",
+      "Moon jellyfish"
+    ],
+    "vi": [
+      "Sứa mặt trăng",
+      "Aurelia aurita"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Cnidaria",
+    "class": "Scyphozoa",
+    "order": "Semaeostomeae",
+    "family": "Ulmaridae",
+    "genus": "Aurelia",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Sứa mặt trăng (Aurelia aurita) thuộc ngành Cnidaria, lớp Scyphozoa.",
+      "en": "Moon Jellyfish (Aurelia aurita) is a species in the phylum Cnidaria, class Scyphozoa."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Semaeostomeae.",
+      "en": "Inhabits representative biomes corresponding to Semaeostomeae."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2264442"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Ulmaridae.",
+      "en": "Characteristic foraging behavior of the family Ulmaridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Sứa mặt trăng.",
+      "en": "Ecological behavioral patterns of Moon Jellyfish."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sứa mặt trăng là một đại diện tiêu biểu của nhóm phân loại Semaeostomeae.",
+      "en": "Moon Jellyfish represents a key specimen in the order Semaeostomeae."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vandmaend.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vandmaend.jpg",
+        "caption": {
+          "vi": "Mẫu vật Sứa mặt trăng trong môi trường tự nhiên",
+          "en": "Moon Jellyfish specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2264442",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Aurelia_aurita",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

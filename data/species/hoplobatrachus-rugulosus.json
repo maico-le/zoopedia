@@ -1,0 +1,164 @@
+{
+  "id": "hoplobatrachus-rugulosus",
+  "taxonKey": {
+    "gbif": 2430382,
+    "col": null,
+    "wikidata": "Q711322",
+    "inaturalist": 65541,
+    "eol": "320015"
+  },
+  "names": {
+    "scientific": "Hoplobatrachus rugulosus",
+    "authorship": "(Wiegmann, 1834) ",
+    "en": [
+      "East Asian Bullfrog",
+      "Chinese edible frog",
+      "Hoplobatrachus rugulosus",
+      "Asian peters frog",
+      "Asian rugose bullfrog",
+      "Chinese bullfrog",
+      "East asian bullfrog",
+      "Taiwanese frog"
+    ],
+    "vi": [
+      "Ếch đồng",
+      "Hoplobatrachus rugulosus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Amphibia",
+    "order": "Anura",
+    "family": "Dicroglossidae",
+    "genus": "Hoplobatrachus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Ếch đồng (Hoplobatrachus rugulosus) thuộc ngành Chordata, lớp Amphibia.",
+      "en": "East Asian Bullfrog (Hoplobatrachus rugulosus) is a species in the phylum Chordata, class Amphibia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Anura.",
+      "en": "Inhabits representative biomes corresponding to Anura."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2430382"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Dicroglossidae.",
+      "en": "Characteristic foraging behavior of the family Dicroglossidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Ếch đồng.",
+      "en": "Ecological behavioral patterns of East Asian Bullfrog."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ếch đồng là một đại diện tiêu biểu của nhóm phân loại Anura.",
+      "en": "East Asian Bullfrog represents a key specimen in the order Anura."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoplobatrachus_rugulosus.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoplobatrachus rugulosus.jpg",
+        "caption": {
+          "vi": "Mẫu vật Ếch đồng trong môi trường tự nhiên",
+          "en": "East Asian Bullfrog specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2430382",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%E1%BA%BEch_%C4%91%E1%BB%93ng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

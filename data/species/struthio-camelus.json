@@ -1,0 +1,172 @@
+{
+  "id": "struthio-camelus",
+  "taxonKey": {
+    "gbif": 2495150,
+    "col": null,
+    "wikidata": "Q17592",
+    "inaturalist": 20526,
+    "eol": "45513749"
+  },
+  "names": {
+    "scientific": "Struthio camelus",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Common Ostrich",
+      "Common ostrich",
+      "Struthio camelus",
+      "Ostrich",
+      "African ostrich",
+      "Coos",
+      "Common/somali ostrich",
+      "Red-necked ostrich"
+    ],
+    "vi": [
+      "Đà điểu châu Phi",
+      "Đà điểu châu phi"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Struthioniformes",
+    "family": "Struthionidae",
+    "genus": "Struthio",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Đà điểu châu Phi (Struthio camelus) thuộc ngành Chordata, lớp Aves.",
+      "en": "Common Ostrich (Struthio camelus) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Struthioniformes.",
+      "en": "Inhabits representative biomes corresponding to Struthioniformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2495150"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Struthionidae.",
+      "en": "Characteristic foraging behavior of the family Struthionidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Đà điểu châu Phi.",
+      "en": "Ecological behavioral patterns of Common Ostrich."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Đà điểu châu Phi là một đại diện tiêu biểu của nhóm phân loại Struthioniformes.",
+      "en": "Common Ostrich represents a key specimen in the order Struthioniformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "B",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": true,
+      "representativeFor": "Aves"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/North_African_Ostrich_-_Masai_Ostrich_(Struthio_camelus_massaicus)_-_Flickr_-_Lip_Kee.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North African Ostrich - Masai Ostrich (Struthio camelus massaicus) - Flickr - Lip Kee.jpg",
+        "caption": {
+          "vi": "Mẫu vật Đà điểu châu Phi trong môi trường tự nhiên",
+          "en": "Common Ostrich specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2495150",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%C4%90%C3%A0_%C4%91i%E1%BB%83u_ch%C3%A2u_Phi",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

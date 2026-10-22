@@ -1,0 +1,160 @@
+{
+  "id": "pandinus-imperator",
+  "taxonKey": {
+    "gbif": 6894611,
+    "col": null,
+    "wikidata": "Q1142349",
+    "inaturalist": 127713,
+    "eol": "5010047"
+  },
+  "names": {
+    "scientific": "Pandinus imperator",
+    "authorship": "(C.L.Koch, 1841) ",
+    "en": [
+      "Emperor Scorpion",
+      "Emperor scorpion",
+      "Pandinus imperator",
+      "Common emperor scorpion"
+    ],
+    "vi": [
+      "Bọ cạp hoàng đế",
+      "Pandinus imperator"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Arachnida",
+    "order": "Scorpiones",
+    "family": "Scorpionidae",
+    "genus": "Pandinus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bọ cạp hoàng đế (Pandinus imperator) thuộc ngành Arthropoda, lớp Arachnida.",
+      "en": "Emperor Scorpion (Pandinus imperator) is a species in the phylum Arthropoda, class Arachnida."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Scorpiones.",
+      "en": "Inhabits representative biomes corresponding to Scorpiones."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/6894611"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Scorpionidae.",
+      "en": "Characteristic foraging behavior of the family Scorpionidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bọ cạp hoàng đế.",
+      "en": "Ecological behavioral patterns of Emperor Scorpion."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bọ cạp hoàng đế là một đại diện tiêu biểu của nhóm phân loại Scorpiones.",
+      "en": "Emperor Scorpion represents a key specimen in the order Scorpiones."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Emperor_scorpion_or_Imperial_scorpion_(Pandinus_imperator).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emperor scorpion or Imperial scorpion (Pandinus imperator).jpg",
+        "caption": {
+          "vi": "Mẫu vật Bọ cạp hoàng đế trong môi trường tự nhiên",
+          "en": "Emperor Scorpion specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/6894611",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%E1%BB%8D_c%E1%BA%A1p_ho%C3%A0ng_%C4%91%E1%BA%BF",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

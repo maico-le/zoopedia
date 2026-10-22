@@ -1,0 +1,161 @@
+{
+  "id": "locusta-migratoria",
+  "taxonKey": {
+    "gbif": 1713418,
+    "col": null,
+    "wikidata": "Q1059580",
+    "inaturalist": 201627,
+    "eol": "494417"
+  },
+  "names": {
+    "scientific": "Locusta migratoria",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Migratory Locust",
+      "Locusta migratoria",
+      "Migratory locust",
+      "Locust",
+      "Tropical migratory locust"
+    ],
+    "vi": [
+      "Châu chấu di cư",
+      "Locusta migratoria"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Orthoptera",
+    "family": "Acrididae",
+    "genus": "Locusta",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Châu chấu di cư (Locusta migratoria) thuộc ngành Arthropoda, lớp Insecta.",
+      "en": "Migratory Locust (Locusta migratoria) is a species in the phylum Arthropoda, class Insecta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Orthoptera.",
+      "en": "Inhabits representative biomes corresponding to Orthoptera."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/1713418"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Acrididae.",
+      "en": "Characteristic foraging behavior of the family Acrididae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Châu chấu di cư.",
+      "en": "Ecological behavioral patterns of Migratory Locust."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Châu chấu di cư là một đại diện tiêu biểu của nhóm phân loại Orthoptera.",
+      "en": "Migratory Locust represents a key specimen in the order Orthoptera."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wanderheuschrecke-03.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wanderheuschrecke-03.jpg",
+        "caption": {
+          "vi": "Mẫu vật Châu chấu di cư trong môi trường tự nhiên",
+          "en": "Migratory Locust specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/1713418",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

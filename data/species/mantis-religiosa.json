@@ -1,0 +1,163 @@
+{
+  "id": "mantis-religiosa",
+  "taxonKey": {
+    "gbif": 6258028,
+    "col": null,
+    "wikidata": "Q268319",
+    "inaturalist": 53905,
+    "eol": "487055"
+  },
+  "names": {
+    "scientific": "Mantis religiosa",
+    "authorship": "(Linne, 1758) ",
+    "en": [
+      "European Mantis",
+      "European mantis",
+      "Praying mantis",
+      "Mantis religiosa",
+      "European mantid",
+      "European praying mantis",
+      "Preying mantis"
+    ],
+    "vi": [
+      "Bọ ngựa châu Âu",
+      "Bọ ngựa châu âu"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Mantodea",
+    "family": "Mantidae",
+    "genus": "Mantis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bọ ngựa châu Âu (Mantis religiosa) thuộc ngành Arthropoda, lớp Insecta.",
+      "en": "European Mantis (Mantis religiosa) is a species in the phylum Arthropoda, class Insecta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Mantodea.",
+      "en": "Inhabits representative biomes corresponding to Mantodea."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/6258028"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Mantidae.",
+      "en": "Characteristic foraging behavior of the family Mantidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bọ ngựa châu Âu.",
+      "en": "Ecological behavioral patterns of European Mantis."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bọ ngựa châu Âu là một đại diện tiêu biểu của nhóm phân loại Mantodea.",
+      "en": "European Mantis represents a key specimen in the order Mantodea."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mantis_religiosa_MHNT_entière.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantis religiosa MHNT entière.jpg",
+        "caption": {
+          "vi": "Mẫu vật Bọ ngựa châu Âu trong môi trường tự nhiên",
+          "en": "European Mantis specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/6258028",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%E1%BB%8D_ng%E1%BB%B1a_ch%C3%A2u_%C3%82u",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

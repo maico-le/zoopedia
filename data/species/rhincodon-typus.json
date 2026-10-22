@@ -1,0 +1,164 @@
+{
+  "id": "rhincodon-typus",
+  "taxonKey": {
+    "gbif": 2417522,
+    "col": null,
+    "wikidata": "Q80378",
+    "inaturalist": 52188,
+    "eol": "46559686"
+  },
+  "names": {
+    "scientific": "Rhincodon typus",
+    "authorship": "Smith, 1828",
+    "en": [
+      "Whale Shark",
+      "Whale shark",
+      "Rhincodon typus",
+      "Checkerboard shark",
+      "East indian basking shark",
+      "Tofu shark",
+      "Basking shark"
+    ],
+    "vi": [
+      "Cá nhám voi",
+      "Cá mập voi",
+      "Rhincodon typus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Elasmobranchii",
+    "order": "Orectolobiformes",
+    "family": "Rhincodontidae",
+    "genus": "Rhincodon",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cá nhám voi (Rhincodon typus) thuộc ngành Chordata, lớp Elasmobranchii.",
+      "en": "Whale Shark (Rhincodon typus) is a species in the phylum Chordata, class Elasmobranchii."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Orectolobiformes.",
+      "en": "Inhabits representative biomes corresponding to Orectolobiformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2417522"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Rhincodontidae.",
+      "en": "Characteristic foraging behavior of the family Rhincodontidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cá nhám voi.",
+      "en": "Ecological behavioral patterns of Whale Shark."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá nhám voi là một đại diện tiêu biểu của nhóm phân loại Orectolobiformes.",
+      "en": "Whale Shark represents a key specimen in the order Orectolobiformes."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Whale_shark_Georgia_aquarium.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whale shark Georgia aquarium.jpg",
+        "caption": {
+          "vi": "Mẫu vật Cá nhám voi trong môi trường tự nhiên",
+          "en": "Whale Shark specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2417522",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/C%C3%A1_nh%C3%A1m_voi",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

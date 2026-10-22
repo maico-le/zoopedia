@@ -1,0 +1,167 @@
+{
+  "id": "octopus-vulgaris",
+  "taxonKey": {
+    "gbif": 2289671,
+    "col": null,
+    "wikidata": "Q651361",
+    "inaturalist": 49315,
+    "eol": "492280"
+  },
+  "names": {
+    "scientific": "Octopus vulgaris",
+    "authorship": "Cuvier, 1797",
+    "en": [
+      "Common Octopus",
+      "Common octopus",
+      "Octopus vulgaris",
+      "European common octopus",
+      "Kolkrabbi",
+      "Mediterranean octopus",
+      "Octopus",
+      "Common atlantic octopus",
+      "Common european octopus",
+      "Rock scuttle",
+      "Scuttle"
+    ],
+    "vi": [
+      "Bạch tuộc thông thường",
+      "Octopus vulgaris"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Cephalopoda",
+    "order": "Octopoda",
+    "family": "Octopodidae",
+    "genus": "Octopus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bạch tuộc thông thường (Octopus vulgaris) thuộc ngành Mollusca, lớp Cephalopoda.",
+      "en": "Common Octopus (Octopus vulgaris) is a species in the phylum Mollusca, class Cephalopoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Octopoda.",
+      "en": "Inhabits representative biomes corresponding to Octopoda."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2289671"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Octopodidae.",
+      "en": "Characteristic foraging behavior of the family Octopodidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bạch tuộc thông thường.",
+      "en": "Ecological behavioral patterns of Common Octopus."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bạch tuộc thông thường là một đại diện tiêu biểu của nhóm phân loại Octopoda.",
+      "en": "Common Octopus represents a key specimen in the order Octopoda."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Octopus_vulgaris_Merculiano.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octopus vulgaris Merculiano.jpg",
+        "caption": {
+          "vi": "Mẫu vật Bạch tuộc thông thường trong môi trường tự nhiên",
+          "en": "Common Octopus specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2289671",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%E1%BA%A1ch_tu%E1%BB%99c_th%C3%B4ng_th%C6%B0%E1%BB%9Dng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

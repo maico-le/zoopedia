@@ -1,0 +1,174 @@
+{
+  "id": "elephas-maximus",
+  "taxonKey": {
+    "gbif": 5219461,
+    "col": null,
+    "wikidata": "Q133006",
+    "inaturalist": 43697,
+    "eol": "997407"
+  },
+  "names": {
+    "scientific": "Elephas maximus",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Asian Elephant",
+      "Asian elephant",
+      "Asiatic elephant",
+      "Elephas maximus",
+      "Elefante asiático",
+      "Indian elephant",
+      "Pygmy elephant",
+      "Pygmy elephant (borneensis)",
+      "Borneensis"
+    ],
+    "vi": [
+      "Voi châu Á",
+      "Voi châu á",
+      "Elephas maximus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Proboscidea",
+    "family": "Elephantidae",
+    "genus": "Elephas",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Voi châu Á (Elephas maximus) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Asian Elephant (Elephas maximus) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Proboscidea.",
+      "en": "Inhabits representative biomes corresponding to Proboscidea."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5219461"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Elephantidae.",
+      "en": "Characteristic foraging behavior of the family Elephantidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Voi châu Á.",
+      "en": "Ecological behavioral patterns of Asian Elephant."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Voi châu Á là một đại diện tiêu biểu của nhóm phân loại Proboscidea.",
+      "en": "Asian Elephant represents a key specimen in the order Proboscidea."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Elephas_maximus_(Bandipur).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elephas maximus (Bandipur).jpg",
+        "caption": {
+          "vi": "Mẫu vật Voi châu Á trong môi trường tự nhiên",
+          "en": "Asian Elephant specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5219461",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Voi_ch%C3%A2u_%C3%81",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

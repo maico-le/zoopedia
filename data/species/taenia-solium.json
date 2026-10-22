@@ -1,0 +1,163 @@
+{
+  "id": "taenia-solium",
+  "taxonKey": {
+    "gbif": 6101576,
+    "col": null,
+    "wikidata": "Q565708",
+    "inaturalist": 372430,
+    "eol": "3247842"
+  },
+  "names": {
+    "scientific": "Taenia solium",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Pork Tapeworm",
+      "Taenia solium",
+      "Tenia o solitaria",
+      "Measly pork tapeworm",
+      "Pig tapeworm",
+      "Pork tapeworm"
+    ],
+    "vi": [
+      "Sán dây lợn",
+      "Sán dải lợn",
+      "Taenia solium"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Platyhelminthes",
+    "class": "Cestoda",
+    "order": "Cyclophyllidea",
+    "family": "Taeniidae",
+    "genus": "Taenia",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Sán dây lợn (Taenia solium) thuộc ngành Platyhelminthes, lớp Cestoda.",
+      "en": "Pork Tapeworm (Taenia solium) is a species in the phylum Platyhelminthes, class Cestoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Cyclophyllidea.",
+      "en": "Inhabits representative biomes corresponding to Cyclophyllidea."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/6101576"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Taeniidae.",
+      "en": "Characteristic foraging behavior of the family Taeniidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Sán dây lợn.",
+      "en": "Ecological behavioral patterns of Pork Tapeworm."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sán dây lợn là một đại diện tiêu biểu của nhóm phân loại Cyclophyllidea.",
+      "en": "Pork Tapeworm represents a key specimen in the order Cyclophyllidea."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taenia_solium_scolex.JPG?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taenia solium scolex.JPG",
+        "caption": {
+          "vi": "Mẫu vật Sán dây lợn trong môi trường tự nhiên",
+          "en": "Pork Tapeworm specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/6101576",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/S%C3%A1n_d%E1%BA%A3i_l%E1%BB%A3n",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

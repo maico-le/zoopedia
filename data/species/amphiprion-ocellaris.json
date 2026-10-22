@@ -1,0 +1,179 @@
+{
+  "id": "amphiprion-ocellaris",
+  "taxonKey": {
+    "gbif": 5212106,
+    "col": null,
+    "wikidata": "Q1126155",
+    "inaturalist": 132688,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Amphiprion ocellaris",
+    "authorship": "Cuvier, 1830",
+    "en": [
+      "False Clownfish",
+      "Amphiprion ocellaris",
+      "Ocellaris clownfish",
+      "Common clownfish",
+      "Anemone demoiselle",
+      "Black anemonefish",
+      "Black clownfish",
+      "Black ocellaris clown",
+      "Common clown",
+      "False percula clownfish",
+      "Frostbite anemonefish",
+      "Frostbite clownfish",
+      "Juggalo clownfish",
+      "Nemo",
+      "Ocellaris anemonefish",
+      "Puller",
+      "Snowflake anemonefish",
+      "Snowflake clownfish",
+      "Western clown anemonefish",
+      "Western clownfish",
+      "Wyoming white clownfish",
+      "Clown anemonefish",
+      "False clown anemonefish"
+    ],
+    "vi": [
+      "Cá hề",
+      "Amphiprion ocellaris"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Unknown",
+    "order": "Perciformes",
+    "family": "Pomacentridae",
+    "genus": "Amphiprion",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cá hề (Amphiprion ocellaris) thuộc ngành Chordata, lớp Unknown.",
+      "en": "False Clownfish (Amphiprion ocellaris) is a species in the phylum Chordata, class Unknown."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Perciformes.",
+      "en": "Inhabits representative biomes corresponding to Perciformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5212106"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Pomacentridae.",
+      "en": "Characteristic foraging behavior of the family Pomacentridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cá hề.",
+      "en": "Ecological behavioral patterns of False Clownfish."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá hề là một đại diện tiêu biểu của nhóm phân loại Perciformes.",
+      "en": "False Clownfish represents a key specimen in the order Perciformes."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Clownfisch_(Amphiprion_ocellaris).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clownfisch (Amphiprion ocellaris).jpg",
+        "caption": {
+          "vi": "Mẫu vật Cá hề trong môi trường tự nhiên",
+          "en": "False Clownfish specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5212106",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Amphiprion_ocellaris",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

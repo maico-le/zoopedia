@@ -1,0 +1,178 @@
+{
+  "id": "pongo-pygmaeus",
+  "taxonKey": {
+    "gbif": 5219532,
+    "col": null,
+    "wikidata": "Q599672",
+    "inaturalist": 43582,
+    "eol": "326450"
+  },
+  "names": {
+    "scientific": "Pongo pygmaeus",
+    "authorship": "(Linnaeus, 1760) ",
+    "en": [
+      "Bornean Orangutan",
+      "Bornean orangutan",
+      "Pongo pygmaeus",
+      "North-east bornean orangutan (morio)",
+      "North-west bornean orangutan (pygmaeus)",
+      "Southern bornean orangutan",
+      "Southwest bornean orangutan",
+      "Southwest bornean orangutan (wurmbii)",
+      "Western bornean orangutan",
+      "Orangutan",
+      "Wurmbii"
+    ],
+    "vi": [
+      "Đười ươi Borneo",
+      "Đười ươi borneo",
+      "Pongo pygmaeus pygmaeus",
+      "Pongo pygmaeus morio",
+      "Pongo pygmaeus wurmbii"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Primates",
+    "family": "Hominidae",
+    "genus": "Pongo",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Đười ươi Borneo (Pongo pygmaeus) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Bornean Orangutan (Pongo pygmaeus) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Primates.",
+      "en": "Inhabits representative biomes corresponding to Primates."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5219532"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Hominidae.",
+      "en": "Characteristic foraging behavior of the family Hominidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Đười ươi Borneo.",
+      "en": "Ecological behavioral patterns of Bornean Orangutan."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Đười ươi Borneo là một đại diện tiêu biểu của nhóm phân loại Primates.",
+      "en": "Bornean Orangutan represents a key specimen in the order Primates."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/OrangutanP1.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OrangutanP1.jpg",
+        "caption": {
+          "vi": "Mẫu vật Đười ươi Borneo trong môi trường tự nhiên",
+          "en": "Bornean Orangutan specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5219532",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Di_%C6%B0%C6%A1i_Borneo",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

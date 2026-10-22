@@ -1,0 +1,167 @@
+{
+  "id": "aptenodytes-forsteri",
+  "taxonKey": {
+    "gbif": 2481661,
+    "col": null,
+    "wikidata": "Q161829",
+    "inaturalist": 3820,
+    "eol": "45512074"
+  },
+  "names": {
+    "scientific": "Aptenodytes forsteri",
+    "authorship": "G.R.Gray, 1844",
+    "en": [
+      "Emperor Penguin",
+      "Emperor penguin",
+      "Aptenodytes forsteri"
+    ],
+    "vi": [
+      "Chim cánh cụt hoàng đế",
+      "Aptenodytes forsteri"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Sphenisciformes",
+    "family": "Spheniscidae",
+    "genus": "Aptenodytes",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Chim cánh cụt hoàng đế (Aptenodytes forsteri) thuộc ngành Chordata, lớp Aves.",
+      "en": "Emperor Penguin (Aptenodytes forsteri) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Sphenisciformes.",
+      "en": "Inhabits representative biomes corresponding to Sphenisciformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2481661"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Spheniscidae.",
+      "en": "Characteristic foraging behavior of the family Spheniscidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Chim cánh cụt hoàng đế.",
+      "en": "Ecological behavioral patterns of Emperor Penguin."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Chim cánh cụt hoàng đế là một đại diện tiêu biểu của nhóm phân loại Sphenisciformes.",
+      "en": "Emperor Penguin represents a key specimen in the order Sphenisciformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "B",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": true,
+      "representativeFor": "Aves"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aptenodytes forsteri -Snow Hill Island, Antarctica -adults and juvenile-8.jpg",
+        "caption": {
+          "vi": "Mẫu vật Chim cánh cụt hoàng đế trong môi trường tự nhiên",
+          "en": "Emperor Penguin specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2481661",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/C%C3%A1nh_c%E1%BB%A5t_ho%C3%A0ng_%C4%91%E1%BA%BF",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

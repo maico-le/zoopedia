@@ -1,0 +1,170 @@
+{
+  "id": "phoenicopterus-roseus",
+  "taxonKey": {
+    "gbif": 4352332,
+    "col": null,
+    "wikidata": "Q179863",
+    "inaturalist": 73222,
+    "eol": "45513553"
+  },
+  "names": {
+    "scientific": "Phoenicopterus roseus",
+    "authorship": "Pallas, 1811",
+    "en": [
+      "Greater Flamingo",
+      "Greater flamingo",
+      "Phoenicopterus roseus",
+      "European flamingo",
+      "Grfl",
+      "Mediterranean flamingo",
+      "Old world greater flamingo"
+    ],
+    "vi": [
+      "Hồng hạc lớn",
+      "Phoenicopterus roseus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Phoenicopteriformes",
+    "family": "Phoenicopteridae",
+    "genus": "Phoenicopterus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Hồng hạc lớn (Phoenicopterus roseus) thuộc ngành Chordata, lớp Aves.",
+      "en": "Greater Flamingo (Phoenicopterus roseus) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Phoenicopteriformes.",
+      "en": "Inhabits representative biomes corresponding to Phoenicopteriformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/4352332"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Phoenicopteridae.",
+      "en": "Characteristic foraging behavior of the family Phoenicopteridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Hồng hạc lớn.",
+      "en": "Ecological behavioral patterns of Greater Flamingo."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Hồng hạc lớn là một đại diện tiêu biểu của nhóm phân loại Phoenicopteriformes.",
+      "en": "Greater Flamingo represents a key specimen in the order Phoenicopteriformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "A",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": false
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flamant_rose_Thyna009.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flamant rose Thyna009.jpg",
+        "caption": {
+          "vi": "Mẫu vật Hồng hạc lớn trong môi trường tự nhiên",
+          "en": "Greater Flamingo specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/4352332",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/H%E1%BB%93ng_h%E1%BA%A1c_l%E1%BB%9Bn",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

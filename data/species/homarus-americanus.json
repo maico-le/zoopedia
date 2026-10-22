@@ -1,0 +1,168 @@
+{
+  "id": "homarus-americanus",
+  "taxonKey": {
+    "gbif": 5972004,
+    "col": null,
+    "wikidata": "Q37668",
+    "inaturalist": 61383,
+    "eol": "46505674"
+  },
+  "names": {
+    "scientific": "Homarus americanus",
+    "authorship": "H.Milne Edwards, 1837",
+    "en": [
+      "American Lobster",
+      "American lobster",
+      "Atlantic lobster",
+      "Homarus americanus",
+      "True lobster",
+      "American clawed lobster",
+      "Blue crab",
+      "Canadian lobster",
+      "Lobster",
+      "Maine lobster",
+      "Northern lobster"
+    ],
+    "vi": [
+      "Tôm hùm Mỹ",
+      "Tôm hùm mỹ",
+      "Homarus americanus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Decapoda",
+    "family": "Nephropidae",
+    "genus": "Homarus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Tôm hùm Mỹ (Homarus americanus) thuộc ngành Arthropoda, lớp Malacostraca.",
+      "en": "American Lobster (Homarus americanus) is a species in the phylum Arthropoda, class Malacostraca."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Decapoda.",
+      "en": "Inhabits representative biomes corresponding to Decapoda."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5972004"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Nephropidae.",
+      "en": "Characteristic foraging behavior of the family Nephropidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Tôm hùm Mỹ.",
+      "en": "Ecological behavioral patterns of American Lobster."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Tôm hùm Mỹ là một đại diện tiêu biểu của nhóm phân loại Decapoda.",
+      "en": "American Lobster represents a key specimen in the order Decapoda."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nur01521_-_Flickr_-_NOAA_Photo_Library.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nur01521 - Flickr - NOAA Photo Library.jpg",
+        "caption": {
+          "vi": "Mẫu vật Tôm hùm Mỹ trong môi trường tự nhiên",
+          "en": "American Lobster specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5972004",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/T%C3%B4m_h%C3%B9m_M%E1%BB%B9",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

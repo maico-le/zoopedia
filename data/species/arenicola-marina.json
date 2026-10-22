@@ -1,0 +1,166 @@
+{
+  "id": "arenicola-marina",
+  "taxonKey": {
+    "gbif": 5197443,
+    "col": null,
+    "wikidata": "Q21155",
+    "inaturalist": 208364,
+    "eol": "486136"
+  },
+  "names": {
+    "scientific": "Arenicola marina",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Lugworm",
+      "Arenicola marina",
+      "Lug worm",
+      "Sandworm",
+      "Blow lug",
+      "Blow lug, lugworm, lobworm",
+      "Blow lugworm",
+      "European lug worm",
+      "Lobworm",
+      "Yellowtail"
+    ],
+    "vi": [
+      "Giun cát biển",
+      "Arenicola marina"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Annelida",
+    "class": "Polychaeta",
+    "order": "Unknown",
+    "family": "Arenicolidae",
+    "genus": "Arenicola",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Giun cát biển (Arenicola marina) thuộc ngành Annelida, lớp Polychaeta.",
+      "en": "Lugworm (Arenicola marina) is a species in the phylum Annelida, class Polychaeta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Unknown.",
+      "en": "Inhabits representative biomes corresponding to Unknown."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5197443"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Arenicolidae.",
+      "en": "Characteristic foraging behavior of the family Arenicolidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Giun cát biển.",
+      "en": "Ecological behavioral patterns of Lugworm."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Giun cát biển là một đại diện tiêu biểu của nhóm phân loại Unknown.",
+      "en": "Lugworm represents a key specimen in the order Unknown."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arenicola_marina.JPG?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arenicola marina.JPG",
+        "caption": {
+          "vi": "Mẫu vật Giun cát biển trong môi trường tự nhiên",
+          "en": "Lugworm specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5197443",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Arenicola_marina",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

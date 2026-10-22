@@ -1,0 +1,171 @@
+{
+  "id": "cyanea-capillata",
+  "taxonKey": {
+    "gbif": 2264478,
+    "col": null,
+    "wikidata": "Q522939",
+    "inaturalist": 69838,
+    "eol": "46554310"
+  },
+  "names": {
+    "scientific": "Cyanea capillata",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Lion's Mane Jellyfish",
+      "Lion's mane jellyfish",
+      "Cyanea capillata",
+      "Giant jellyfish",
+      "Hairy stinger",
+      "Lion's mane",
+      "Lion's mane jelly",
+      "Lion's mane yellyfish",
+      "Lions mane jellyfish",
+      "Lion’s mane",
+      "Lion’s mane jellyfish",
+      "Pink jellyfish",
+      "Sea blubber",
+      "Sea nettle",
+      "Sun jelly"
+    ],
+    "vi": [
+      "Sứa bờm sư tử",
+      "Cyanea capillata"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Cnidaria",
+    "class": "Scyphozoa",
+    "order": "Semaeostomeae",
+    "family": "Cyaneidae",
+    "genus": "Cyanea",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Sứa bờm sư tử (Cyanea capillata) thuộc ngành Cnidaria, lớp Scyphozoa.",
+      "en": "Lion's Mane Jellyfish (Cyanea capillata) is a species in the phylum Cnidaria, class Scyphozoa."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Semaeostomeae.",
+      "en": "Inhabits representative biomes corresponding to Semaeostomeae."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2264478"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Cyaneidae.",
+      "en": "Characteristic foraging behavior of the family Cyaneidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Sứa bờm sư tử.",
+      "en": "Ecological behavioral patterns of Lion's Mane Jellyfish."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sứa bờm sư tử là một đại diện tiêu biểu của nhóm phân loại Semaeostomeae.",
+      "en": "Lion's Mane Jellyfish represents a key specimen in the order Semaeostomeae."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyanea_capillata_no.JPG?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyanea capillata no.JPG",
+        "caption": {
+          "vi": "Mẫu vật Sứa bờm sư tử trong môi trường tự nhiên",
+          "en": "Lion's Mane Jellyfish specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2264478",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/S%E1%BB%A9a_b%E1%BB%9Dm_s%C6%B0_t%E1%BB%AD",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

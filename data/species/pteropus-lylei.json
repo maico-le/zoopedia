@@ -1,0 +1,170 @@
+{
+  "id": "pteropus-lylei",
+  "taxonKey": {
+    "gbif": 5218678,
+    "col": null,
+    "wikidata": "Q635120",
+    "inaturalist": 40898,
+    "eol": "327275"
+  },
+  "names": {
+    "scientific": "Pteropus lylei",
+    "authorship": "K.Andersen, 1908",
+    "en": [
+      "Lyle's Flying Fox",
+      "Pteropus lylei",
+      "Lyle's flying fox",
+      "Lyle's flying-fox",
+      "Lyles flying fox",
+      "Lyle’s flying fox"
+    ],
+    "vi": [
+      "Dơi ngựa Thái Lan",
+      "Pteropus lylei"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Pteropodidae",
+    "genus": "Pteropus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Dơi ngựa Thái Lan (Pteropus lylei) thuộc ngành Chordata, lớp Mammalia.",
+      "en": "Lyle's Flying Fox (Pteropus lylei) is a species in the phylum Chordata, class Mammalia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Chiroptera.",
+      "en": "Inhabits representative biomes corresponding to Chiroptera."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5218678"
+  },
+  "diet": {
+    "type": "herbivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Pteropodidae.",
+      "en": "Characteristic foraging behavior of the family Pteropodidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Dơi ngựa Thái Lan.",
+      "en": "Ecological behavioral patterns of Lyle's Flying Fox."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "viviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Dơi ngựa Thái Lan là một đại diện tiêu biểu của nhóm phân loại Chiroptera.",
+      "en": "Lyle's Flying Fox represents a key specimen in the order Chiroptera."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/vulpes-vulpes.glb",
+      "tier": "B",
+      "license": "CC0 / CC-BY-4.0",
+      "author": "PixelMannen",
+      "sourceUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "isRepresentative": true,
+      "representativeFor": "Mammalia"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyles_flyvende_hund_Pteropus_lylei.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lyles flyvende hund Pteropus lylei.jpg",
+        "caption": {
+          "vi": "Mẫu vật Dơi ngựa Thái Lan trong môi trường tự nhiên",
+          "en": "Lyle's Flying Fox specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5218678",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/D%C6%A1i_ng%E1%BB%B1a_Th%C3%A1i_Lan",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

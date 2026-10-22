@@ -1,0 +1,165 @@
+{
+  "id": "achatina-fulica",
+  "taxonKey": {
+    "gbif": 10928934,
+    "col": null,
+    "wikidata": "Q26908",
+    "inaturalist": 68420,
+    "eol": "452699"
+  },
+  "names": {
+    "scientific": "Achatina fulica",
+    "authorship": "Bowdich, 1822",
+    "en": [
+      "Giant African Snail",
+      "Achatina fulica",
+      "Giant african land snail",
+      "East african land snail",
+      "Giant african snail",
+      "Giant east african snail",
+      "Giant african snail, east african land snail",
+      "Giant east african land snail"
+    ],
+    "vi": [
+      "Ốc sên khổng lồ châu Phi",
+      "Ốc sên",
+      "Achatina fulica"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Gastropoda",
+    "order": "Stylommatophora",
+    "family": "Achatinidae",
+    "genus": "Lissachatina",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Ốc sên khổng lồ châu Phi (Achatina fulica) thuộc ngành Mollusca, lớp Gastropoda.",
+      "en": "Giant African Snail (Achatina fulica) is a species in the phylum Mollusca, class Gastropoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Stylommatophora.",
+      "en": "Inhabits representative biomes corresponding to Stylommatophora."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/10928934"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Achatinidae.",
+      "en": "Characteristic foraging behavior of the family Achatinidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Ốc sên khổng lồ châu Phi.",
+      "en": "Ecological behavioral patterns of Giant African Snail."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "EN",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ốc sên khổng lồ châu Phi là một đại diện tiêu biểu của nhóm phân loại Stylommatophora.",
+      "en": "Giant African Snail represents a key specimen in the order Stylommatophora."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snail_in_Ubud,_Bali,_2010_(1).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snail in Ubud, Bali, 2010 (1).jpg",
+        "caption": {
+          "vi": "Mẫu vật Ốc sên khổng lồ châu Phi trong môi trường tự nhiên",
+          "en": "Giant African Snail specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/10928934",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%E1%BB%90c_s%C3%AAn",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

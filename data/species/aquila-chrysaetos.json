@@ -1,0 +1,175 @@
+{
+  "id": "aquila-chrysaetos",
+  "taxonKey": {
+    "gbif": 2480506,
+    "col": null,
+    "wikidata": "Q41181",
+    "inaturalist": 5074,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Aquila chrysaetos",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Golden Eagle",
+      "Golden eagle",
+      "Aquila chrysaetos",
+      "American war bird",
+      "Bird of jupiter",
+      "Calumet bird",
+      "Goea",
+      "Jackrabbit eagle",
+      "King of birds",
+      "Mountain eagle",
+      "Royal eagle"
+    ],
+    "vi": [
+      "Đại bàng vàng",
+      "Aquila chrysaetos"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Aquila",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Đại bàng vàng (Aquila chrysaetos) thuộc ngành Chordata, lớp Aves.",
+      "en": "Golden Eagle (Aquila chrysaetos) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Accipitriformes.",
+      "en": "Inhabits representative biomes corresponding to Accipitriformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2480506"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Accipitridae.",
+      "en": "Characteristic foraging behavior of the family Accipitridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Đại bàng vàng.",
+      "en": "Ecological behavioral patterns of Golden Eagle."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Đại bàng vàng là một đại diện tiêu biểu của nhóm phân loại Accipitriformes.",
+      "en": "Golden Eagle represents a key specimen in the order Accipitriformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "B",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": true,
+      "representativeFor": "Aves"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maakotka_(Aquila_chrysaetos)_by_Jarkko_Järvinen.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maakotka (Aquila chrysaetos) by Jarkko Järvinen.jpg",
+        "caption": {
+          "vi": "Mẫu vật Đại bàng vàng trong môi trường tự nhiên",
+          "en": "Golden Eagle specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2480506",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_b%C3%A0ng_v%C3%A0ng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

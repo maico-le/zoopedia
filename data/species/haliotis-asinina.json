@@ -1,0 +1,162 @@
+{
+  "id": "haliotis-asinina",
+  "taxonKey": {
+    "gbif": 2293072,
+    "col": null,
+    "wikidata": "Q1055400",
+    "inaturalist": 82509,
+    "eol": "462648"
+  },
+  "names": {
+    "scientific": "Haliotis asinina",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Ass's-ear Abalone",
+      "Ass's ear abalone",
+      "Haliotis asinina",
+      "Ass's ear",
+      "Donkey’s ear abalone",
+      "Donkey's ear abalone",
+      "Donkey's ear shell"
+    ],
+    "vi": [
+      "Bào ngư vành tai"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Gastropoda",
+    "order": "Lepetellida",
+    "family": "Haliotidae",
+    "genus": "Haliotis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bào ngư vành tai (Haliotis asinina) thuộc ngành Mollusca, lớp Gastropoda.",
+      "en": "Ass's-ear Abalone (Haliotis asinina) is a species in the phylum Mollusca, class Gastropoda."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Lepetellida.",
+      "en": "Inhabits representative biomes corresponding to Lepetellida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2293072"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Haliotidae.",
+      "en": "Characteristic foraging behavior of the family Haliotidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bào ngư vành tai.",
+      "en": "Ecological behavioral patterns of Ass's-ear Abalone."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bào ngư vành tai là một đại diện tiêu biểu của nhóm phân loại Lepetellida.",
+      "en": "Ass's-ear Abalone represents a key specimen in the order Lepetellida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Queensland_State_Archives_1094_Asses_Ear_Shell_Haliotis_asinino_Linne_c_1931.png?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queensland State Archives 1094 Asses Ear Shell Haliotis asinino Linne c 1931.png",
+        "caption": {
+          "vi": "Mẫu vật Bào ngư vành tai trong môi trường tự nhiên",
+          "en": "Ass's-ear Abalone specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2293072",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/B%C3%A0o_ng%C6%B0_v%C3%A0nh_tai",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

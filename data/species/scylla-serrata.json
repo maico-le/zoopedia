@@ -1,0 +1,167 @@
+{
+  "id": "scylla-serrata",
+  "taxonKey": {
+    "gbif": 2225562,
+    "col": null,
+    "wikidata": "Q3544834",
+    "inaturalist": 340825,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Scylla serrata",
+    "authorship": "(Forskål, 1775) ",
+    "en": [
+      "Giant Mud Crab",
+      "Scylla serrata",
+      "Black crab",
+      "Mangrove crab",
+      "Mud crab",
+      "Giant mud crab",
+      "King mud crab",
+      "Indo-pacific swamp crab",
+      "Samoan crab",
+      "Serrated mangrove swimming crab",
+      "Serrated mud swimming crab"
+    ],
+    "vi": [
+      "Cua bùn / Cua biển",
+      "Scylla serrata"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Decapoda",
+    "family": "Portunidae",
+    "genus": "Scylla",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cua bùn / Cua biển (Scylla serrata) thuộc ngành Arthropoda, lớp Malacostraca.",
+      "en": "Giant Mud Crab (Scylla serrata) is a species in the phylum Arthropoda, class Malacostraca."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Decapoda.",
+      "en": "Inhabits representative biomes corresponding to Decapoda."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2225562"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Portunidae.",
+      "en": "Characteristic foraging behavior of the family Portunidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cua bùn / Cua biển.",
+      "en": "Ecological behavioral patterns of Giant Mud Crab."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cua bùn / Cua biển là một đại diện tiêu biểu của nhóm phân loại Decapoda.",
+      "en": "Giant Mud Crab represents a key specimen in the order Decapoda."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scylla_serrata_by_OpenCage.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scylla serrata by OpenCage.jpg",
+        "caption": {
+          "vi": "Mẫu vật Cua bùn / Cua biển trong môi trường tự nhiên",
+          "en": "Giant Mud Crab specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2225562",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Scylla_serrata",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

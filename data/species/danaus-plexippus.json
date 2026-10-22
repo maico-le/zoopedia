@@ -1,0 +1,156 @@
+{
+  "id": "danaus-plexippus",
+  "taxonKey": {
+    "gbif": 5133088,
+    "col": null,
+    "wikidata": "Q21354783",
+    "inaturalist": 235550,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Danaus plexippus",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Monarch Butterfly",
+      "Danaus plexippus plexippus",
+      "Migrating monarch butterfly",
+      "Milkweed",
+      "Milkweed butterfly",
+      "Milkweed [butterfly]",
+      "Monarch",
+      "Monarch butterfly",
+      "Monarch or milkweed",
+      "The milkweed",
+      "Common tiger wanderer"
+    ],
+    "vi": [
+      "Bướm vua",
+      "Danaus plexippus plexippus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae",
+    "genus": "Danaus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Bướm vua (Danaus plexippus) thuộc ngành Arthropoda, lớp Insecta.",
+      "en": "Monarch Butterfly (Danaus plexippus) is a species in the phylum Arthropoda, class Insecta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Lepidoptera.",
+      "en": "Inhabits representative biomes corresponding to Lepidoptera."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5133088"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Nymphalidae.",
+      "en": "Characteristic foraging behavior of the family Nymphalidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Bướm vua.",
+      "en": "Ecological behavioral patterns of Monarch Butterfly."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Bướm vua là một đại diện tiêu biểu của nhóm phân loại Lepidoptera.",
+      "en": "Monarch Butterfly represents a key specimen in the order Lepidoptera."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5133088",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

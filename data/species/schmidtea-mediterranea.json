@@ -1,0 +1,158 @@
+{
+  "id": "schmidtea-mediterranea",
+  "taxonKey": {
+    "gbif": 5892123,
+    "col": null,
+    "wikidata": "Q2158498",
+    "inaturalist": null,
+    "eol": null
+  },
+  "names": {
+    "scientific": "Schmidtea mediterranea",
+    "authorship": "Benazzi, Baguna, Ballester & del Papa, 1975",
+    "en": [
+      "Freshwater Flatworm",
+      "Schmidtea mediterranea"
+    ],
+    "vi": [
+      "Sán dẹp Planaria Địa Trung Hải",
+      "Schmidtea mediterranea"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Platyhelminthes",
+    "class": "Unknown",
+    "order": "Tricladida",
+    "family": "Dugesiidae",
+    "genus": "Schmidtea",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Sán dẹp Planaria Địa Trung Hải (Schmidtea mediterranea) thuộc ngành Platyhelminthes, lớp Unknown.",
+      "en": "Freshwater Flatworm (Schmidtea mediterranea) is a species in the phylum Platyhelminthes, class Unknown."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Tricladida.",
+      "en": "Inhabits representative biomes corresponding to Tricladida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5892123"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Dugesiidae.",
+      "en": "Characteristic foraging behavior of the family Dugesiidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Sán dẹp Planaria Địa Trung Hải.",
+      "en": "Ecological behavioral patterns of Freshwater Flatworm."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sán dẹp Planaria Địa Trung Hải là một đại diện tiêu biểu của nhóm phân loại Tricladida.",
+      "en": "Freshwater Flatworm represents a key specimen in the order Tricladida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Smed.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smed.jpg",
+        "caption": {
+          "vi": "Mẫu vật Sán dẹp Planaria Địa Trung Hải trong môi trường tự nhiên",
+          "en": "Freshwater Flatworm specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5892123",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Schmidtea_mediterranea",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

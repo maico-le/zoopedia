@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import tigerData from '../../../data/species/panthera-tigris.json';
 import { Species } from '../../types/species';
 import { Copy, Check, Layers, ExternalLink, ShieldCheck } from 'lucide-react';
 import { AnimalViewer } from '../viewer/AnimalViewer';
+import { loadSpeciesBySlug } from '../../lib/data-loader';
 
 type TabKey =
   | 'overview'
@@ -19,14 +20,27 @@ type TabKey =
   | 'provenance';
 
 export const SpeciesPage: React.FC = () => {
-  const { slug: _slug } = useParams<{ slug: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState<TabKey>('overview');
   const [copied, setCopied] = useState(false);
   const [selectedModelGlb, setSelectedModelGlb] = useState<string>('models/panthera-tigris.glb');
+  const [species, setSpecies] = useState<Species>((tigerData as unknown) as Species);
 
-  // In M0/M1, we have tigerData seeded
-  const species: Species = (tigerData as unknown) as Species;
+  useEffect(() => {
+    if (slug) {
+      loadSpeciesBySlug(slug).then((data) => {
+        if (data) {
+          setSpecies(data);
+          if (data.media?.model3d?.glb) {
+            setSelectedModelGlb(data.media.model3d.glb);
+          } else {
+            setSelectedModelGlb('models/panthera-tigris.glb');
+          }
+        }
+      });
+    }
+  }, [slug]);
 
   const handleCopyScientific = () => {
     navigator.clipboard.writeText(species.names.scientific);

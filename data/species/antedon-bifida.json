@@ -1,0 +1,162 @@
+{
+  "id": "antedon-bifida",
+  "taxonKey": {
+    "gbif": 5187721,
+    "col": null,
+    "wikidata": "Q649919",
+    "inaturalist": 342278,
+    "eol": "597854"
+  },
+  "names": {
+    "scientific": "Antedon bifida",
+    "authorship": "(Pennant, 1777) ",
+    "en": [
+      "Rosy Feather Star",
+      "Antedon bifida",
+      "Atlantic feather star",
+      "Rosy feather star",
+      "Rosy feather-star",
+      "Sea feather"
+    ],
+    "vi": [
+      "Huệ biển lông vũ",
+      "Antedon bifida"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Echinodermata",
+    "class": "Crinoidea",
+    "order": "Comatulida",
+    "family": "Antedonidae",
+    "genus": "Antedon",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Huệ biển lông vũ (Antedon bifida) thuộc ngành Echinodermata, lớp Crinoidea.",
+      "en": "Rosy Feather Star (Antedon bifida) is a species in the phylum Echinodermata, class Crinoidea."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Comatulida.",
+      "en": "Inhabits representative biomes corresponding to Comatulida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/5187721"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Antedonidae.",
+      "en": "Characteristic foraging behavior of the family Antedonidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Huệ biển lông vũ.",
+      "en": "Ecological behavioral patterns of Rosy Feather Star."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Huệ biển lông vũ là một đại diện tiêu biểu của nhóm phân loại Comatulida.",
+      "en": "Rosy Feather Star represents a key specimen in the order Comatulida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antedon_bifida,_Barranco_del_Eco.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antedon bifida, Barranco del Eco.jpg",
+        "caption": {
+          "vi": "Mẫu vật Huệ biển lông vũ trong môi trường tự nhiên",
+          "en": "Rosy Feather Star specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/5187721",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": null,
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

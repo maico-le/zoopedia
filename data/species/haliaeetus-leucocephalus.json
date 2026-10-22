@@ -1,0 +1,171 @@
+{
+  "id": "haliaeetus-leucocephalus",
+  "taxonKey": {
+    "gbif": 2480446,
+    "col": null,
+    "wikidata": "Q127216",
+    "inaturalist": 5305,
+    "eol": "45511401"
+  },
+  "names": {
+    "scientific": "Haliaeetus leucocephalus",
+    "authorship": "(Linnaeus, 1766) ",
+    "en": [
+      "Bald Eagle",
+      "Bald eagle",
+      "Haliaeetus leucocephalus",
+      "American eagle",
+      "American bald eagle",
+      "Bird of washington",
+      "Washington eagle"
+    ],
+    "vi": [
+      "Đại bàng đầu trắng",
+      "Haliaeetus leucocephalus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Haliaeetus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Đại bàng đầu trắng (Haliaeetus leucocephalus) thuộc ngành Chordata, lớp Aves.",
+      "en": "Bald Eagle (Haliaeetus leucocephalus) is a species in the phylum Chordata, class Aves."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Accipitriformes.",
+      "en": "Inhabits representative biomes corresponding to Accipitriformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2480446"
+  },
+  "diet": {
+    "type": "carnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Accipitridae.",
+      "en": "Characteristic foraging behavior of the family Accipitridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "diurnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Đại bàng đầu trắng.",
+      "en": "Ecological behavioral patterns of Bald Eagle."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Đại bàng đầu trắng là một đại diện tiêu biểu của nhóm phân loại Accipitriformes.",
+      "en": "Bald Eagle represents a key specimen in the order Accipitriformes."
+    }
+  ],
+  "media": {
+    "model3d": {
+      "glb": "models/flamingo.glb",
+      "tier": "B",
+      "license": "CC0-1.0",
+      "author": "Three.js Sample Models",
+      "sourceUrl": "https://threejs.org",
+      "isRepresentative": true,
+      "representativeFor": "Aves"
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bald_Eagle_(Haliaeetus_leucocephalus)_Kachemak_Bay,_Alaska.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bald Eagle (Haliaeetus leucocephalus) Kachemak Bay, Alaska.jpg",
+        "caption": {
+          "vi": "Mẫu vật Đại bàng đầu trắng trong môi trường tự nhiên",
+          "en": "Bald Eagle specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2480446",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_b%C3%A0ng_%C4%91%E1%BA%A7u_tr%E1%BA%AFng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

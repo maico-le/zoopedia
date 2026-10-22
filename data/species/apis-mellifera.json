@@ -1,0 +1,168 @@
+{
+  "id": "apis-mellifera",
+  "taxonKey": {
+    "gbif": 1341976,
+    "col": null,
+    "wikidata": "Q30034",
+    "inaturalist": 47219,
+    "eol": "1045608"
+  },
+  "names": {
+    "scientific": "Apis mellifera",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Western Honey Bee",
+      "Apis mellifera",
+      "Honeybee",
+      "Western honey bee",
+      "European honey bee",
+      "Honey bee",
+      "A. mellifera",
+      "Africanized honey bee",
+      "Domestic honey bee",
+      "Drone-bee",
+      "Killer bee"
+    ],
+    "vi": [
+      "Ong mật phương Tây",
+      "Ong mật phương tây",
+      "Apis mellifera"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae",
+    "genus": "Apis",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Ong mật phương Tây (Apis mellifera) thuộc ngành Arthropoda, lớp Insecta.",
+      "en": "Western Honey Bee (Apis mellifera) is a species in the phylum Arthropoda, class Insecta."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "terrestrial"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Hymenoptera.",
+      "en": "Inhabits representative biomes corresponding to Hymenoptera."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/1341976"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Apidae.",
+      "en": "Characteristic foraging behavior of the family Apidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "gregarious",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Ong mật phương Tây.",
+      "en": "Ecological behavioral patterns of Western Honey Bee."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Ong mật phương Tây là một đại diện tiêu biểu của nhóm phân loại Hymenoptera.",
+      "en": "Western Honey Bee represents a key specimen in the order Hymenoptera."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/(MHNT)_Apis_mellifera_(female)_-_on_viburnum_tinus_flowers.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(MHNT) Apis mellifera (female) - on viburnum tinus flowers.jpg",
+        "caption": {
+          "vi": "Mẫu vật Ong mật phương Tây trong môi trường tự nhiên",
+          "en": "Western Honey Bee specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/1341976",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Ong_m%E1%BA%ADt_ph%C6%B0%C6%A1ng_T%C3%A2y",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

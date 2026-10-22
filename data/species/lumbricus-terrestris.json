@@ -1,0 +1,177 @@
+{
+  "id": "lumbricus-terrestris",
+  "taxonKey": {
+    "gbif": 4410657,
+    "col": null,
+    "wikidata": "Q30092",
+    "inaturalist": 81545,
+    "eol": "3126801"
+  },
+  "names": {
+    "scientific": "Lumbricus terrestris",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Common Earthworm",
+      "Lumbricus terrestris",
+      "Earthworm",
+      "Common earthworm",
+      "Lob worm",
+      "Nightcrawler",
+      "Vitalis",
+      "Dew worm",
+      "Granddaddy earthworm",
+      "Angleworm",
+      "Canadian crawler",
+      "European common earthworm",
+      "Grandaddy earthworm",
+      "Green crawler",
+      "Large crawler",
+      "Lob",
+      "Night crawler (n. america)",
+      "Nitro crawler",
+      "Squirrel tail",
+      "Squirreltail worm",
+      "Twachel"
+    ],
+    "vi": [
+      "Giun đất thông thường",
+      "Lumbricus terrestris"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Annelida",
+    "class": "Clitellata",
+    "order": "Crassiclitellata",
+    "family": "Lumbricidae",
+    "genus": "Lumbricus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Giun đất thông thường (Lumbricus terrestris) thuộc ngành Annelida, lớp Clitellata.",
+      "en": "Common Earthworm (Lumbricus terrestris) is a species in the phylum Annelida, class Clitellata."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Crassiclitellata.",
+      "en": "Inhabits representative biomes corresponding to Crassiclitellata."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/4410657"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Lumbricidae.",
+      "en": "Characteristic foraging behavior of the family Lumbricidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Giun đất thông thường.",
+      "en": "Ecological behavioral patterns of Common Earthworm."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Giun đất thông thường là một đại diện tiêu biểu của nhóm phân loại Crassiclitellata.",
+      "en": "Common Earthworm represents a key specimen in the order Crassiclitellata."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lumbricus_terrestris_(26559560801).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lumbricus terrestris (26559560801).jpg",
+        "caption": {
+          "vi": "Mẫu vật Giun đất thông thường trong môi trường tự nhiên",
+          "en": "Common Earthworm specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/4410657",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Lumbricus_terrestris",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

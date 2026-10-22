@@ -1,0 +1,161 @@
+{
+  "id": "pinctada-margaritifera",
+  "taxonKey": {
+    "gbif": 2285337,
+    "col": null,
+    "wikidata": "Q820786",
+    "inaturalist": 368663,
+    "eol": "46467327"
+  },
+  "names": {
+    "scientific": "Pinctada margaritifera",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Black-lip Pearl Oyster",
+      "Pinctada margaritifera",
+      "Pacific pearl-oyster",
+      "Black-lip pearl oyster",
+      "Black-lip pearl shell",
+      "Black-lipped pearl oyster"
+    ],
+    "vi": [
+      "Trai ngọc môi đen"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Bivalvia",
+    "order": "Ostreida",
+    "family": "Margaritidae",
+    "genus": "Pinctada",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Trai ngọc môi đen (Pinctada margaritifera) thuộc ngành Mollusca, lớp Bivalvia.",
+      "en": "Black-lip Pearl Oyster (Pinctada margaritifera) is a species in the phylum Mollusca, class Bivalvia."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Ostreida.",
+      "en": "Inhabits representative biomes corresponding to Ostreida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2285337"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Margaritidae.",
+      "en": "Characteristic foraging behavior of the family Margaritidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Trai ngọc môi đen.",
+      "en": "Ecological behavioral patterns of Black-lip Pearl Oyster."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Trai ngọc môi đen là một đại diện tiêu biểu của nhóm phân loại Ostreida.",
+      "en": "Black-lip Pearl Oyster represents a key specimen in the order Ostreida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ostra_perla_de_labios_negros_(Pinctada_margaritifera),_islas_Ad_Dimaniyat,_Omán,_2024-08-15,_DD_35.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ostra perla de labios negros (Pinctada margaritifera), islas Ad Dimaniyat, Omán, 2024-08-15, DD 35.jpg",
+        "caption": {
+          "vi": "Mẫu vật Trai ngọc môi đen trong môi trường tự nhiên",
+          "en": "Black-lip Pearl Oyster specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2285337",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Trai_ng%E1%BB%8Dc_m%C3%B4i_%C4%91en",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

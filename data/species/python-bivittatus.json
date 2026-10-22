@@ -1,0 +1,162 @@
+{
+  "id": "python-bivittatus",
+  "taxonKey": {
+    "gbif": 4820533,
+    "col": null,
+    "wikidata": "Q2716137",
+    "inaturalist": 238252,
+    "eol": "47045660"
+  },
+  "names": {
+    "scientific": "Python bivittatus",
+    "authorship": "Kuhl, 1820",
+    "en": [
+      "Burmese Python",
+      "Burmese python",
+      "Python bivittatus",
+      "Banana snake",
+      "Burmese rock python",
+      "Dark indian rock python"
+    ],
+    "vi": [
+      "Trăn đất",
+      "Python molurus bivittatus"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Squamata",
+    "order": "Unknown",
+    "family": "Pythonidae",
+    "genus": "Python",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Trăn đất (Python bivittatus) thuộc ngành Chordata, lớp Squamata.",
+      "en": "Burmese Python (Python bivittatus) is a species in the phylum Chordata, class Squamata."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Unknown.",
+      "en": "Inhabits representative biomes corresponding to Unknown."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/4820533"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Pythonidae.",
+      "en": "Characteristic foraging behavior of the family Pythonidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Trăn đất.",
+      "en": "Ecological behavioral patterns of Burmese Python."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Trăn đất là một đại diện tiêu biểu của nhóm phân loại Unknown.",
+      "en": "Burmese Python represents a key specimen in the order Unknown."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Burmese_Python_(13),_NPSPhoto,_R._Cammauf_(9101584016).jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burmese Python (13), NPSPhoto, R. Cammauf (9101584016).jpg",
+        "caption": {
+          "vi": "Mẫu vật Trăn đất trong môi trường tự nhiên",
+          "en": "Burmese Python specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/4820533",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Tr%C4%83n_Mi%E1%BA%BFn_%C4%90i%E1%BB%87n",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

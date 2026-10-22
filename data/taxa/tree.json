@@ -1,0 +1,457 @@
+{
+  "Chordata": {
+    "classes": {
+      "Mammalia": {
+        "orders": {
+          "Perissodactyla": [
+            "rhinoceros-unicornis",
+            "equus-quagga",
+            "equus-caballus"
+          ],
+          "Chiroptera": [
+            "pteropus-lylei"
+          ],
+          "Carnivora": [
+            "panthera-leo",
+            "acinonyx-jubatus",
+            "ursus-maritimus",
+            "panthera-tigris",
+            "vulpes-vulpes",
+            "ursus-arctos",
+            "ailuropoda-melanoleuca",
+            "canis-lupus",
+            "panthera-pardus"
+          ],
+          "Pholidota": [
+            "manis-javanica"
+          ],
+          "Primates": [
+            "pan-troglodytes",
+            "macaca-mulatta",
+            "gorilla-beringei",
+            "pongo-pygmaeus"
+          ],
+          "Cetacea": [
+            "balaenoptera-musculus",
+            "megaptera-novaeangliae",
+            "delphinus-delphis",
+            "orcinus-orca"
+          ],
+          "Proboscidea": [
+            "loxodonta-africana",
+            "elephas-maximus"
+          ],
+          "Artiodactyla": [
+            "hippopotamus-amphibius",
+            "giraffa-camelopardalis"
+          ],
+          "Diprotodontia": [
+            "phascolarctos-cinereus",
+            "macropus-giganteus"
+          ],
+          "Monotremata": [
+            "ornithorhynchus-anatinus"
+          ]
+        },
+        "speciesCount": 29
+      },
+      "Aves": {
+        "orders": {
+          "Sphenisciformes": [
+            "aptenodytes-forsteri"
+          ],
+          "Phoenicopteriformes": [
+            "phoenicopterus-roseus"
+          ],
+          "Galliformes": [
+            "gallus-gallus",
+            "pavo-muticus"
+          ],
+          "Struthioniformes": [
+            "struthio-camelus"
+          ],
+          "Psittaciformes": [
+            "ara-macao"
+          ],
+          "Accipitriformes": [
+            "haliaeetus-leucocephalus",
+            "aquila-chrysaetos"
+          ],
+          "Strigiformes": [
+            "bubo-bubo"
+          ]
+        },
+        "speciesCount": 9
+      },
+      "Squamata": {
+        "orders": {
+          "Unknown": [
+            "python-bivittatus",
+            "ophiophagus-hannah",
+            "varanus-komodoensis",
+            "chamaeleo-chamaeleon"
+          ]
+        },
+        "speciesCount": 4
+      },
+      "Crocodylia": {
+        "orders": {
+          "Unknown": [
+            "crocodylus-siamensis"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Testudines": {
+        "orders": {
+          "Unknown": [
+            "chelonia-mydas"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Amphibia": {
+        "orders": {
+          "Anura": [
+            "hoplobatrachus-rugulosus",
+            "rana-temporaria",
+            "bufo-bufo",
+            "dendrobates-tinctorius"
+          ],
+          "Caudata": [
+            "andrias-davidianus"
+          ]
+        },
+        "speciesCount": 5
+      },
+      "Unknown": {
+        "orders": {
+          "Salmoniformes": [
+            "salmo-salar"
+          ],
+          "Perciformes": [
+            "amphiprion-ocellaris",
+            "thunnus-thynnus"
+          ],
+          "Syngnathiformes": [
+            "hippocampus-hippocampus"
+          ]
+        },
+        "speciesCount": 4
+      },
+      "Elasmobranchii": {
+        "orders": {
+          "Lamniformes": [
+            "carcharodon-carcharias"
+          ],
+          "Orectolobiformes": [
+            "rhincodon-typus"
+          ],
+          "Myliobatiformes": [
+            "manta-birostris"
+          ]
+        },
+        "speciesCount": 3
+      }
+    },
+    "speciesCount": 56
+  },
+  "Arthropoda": {
+    "classes": {
+      "Insecta": {
+        "orders": {
+          "Hymenoptera": [
+            "vespa-mandarinia",
+            "formica-rufa",
+            "apis-mellifera"
+          ],
+          "Lepidoptera": [
+            "danaus-plexippus"
+          ],
+          "Mantodea": [
+            "mantis-religiosa"
+          ],
+          "Coleoptera": [
+            "dynastes-hercules"
+          ],
+          "Orthoptera": [
+            "locusta-migratoria"
+          ],
+          "Blattodea": [
+            "periplaneta-americana"
+          ]
+        },
+        "speciesCount": 8
+      },
+      "Arachnida": {
+        "orders": {
+          "Araneae": [
+            "latrodectus-mactans",
+            "theraphosa-blondi"
+          ],
+          "Scorpiones": [
+            "pandinus-imperator"
+          ]
+        },
+        "speciesCount": 3
+      },
+      "Malacostraca": {
+        "orders": {
+          "Decapoda": [
+            "homarus-americanus",
+            "scylla-serrata"
+          ]
+        },
+        "speciesCount": 2
+      },
+      "Merostomata": {
+        "orders": {
+          "Xiphosurida": [
+            "limulus-polyphemus"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Chilopoda": {
+        "orders": {
+          "Scolopendromorpha": [
+            "scolopendra-subspinipes"
+          ]
+        },
+        "speciesCount": 1
+      }
+    },
+    "speciesCount": 15
+  },
+  "Mollusca": {
+    "classes": {
+      "Cephalopoda": {
+        "orders": {
+          "Octopoda": [
+            "octopus-vulgaris"
+          ],
+          "Oegopsida": [
+            "architeuthis-dux"
+          ],
+          "Sepiida": [
+            "sepia-officinalis"
+          ],
+          "Nautilida": [
+            "nautilus-pompilius"
+          ]
+        },
+        "speciesCount": 4
+      },
+      "Bivalvia": {
+        "orders": {
+          "Cardiida": [
+            "tridacna-gigas"
+          ],
+          "Ostreida": [
+            "pinctada-margaritifera"
+          ]
+        },
+        "speciesCount": 2
+      },
+      "Gastropoda": {
+        "orders": {
+          "Stylommatophora": [
+            "helix-pomatia",
+            "achatina-fulica"
+          ],
+          "Lepetellida": [
+            "haliotis-asinina"
+          ],
+          "Neogastropoda": [
+            "conus-geographus"
+          ]
+        },
+        "speciesCount": 4
+      }
+    },
+    "speciesCount": 10
+  },
+  "Cnidaria": {
+    "classes": {
+      "Scyphozoa": {
+        "orders": {
+          "Semaeostomeae": [
+            "cyanea-capillata",
+            "aurelia-aurita"
+          ]
+        },
+        "speciesCount": 2
+      },
+      "Cubozoa": {
+        "orders": {
+          "Chirodropida": [
+            "chironex-fleckeri"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Hydrozoa": {
+        "orders": {
+          "Siphonophorae": [
+            "physalia-physalis"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Anthozoa": {
+        "orders": {
+          "Scleractinia": [
+            "acropora-cervicornis"
+          ],
+          "Actiniaria": [
+            "actinia-equina"
+          ]
+        },
+        "speciesCount": 2
+      }
+    },
+    "speciesCount": 6
+  },
+  "Echinodermata": {
+    "classes": {
+      "Asteroidea": {
+        "orders": {
+          "Forcipulatida": [
+            "asterias-rubens"
+          ],
+          "Valvatida": [
+            "acanthaster-planci"
+          ]
+        },
+        "speciesCount": 2
+      },
+      "Echinoidea": {
+        "orders": {
+          "Camarodonta": [
+            "strongylocentrotus-purpuratus"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Ophiuroidea": {
+        "orders": {
+          "Amphilepidida": [
+            "ophiothrix-fragilis"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Crinoidea": {
+        "orders": {
+          "Comatulida": [
+            "antedon-bifida"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Holothuroidea": {
+        "orders": {
+          "Holothuriida": [
+            "holothuria-edulis"
+          ]
+        },
+        "speciesCount": 1
+      }
+    },
+    "speciesCount": 6
+  },
+  "Annelida": {
+    "classes": {
+      "Clitellata": {
+        "orders": {
+          "Crassiclitellata": [
+            "lumbricus-terrestris"
+          ],
+          "Arhynchobdellida": [
+            "hirudo-medicinalis"
+          ]
+        },
+        "speciesCount": 2
+      },
+      "Polychaeta": {
+        "orders": {
+          "Unknown": [
+            "arenicola-marina"
+          ],
+          "Phyllodocida": [
+            "nereis-virens"
+          ],
+          "Sabellida": [
+            "riftia-pachyptila"
+          ]
+        },
+        "speciesCount": 3
+      }
+    },
+    "speciesCount": 5
+  },
+  "Porifera": {
+    "classes": {
+      "Hexactinellida": {
+        "orders": {
+          "Lyssacinosida": [
+            "euplectella-aspergillum"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Demospongiae": {
+        "orders": {
+          "Dictyoceratida": [
+            "spongia-officinalis"
+          ],
+          "Suberitida": [
+            "halichondria-panicea"
+          ],
+          "Clionaida": [
+            "cliona-celata"
+          ]
+        },
+        "speciesCount": 3
+      }
+    },
+    "speciesCount": 4
+  },
+  "Platyhelminthes": {
+    "classes": {
+      "Unknown": {
+        "orders": {
+          "Tricladida": [
+            "schmidtea-mediterranea"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Trematoda": {
+        "orders": {
+          "Plagiorchiida": [
+            "fasciola-hepatica"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Cestoda": {
+        "orders": {
+          "Cyclophyllidea": [
+            "taenia-solium"
+          ]
+        },
+        "speciesCount": 1
+      },
+      "Turbellaria": {
+        "orders": {
+          "Unknown": [
+            "pseudobiceros-hancockanus"
+          ]
+        },
+        "speciesCount": 1
+      }
+    },
+    "speciesCount": 4
+  }
+}

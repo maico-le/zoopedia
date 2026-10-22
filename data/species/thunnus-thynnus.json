@@ -1,0 +1,171 @@
+{
+  "id": "thunnus-thynnus",
+  "taxonKey": {
+    "gbif": 2373980,
+    "col": null,
+    "wikidata": "Q214415",
+    "inaturalist": 114126,
+    "eol": "46577336"
+  },
+  "names": {
+    "scientific": "Thunnus thynnus",
+    "authorship": "(Linnaeus, 1758) ",
+    "en": [
+      "Atlantic Bluefin Tuna",
+      "Atlantic bluefin tuna",
+      "Northern bluefin tuna",
+      "Blue fin tuna",
+      "Blue-fin tunny",
+      "Horse mackerel",
+      "Thunnus thynnus",
+      "Atlantic bluefin tuna, northern bluefin tuna, blue-fin tunny",
+      "Bluefin tuna",
+      "Bluefin tunny",
+      "Southern bluefin tuna",
+      "Squid hound",
+      "Tuna",
+      "Tunny",
+      "Blue-fin tuna"
+    ],
+    "vi": [
+      "Cá ngừ vây xanh Đại Tây Dương",
+      "Cá ngừ vây xanh biển bắc"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Unknown",
+    "order": "Perciformes",
+    "family": "Scombridae",
+    "genus": "Thunnus",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Cá ngừ vây xanh Đại Tây Dương (Thunnus thynnus) thuộc ngành Chordata, lớp Unknown.",
+      "en": "Atlantic Bluefin Tuna (Thunnus thynnus) is a species in the phylum Chordata, class Unknown."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Perciformes.",
+      "en": "Inhabits representative biomes corresponding to Perciformes."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2373980"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Scombridae.",
+      "en": "Characteristic foraging behavior of the family Scombridae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Cá ngừ vây xanh Đại Tây Dương.",
+      "en": "Ecological behavioral patterns of Atlantic Bluefin Tuna."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Cá ngừ vây xanh Đại Tây Dương là một đại diện tiêu biểu của nhóm phân loại Perciformes.",
+      "en": "Atlantic Bluefin Tuna represents a key specimen in the order Perciformes."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bluefin-big.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bluefin-big.jpg",
+        "caption": {
+          "vi": "Mẫu vật Cá ngừ vây xanh Đại Tây Dương trong môi trường tự nhiên",
+          "en": "Atlantic Bluefin Tuna specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2373980",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/C%C3%A1_ng%E1%BB%AB_v%C3%A2y_xanh_%C4%90%E1%BA%A1i_T%C3%A2y_D%C6%B0%C6%A1ng",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

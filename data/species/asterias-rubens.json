@@ -1,0 +1,165 @@
+{
+  "id": "asterias-rubens",
+  "taxonKey": {
+    "gbif": 7765831,
+    "col": null,
+    "wikidata": "Q21120",
+    "inaturalist": 120138,
+    "eol": "598481"
+  },
+  "names": {
+    "scientific": "Asterias rubens",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "Common Starfish",
+      "Asterias rubens",
+      "Starfish",
+      "Common sea star",
+      "Sea star",
+      "Sugar starfish",
+      "Common starfish",
+      "Atlantic common sea star",
+      "Purple starfish"
+    ],
+    "vi": [
+      "Sao biển thông thường",
+      "Asterias rubens"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Echinodermata",
+    "class": "Asteroidea",
+    "order": "Forcipulatida",
+    "family": "Asteriidae",
+    "genus": "Asterias",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Sao biển thông thường (Asterias rubens) thuộc ngành Echinodermata, lớp Asteroidea.",
+      "en": "Common Starfish (Asterias rubens) is a species in the phylum Echinodermata, class Asteroidea."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Forcipulatida.",
+      "en": "Inhabits representative biomes corresponding to Forcipulatida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/7765831"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Asteriidae.",
+      "en": "Characteristic foraging behavior of the family Asteriidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Sao biển thông thường.",
+      "en": "Ecological behavioral patterns of Common Starfish."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Sao biển thông thường là một đại diện tiêu biểu của nhóm phân loại Forcipulatida.",
+      "en": "Common Starfish represents a key specimen in the order Forcipulatida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asterias_rubens.jpg?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asterias rubens.jpg",
+        "caption": {
+          "vi": "Mẫu vật Sao biển thông thường trong môi trường tự nhiên",
+          "en": "Common Starfish specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/7765831",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/Asterias_rubens",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}

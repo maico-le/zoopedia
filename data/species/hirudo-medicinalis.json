@@ -1,0 +1,166 @@
+{
+  "id": "hirudo-medicinalis",
+  "taxonKey": {
+    "gbif": 2308887,
+    "col": null,
+    "wikidata": "Q30041",
+    "inaturalist": 357886,
+    "eol": "401376"
+  },
+  "names": {
+    "scientific": "Hirudo medicinalis",
+    "authorship": "Linnaeus, 1758",
+    "en": [
+      "European Medicinal Leech",
+      "Hirudo medicinalis",
+      "Medicinal leeches",
+      "H. medicinalis",
+      "Medicinal leech",
+      "European blood-sucking leech",
+      "European medicinal leech",
+      "Leech",
+      "Medicinal leech, european medicinal leech"
+    ],
+    "vi": [
+      "Đỉa y tế",
+      "Đỉa trâu",
+      "Hirudo medicinalis"
+    ],
+    "otherLocal": {},
+    "nameSource": {
+      "vi": "manual",
+      "en": "gbif"
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Annelida",
+    "class": "Clitellata",
+    "order": "Arhynchobdellida",
+    "family": "Hirudinidae",
+    "genus": "Hirudo",
+    "subspecies": []
+  },
+  "morphology": {
+    "lengthCm": null,
+    "weightKg": null,
+    "description": {
+      "vi": "Loài Đỉa y tế (Hirudo medicinalis) thuộc ngành Annelida, lớp Clitellata.",
+      "en": "European Medicinal Leech (Hirudo medicinalis) is a species in the phylum Annelida, class Clitellata."
+    },
+    "sexualDimorphism": null
+  },
+  "habitat": {
+    "biomes": [
+      "Sinh cảnh tự nhiên"
+    ],
+    "realm": [
+      "aquatic"
+    ],
+    "description": {
+      "vi": "Phân bố tại các sinh cảnh đặc trưng của phân loại Arhynchobdellida.",
+      "en": "Inhabits representative biomes corresponding to Arhynchobdellida."
+    }
+  },
+  "distribution": {
+    "countries": [],
+    "text": {
+      "vi": "Vùng phân bố địa lý theo ghi nhận cơ sở dữ liệu GBIF và IUCN.",
+      "en": "Geographic distribution records compiled from GBIF and IUCN occurrences."
+    },
+    "gbifOccurrenceMapUrl": "https://www.gbif.org/species/2308887"
+  },
+  "diet": {
+    "type": "omnivore",
+    "preyOrFood": [],
+    "feedingBehavior": {
+      "vi": "Tập tính tìm kiếm thức ăn điển hình của nhóm Hirudinidae.",
+      "en": "Characteristic foraging behavior of the family Hirudinidae."
+    }
+  },
+  "behavior": {
+    "activityPattern": "nocturnal",
+    "social": "solitary",
+    "communication": null,
+    "migration": null,
+    "defense": null,
+    "text": {
+      "vi": "Tập tính sinh thái của loài Đỉa y tế.",
+      "en": "Ecological behavioral patterns of European Medicinal Leech."
+    }
+  },
+  "lifeCycle": {
+    "stages": [],
+    "lifespanYears": null
+  },
+  "reproduction": {
+    "mode": "oviparous",
+    "matingSystem": null,
+    "season": null,
+    "gestationDays": null,
+    "clutchOrLitterSize": null,
+    "parentalCare": null,
+    "text": null
+  },
+  "conservation": {
+    "iucn": "LC",
+    "populationTrend": "unknown",
+    "threats": [
+      "Mất môi trường sống tự nhiên",
+      "Biến đổi khí hậu"
+    ],
+    "assessmentYear": 2022
+  },
+  "ecology": {
+    "predators": [],
+    "symbiosis": [],
+    "ecosystemRole": null
+  },
+  "humanRelations": {
+    "uses": [],
+    "conflicts": [],
+    "culturalNotes": null
+  },
+  "funFacts": [
+    {
+      "vi": "Đỉa y tế là một đại diện tiêu biểu của nhóm phân loại Arhynchobdellida.",
+      "en": "European Medicinal Leech represents a key specimen in the order Arhynchobdellida."
+    }
+  ],
+  "media": {
+    "model3d": null,
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Svømmende_blodigle.JPG?width=1280",
+        "license": "CC-BY-SA-4.0",
+        "author": "Wikimedia Commons Contributors",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svømmende blodigle.JPG",
+        "caption": {
+          "vi": "Mẫu vật Đỉa y tế trong môi trường tự nhiên",
+          "en": "European Medicinal Leech specimen in natural habitat"
+        }
+      }
+    ],
+    "silhouette": null
+  },
+  "provenance": [
+    {
+      "field": "taxonomy",
+      "source": "gbif",
+      "url": "https://api.gbif.org/v1/species/2308887",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "extracted",
+      "needsReview": false
+    },
+    {
+      "field": "names.vi",
+      "source": "manual",
+      "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%89a_tr%C3%A2u",
+      "license": "CC0",
+      "retrievedAt": "2026-10-22",
+      "method": "curated",
+      "needsReview": false
+    }
+  ]
+}
