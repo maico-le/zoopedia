@@ -190,24 +190,24 @@ export const HomePage: React.FC = () => {
 
       {/* Hero Field Expedition Section */}
       <section className="relative pt-10 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Editorial Heading: National Geographic Magazine Style */}
+        {/* Editorial Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           {/* Field Dispatch Stamp Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-lg bg-expedition-canvas border border-natgeo-yellow/40 text-natgeo-yellow text-xs font-mono tracking-widest uppercase mb-6 shadow-glow">
-            <Radio className="w-3.5 h-3.5 text-natgeo-yellow animate-pulse" />
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-amber-400/30 text-amber-400 text-xs font-mono tracking-wider mb-6 shadow-sm">
+            <Radio className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
             <span>{t('home.galleryBadge')}</span>
-            <span className="text-stone-500">•</span>
-            <span className="text-stone-400">DISPATCH #2026-BIO</span>
+            <span className="text-slate-600">•</span>
+            <span className="text-slate-400">DISPATCH #2026-BIO</span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.08] uppercase">
+          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.15]">
             {t('home.heroTitle1')}{' '}
-            <span className="italic font-serif font-normal bg-gradient-to-r from-natgeo-yellow via-amber-300 to-amber-500 bg-clip-text text-transparent underline decoration-natgeo-yellow/40 decoration-4 underline-offset-8">
+            <span className="block mt-2 italic font-serif font-normal bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">
               {t('home.heroTitleHighlight')}
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-stone-300 font-sans max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-300 font-sans max-w-2xl mx-auto leading-relaxed">
             {t('home.heroSubtitle')}
           </p>
         </div>
@@ -215,11 +215,8 @@ export const HomePage: React.FC = () => {
         {/* Expedition Specimen Search Terminal */}
         <div className="max-w-2xl mx-auto mb-14">
           <form onSubmit={handleSearchSubmit} className="relative group">
-            <div className="relative flex items-center field-panel field-ruler-bottom rounded-2xl border-2 border-natgeo-yellow/30 shadow-2xl group-focus-within:border-natgeo-yellow group-focus-within:shadow-natgeo transition-all overflow-hidden">
-              {/* Iconic NatGeo Yellow Vertical Accent Bar */}
-              <div className="w-2.5 self-stretch bg-natgeo-yellow shrink-0" />
-
-              <div className="pl-4 text-natgeo-yellow">
+            <div className="relative flex items-center bg-slate-900/90 backdrop-blur-xl rounded-2xl border border-slate-700/80 shadow-2xl group-focus-within:border-amber-400 group-focus-within:shadow-[0_0_25px_rgba(245,158,11,0.2)] transition-all overflow-hidden">
+              <div className="pl-4 text-amber-400">
                 <Search className="w-5 h-5" />
               </div>
 
@@ -228,11 +225,11 @@ export const HomePage: React.FC = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t('home.searchPlaceholder')}
-                className="w-full pl-3.5 pr-28 py-4 bg-transparent text-white placeholder-stone-400 text-sm focus:outline-none font-sans"
+                className="w-full pl-3.5 pr-28 py-4 bg-transparent text-white placeholder-slate-400 text-sm focus:outline-none font-sans"
               />
 
               <div className="absolute right-3 flex items-center gap-1.5 pointer-events-none">
-                <kbd className="hidden sm:inline-block px-2.5 py-1 text-[10px] font-mono font-bold text-natgeo-yellow bg-black/60 border border-natgeo-yellow/30 rounded-md">
+                <kbd className="hidden sm:inline-block px-2.5 py-1 text-[10px] font-mono font-bold text-amber-400 bg-slate-800 border border-amber-400/30 rounded-md">
                   SEARCH [↵]
                 </kbd>
               </div>
@@ -454,17 +451,17 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Biological Departments Section: Field Explorer Style */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-natgeo-yellow/15">
+      {/* Featured Biological Departments Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
           <div>
-            <div className="text-xs font-mono uppercase tracking-widest text-natgeo-yellow font-bold mb-2">
+            <div className="text-xs font-mono uppercase tracking-widest text-amber-400 font-bold mb-2">
               GBIF Backbone Field Taxonomy
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white uppercase">
+            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               {t('home.taxonomyTitle')}
             </h2>
-            <p className="text-sm text-stone-400 mt-1 max-w-xl">
+            <p className="text-sm text-slate-400 mt-1 max-w-xl">
               {t('home.taxonomySub')}
             </p>
           </div>
@@ -473,7 +470,7 @@ export const HomePage: React.FC = () => {
             to="/taxa"
             className="btn-expedition-secondary text-xs"
           >
-            <Compass className="w-4 h-4 text-natgeo-yellow" />
+            <Compass className="w-4 h-4 text-amber-400" />
             <span>{t('home.viewFullTree')}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
@@ -484,20 +481,20 @@ export const HomePage: React.FC = () => {
             <Link
               key={item.phylum}
               to="/taxa"
-              className="p-6 rounded-3xl field-panel field-panel-interactive transition-all group flex flex-col justify-between border border-natgeo-yellow/20"
+              className="p-6 rounded-3xl bg-slate-900/70 border border-slate-800 hover:border-amber-400/40 hover:bg-slate-800/60 transition-all shadow-xl group flex flex-col justify-between"
             >
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-black border border-natgeo-yellow/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
-                <h3 className="font-serif text-xl font-bold text-white group-hover:text-natgeo-yellow transition-colors">
+                <h3 className="font-display text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
                   {isEn ? item.nameEn : item.nameVi}
                 </h3>
-                <div className="text-xs font-mono text-natgeo-yellow mb-2">{item.phylum} • {item.count} {isEn ? 'species' : 'loài'}</div>
-                <p className="text-xs text-stone-300 leading-relaxed">{isEn ? item.descEn : item.descVi}</p>
+                <div className="text-xs font-mono text-amber-400 mb-2 mt-0.5">{item.phylum} • {item.count} {isEn ? 'species' : 'loài'}</div>
+                <p className="text-xs text-slate-300 leading-relaxed">{isEn ? item.descEn : item.descVi}</p>
               </div>
 
-              <div className="mt-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono font-bold text-natgeo-yellow">
+              <div className="mt-6 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-sans font-bold text-amber-400">
                 <span>{t('home.explorePhylum')}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
