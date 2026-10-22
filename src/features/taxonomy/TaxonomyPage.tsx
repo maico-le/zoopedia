@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Compass, ArrowRight } from 'lucide-react';
+import { ArrowRight, Radio } from 'lucide-react';
 import taxaTreeData from '../../../data/taxa/tree.json';
 import speciesIndexData from '../../../data/species-index.json';
 
@@ -74,21 +74,21 @@ export const TaxonomyPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Editorial Header */}
       <div className="mb-12">
-        <div className="flex items-center gap-2 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider mb-2">
-          <Compass className="w-4 h-4" />
-          GBIF Backbone Taxonomy System
+        <div className="flex items-center gap-2 text-natgeo-yellow text-xs font-mono font-bold uppercase tracking-widest mb-2">
+          <Radio className="w-4 h-4 text-natgeo-yellow animate-pulse" />
+          GBIF Backbone Field Taxonomy System
         </div>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-white">
+        <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight">
           {isEn ? 'Taxonomy of the 8 Animal Phyla (Kingdom Animalia)' : 'Cây Phân Loại 8 Ngành Động Vật (Animalia)'}
         </h1>
-        <p className="text-stone-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
+        <p className="text-stone-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed font-sans">
           {isEn
             ? 'Phylogenetic hierarchy from Phylum \u2192 Class \u2192 Order \u2192 Family \u2192 Genus \u2192 Species according to international catalog standards.'
             : 'Hệ thống phát sinh chủng loại từ Ngành (Phylum) \u2192 Lớp (Class) \u2192 Bộ (Order) \u2192 Họ (Family) \u2192 Chi (Genus) \u2192 Loài (Species).'}
         </p>
       </div>
 
-      {/* 8 Phyla Grid */}
+      {/* 8 Phyla Grid: Field Expedition Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {Object.entries(PHYLA_META).map(([phylumKey, meta]) => {
           const phylumData = tree[phylumKey];
@@ -99,20 +99,20 @@ export const TaxonomyPage: React.FC = () => {
           return (
             <div
               key={phylumKey}
-              className="p-6 rounded-3xl bio-glass-panel border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between group"
+              className="p-6 rounded-3xl field-panel field-panel-interactive border-2 border-natgeo-yellow/20 hover:border-natgeo-yellow/60 transition-all flex flex-col justify-between group shadow-xl"
             >
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-stone-900 border border-white/10 flex items-center justify-center text-3xl mb-5 group-hover:scale-105 transition-transform shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-black border border-natgeo-yellow/30 flex items-center justify-center text-3xl mb-5 group-hover:scale-105 transition-transform shadow-lg">
                   {meta.icon}
                 </div>
 
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-emerald-400 font-bold">
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-natgeo-yellow font-extrabold">
                     Phylum {phylumKey}
                   </span>
                 </div>
 
-                <h2 className="font-serif text-2xl font-bold text-white mb-1 group-hover:text-emerald-300 transition-colors">
+                <h2 className="font-serif text-2xl font-bold text-white mb-1 group-hover:text-natgeo-yellow transition-colors">
                   {isEn ? meta.nameEn : meta.nameVi}
                 </h2>
 
@@ -122,7 +122,7 @@ export const TaxonomyPage: React.FC = () => {
                   <span>{classesCount} {isEn ? 'classes' : 'lớp'}</span>
                 </div>
 
-                <p className="text-xs text-stone-300 leading-relaxed mb-6">
+                <p className="text-xs text-stone-300 leading-relaxed mb-6 font-sans">
                   {isEn ? meta.descEn : meta.descVi}
                 </p>
               </div>
@@ -130,7 +130,7 @@ export const TaxonomyPage: React.FC = () => {
               <div className="pt-4 border-t border-white/10 flex flex-col gap-2">
                 <Link
                   to={`/taxa/phylum/${phylumKey}`}
-                  className="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-emerald-500/20 text-emerald-300 border border-white/10 hover:border-emerald-500/30 flex items-center justify-between text-xs font-semibold transition-all"
+                  className="btn-expedition-secondary w-full !text-xs justify-between"
                 >
                   <span>{isEn ? `Explore ${phylumKey} Tree` : `Xem cây ngành ${phylumKey}`}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -139,7 +139,7 @@ export const TaxonomyPage: React.FC = () => {
                 {representativeSpecies && (
                   <Link
                     to={`/species/${representativeSpecies.id}`}
-                    className="flex items-center justify-between text-[11px] text-stone-400 hover:text-white transition-colors px-1"
+                    className="flex items-center justify-between text-[11px] text-stone-400 hover:text-natgeo-yellow transition-colors px-1 font-mono"
                   >
                     <span>{isEn ? 'Representative:' : 'Đại diện:'} {isEn ? (representativeSpecies.nameEn || representativeSpecies.nameVi) : representativeSpecies.nameVi}</span>
                     <span>&rarr;</span>

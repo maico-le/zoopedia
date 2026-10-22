@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { User, Ruler } from 'lucide-react';
+import { User, Ruler, Compass } from 'lucide-react';
 
 interface SizeComparisonProps {
   lengthCm?: number[] | null;
@@ -17,7 +17,7 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
 
   if (!lengthCm || lengthCm.length < 2) {
     return (
-      <div className="p-5 rounded-2xl bio-glass border border-white/10 text-xs text-stone-400">
+      <div className="p-6 rounded-2xl field-panel border border-white/10 text-xs text-stone-400 font-mono">
         {t('morphometrics.noData')}
       </div>
     );
@@ -42,40 +42,41 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
   const animalBarPct = isLarger ? 100 : Math.max(12, ratio * 100);
 
   return (
-    <div className="p-6 rounded-3xl bio-glass-panel border border-white/10 shadow-xl">
-      <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+    <div className="p-6 sm:p-8 rounded-3xl field-panel border-2 border-natgeo-yellow/25 shadow-2xl relative overflow-hidden field-ruler-bottom">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-white/10 mb-6 gap-3">
         <div>
-          <div className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold mb-1">
+          <div className="text-[10px] font-mono uppercase tracking-widest text-natgeo-yellow font-bold mb-1 flex items-center gap-1.5">
+            <Compass className="w-3.5 h-3.5 text-natgeo-yellow" />
             {t('morphometrics.subtitle')}
           </div>
-          <h3 className="font-serif text-xl font-bold text-white flex items-center gap-2">
-            <Ruler className="w-5 h-5 text-emerald-400" />
+          <h3 className="font-display text-2xl font-extrabold text-white flex items-center gap-2 uppercase">
+            <Ruler className="w-5 h-5 text-natgeo-yellow" />
             {t('morphometrics.title')}
           </h3>
         </div>
 
-        <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-white/5 border border-white/10 text-stone-300">
+        <span className="field-stamp field-stamp-verified">
           {ratio >= 1
             ? t('morphometrics.largerThanHuman', { val: ratio.toFixed(1) })
             : t('morphometrics.percentOfHuman', { val: (ratio * 100).toFixed(0) })}
         </span>
       </div>
 
-      {/* Silhouette & Scale Comparison Stage */}
+      {/* Silhouette & Metric Scale Comparison Stage */}
       <div className="space-y-6">
-        {/* Animal Bar */}
+        {/* Animal Metric Bar */}
         <div>
           <div className="flex justify-between items-center text-xs mb-2">
-            <span className="font-serif font-bold text-emerald-300 flex items-center gap-2">
+            <span className="font-serif font-bold text-natgeo-yellow flex items-center gap-2 text-sm">
               🐾 {speciesName}
             </span>
-            <span className="font-mono text-stone-300">
+            <span className="font-mono font-bold text-stone-200">
               {minLen} – {maxLen} cm {maxWeight ? `• ${minWeight} – ${maxWeight} kg` : ''}
             </span>
           </div>
-          <div className="h-8 bg-stone-900/80 rounded-xl overflow-hidden border border-white/10 p-1 flex items-center">
+          <div className="h-9 bg-black/80 rounded-xl overflow-hidden border border-natgeo-yellow/30 p-1 flex items-center">
             <div
-              className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-lg shadow-sm transition-all duration-700 flex items-center justify-end pr-2 text-[10px] font-mono font-bold text-stone-950"
+              className="h-full bg-gradient-to-r from-natgeo-yellow to-amber-500 rounded-lg shadow-glow transition-all duration-700 flex items-center justify-end pr-3 text-[11px] font-mono font-extrabold text-stone-950"
               style={{ width: `${animalBarPct}%` }}
             >
               {avgLen >= 100 ? `${(avgLen / 100).toFixed(1)}m` : `${avgLen.toFixed(0)}cm`}
@@ -83,10 +84,10 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
           </div>
         </div>
 
-        {/* Human Reference Bar */}
+        {/* Standard Human Reference Bar */}
         <div>
           <div className="flex justify-between items-center text-xs mb-2">
-            <span className="text-stone-400 flex items-center gap-1.5 font-medium">
+            <span className="text-stone-400 flex items-center gap-1.5 font-medium font-sans">
               <User className="w-4 h-4 text-stone-400" />
               {t('morphometrics.humanRef')}
             </span>
@@ -94,9 +95,9 @@ export const SizeComparison: React.FC<SizeComparisonProps> = ({
               {humanHeightCm} cm • ~{humanWeightKg} kg
             </span>
           </div>
-          <div className="h-8 bg-stone-900/80 rounded-xl overflow-hidden border border-white/10 p-1 flex items-center">
+          <div className="h-9 bg-black/80 rounded-xl overflow-hidden border border-white/10 p-1 flex items-center">
             <div
-              className="h-full bg-stone-700/80 rounded-lg transition-all duration-700 flex items-center justify-end pr-2 text-[10px] font-mono font-bold text-stone-200"
+              className="h-full bg-stone-700/90 rounded-lg transition-all duration-700 flex items-center justify-end pr-3 text-[11px] font-mono font-bold text-stone-200"
               style={{ width: `${humanBarPct}%` }}
             >
               1.75m
